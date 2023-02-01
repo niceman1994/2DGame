@@ -1,0 +1,5404 @@
+fileFormatVersion: 2
+guid: fbcae8f8f585f4f49b8fcbf3e0a6dc80
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 323
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 982cc0cffdf62cc418ecc00b7efd58ed
+      internalID: -440412256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 326
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda6efa93ea10b1478c1912af190185c
+      internalID: 930833323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 324
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884b6de772b389149a52eae4226c6eed
+      internalID: -1189049216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 323
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59a6d42466c9784daac8b3d59f4ef94
+      internalID: -467723137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_4
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 323
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d8256f091bddf4593b2d25c3fb9dd1
+      internalID: -604225127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_5
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 326
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e71ef4bbc3ab5419cd4a5dcd708e1e
+      internalID: -745151587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_6
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 323
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2db712bce45a1054085651f622573424
+      internalID: 1331919654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_7
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 323
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 631787a9292df874296f89a792ced193
+      internalID: -748832257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_8
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 324
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91f7c19b81757a948bdd209e3e1040b4
+      internalID: 1513545582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_9
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 324
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e14613ce0ac7da4cab3b44dd33d9d45
+      internalID: 513350724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_10
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 308
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd63da884fd71248923cd9dc089f8e2
+      internalID: 936150583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_11
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 324
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be3d4b80f081fc54089bf8cdc8f9ef38
+      internalID: 1536239980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_12
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 307
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a4e0b3ec4cc6b40a3f0be611fdcd49
+      internalID: -2018910132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_13
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 307
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fccde1a7004b8634e82d0d3eb4a8c147
+      internalID: -1879190306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_14
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 307
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd5624adb6547d4449d206d99548c1e3
+      internalID: 754999706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_15
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 307
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cdafa1e0c8f72b459c58e8ef5b87c4c
+      internalID: -2092446883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_16
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 307
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027deea8d6ccf6740aa87d5c16f2efd0
+      internalID: -296410284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_17
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 307
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf4bf45ceeb4a0478323efdc7b9a09e
+      internalID: -415503852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_18
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 307
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18509a5332ced054cacf49754eb350f2
+      internalID: -1950499754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_19
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 307
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e719bad2fdb0774ba38d541569906a3
+      internalID: -1393640408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_20
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 307
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48fc6f944bf66584da67debf1163dafd
+      internalID: -49587112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_21
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 307
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afbc7c0a158def841a6135cbc0755632
+      internalID: -2147306910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_22
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 291
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cdb483e1ba175c4eb61b6adfff04c06
+      internalID: -577201054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_23
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 307
+        width: 3
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff22941bf551004aa0e268a90d63ed6
+      internalID: 377443226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_24
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 323
+        width: 3
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d2f19241efc45b4f802526e0d33546b
+      internalID: -266491706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_25
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 307
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d53381f867a604b9f7fb39c3f08a26
+      internalID: 117808978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_26
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 291
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b89b5be3b899f334ea8438393c5d092b
+      internalID: -301202415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_27
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 291
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b32c69f33e51d4291d89ba04e24d73
+      internalID: 323091059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_28
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 291
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6686e254bcce1a749aa4fd20dd66f249
+      internalID: -1046326475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_29
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 291
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b50295369dc4d4b9d2d28b5ff66974
+      internalID: 205967244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_30
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 291
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07fd3931860287948b893e97d97e4632
+      internalID: 300025565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_31
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 291
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7f702e5c3f5394da7c10bddfdcb5ed
+      internalID: -244468123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_32
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 291
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba642aa033023164e9f2a8ff6fb08f96
+      internalID: 200996796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_33
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 291
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a065ed802941e4292c918573dbf2fd
+      internalID: -1635513207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_34
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 291
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423e989a994a92b41a390dd924dd651d
+      internalID: 1830065514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_35
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 291
+        width: 3
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7e13ad60e7c8b4eb1e52e1c4e4954c
+      internalID: 63871306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_36
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 291
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c9bfa93e5d37f45a15d8c78baea6f7
+      internalID: -645028202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_37
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 291
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed04cfdfd1fd9ad46bb5e363b998d0e7
+      internalID: -1573956466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_38
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 291
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2d63de3fc97ea42ade2d102eb52732
+      internalID: 1202591654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_39
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 291
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9e7f50614bb98c41a74976be46d7d96
+      internalID: 1374648897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_40
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 275
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68cba32743419fe409192a8b35d05767
+      internalID: 1316377321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_41
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 275
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aace8872a6a94464c9e9965059d713e1
+      internalID: 741426609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_42
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 275
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2ea37b3a916c94f98c70bcae3146f6
+      internalID: -1148059846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_43
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 275
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d1b6bab8e603a4cb13ead75b74df39
+      internalID: -1808527113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_44
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 275
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b44b8c25b0d50b946a6b6e67a888a058
+      internalID: -378308320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_45
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 275
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f2fbb6c8c2ad8e4184fa84165dd580c
+      internalID: 297538622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_46
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 275
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e9d868c92d2f84db4e87a8264c8517
+      internalID: -129253780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_47
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 275
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382bb54b59f005246ba4af553268b74f
+      internalID: 825432495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_48
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 275
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30b189a53c70e24cabcbf2bd7c6d112
+      internalID: 230052296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_49
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 275
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3fda43932ed0641a6a5aec28cbf873
+      internalID: 564966041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_50
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 275
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7b480648df82c345abc1dd74fc683a0
+      internalID: 347340284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_51
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 275
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85120b9329e0f7c4ba24a0b56dc73ebc
+      internalID: -2010686237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_52
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 275
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d86b9b45822d914f9eb361fecf4e7c4
+      internalID: 1714885841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_53
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 275
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228d94fa7f4d8f14c916c5f1855bdfac
+      internalID: -1183538007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_54
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 276
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bcc64dbd8bf39d4cb76dc5b56e428dd
+      internalID: -1173497620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_55
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 250
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19eafd16a772cf54c9a0244ef1092c4a
+      internalID: -1866440540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_56
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 257
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4501cb993842bd744b4f5961a88cccc8
+      internalID: -653353367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_57
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 252
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66ec9e5c73b655e4ca56b53ee1341eca
+      internalID: -1914196533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_58
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 250
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab2c6c155d0c06a46a2014608db530bc
+      internalID: -246065695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_59
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 250
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfc58b5b087cab74e95e3be85c4060ff
+      internalID: 373421964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_60
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 250
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd948a1b3a92ad47baa5a907425b7a7
+      internalID: 1817866542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_61
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 257
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f41761ae2ea8ef4b83bbe5d6b997adb
+      internalID: 758239269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_62
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 250
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33c18a8de583e243a1c4605b662d9bb
+      internalID: 787889610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_63
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 250
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0625aaac09b07a442a6df4988b22a444
+      internalID: 202449234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_64
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 251
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e85ed251caaad148a13b268be90f607
+      internalID: 626156330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_65
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 252
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f4fb02b3a432124c9b348182a211ece
+      internalID: 1871346076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_66
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 251
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0d916c38d647c34491e1e2f66a167bb
+      internalID: 1369979635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_67
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 256
+        width: 12
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce4b088fd5d465489fb2f35bfe585a2
+      internalID: 1246272524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_68
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 252
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f159776f583e00a46b434a2042dc32a2
+      internalID: -1438674644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_69
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 250
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 885f3bb777788b34a835323ac10a72e3
+      internalID: 1005399001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_70
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5ab25c664756c944934e895492fcb7f
+      internalID: -1513681323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_71
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 232
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14953f129c1cf1e41b038fee0097c02d
+      internalID: 261950785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_72
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c382eb64392ca2489e6aada0ca42c6c
+      internalID: 1978411097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_73
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5000e284f8c54a843a93e334d8107a4e
+      internalID: -2084284324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_74
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2496ba93996d494c878c025ea44d753
+      internalID: 168383623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_75
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0964f822a26c10a4b8db8589daca6c58
+      internalID: 813832008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_76
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74de344960828364d9fc32849c566bbc
+      internalID: 1829859037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_77
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72aec378d0d946046bbdf9cda93cf406
+      internalID: -1987215822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_78
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ff49ed91c8a6c4e950987456a58880
+      internalID: -926491307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_79
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 232
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d5121e096303da4a8d438de6fb2e5ad
+      internalID: -1856974209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_80
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 234
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c424516068f24840a3ddf9f8f49658c
+      internalID: -1081873107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_81
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 232
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b640b800edaf8c419b473a953849a10
+      internalID: -824632579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_82
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 232
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 861f8a8d7298ce044ba10a385a630221
+      internalID: -1897060978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_83
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 240
+        width: 12
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 447629d145bc8cb4e83cad4a404941e5
+      internalID: 534079058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_84
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 232
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f87040ff50683b4fa2a41e32bc2950e
+      internalID: 327837667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_85
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 232
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1272c4afe2736c748a81cf34e0a262c7
+      internalID: -2002346419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_86
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 234
+        width: 12
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 145854f04ac9146419acbd29bdccfa75
+      internalID: 372088495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_87
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 214
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65566c790a3fa2b4291bf5f79e3d2c5a
+      internalID: -918327027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_88
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 214
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32cf81d51035a4847b31af0323260670
+      internalID: -1789278121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_89
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 214
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 996a10ed5f800a84c82d3455592ccb94
+      internalID: -517958695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_90
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 214
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 470a8f2de3991a84a8d311e7316e91c8
+      internalID: 1379493547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_91
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 214
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce6ad9f9a683edb4a81cbe83237f2214
+      internalID: -372538826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_92
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 214
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5b7a5888866984abd84f43b2f259bd
+      internalID: -1217605937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_93
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 214
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d1588eecc30ff459bbff7800822b57
+      internalID: -47947644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_94
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 214
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b67c5d85296c3e844a5ee4c66ce8088f
+      internalID: 1524149535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_95
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 214
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ecc3cf2228e13f4aafb98bd906a738e
+      internalID: 2098887585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_96
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 214
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 608edaa6dc3fa99408d430cfcea08ef0
+      internalID: -1248649193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_97
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 214
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb1c2f1a3073fe4f850cb2bc1c6fa6d
+      internalID: 396827046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_98
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 214
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d80f9f0f2d9e44986643705c0461b3
+      internalID: 1513644525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_99
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 214
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36adbde65af636649a53f6f9182eba52
+      internalID: 1505096950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_100
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 214
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ae1db697fd37245bbf76fedbeb1bb5
+      internalID: -880541437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_101
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 214
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7d90aa5f9842e428a405fdfdf97829
+      internalID: 2068813075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_102
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 214
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caff6e852374ed04080e0054b247b5ed
+      internalID: -184220651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_103
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 196
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6bc51b6b5d72842b752fde2f29306c
+      internalID: -955464321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_104
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 196
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e5281f3cdc5ffc46ae18eeec17d71b5
+      internalID: 1946764645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_105
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 196
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec17425b44dd7145b43b494f3f9c3ad
+      internalID: -1620177001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_106
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 196
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c673ec7e91432e479e80d5634bbb882
+      internalID: 1997073074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_107
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 196
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ab0f7e2c3c3e74893f17bd123bdf34
+      internalID: 587478893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_108
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 196
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a42613ea8dbce045b2244bd5df8ac0e
+      internalID: -1115356935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_109
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 196
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb00df16e78a454b8ac5b76b481dd68
+      internalID: -178321255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_110
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 196
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a3daeb21cec714eafc89c144172b52
+      internalID: 1662012029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_111
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 196
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2bee3d1f25d964f81b480982fd87f0
+      internalID: -2143819609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_112
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 196
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8417658def7adf4fb9ba499abc33fff
+      internalID: 610136559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_113
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 196
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 718d035353a7e56409f1283005a2415b
+      internalID: 1392831438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_114
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 196
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73397b279005c7469cc77527262e596
+      internalID: 976380349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_116
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 197
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac0b943c09e81684da7d63503b0e1913
+      internalID: 407885160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_117
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 196
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37ac2820ad5c734585c75ab7ce63303
+      internalID: 332657805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_118
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 196
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9f75a18372ebd448b051efb2c163e3
+      internalID: 735168587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_119
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 198
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad072c11c4f905e408a8b270dc20e8c6
+      internalID: -1249972669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_120
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 185
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 920466238b106fa46b869487725697ac
+      internalID: 436424404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_121
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 185
+        width: 21
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5904c73dd79bbc043aa5ffa7bb620dc4
+      internalID: -383827352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_122
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 185
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c99a4a36c191e4794e781fd2811d63
+      internalID: 718940951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_123
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 185
+        width: 30
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de7461f1a890b04aa7c493cf8f6aa91
+      internalID: 1741422474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_124
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 186
+        width: 24
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7314fe5cef7bb4c47abec70b80c199aa
+      internalID: 1817894934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_125
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 186
+        width: 32
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdbb17004cc97a04cb30d0651e3feae1
+      internalID: 1417925706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_127
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 186
+        width: 24
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61321837e045398459b19c0165bcb811
+      internalID: -955726249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_128
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 178
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e660d4a25b55a48a4b9f5f93be9f83
+      internalID: -1415703479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_130
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 177
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51cb4f587247f7b49b1c34f0761f57a4
+      internalID: 2063792444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_131
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 177
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9132ebd640250144b8b49475084f886
+      internalID: 1046457973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_132
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 180
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c82ec287e81054a8ff095b884ee75c
+      internalID: -1131327152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_133
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 178
+        width: 24
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a53924bbe56e754ea79f122b2b77206
+      internalID: 793693005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_134
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 178
+        width: 23
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fad6d4eb9613cd41877cd9d75409ca0
+      internalID: -917882439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_136
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 178
+        width: 28
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389f215fee1fb8344a4772e7d857e839
+      internalID: 904757200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_138
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 158
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89504dc974ef7864b98cfac59d62b990
+      internalID: -2043124207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_139
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 158
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ce208cfef1c134fabcb511734c9d04
+      internalID: -1567730642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_140
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 158
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b60f7ea5cb5d8a45b035a47a7db46dc
+      internalID: 117863655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_141
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 166
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 942e00edca047504e8103cbd6bb93195
+      internalID: -1104566151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_142
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 166
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e1deb52e2768404db53d3142e2185fa
+      internalID: 1275081671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_143
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 165
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdab1a2cf54bf8e47979a3517e31602d
+      internalID: 158219303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_144
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 165
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 906cce78084114f4bae9bf0daf0742e3
+      internalID: 987361512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_145
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 170
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf39ab7c75a27c46ac6ccc7bf68697f
+      internalID: -268538501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_146
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 170
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38b62fc51f05a543a62ff94d658a0e4
+      internalID: -1292973024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_147
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 170
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b539398bae1b34d40a5b9d940c0ce625
+      internalID: 2009039453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_148
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 170
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf731aacd42d35419891d011065f296
+      internalID: 1624202298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_149
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 165
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01a46f0581cb5da448f3d18886bbf7e5
+      internalID: 955814612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_150
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 165
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a2491e022b010247a679c853912febc
+      internalID: 914015111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_151
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 165
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1310532d5f3bc0c43aa7f50ea1f4270a
+      internalID: 1983842517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_152
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 165
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22f9789c7883d04db0e6af1aed01c20
+      internalID: 258245750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_153
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 143
+        width: 32
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f55fe4d7d5f2fc48a10cce3f4a20c69
+      internalID: 78475232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_157
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 143
+        width: 37
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a3b800b2fe6f0458a0e94a8d29a957
+      internalID: -955801318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_162
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 145
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfcf1056ed06f1f49a5a0439f0247178
+      internalID: -279087237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_163
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 145
+        width: 39
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1341bfcbb44cb104cb8b359816de3386
+      internalID: -1959867397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_169
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 144
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed28b161f6ccd14ab9328a489645a9e
+      internalID: -238972857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_170
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 145
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cd7bd9ace9789f4bb8feca8658d28b0
+      internalID: -1123350030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_171
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 145
+        width: 30
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2436136a420a38545bcd9cc9228901ba
+      internalID: 942010133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_174
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 144
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad2003ebeadef3489f0189674f38ec0
+      internalID: -160931781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_175
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 145
+        width: 22
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7240be0c19128b249af43e9b5f750033
+      internalID: -738243654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_178
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 144
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51c306bb32fa0d5418fac5e99c0973fd
+      internalID: 1525467974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_179
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 145
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df61caf00eff5844cafbd305c8e7f839
+      internalID: -602070087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_181
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 129
+        width: 30
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ffaec072279c44785c7b5b4df2c46a
+      internalID: 1805391997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_184
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 128
+        width: 2
+        height: 2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58dd65a3e8f0c0045a100383ff74aa8a
+      internalID: 2132692625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_190
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 129
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da6b0cb40198cd44983fd3dacbfb798
+      internalID: 844164274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_192
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 129
+        width: 33
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f190016e04010ce4ea8bba57fe8f12ca
+      internalID: -1790647510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_196
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 129
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: babb970a65c51f24ea02cdde3a7054cd
+      internalID: 798876588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_198
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 129
+        width: 22
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac6e7c8607f89c74087b9201e435c732
+      internalID: 1297849036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_201
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 94
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76a3e7734922834ab11e3f528164f47
+      internalID: -637556519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_202
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 94
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486b86ef18374c045959f2f82f47d02c
+      internalID: -2083484506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_203
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 94
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6102f6153eb483439537d9c823b2c3f
+      internalID: 155796844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_204
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 94
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca6fc446c334f847bc0a838dc5c6bca
+      internalID: -2046398213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_205
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 94
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4137e76c71ca82740b1b5926ce06b097
+      internalID: -722838921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_206
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 94
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ac60aaa82be4b43b64c2d2e8769889
+      internalID: -1954723434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_207
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 94
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b08b69f709e8cfe4b84350d4a2be5f27
+      internalID: 664210706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_208
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 94
+        width: 32
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb0f1f0d17aff1469918d5414f339ef
+      internalID: -330555077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_209
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 82
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af33fc160efb2a54298cfa6a43445568
+      internalID: 1645306220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_210
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 82
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ae243a85158854a9f5c4cacabdf676
+      internalID: -290643615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_211
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 82
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0531385d379c650499dcae318881bdd8
+      internalID: 546939918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_212
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 82
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 885805ec9fec7214c95c64619d115d46
+      internalID: -562145132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_213
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 82
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8ac65750cf2cd4982a4ef016430680
+      internalID: 1383889209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_214
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 82
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f09ca1207ddbff4aa48ee4dd9433e35
+      internalID: -1450090523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_215
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 82
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e6bd887aba1744bade4993f5f4f158
+      internalID: 599137309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_216
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 82
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1b563517df8ca45bf0f98dec0b4e3a
+      internalID: 277756528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_217
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 71
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1089260e3013ff479dfb21bb5b55845
+      internalID: 1167987357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_218
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 71
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f9fba63edfc1ef49ae67fd8575d44d9
+      internalID: 453911040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_219
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 71
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7810be9d32e77054abc0313fcfdf2de7
+      internalID: 1075815622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_220
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 71
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc989dbfc952d12409702aab7f09394b
+      internalID: 2133882448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_221
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 71
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672fd1473b581874b9cc68ee85d82e05
+      internalID: -1188047342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_222
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 71
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afce0f3abb9f46642826e76f0abb6de2
+      internalID: -1978063317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_223
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 71
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 180165dcca4c55a4d83d0e9716004438
+      internalID: 898117569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_224
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 71
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8509897d59d8b9d4c9271ea9f955eae3
+      internalID: -1549533426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_225
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 60
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 041b6548b63512e459e9ed34812768b5
+      internalID: -1888745750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_226
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 60
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b6c658194c7a74b8b5cbdcbfadc276
+      internalID: -1214278153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_227
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 60
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515c4c5c3dfa94348a93c55b4efd2e8e
+      internalID: -1269692498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_228
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 60
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453c2e84d50828549ba55c623ad69ea6
+      internalID: 1903034607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_229
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 60
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f66b87d0d1fc7fc4cb4b1370f1dd197d
+      internalID: -1445690675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_230
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 60
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6285f9de60ecb42b5ae8265ad93709
+      internalID: 2082822385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_231
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 60
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba5136d01d43d7a4287103a87b8e7645
+      internalID: 904375203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_232
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 60
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72217cbda084658439c405597fd97c25
+      internalID: -1712283871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_233
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 49
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 369ab5d29c8676d45ba7214069f2272b
+      internalID: -1553458063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_234
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 49
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c7d64d2681b9ca44884bbc012d9ab7f
+      internalID: -153844522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_235
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 49
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e16051bd048ab745b1fb08b917f0a8f
+      internalID: 1301042495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_236
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 49
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50fb3abd5c6fac44a9de8ef047be3097
+      internalID: 910965666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_237
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 49
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 459072ea10a8ee14090a76e6f4546657
+      internalID: -2096516718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_238
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 49
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d480ecccf2d2c845aa6db4dfb968ba2
+      internalID: -1398364570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_239
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 49
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6af94e7901a5d547b2e212f9e238c8b
+      internalID: 533600546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_240
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 49
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f679945a50abe4bac0f21d52103401
+      internalID: -1523940492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_241
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 38
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984ded94b3c8a264b85dd84625878493
+      internalID: -1897419125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_242
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 38
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b138bb0b83fa87041a7f44440eb87e35
+      internalID: 1461047090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_243
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 38
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac3f90aed29cb1846bd51f9a40675f08
+      internalID: -949414635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_244
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 38
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 010a0e61f399b884a907f4741b966eef
+      internalID: 761467604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_245
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 38
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2793a0ed35e13a942b86bf35da9c0a0f
+      internalID: 1194445478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_246
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 38
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 728cadf092c6c6c4591bf545cdea97d0
+      internalID: 750790895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_247
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 38
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c34d6fca4258945b1710ff3642d67a
+      internalID: -1794975883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_248
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 38
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29ac393960246524095142527cd35dbd
+      internalID: 835784763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_249
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 27
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2095f5642a9804a4b91d6405a71d1965
+      internalID: -936657891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_250
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 27
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081d3ab4f69e48541923fbe566ec899e
+      internalID: 1849136620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_251
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 27
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d08550015fe234439a741079bf13c7e
+      internalID: -328051543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_252
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 27
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776b4668204a9c7418426942feaebfbd
+      internalID: -1888196981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_253
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 27
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 370d4b065de4f69419cd7748cff9ac95
+      internalID: 1701865971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_254
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 27
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df3bd40df050d334f963c1d6b797240d
+      internalID: -2032836298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_255
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 27
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8f57018cea4064daa3a13669c008b5
+      internalID: 2124609961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_256
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 27
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47347e958983294897cf0030936403f
+      internalID: -900045234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_257
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 16
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ec2611654fe3b4483a8e8a7f452822
+      internalID: 968834627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_258
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 16
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c74f2dfb2126e4cbf531c64f69b34c
+      internalID: -935726529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_259
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 16
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e9c309a80c0074890cd29b08393c73
+      internalID: -103626993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_260
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 16
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c75f11269d4e24cbb95fdfe20276a5
+      internalID: 2115860470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_261
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 16
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9de63f997b0ca4499faa27a1ea47179
+      internalID: 1437543177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_262
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 16
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19aabe873f47bdb488e18ce7c3ebfc8e
+      internalID: -1411495558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_263
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 16
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d58a4fb09ac6d8442a2740faaf8c3ab4
+      internalID: 1246510256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_264
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 323
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff06ece75b2dab649b20c3b9f54e9038
+      internalID: 2066385300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_265
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 275
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b422c2ef1017574f9c6dda5a5858783
+      internalID: -1598711978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_266
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 307
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1afacd4d49f0499459f0f61495b93912
+      internalID: -692261015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_267
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 326
+        width: 6
+        height: 2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aec2af17852be3842ab5c4838bab1e05
+      internalID: 971673384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_268
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 323
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0bf89aaa69e24642a7d79d01003ed1a
+      internalID: 2055991607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_270
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 307
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb2157c94b37994a9700c89cd9875b5
+      internalID: -154429481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_269
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 308
+        width: 3
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd41710e746c5c54e8c58f7e72d9c938
+      internalID: 2045041317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_271
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 291
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24cd17fa651b5174cbe9681c5e8b9e88
+      internalID: 1614181445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_115
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 129
+        width: 5
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e3977a498a2914e949ed970e18e449
+      internalID: 1011125912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Font & HUD_126
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 128
+        width: 43
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47ca65dc891c6434386bd6ccfd90c9e5
+      internalID: 2038622428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Air Buster - Font & HUD_134: -917882439
+      Air Buster - Font & HUD_183: -758090814
+      Air Buster - Font & HUD_268: 2055991607
+      Air Buster - Font & HUD_237: -2096516718
+      Air Buster - Font & HUD_104: 1946764645
+      Air Buster - Font & HUD_55: -1866440540
+      Air Buster - Font & HUD_132: -1131327152
+      Air Buster - Font & HUD_213: 1383889209
+      Air Buster - Font & HUD_137: -925465903
+      Air Buster - Font & HUD_102: -184220651
+      Air Buster - Font & HUD_231: 904375203
+      Air Buster - Font & HUD_240: -1523940492
+      Air Buster - Font & HUD_21: -2147306910
+      Air Buster - Font & HUD_208: -330555077
+      Air Buster - Font & HUD_232: -1712283871
+      Air Buster - Font & HUD_238: -1398364570
+      Air Buster - Font & HUD_254: -2032836298
+      Air Buster - Font & HUD_267: 971673384
+      Air Buster - Font & HUD_131: 1046457973
+      Air Buster - Font & HUD_199: 1402285718
+      Air Buster - Font & HUD_75: 813832008
+      Air Buster - Font & HUD_229: -1445690675
+      Air Buster - Font & HUD_269: 2045041317
+      Air Buster - Font & HUD_35: 63871306
+      Air Buster - Font & HUD_223: 898117569
+      Air Buster - Font & HUD_66: 1369979635
+      Air Buster - Font & HUD_48: 230052296
+      Air Buster - Font & HUD_51: -2010686237
+      Air Buster - Font & HUD_14: 754999706
+      Air Buster - Font & HUD_162: -279087237
+      Air Buster - Font & HUD_25: 117808978
+      Air Buster - Font & HUD_0: -440412256
+      Air Buster - Font & HUD_194: 1711440048
+      Air Buster - Font & HUD_124: 1817894934
+      Air Buster - Font & HUD_37: -1573956466
+      Air Buster - Font & HUD_154: -1770865046
+      Air Buster - Font & HUD_10: 936150583
+      Air Buster - Font & HUD_126: 2038622428
+      Air Buster - Font & HUD_198: 1297849036
+      Air Buster - Font & HUD_211: 546939918
+      Air Buster - Font & HUD_59: 373421964
+      Air Buster - Font & HUD_182: -1613215908
+      Air Buster - Font & HUD_218: 453911040
+      Air Buster - Font & HUD_63: 202449234
+      Air Buster - Font & HUD_241: -1897419125
+      Air Buster - Font & HUD_5: -745151587
+      Air Buster - Font & HUD_91: -372538826
+      Air Buster - Font & HUD_161: 1108597528
+      Air Buster - Font & HUD_101: 2068813075
+      Air Buster - Font & HUD_233: -1553458063
+      Air Buster - Font & HUD_260: 2115860470
+      Air Buster - Font & HUD_111: -2143819609
+      Air Buster - Font & HUD_186: 2003674866
+      Air Buster - Font & HUD_246: 750790895
+      Air Buster - Font & HUD_93: -47947644
+      Air Buster - Font & HUD_244: 761467604
+      Air Buster - Font & HUD_153: 78475232
+      Air Buster - Font & HUD_235: 1301042495
+      Air Buster - Font & HUD_106: 1997073074
+      Air Buster - Font & HUD_139: -1567730642
+      Air Buster - Font & HUD_219: 1075815622
+      Air Buster - Font & HUD_245: 1194445478
+      Air Buster - Font & HUD_114: 976380349
+      Air Buster - Font & HUD_85: -2002346419
+      Air Buster - Font & HUD_76: 1829859037
+      Air Buster - Font & HUD_127: -955726249
+      Air Buster - Font & HUD_156: 1752174628
+      Air Buster - Font & HUD_226: -1214278153
+      Air Buster - Font & HUD_97: 396827046
+      Air Buster - Font & HUD_255: 2124609961
+      Air Buster - Font & HUD_98: 1513644525
+      Air Buster - Font & HUD_157: -955801318
+      Air Buster - Font & HUD_251: -328051543
+      Air Buster - Font & HUD_30: 300025565
+      Air Buster - Font & HUD_6: 1331919654
+      Air Buster - Font & HUD_83: 534079058
+      Air Buster - Font & HUD_227: -1269692498
+      Air Buster - Font & HUD_38: 1202591654
+      Air Buster - Font & HUD_197: 1863779151
+      Air Buster - Font & HUD_204: -2046398213
+      Air Buster - Font & HUD_41: 741426609
+      Air Buster - Font & HUD_90: 1379493547
+      Air Buster - Font & HUD_52: 1714885841
+      Air Buster - Font & HUD_82: -1897060978
+      Air Buster - Font & HUD_187: 1335631132
+      Air Buster - Font & HUD_84: 327837667
+      Air Buster - Font & HUD_81: -824632579
+      Air Buster - Font & HUD_4: -604225127
+      Air Buster - Font & HUD_120: 436424404
+      Air Buster - Font & HUD_17: -415503852
+      Air Buster - Font & HUD_263: 1246510256
+      Air Buster - Font & HUD_16: -296410284
+      Air Buster - Font & HUD_168: 1909155562
+      Air Buster - Font & HUD_130: 2063792444
+      Air Buster - Font & HUD_188: -356851276
+      Air Buster - Font & HUD_230: 2082822385
+      Air Buster - Font & HUD_26: -301202415
+      Air Buster - Font & HUD_177: -122154389
+      Air Buster - Font & HUD_166: 254059349
+      Air Buster - Font & HUD_167: -1254225261
+      Air Buster - Font & HUD_179: -602070087
+      Air Buster - Font & HUD_210: -290643615
+      Air Buster - Font & HUD_152: 258245750
+      Air Buster - Font & HUD_23: 377443226
+      Air Buster - Font & HUD_107: 587478893
+      Air Buster - Font & HUD_100: -880541437
+      Air Buster - Font & HUD_207: 664210706
+      Air Buster - Font & HUD_193: 1264081721
+      Air Buster - Font & HUD_140: 117863655
+      Air Buster - Font & HUD_228: 1903034607
+      Air Buster - Font & HUD_136: 904757200
+      Air Buster - Font & HUD_47: 825432495
+      Air Buster - Font & HUD_88: -1789278121
+      Air Buster - Font & HUD_69: 1005399001
+      Air Buster - Font & HUD_123: 1741422474
+      Air Buster - Font & HUD_113: 1392831438
+      Air Buster - Font & HUD_206: -1954723434
+      Air Buster - Font & HUD_24: -266491706
+      Air Buster - Font & HUD_163: -1959867397
+      Air Buster - Font & HUD_164: -807807400
+      Air Buster - Font & HUD_125: 1417925706
+      Air Buster - Font & HUD_78: -926491307
+      Air Buster - Font & HUD_236: 910965666
+      Air Buster - Font & HUD_65: 1871346076
+      Air Buster - Font & HUD_31: -244468123
+      Air Buster - Font & HUD_257: 968834627
+      Air Buster - Font & HUD_18: -1950499754
+      Air Buster - Font & HUD_96: -1248649193
+      Air Buster - Font & HUD_270: -154429481
+      Air Buster - Font & HUD_70: -1513681323
+      Air Buster - Font & HUD_224: -1549533426
+      Air Buster - Font & HUD_165: 2058193506
+      Air Buster - Font & HUD_2: -1189049216
+      Air Buster - Font & HUD_243: -949414635
+      Air Buster - Font & HUD_62: 787889610
+      Air Buster - Font & HUD_133: 793693005
+      Air Buster - Font & HUD_175: -738243654
+      Air Buster - Font & HUD_42: -1148059846
+      Air Buster - Font & HUD_45: 297538622
+      Air Buster - Font & HUD_203: 155796844
+      Air Buster - Font & HUD_61: 758239269
+      Air Buster - Font & HUD_147: 2009039453
+      Air Buster - Font & HUD_159: -191035980
+      Air Buster - Font & HUD_155: -539489934
+      Air Buster - Font & HUD_185: 2075509255
+      Air Buster - Font & HUD_32: 200996796
+      Air Buster - Font & HUD_253: 1701865971
+      Air Buster - Font & HUD_40: 1316377321
+      Air Buster - Font & HUD_129: -1086110898
+      Air Buster - Font & HUD_201: -637556519
+      Air Buster - Font & HUD_135: 349273846
+      Air Buster - Font & HUD_261: 1437543177
+      Air Buster - Font & HUD_256: -900045234
+      Air Buster - Font & HUD_146: -1292973024
+      Air Buster - Font & HUD_215: 599137309
+      Air Buster - Font & HUD_258: -935726529
+      Air Buster - Font & HUD_28: -1046326475
+      Air Buster - Font & HUD_110: 1662012029
+      Air Buster - Font & HUD_266: -692261015
+      Air Buster - Font & HUD_12: -2018910132
+      Air Buster - Font & HUD_89: -517958695
+      Air Buster - Font & HUD_3: -467723137
+      Air Buster - Font & HUD_19: -1393640408
+      Air Buster - Font & HUD_80: -1081873107
+      Air Buster - Font & HUD_148: 1624202298
+      Air Buster - Font & HUD_118: 735168587
+      Air Buster - Font & HUD_121: -383827352
+      Air Buster - Font & HUD_8: 1513545582
+      Air Buster - Font & HUD_209: 1645306220
+      Air Buster - Font & HUD_128: -1415703479
+      Air Buster - Font & HUD_142: 1275081671
+      Air Buster - Font & HUD_60: 1817866542
+      Air Buster - Font & HUD_202: -2083484506
+      Air Buster - Font & HUD_92: -1217605937
+      Air Buster - Font & HUD_171: 942010133
+      Air Buster - Font & HUD_222: -1978063317
+      Air Buster - Font & HUD_108: -1115356935
+      Air Buster - Font & HUD_196: 798876588
+      Air Buster - Font & HUD_170: -1123350030
+      Air Buster - Font & HUD_39: 1374648897
+      Air Buster - Font & HUD_212: -562145132
+      Air Buster - Font & HUD_174: -160931781
+      Air Buster - Font & HUD_250: 1849136620
+      Air Buster - Font & HUD_191: -1050176362
+      Air Buster - Font & HUD_87: -918327027
+      Air Buster - Font & HUD_49: 564966041
+      Air Buster - Font & HUD_195: 821159805
+      Air Buster - Font & HUD_112: 610136559
+      Air Buster - Font & HUD_116: 407885160
+      Air Buster - Font & HUD_214: -1450090523
+      Air Buster - Font & HUD_150: 914015111
+      Air Buster - Font & HUD_77: -1987215822
+      Air Buster - Font & HUD_115: 1011125912
+      Air Buster - Font & HUD_192: -1790647510
+      Air Buster - Font & HUD_262: -1411495558
+      Air Buster - Font & HUD_53: -1183538007
+      Air Buster - Font & HUD_180: -1298382323
+      Air Buster - Font & HUD_95: 2098887585
+      Air Buster - Font & HUD_144: 987361512
+      Air Buster - Font & HUD_50: 347340284
+      Air Buster - Font & HUD_160: -781668407
+      Air Buster - Font & HUD_13: -1879190306
+      Air Buster - Font & HUD_249: -936657891
+      Air Buster - Font & HUD_265: -1598711978
+      Air Buster - Font & HUD_67: 1246272524
+      Air Buster - Font & HUD_138: -2043124207
+      Air Buster - Font & HUD_7: -748832257
+      Air Buster - Font & HUD_72: 1978411097
+      Air Buster - Font & HUD_34: 1830065514
+      Air Buster - Font & HUD_173: 805767953
+      Air Buster - Font & HUD_248: 835784763
+      Air Buster - Font & HUD_71: 261950785
+      Air Buster - Font & HUD_217: 1167987357
+      Air Buster - Font & HUD_184: 2132692625
+      Air Buster - Font & HUD_169: -238972857
+      Air Buster - Font & HUD_105: -1620177001
+      Air Buster - Font & HUD_22: -577201054
+      Air Buster - Font & HUD_145: -268538501
+      Air Buster - Font & HUD_57: -1914196533
+      Air Buster - Font & HUD_190: 844164274
+      Air Buster - Font & HUD_43: -1808527113
+      Air Buster - Font & HUD_143: 158219303
+      Air Buster - Font & HUD_56: -653353367
+      Air Buster - Font & HUD_86: 372088495
+      Air Buster - Font & HUD_68: -1438674644
+      Air Buster - Font & HUD_176: 991878177
+      Air Buster - Font & HUD_172: 1820893885
+      Air Buster - Font & HUD_33: -1635513207
+      Air Buster - Font & HUD_225: -1888745750
+      Air Buster - Font & HUD_178: 1525467974
+      Air Buster - Font & HUD_259: -103626993
+      Air Buster - Font & HUD_141: -1104566151
+      Air Buster - Font & HUD_36: -645028202
+      Air Buster - Font & HUD_158: -1159061514
+      Air Buster - Font & HUD_252: -1888196981
+      Air Buster - Font & HUD_73: -2084284324
+      Air Buster - Font & HUD_1: 930833323
+      Air Buster - Font & HUD_239: 533600546
+      Air Buster - Font & HUD_79: -1856974209
+      Air Buster - Font & HUD_151: 1983842517
+      Air Buster - Font & HUD_189: 905072477
+      Air Buster - Font & HUD_221: -1188047342
+      Air Buster - Font & HUD_64: 626156330
+      Air Buster - Font & HUD_247: -1794975883
+      Air Buster - Font & HUD_220: 2133882448
+      Air Buster - Font & HUD_58: -246065695
+      Air Buster - Font & HUD_117: 332657805
+      Air Buster - Font & HUD_264: 2066385300
+      Air Buster - Font & HUD_242: 1461047090
+      Air Buster - Font & HUD_9: 513350724
+      Air Buster - Font & HUD_15: -2092446883
+      Air Buster - Font & HUD_122: 718940951
+      Air Buster - Font & HUD_234: -153844522
+      Air Buster - Font & HUD_216: 277756528
+      Air Buster - Font & HUD_46: -129253780
+      Air Buster - Font & HUD_181: 1805391997
+      Air Buster - Font & HUD_205: -722838921
+      Air Buster - Font & HUD_29: 205967244
+      Air Buster - Font & HUD_200: 1591020808
+      Air Buster - Font & HUD_103: -955464321
+      Air Buster - Font & HUD_119: -1249972669
+      Air Buster - Font & HUD_94: 1524149535
+      Air Buster - Font & HUD_74: 168383623
+      Air Buster - Font & HUD_44: -378308320
+      Air Buster - Font & HUD_54: -1173497620
+      Air Buster - Font & HUD_149: 955814612
+      Air Buster - Font & HUD_109: -178321255
+      Air Buster - Font & HUD_271: 1614181445
+      Air Buster - Font & HUD_11: 1536239980
+      Air Buster - Font & HUD_20: -49587112
+      Air Buster - Font & HUD_99: 1505096950
+      Air Buster - Font & HUD_27: 323091059
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
