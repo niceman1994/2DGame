@@ -1,0 +1,695 @@
+fileFormatVersion: 2
+guid: 901a21545b798b54b964aa42570cf5b4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Air Buster2 - Phase 1 Seaside Front_55
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 11
+        width: 110
+        height: 215
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 983a8cbfdaea57845a91f0aefb20b1af
+      internalID: -1442726778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster2 - Phase 1 Seaside Front_56
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 10
+        width: 256
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3404d38b42e7aae48917313eacea14fa
+      internalID: -755250247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster2 - Phase 1 Seaside Front_57
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 178
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5442beed27e92242a4f8d7774cdf300
+      internalID: 1317553843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster2 - Phase 1 Seaside Front_58
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 178
+        width: 64
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f918124769b5d834a870007a5e4a2717
+      internalID: -1280890710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster2 - Phase 1 Seaside Front_59
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 178
+        width: 80
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844ebf1a1f7e4e543b034d8c2f9bc7ad
+      internalID: -1938830900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster2 - Phase 1 Seaside Front_60
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 178
+        width: 96
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c9cfe6ec5928345a958d9a13a46a97
+      internalID: 445392423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster2 - Phase 1 Seaside Front_61
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 178
+        width: 160
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e987cd6e6d157e408e0486c9a892960
+      internalID: 614555939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster2 - Phase 1 Seaside Front_62
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 109
+        width: 64
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e68de56d1d8a84a8a5f69533061a1c
+      internalID: -1047154795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster2 - Phase 1 Seaside Front_63
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 109
+        width: 64
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab27b84f50e794b4da95b60b11d39f64
+      internalID: -529144065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster2 - Phase 1 Seaside Front_64
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 109
+        width: 62
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8421d1d56decafd4cac0566e79b74d6c
+      internalID: -1678522155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster2 - Phase 1 Seaside Front_65
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 109
+        width: 64
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 070d9702331dbda4a95ac3ec0ceba92f
+      internalID: -840654375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster2 - Phase 1 Seaside Front_66
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 112
+        width: 16
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2264cb4df75c6a40b1579a17a2a2d58
+      internalID: -1861781853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster2 - Phase 1 Seaside Front_67
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 80
+        width: 240
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8e7c5506142de6419f0b33235983207
+      internalID: 195487895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster2 - Phase 1 Seaside Front_68
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 80
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6cbe5d60378ef4a8775aa0d8d10588
+      internalID: -1654436976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster2 - Phase 1 Seaside Front_69
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 80
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80a2c1636c0de04d878e8b9efe53b85
+      internalID: 1106954423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster2 - Phase 1 Seaside Front_70
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 80
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd12589d9ba7364f9102b553de95556
+      internalID: -1129174212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster2 - Phase 1 Seaside Front_71
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 80
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da658ed475c7d54fb9a4460471bda72
+      internalID: -1048425253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster2 - Phase 1 Seaside Front_72
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 11
+        width: 120
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b843d7111ca8d640b84744255733448
+      internalID: -560734157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster2 - Phase 1 Seaside Front_73
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 11
+        width: 512
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3fc9453aefc8847a26cf452c88f20a
+      internalID: -663195074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster2 - Phase 1 Seaside Front_74
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 11
+        width: 63
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02d3a53d4f281d0479a570ae8fed8f5b
+      internalID: -545773105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster2 - Phase 1 Seaside Front_75
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 11
+        width: 64
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27682543e6f059b4f8f3d3198314be43
+      internalID: 653706919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster2 - Phase 1 Seaside Front_76
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 11
+        width: 63
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6f486ebc90a26a478b4e780edc593f8
+      internalID: -1095971776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster2 - Phase 1 Seaside Front_77
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 11
+        width: 64
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91bb79060c35ac742bd256cee89a83b7
+      internalID: -1443818535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Air Buster2 - Phase 1 Seaside Front_57: 1317553843
+      Air Buster2 - Phase 1 Seaside Front_16: 1569789214
+      Air Buster2 - Phase 1 Seaside Front_14: -1402508950
+      Air Buster2 - Phase 1 Seaside Front_62: -1047154795
+      Air Buster2 - Phase 1 Seaside Front_36: 1554153276
+      Air Buster2 - Phase 1 Seaside Front_9: -2143150282
+      Air Buster2 - Phase 1 Seaside Front_21: -814318218
+      Air Buster2 - Phase 1 Seaside Front_42: -1279615018
+      Air Buster2 - Phase 1 Seaside Front_76: -1095971776
+      Air Buster2 - Phase 1 Seaside Front_25: 1036361030
+      Air Buster2 - Phase 1 Seaside Front_26: 1899422892
+      Air Buster2 - Phase 1 Seaside Front_54: 246373441
+      Air Buster2 - Phase 1 Seaside Front_64: -1678522155
+      Air Buster2 - Phase 1 Seaside Front_17: 92505362
+      Air Buster2 - Phase 1 Seaside Front_22: 1391276388
+      Air Buster2 - Phase 1 Seaside Front_67: 195487895
+      Air Buster2 - Phase 1 Seaside Front_39: -843257213
+      Air Buster2 - Phase 1 Seaside Front_51: 112186373
+      Air Buster2 - Phase 1 Seaside Front_40: -71721936
+      Air Buster2 - Phase 1 Seaside Front_27: 78159591
+      Air Buster2 - Phase 1 Seaside Front_4: 1101031305
+      Air Buster2 - Phase 1 Seaside Front_1: -1313961592
+      Air Buster2 - Phase 1 Seaside Front_28: -662386707
+      Air Buster2 - Phase 1 Seaside Front_30: -1876048438
+      Air Buster2 - Phase 1 Seaside Front_33: 1313004393
+      Air Buster2 - Phase 1 Seaside Front_46: 128309143
+      Air Buster2 - Phase 1 Seaside Front_75: 653706919
+      Air Buster2 - Phase 1 Seaside Front_8: 1364233816
+      Air Buster2 - Phase 1 Seaside Front_13: 1382635629
+      Air Buster2 - Phase 1 Seaside Front_24: -694292988
+      Air Buster2 - Phase 1 Seaside Front_6: 188094991
+      Air Buster2 - Phase 1 Seaside Front_71: -1048425253
+      Air Buster2 - Phase 1 Seaside Front_44: 1012923014
+      Air Buster2 - Phase 1 Seaside Front_45: 1645637245
+      Air Buster2 - Phase 1 Seaside Front_55: -1442726778
+      Air Buster2 - Phase 1 Seaside Front_77: -1443818535
+      Air Buster2 - Phase 1 Seaside Front_52: 2077013571
+      Air Buster2 - Phase 1 Seaside Front_37: -305806124
+      Air Buster2 - Phase 1 Seaside Front_69: 1106954423
+      Air Buster2 - Phase 1 Seaside Front_2: 214285363
+      Air Buster2 - Phase 1 Seaside Front_29: 565395274
+      Air Buster2 - Phase 1 Seaside Front_11: -946244569
+      Air Buster2 - Phase 1 Seaside Front_31: -1007264966
+      Air Buster2 - Phase 1 Seaside Front_43: -1422949145
+      Air Buster2 - Phase 1 Seaside Front_0: -1983747417
+      Air Buster2 - Phase 1 Seaside Front_3: -647461384
+      Air Buster2 - Phase 1 Seaside Front_12: 2035991194
+      Air Buster2 - Phase 1 Seaside Front_72: -560734157
+      Air Buster2 - Phase 1 Seaside Front_60: 445392423
+      Air Buster2 - Phase 1 Seaside Front_50: 1190350218
+      Air Buster2 - Phase 1 Seaside Front_58: -1280890710
+      Air Buster2 - Phase 1 Seaside Front_61: 614555939
+      Air Buster2 - Phase 1 Seaside Front_49: -625670737
+      Air Buster2 - Phase 1 Seaside Front_32: 78765829
+      Air Buster2 - Phase 1 Seaside Front_41: -559968381
+      Air Buster2 - Phase 1 Seaside Front_68: -1654436976
+      Air Buster2 - Phase 1 Seaside Front_10: -1468092928
+      Air Buster2 - Phase 1 Seaside Front_63: -529144065
+      Air Buster2 - Phase 1 Seaside Front_66: -1861781853
+      Air Buster2 - Phase 1 Seaside Front_19: 599238862
+      Air Buster2 - Phase 1 Seaside Front_59: -1938830900
+      Air Buster2 - Phase 1 Seaside Front_73: -663195074
+      Air Buster2 - Phase 1 Seaside Front_7: -1506357635
+      Air Buster2 - Phase 1 Seaside Front_53: 428164430
+      Air Buster2 - Phase 1 Seaside Front_65: -840654375
+      Air Buster2 - Phase 1 Seaside Front_15: -155877350
+      Air Buster2 - Phase 1 Seaside Front_38: -1581558097
+      Air Buster2 - Phase 1 Seaside Front_47: -91816816
+      Air Buster2 - Phase 1 Seaside Front_48: 1795896480
+      Air Buster2 - Phase 1 Seaside Front_20: 432300760
+      Air Buster2 - Phase 1 Seaside Front_74: -545773105
+      Air Buster2 - Phase 1 Seaside Front_18: 1852967591
+      Air Buster2 - Phase 1 Seaside Front_23: 437215345
+      Air Buster2 - Phase 1 Seaside Front_56: -755250247
+      Air Buster2 - Phase 1 Seaside Front_34: -2299430
+      Air Buster2 - Phase 1 Seaside Front_5: -1377905142
+      Air Buster2 - Phase 1 Seaside Front_70: -1129174212
+      Air Buster2 - Phase 1 Seaside Front_35: -857921770
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
