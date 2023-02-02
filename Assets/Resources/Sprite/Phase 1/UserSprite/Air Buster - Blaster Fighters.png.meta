@@ -1,0 +1,2510 @@
+fileFormatVersion: 2
+guid: 1bd699ab85154f94a9f23ed004dd6eaa
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 193
+        width: 30
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b2c208267395049b405a14776f874e
+      internalID: 1867469635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 192
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d224ce94ad954424bbad84ef10790fb6
+      internalID: 1690005085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 192
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5914eed4c7ade3746850b1fef72524dd
+      internalID: -160981572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_3
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 192
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b1f20c086582045b1aee1b0d42fa3c
+      internalID: 865734695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_4
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 192
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b1518570b84cee4591def6f75b5bab5
+      internalID: 1837867274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_5
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 192
+        width: 30
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e509c00bfb0b1e94e81548752853d9a6
+      internalID: -1672543699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 172
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a040568dfb4a9d418904ede6edce33a
+      internalID: 2042429208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_7
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 173
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa2855390ceea84aa3078296de87a00
+      internalID: 1932172196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_8
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 173
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d019eea2d1b9f84784a5a99ca3092c8
+      internalID: 276233814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_9
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 171
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea6f784aa9c3f749a32aca85c334aab
+      internalID: -1101815382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_10
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 171
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec230513ed9460b48937094ac3340771
+      internalID: -862822164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_11
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 172
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bcb2f21011504a4494544aa2d145ef4
+      internalID: -934182494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_12
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 171
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39103b01c60bb4b47a569bb7bd2cb063
+      internalID: 1398739779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_13
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 172
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c618cdb914ef14f8494dd3d6b1e041
+      internalID: 1745446270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_14
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 172
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd4e101f581a56a4daf04fcad9f66d20
+      internalID: -903978678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_15
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 172
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9b2740f0de1044a9f6adb8de386f8c
+      internalID: 1706575578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_16
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 170
+        width: 16
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6554a20b70707db489c72569882cc985
+      internalID: 1296670961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_17
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d167efcc143d51c44a3bba9f80f6f7fa
+      internalID: 1095249092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_18
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 153
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb9af3dbb3f6ed4c98ea57695d14cbc
+      internalID: -962595046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_19
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 154
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec8145d4f578a2438a69d7c40bd1759
+      internalID: -1976324202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_20
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 156
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccfba066c1863d34e941ad7b3d900457
+      internalID: 589788053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_21
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 155
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 179f93e9b777f424ca6e3c5db18849d4
+      internalID: 1363938721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_22
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 155
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79744d9d73dc2bf4a9b1e278386238a4
+      internalID: 217646077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_23
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 155
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3610e7284383f8547a5c4dee933fdd0b
+      internalID: 1743119177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_24
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 155
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be1f96f3e65b4349b2ec107fbd1f27e
+      internalID: -887490232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_25
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 155
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bd91e7db66022646b3f614083e9306a
+      internalID: 1901242988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_26
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 154
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92b4020eb7e48ad4cbe5e3deeee206e9
+      internalID: -1186855860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_27
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 155
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cccfaf24891a0b469807e09935abdbb
+      internalID: -1439583624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_28
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 135
+        width: 29
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a0399926ce8a44d9bc96b7424705ed
+      internalID: 1432102562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_29
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 135
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 752cfc37eb357d845b13fe59f45a5828
+      internalID: 959410011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_30
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 136
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87562e00d8f4cc244b22160b258f51e7
+      internalID: 1495157939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_31
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 136
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cadd898b4ffe0924b921f70718af518d
+      internalID: 1790103190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_32
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 135
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: badd337083af6c5478438737d1df2cd7
+      internalID: 711834145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_33
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 136
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 149a199f01726ad4b8b8167f73155be6
+      internalID: -1955714627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_34
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 136
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f577a6890337b494097db2ab1d0a27c1
+      internalID: -915590022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_35
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 137
+        width: 19
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f36e3db3319a4cb4b8ee8e1849fed51c
+      internalID: 1986010811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_36
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 138
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd2efe735a5ff924b8cb3664c94b5762
+      internalID: -370845203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_37
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 136
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f2b423aa3c05b408613f4b1c7eece9
+      internalID: 1799734632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_38
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 124
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 590abdbb0c55345478fb5c9c26938fe9
+      internalID: -860933456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_39
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 123
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f39ac1563c53d284782c8d315876a23d
+      internalID: -433662770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_40
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 123
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8e657d8742c7e0478e48e9fe7dbd8be
+      internalID: 264554269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_41
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 122
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a81e5333ac6cec48ae3ed4e8385f091
+      internalID: 775861428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_42
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 113
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6813a509a22b0aa4d8e438b1da4256c2
+      internalID: 1418510184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_43
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 113
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff22c97ce0add3498ebc0cbb1f41d3d
+      internalID: 2055474365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_44
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 113
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf982f47708f4c54596ae2c5eb6fabd1
+      internalID: 1406313431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_45
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 113
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc81c9ee4f7efb047bc17cd3e85e16ca
+      internalID: -974680830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_46
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 114
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7fa60b4aca805479913b34eb32ad3b
+      internalID: 383799866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_47
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 124
+        width: 23
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99a28d80cb745e429f1afa70c256531
+      internalID: -2022738666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_48
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 124
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3223a4cb4deab9749829b66888c87630
+      internalID: -1048133906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_49
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 108
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6079b8a169d6c2740bc42e1a46380bfc
+      internalID: -1385823796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_50
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 113
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a781f36e2977c444b963e2ac803fa4f9
+      internalID: -1751808265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_51
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 107
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98815f91513148b44a0ce0808c00ca90
+      internalID: -543611716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_52
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 107
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe7fd083a7ffde4dbe899baed20e2dc
+      internalID: 561624280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_53
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 75
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deb754c7ed8c2ff4d84524a9519eb809
+      internalID: -1171220677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_54
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 75
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63caf56c4bd9139498e3fc71e60cf7ac
+      internalID: -2100302751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_55
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 75
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c4762d93a1d714d9349532d6784749
+      internalID: 293822059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_56
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 74
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7454aaf5bc7e524489bf0a93185ed661
+      internalID: 536726761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_57
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 86
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967906ff0fe6a0844a2d6ac5cab324b8
+      internalID: 1650974765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_58
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 86
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7bccb018374faa4c8d686866c1086b3
+      internalID: 409034529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_59
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 42
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3f89513b5e45b54f8f7f926fa637514
+      internalID: 1280416436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_60
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 42
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87fcf18b89ac724469fc4e1ec45b8e15
+      internalID: 95526226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_61
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 42
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3def109a12c99ee44b3f53afd49b676a
+      internalID: 2083273455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_62
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 42
+        width: 30
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f124a0da4ac345e4b8ff48b23cbd65cc
+      internalID: -1071773053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_63
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 44
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b5c3f223a0917428543b3ecfd7d1fc
+      internalID: 903794678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_64
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 42
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205846c78932aee419b74b2ac031eb4f
+      internalID: 1370068739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_65
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 27
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e31dd01ad55d314d8c203aaf33c2e51
+      internalID: 1109946825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_66
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 29
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c41a07f05bc10d4f9b469443bb54015
+      internalID: 16139541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_67
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 29
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd27fe552491fb41a341219ace7b52e
+      internalID: 1012473998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_68
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 29
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e30c04f1678d754abda6c38c2fc12df
+      internalID: 192221476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_69
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 29
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01517c7eb10dd2d43897cfe4e36210b9
+      internalID: 275695074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_70
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 29
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab049a40b04c0d4591bb0cd541bc7b9
+      internalID: 961203822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_71
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 29
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de42b108a2f0386439eadc2c5c16ef3f
+      internalID: -2012094079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_72
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 27
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb6608679933864c95805dd0cc60c78
+      internalID: 968313622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_73
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 29
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45c0494c0cd12646b3aa156eb2f109b
+      internalID: 662688650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_74
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 29
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e484c5d43db582c4cbd50d0f8866816b
+      internalID: -535604943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_75
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 29
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a2703455eece97489a81ddf70432cbc
+      internalID: -92798857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_76
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 29
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 923a11734c062484388cc939320068a4
+      internalID: 1910355365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_77
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 29
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff1868025b94b34cb21c919f7b53c4b
+      internalID: -1977428574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_78
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 29
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21cd058c210572a479c496987276b71f
+      internalID: 1405531492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_79
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 16
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09824bdcabf9c8149b1a74f5b9deff2f
+      internalID: -1490339452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_80
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 29
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af5b9c572de88b40a6fe5a286b7bd0d
+      internalID: -142294513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_81
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 29
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05df1a51ee0dc44892a6daa90f2842e
+      internalID: 2077000644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_82
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 28
+        width: 18
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 867172e7afe441f46b03e10bcc50c181
+      internalID: 1925491776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_83
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 29
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b191be394c4b08446aa16bdd54ddbceb
+      internalID: 1800910304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_84
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 29
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d36974c7d4ff9724cba999eee95a9317
+      internalID: -608858490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_85
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 29
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 079997fe515a7df498e1de113ab42f7d
+      internalID: 401493739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_86
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 16
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8a9cd1b8a11c54ab1e00fa5c5d82b1
+      internalID: 2051167229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_87
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 16
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f06567e9eecb5489366b50572dddc3
+      internalID: 1361662054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_88
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 16
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eeb2841f1598d44fa308122216cda1e
+      internalID: -960947266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_89
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 16
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62437372cdcd56b47bc7033e46ae5e95
+      internalID: 105568253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_90
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 16
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d43b4e887b01c648856f2fa9b70f838
+      internalID: 303399565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_91
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 16
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5faf7b7e1541a646af13f02e5b36056
+      internalID: -578830622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_92
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 16
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086ba1b822302a04d9f40a72bf2ebe49
+      internalID: 1613735168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_93
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 16
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f55efa3499033b4bab4c718d16fb85e
+      internalID: -1066536044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_94
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 16
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23b2a8610a4f7d41b09d4b6baa05b68
+      internalID: 1222339566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_95
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 16
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca512b6d3b169864c865591f442c95c4
+      internalID: 396760647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_96
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 15
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76af348eb207d547be720a2a7fe91e8
+      internalID: -1630816519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_97
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 16
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d76132522d69f41a7a98e12c6f34d6
+      internalID: -1484457359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_98
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 16
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ea97fbf01998e4da86cb65f78a607a
+      internalID: 1478432434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_99
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 16
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a1f02128f4dda9439849d6a5245016a
+      internalID: -1194558964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_100
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 16
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b155388e7de5c4e96a23780e85029c
+      internalID: 1311061057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_101
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 16
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8faf7d59450c5b469096693c105d553
+      internalID: 1219738020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_102
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 16
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04b823c7eeb8ccf44aa86c8a8a0b59f3
+      internalID: -1825884062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_103
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 16
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2101af033f691a64087537eb9da8169a
+      internalID: 755661272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_104
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 16
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56418cb6f4f5166428d0db4c7707b3f8
+      internalID: -1640084749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_105
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 16
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b563d1741540274a8ccb497ef661844
+      internalID: 329967121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_106
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 16
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e416a57210577448670c2990ef1ca1
+      internalID: -1723760685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Blaster Fighters_107
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 16
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37eda932a6629cd45b2ef805f9c9b0b1
+      internalID: -1292415325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Air Buster - Blaster Fighters_10: -862822164
+      Air Buster - Blaster Fighters_34: -915590022
+      Air Buster - Blaster Fighters_65: 1109946825
+      Air Buster - Blaster Fighters_50: -1751808265
+      Air Buster - Blaster Fighters_61: 2083273455
+      Air Buster - Blaster Fighters_68: 192221476
+      Air Buster - Blaster Fighters_23: 1743119177
+      Air Buster - Blaster Fighters_76: 1910355365
+      Air Buster - Blaster Fighters_37: 1799734632
+      Air Buster - Blaster Fighters_84: -608858490
+      Air Buster - Blaster Fighters_94: 1222339566
+      Air Buster - Blaster Fighters_101: 1219738020
+      Air Buster - Blaster Fighters_104: -1640084749
+      Air Buster - Blaster Fighters_81: 2077000644
+      Air Buster - Blaster Fighters_5: -1672543699
+      Air Buster - Blaster Fighters_72: 968313622
+      Air Buster - Blaster Fighters_63: 903794678
+      Air Buster - Blaster Fighters_32: 711834145
+      Air Buster - Blaster Fighters_43: 2055474365
+      Air Buster - Blaster Fighters_46: 383799866
+      Air Buster - Blaster Fighters_60: 95526226
+      Air Buster - Blaster Fighters_77: -1977428574
+      Air Buster - Blaster Fighters_91: -578830622
+      Air Buster - Blaster Fighters_30: 1495157939
+      Air Buster - Blaster Fighters_24: -887490232
+      Air Buster - Blaster Fighters_18: -962595046
+      Air Buster - Blaster Fighters_92: 1613735168
+      Air Buster - Blaster Fighters_25: 1901242988
+      Air Buster - Blaster Fighters_106: -1723760685
+      Air Buster - Blaster Fighters_56: 536726761
+      Air Buster - Blaster Fighters_35: 1986010811
+      Air Buster - Blaster Fighters_17: 1095249092
+      Air Buster - Blaster Fighters_13: 1745446270
+      Air Buster - Blaster Fighters_85: 401493739
+      Air Buster - Blaster Fighters_73: 662688650
+      Air Buster - Blaster Fighters_47: -2022738666
+      Air Buster - Blaster Fighters_59: 1280416436
+      Air Buster - Blaster Fighters_75: -92798857
+      Air Buster - Blaster Fighters_103: 755661272
+      Air Buster - Blaster Fighters_82: 1925491776
+      Air Buster - Blaster Fighters_21: 1363938721
+      Air Buster - Blaster Fighters_6: 2042429208
+      Air Buster - Blaster Fighters_31: 1790103190
+      Air Buster - Blaster Fighters_3: 865734695
+      Air Buster - Blaster Fighters_12: 1398739779
+      Air Buster - Blaster Fighters_99: -1194558964
+      Air Buster - Blaster Fighters_22: 217646077
+      Air Buster - Blaster Fighters_74: -535604943
+      Air Buster - Blaster Fighters_14: -903978678
+      Air Buster - Blaster Fighters_52: 561624280
+      Air Buster - Blaster Fighters_97: -1484457359
+      Air Buster - Blaster Fighters_38: -860933456
+      Air Buster - Blaster Fighters_96: -1630816519
+      Air Buster - Blaster Fighters_45: -974680830
+      Air Buster - Blaster Fighters_39: -433662770
+      Air Buster - Blaster Fighters_102: -1825884062
+      Air Buster - Blaster Fighters_4: 1837867274
+      Air Buster - Blaster Fighters_98: 1478432434
+      Air Buster - Blaster Fighters_70: 961203822
+      Air Buster - Blaster Fighters_69: 275695074
+      Air Buster - Blaster Fighters_93: -1066536044
+      Air Buster - Blaster Fighters_11: -934182494
+      Air Buster - Blaster Fighters_95: 396760647
+      Air Buster - Blaster Fighters_1: 1690005085
+      Air Buster - Blaster Fighters_78: 1405531492
+      Air Buster - Blaster Fighters_15: 1706575578
+      Air Buster - Blaster Fighters_79: -1490339452
+      Air Buster - Blaster Fighters_66: 16139541
+      Air Buster - Blaster Fighters_41: 775861428
+      Air Buster - Blaster Fighters_51: -543611716
+      Air Buster - Blaster Fighters_107: -1292415325
+      Air Buster - Blaster Fighters_7: 1932172196
+      Air Buster - Blaster Fighters_28: 1432102562
+      Air Buster - Blaster Fighters_100: 1311061057
+      Air Buster - Blaster Fighters_90: 303399565
+      Air Buster - Blaster Fighters_105: 329967121
+      Air Buster - Blaster Fighters_19: -1976324202
+      Air Buster - Blaster Fighters_80: -142294513
+      Air Buster - Blaster Fighters_87: 1361662054
+      Air Buster - Blaster Fighters_27: -1439583624
+      Air Buster - Blaster Fighters_88: -960947266
+      Air Buster - Blaster Fighters_44: 1406313431
+      Air Buster - Blaster Fighters_0: 1867469635
+      Air Buster - Blaster Fighters_83: 1800910304
+      Air Buster - Blaster Fighters_2: -160981572
+      Air Buster - Blaster Fighters_49: -1385823796
+      Air Buster - Blaster Fighters_20: 589788053
+      Air Buster - Blaster Fighters_36: -370845203
+      Air Buster - Blaster Fighters_16: 1296670961
+      Air Buster - Blaster Fighters_55: 293822059
+      Air Buster - Blaster Fighters_8: 276233814
+      Air Buster - Blaster Fighters_86: 2051167229
+      Air Buster - Blaster Fighters_89: 105568253
+      Air Buster - Blaster Fighters_33: -1955714627
+      Air Buster - Blaster Fighters_48: -1048133906
+      Air Buster - Blaster Fighters_58: 409034529
+      Air Buster - Blaster Fighters_62: -1071773053
+      Air Buster - Blaster Fighters_40: 264554269
+      Air Buster - Blaster Fighters_57: 1650974765
+      Air Buster - Blaster Fighters_64: 1370068739
+      Air Buster - Blaster Fighters_71: -2012094079
+      Air Buster - Blaster Fighters_67: 1012473998
+      Air Buster - Blaster Fighters_53: -1171220677
+      Air Buster - Blaster Fighters_9: -1101815382
+      Air Buster - Blaster Fighters_42: 1418510184
+      Air Buster - Blaster Fighters_54: -2100302751
+      Air Buster - Blaster Fighters_26: -1186855860
+      Air Buster - Blaster Fighters_29: 959410011
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

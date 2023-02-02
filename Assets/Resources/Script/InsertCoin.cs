@@ -5,44 +5,46 @@ using UnityEngine.UI;
 
 public class InsertCoin : MonoBehaviour
 {
+    [SerializeField] private GameObject YellowPlane;
+    [SerializeField] private GameObject RedPlane;
+
     Animator yellow;
     Animator red;
 
     private void Start()
     {
-        gameObject.SetActive(false);
-        yellow = GameManager.Instance.YellowPlane.GetComponent<Animator>();
-        red = GameManager.Instance.RedPlane.GetComponent<Animator>();
+        yellow = YellowPlane.GetComponent<Animator>();
+        red = RedPlane.GetComponent<Animator>();
     }
 
     private void Update()
     {
-        Insertcoin();
+        SceneChange();
         PlayPlaneAnim();
+        PlayGame();
     }
     
-    void Insertcoin()
+    void SceneChange()
     {
         if (Input.GetKeyDown(KeyCode.Alpha0))
         {
-            if (SoundManager.instance.audioSourceBGM.isPlaying == true)
-                SoundManager.instance.StopBGM("Select");
+            if (SoundManager.Instance.audioSourceBGM.isPlaying == true)
+                SoundManager.Instance.StopBGM("Select");
 
-            SoundManager.instance.PlayBGM("Select");
+            SoundManager.Instance.PlayBGM("Select");
 
-            foreach (AudioSource element in SoundManager.instance.audioSourceEffects)
+            foreach (AudioSource element in SoundManager.Instance.audioSourceEffects)
             {
                 if (element.name == "Credit" && element.isPlaying)
-                    SoundManager.instance.StopSE("Credit");
+                    SoundManager.Instance.StopSE("Credit");
             }
 
-            SoundManager.instance.PlaySE("Credit");
+            SoundManager.Instance.PlaySE("Credit");
 
-            if (GameManager.Instance.Coin <= 99)
-            {
-                GameManager.Instance.Coin += 1;
-                GameManager.Instance.CoinText.text = GameManager.Instance.Coin.ToString();
-            }
+            //GameManager.Instance.Coin += 1;
+            //
+            //if (GameManager.Instance.Coin <= 99)
+            //    GameManager.Instance.CoinText.text = GameManager.Instance.Coin.ToString();
         }
     }
 
@@ -57,4 +59,17 @@ public class InsertCoin : MonoBehaviour
                 red.Play("redPlaneup", -1 ,0f);
         }
     }
+
+    void PlayGame()
+	{
+        if (Input.GetKeyDown(KeyCode.Alpha1) && GameManager.Instance.Coin > 0)
+        {
+            gameObject.SetActive(false);
+            SoundManager.Instance.StopBGM("Select");
+            SoundManager.Instance.StopSE("Credit");
+            SoundManager.Instance.PlayBGM("Seaside Front");
+            GameManager.Instance.Coin -= 1;
+            GameManager.Instance.PlayerCanvas.SetActive(true);
+        }
+	}
 }

@@ -9,18 +9,8 @@ public class Sound
     public AudioClip clip;  // °î
 }
 
-public class SoundManager : MonoBehaviour
+public class SoundManager : ManagerSingleton<SoundManager>
 {
-    static public SoundManager instance;
-
-    private void Awake()
-    {
-        if (instance == null)
-            instance = this;
-        else
-            Destroy(this.gameObject);
-    }
-
     public AudioSource audioSourceBGM;
     public AudioSource[] audioSourceEffects;
 

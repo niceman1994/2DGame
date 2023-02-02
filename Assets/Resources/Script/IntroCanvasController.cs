@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainCanvasController : MonoBehaviour
+public class IntroCanvasController : MonoBehaviour
 {
     Animator anim;
 
@@ -13,7 +13,7 @@ public class MainCanvasController : MonoBehaviour
 
     private void Start()
     {
-        SoundManager.instance.PlayBGM("Title");
+        SoundManager.Instance.PlayBGM("Title");
     }
 
     private void Update()
@@ -26,12 +26,12 @@ public class MainCanvasController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha0))
         {
             gameObject.SetActive(false);
-            SoundManager.instance.StopBGM("Title");
+            SoundManager.Instance.StopBGM("Title");
             anim.enabled = false;
 
             GameManager.Instance.CoinCanvas.SetActive(true);
-            SoundManager.instance.PlayBGM("Select");
-            SoundManager.instance.PlaySE("Credit");
+            SoundManager.Instance.PlayBGM("Select");
+            SoundManager.Instance.PlaySE("Credit");
         }
     }
 }
