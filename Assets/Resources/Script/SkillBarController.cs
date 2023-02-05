@@ -29,7 +29,13 @@ public class SkillBarController : MonoBehaviour
         {
             yield return null;
 
+            if (Input.GetKey(KeyCode.Z))
+            {
+                chargeTime = Time.time * 0.25f;
+                Debug.Log("chargeTime : " + chargeTime);
 
+                anim.Play("GaugeUp", 0, Time.time * 0.25f <= 1 ? chargeTime : 1.0f);
+            }
         }
     }
 }
