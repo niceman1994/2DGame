@@ -60,12 +60,15 @@ public class GameManager : ManagerSingleton<GameManager>
 
     void insertCoin()
 	{
-        if (Input.GetKeyDown(KeyCode.Alpha0))
-		{
-            Coin += 1;
+        if (CoinCanvas.activeInHierarchy == true)
+        {
+            if (Input.GetKeyDown(KeyCode.Alpha0))
+            {
+                Coin += 1;
 
-            if (Coin <= 99)
-                CoinText.text = Coin.ToString();
-		}
+                if (Coin <= 99)
+                    CoinText.text = Coin.ToString();
+            }
+        }
 	}
 }

@@ -40,11 +40,6 @@ public class InsertCoin : MonoBehaviour
             }
 
             SoundManager.Instance.PlaySE("Credit");
-
-            //GameManager.Instance.Coin += 1;
-            //
-            //if (GameManager.Instance.Coin <= 99)
-            //    GameManager.Instance.CoinText.text = GameManager.Instance.Coin.ToString();
         }
     }
 
