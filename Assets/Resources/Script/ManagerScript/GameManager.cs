@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class GameManager : ManagerSingleton<GameManager>
 {
+    public GameObject IntroCanvas;
     public GameObject CoinCanvas;
     public GameObject PlayerCanvas;
 

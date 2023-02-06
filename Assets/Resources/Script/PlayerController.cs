@@ -5,17 +5,19 @@ using UnityEngine;
 public class PlayerController : Object
 {
 	[SerializeField] private Animator SkillBar;
+	[SerializeField] private GameObject Smog;
 	[SerializeField] private GameObject BulletPoint;
 	[SerializeField] private GameObject BulletPrefab;
 
 	GameObject Bullet;
+	Animator smoganim;
 
 	private void Start()
 	{
 		Initialize();
 	}
 
-	private void Update()
+	void Update()
 	{
 		Progress();
 	}
@@ -23,12 +25,18 @@ public class PlayerController : Object
 	public override void Initialize()
 	{
 		base.Name = "Player";
-		base.Hp = 10;
+		base.Hp = 0;
+		base.Atk = 0;
 		base.ObjectAnim = _Object.GetComponent<Animator>();
+		ObjectAnim.enabled = false;
+
+		smoganim = Smog.GetComponent<Animator>();
+		smoganim.enabled = false;
 	}
 
 	public override void Progress()
 	{
+		Sally();
 		Move();
 		Attack();
 	}
@@ -36,6 +44,16 @@ public class PlayerController : Object
 	public override void Release()
 	{
 		
+	}
+
+	void Sally()
+	{
+		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
+			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
+		{
+			ObjectAnim.enabled = true;
+			smoganim.enabled = true;
+		}
 	}
 
     void Move()
@@ -46,13 +64,13 @@ public class PlayerController : Object
 		{
 			ObjectAnim.SetBool("up", true);
 			ObjectAnim.SetBool("down", false);
-			transform.Translate(new Vector3(0.0f, 0.02f, 0.0f));
+			transform.Translate(new Vector3(0.0f, 0.03f, 0.0f));
 		}
 		else if (Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.UpArrow))
 		{
 			ObjectAnim.SetBool("down", true);
 			ObjectAnim.SetBool("up", false);
-			transform.Translate(new Vector3(0.0f, -0.02f, 0.0f));
+			transform.Translate(new Vector3(0.0f, -0.03f, 0.0f));
 		}
 		else
 		{
@@ -62,9 +80,9 @@ public class PlayerController : Object
 		}
 
 		if (Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
-			transform.Translate(new Vector2(-0.02f, 0.0f));
+			transform.Translate(new Vector2(-0.03f, 0.0f));
 		else if (Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.LeftArrow))
-			transform.Translate(new Vector2(0.02f, 0.0f));
+			transform.Translate(new Vector2(0.03f, 0.0f));
 	}
 
 	void CameraView()
@@ -84,7 +102,7 @@ public class PlayerController : Object
 		if (Input.GetKeyDown(KeyCode.Z))
 		{
 			Bullet = Instantiate(BulletPrefab, BulletPoint.transform);
-			Bullet.transform.position += new Vector3(Bullet.transform.position.x + (15.0f * Time.deltaTime), Bullet.transform.position.y, 0.0f);
+			Bullet.transform.position += new Vector3(Bullet.transform.position.x + Time.deltaTime, Bullet.transform.position.y, 0.0f);
 		}
     }
 }

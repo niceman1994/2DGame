@@ -20,7 +20,7 @@ public class InsertCoin : MonoBehaviour
     private void Update()
     {
         SceneChange();
-        PlayPlaneAnim();
+        PlayCreditAnim();
         PlayGame();
     }
     
@@ -43,7 +43,7 @@ public class InsertCoin : MonoBehaviour
         }
     }
 
-    void PlayPlaneAnim()
+    void PlayCreditAnim()
     {
         if (Input.GetKeyDown(KeyCode.Alpha0))
         {

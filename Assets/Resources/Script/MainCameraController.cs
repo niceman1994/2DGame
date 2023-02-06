@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class MainCameraController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	private void LateUpdate()
+	{
+		CameraMove();
+	}
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	void CameraMove()
+	{
+		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
+			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
+		{
+
+		}
+	}
 }
