@@ -5,12 +5,16 @@ using UnityEngine;
 public class PlayerController : Object
 {
 	[SerializeField] private Animator SkillBar;
-	[SerializeField] private GameObject Smog;
 	[SerializeField] private GameObject BulletPoint;
 	[SerializeField] private GameObject BulletPrefab;
+	[SerializeField] private GameObject[] Smog = new GameObject[3];
+	[SerializeField] private Transform StraightPoint;
+	[SerializeField] private Transform HalfwayPoint;
+	[SerializeField] private Transform BackPoint;
+	[SerializeField] private Transform EndPoint;
 
 	GameObject Bullet;
-	Animator smoganim;
+	Animator[] smoganim = new Animator[3];
 
 	private void Start()
 	{
@@ -30,8 +34,11 @@ public class PlayerController : Object
 		base.ObjectAnim = _Object.GetComponent<Animator>();
 		ObjectAnim.enabled = false;
 
-		smoganim = Smog.GetComponent<Animator>();
-		smoganim.enabled = false;
+		for (int i = 0; i < Smog.Length; ++i)
+		{
+			smoganim[i] = Smog[i].GetComponent<Animator>();
+			smoganim[i].enabled = false;
+		}
 	}
 
 	public override void Progress()
@@ -52,7 +59,24 @@ public class PlayerController : Object
 			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
 		{
 			ObjectAnim.enabled = true;
-			smoganim.enabled = true;
+
+			if (transform.position.x >= 14.3f)
+				smoganim[0].enabled = true;
+
+			if (transform.position.x >= 15.7f)
+				smoganim[1].enabled = true;
+
+			if (transform.position.x >= 17.2f)
+				smoganim[2].enabled = true;
+
+			if (transform.position.x >= 30.0f)
+            {
+				for (int i = 0; i < smoganim.Length; ++i)
+				{
+					smoganim[i].enabled = false;
+					Smog[i].SetActive(false);
+				}
+            }
 		}
 	}
 

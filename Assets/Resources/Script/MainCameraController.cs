@@ -11,10 +11,6 @@ public class MainCameraController : MonoBehaviour
 
 	void CameraMove()
 	{
-		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
-			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
-		{
-
-		}
+		
 	}
 }
