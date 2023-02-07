@@ -10,6 +10,16 @@ public abstract class Object : MonoBehaviour, Interface
 	protected Animator ObjectAnim;
 	public GameObject _Object;
 
+	protected void Start()
+	{
+		Initialize();
+	}
+
+	protected void Update()
+	{
+		Progress();
+	}
+
 	// 순수 가상 함수 Initialize(), Progress(), Release()
 	public abstract void Initialize();
 	public abstract void Progress();

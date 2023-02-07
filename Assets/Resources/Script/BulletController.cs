@@ -6,16 +6,6 @@ public class BulletController : Object
 {
 	float BulletSpeed;
 
-	void Start()
-    {
-		Initialize();
-	}
-
-	void Update()
-	{
-
-	}
-
 	public override void Initialize()
 	{
 		base.Name = "Bullet";

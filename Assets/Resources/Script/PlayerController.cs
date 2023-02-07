@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class PlayerController : Object
 {
@@ -8,22 +9,16 @@ public class PlayerController : Object
 	[SerializeField] private GameObject BulletPoint;
 	[SerializeField] private GameObject BulletPrefab;
 	[SerializeField] private GameObject[] Smog = new GameObject[3];
-	[SerializeField] private Transform StraightPoint;
-	[SerializeField] private Transform HalfwayPoint;
-	[SerializeField] private Transform BackPoint;
-	[SerializeField] private Transform EndPoint;
+	[SerializeField] private Vector3[] point = new Vector3[4];
 
 	GameObject Bullet;
 	Animator[] smoganim = new Animator[3];
 
-	private void Start()
+	private void FixedUpdate()
 	{
-		Initialize();
-	}
-
-	void Update()
-	{
-		Progress();
+		DOTween.SetTweensCapacity(500, 50);
+		//transform.DOMove(point[1], 3.0f).onPlay(() => transform.DOMove(point[2], 1.0f));
+		//transform.DOPath(point, 2.0f, PathType.CatmullRom);
 	}
 
 	public override void Initialize()
@@ -44,7 +39,7 @@ public class PlayerController : Object
 	public override void Progress()
 	{
 		Sally();
-		Move();
+		//Move();
 		Attack();
 	}
 
@@ -59,9 +54,8 @@ public class PlayerController : Object
 			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
 		{
 			ObjectAnim.enabled = true;
-
-			if (transform.position.x >= 14.3f)
-				smoganim[0].enabled = true;
+			smoganim[0].enabled = true;
+			
 
 			if (transform.position.x >= 15.7f)
 				smoganim[1].enabled = true;
@@ -69,14 +63,14 @@ public class PlayerController : Object
 			if (transform.position.x >= 17.2f)
 				smoganim[2].enabled = true;
 
-			if (transform.position.x >= 30.0f)
-            {
+			if (transform.position.x >= 29.0f)
+			{
 				for (int i = 0; i < smoganim.Length; ++i)
 				{
 					smoganim[i].enabled = false;
 					Smog[i].SetActive(false);
 				}
-            }
+			}
 		}
 	}
 
@@ -115,7 +109,7 @@ public class PlayerController : Object
 
 		if (pos.x > 0.94f) pos.x = 0.94f;
 		if (pos.x < 0.06f) pos.x = 0.06f;
-		if (pos.y > 0.961f) pos.y = 0.961f;
+		if (pos.y > 0.96f) pos.y = 0.96f;
 		if (pos.y < 0.039f) pos.y = 0.039f;
 
 		transform.position = Camera.main.ViewportToWorldPoint(pos);
