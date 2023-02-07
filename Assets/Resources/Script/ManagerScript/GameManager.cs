@@ -20,6 +20,7 @@ public class GameManager : ManagerSingleton<GameManager>
 
     public Text PlayerLifeText;
     public int PlayerLife;
+    public float startTime = 0.0f;
 
     float timer = 0.0f;
 
@@ -27,10 +28,11 @@ public class GameManager : ManagerSingleton<GameManager>
 	{
         CoinCanvas.SetActive(false);
         PlayerCanvas.SetActive(false);
-	}
+    }
 
 	private void Update()
 	{
+        startTime += Time.deltaTime;
         insertCoin();
         ChangeText();
 	}

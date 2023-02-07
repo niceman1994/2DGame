@@ -9,17 +9,11 @@ public class PlayerController : Object
 	[SerializeField] private GameObject BulletPoint;
 	[SerializeField] private GameObject BulletPrefab;
 	[SerializeField] private GameObject[] Smog = new GameObject[3];
-	[SerializeField] private Vector3[] point = new Vector3[4];
+	[SerializeField] private Vector3[] point = new Vector3[3];
+	[SerializeField] private Vector3 StraightPoint;
 
-	GameObject Bullet;
 	Animator[] smoganim = new Animator[3];
-
-	private void FixedUpdate()
-	{
-		DOTween.SetTweensCapacity(500, 50);
-		//transform.DOMove(point[1], 3.0f).onPlay(() => transform.DOMove(point[2], 1.0f));
-		//transform.DOPath(point, 2.0f, PathType.CatmullRom);
-	}
+	GameObject Bullet;
 
 	public override void Initialize()
 	{
@@ -28,6 +22,8 @@ public class PlayerController : Object
 		base.Atk = 0;
 		base.ObjectAnim = _Object.GetComponent<Animator>();
 		ObjectAnim.enabled = false;
+
+		StartCoroutine(Sally());
 
 		for (int i = 0; i < Smog.Length; ++i)
 		{
@@ -38,29 +34,49 @@ public class PlayerController : Object
 
 	public override void Progress()
 	{
-		Sally();
-		//Move();
+		SmogAni();
 		Attack();
+		Move();
 	}
-
+	
 	public override void Release()
 	{
 		
 	}
 
-	void Sally()
+	IEnumerator Sally()
+    {
+		while (true)
+        {
+			yield return null;
+			
+			if (GameManager.Instance.PlayerCanvas.activeInHierarchy == true)
+			{
+				transform.DOMove(point[0], 2.0f).SetEase(Ease.InSine).OnComplete(() =>
+			  {
+				  transform.DOPath(point, 2.0f, PathType.CatmullRom).SetEase(Ease.OutSine);
+			  }).SetDelay(2.0f);
+
+				yield return null;
+				break;
+			}
+		}
+    }
+
+	void SmogAni()
 	{
 		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
 			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
 		{
 			ObjectAnim.enabled = true;
-			smoganim[0].enabled = true;
+
+			if (transform.position.x >= 15.0f)
+				smoganim[0].enabled = true;
 			
-
-			if (transform.position.x >= 15.7f)
+			if (transform.position.x >= 18.7f)
 				smoganim[1].enabled = true;
-
-			if (transform.position.x >= 17.2f)
+			
+			if (transform.position.x >= 22.0f)
 				smoganim[2].enabled = true;
 
 			if (transform.position.x >= 29.0f)
@@ -76,31 +92,34 @@ public class PlayerController : Object
 
     void Move()
 	{
-		CameraView();
+		if (!ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("Sally"))
+		{
+			CameraView();
 
-		if (Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow))
-		{
-			ObjectAnim.SetBool("up", true);
-			ObjectAnim.SetBool("down", false);
-			transform.Translate(new Vector3(0.0f, 0.03f, 0.0f));
-		}
-		else if (Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.UpArrow))
-		{
-			ObjectAnim.SetBool("down", true);
-			ObjectAnim.SetBool("up", false);
-			transform.Translate(new Vector3(0.0f, -0.03f, 0.0f));
-		}
-		else
-		{
-			ObjectAnim.SetBool("idle", true);
-			ObjectAnim.SetBool("up", false);
-			ObjectAnim.SetBool("down", false);
-		}
+			if (Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow))
+			{
+				ObjectAnim.SetBool("up", true);
+				ObjectAnim.SetBool("down", false);
+				transform.Translate(new Vector3(0.0f, 0.03f, 0.0f));
+			}
+			else if (Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.UpArrow))
+			{
+				ObjectAnim.SetBool("down", true);
+				ObjectAnim.SetBool("up", false);
+				transform.Translate(new Vector3(0.0f, -0.03f, 0.0f));
+			}
+			else
+			{
+				ObjectAnim.SetBool("idle", true);
+				ObjectAnim.SetBool("up", false);
+				ObjectAnim.SetBool("down", false);
+			}
 
-		if (Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
-			transform.Translate(new Vector2(-0.03f, 0.0f));
-		else if (Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.LeftArrow))
-			transform.Translate(new Vector2(0.03f, 0.0f));
+			if (Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
+				transform.Translate(new Vector2(-0.03f, 0.0f));
+			else if (Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.LeftArrow))
+				transform.Translate(new Vector2(0.03f, 0.0f));
+		}
 	}
 
 	void CameraView()
@@ -120,7 +139,8 @@ public class PlayerController : Object
 		if (Input.GetKeyDown(KeyCode.Z))
 		{
 			Bullet = Instantiate(BulletPrefab, BulletPoint.transform);
-			Bullet.transform.position += new Vector3(Bullet.transform.position.x + Time.deltaTime, Bullet.transform.position.y, 0.0f);
+			Bullet.transform.position = Vector3.MoveTowards(
+				BulletPoint.transform.position, BulletPoint.transform.position + new Vector3(17.0f, 0.0f, 0.0f), 0.5f);
 		}
     }
 }
