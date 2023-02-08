@@ -392,9 +392,9 @@ TextureImporter:
       name: Air Buster1 - Phase 1 Seaside Front_13
       rect:
         serializedVersion: 2
-        x: 18
+        x: 16
         y: 331
-        width: 28
+        width: 32
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -2048,27 +2048,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Air Buster1 - Phase 1 Seaside Front_94
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 234
-        width: 256
-        height: 73
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9240199c80a4176449d9764c08894191
-      internalID: -1584240631
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Air Buster1 - Phase 1 Seaside Front_95
       rect:
         serializedVersion: 2
@@ -2114,7 +2093,7 @@ TextureImporter:
       name: Air Buster1 - Phase 1 Seaside Front_97
       rect:
         serializedVersion: 2
-        x: 16
+        x: 17
         y: 250
         width: 48
         height: 16

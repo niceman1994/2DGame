@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SkillBarController : MonoBehaviour
 {
+    [SerializeField] private Animator Player;
     Animator anim;
     float animNormalizedTime;
 
@@ -25,7 +26,8 @@ public class SkillBarController : MonoBehaviour
 
 	void StartAnimation()
     {
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("GaugeUp"))
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("GaugeUp") && Player.GetCurrentAnimatorStateInfo(0).IsName("Idle")
+            && Player.gameObject != null)
         {
             if (Input.GetKey(KeyCode.Z))
             {

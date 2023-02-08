@@ -11,6 +11,7 @@ public class GameManager : ManagerSingleton<GameManager>
 
     public Text InsertCoinText;
     public Text GameOverText;
+    public Text PhaseInfoText;
 
     public Text CoinText;
     public int Coin;
@@ -20,30 +21,31 @@ public class GameManager : ManagerSingleton<GameManager>
 
     public Text PlayerLifeText;
     public int PlayerLife;
-    public float startTime = 0.0f;
 
     float timer = 0.0f;
+    string message;
 
 	private void Start()
 	{
+        message = "PHASE  1\n SEASIDE   FRONT";
         CoinCanvas.SetActive(false);
         PlayerCanvas.SetActive(false);
+        StartCoroutine(PhaseNotice(message, 0.15f));
     }
 
 	private void Update()
 	{
-        startTime += Time.deltaTime;
         insertCoin();
         ChangeText();
 	}
 
     void ChangeText()
 	{
-        if (CoinCanvas.activeInHierarchy == true)
+        if (PlayerCanvas.activeInHierarchy == true)
         {
             timer += Time.deltaTime;
 
-            if (timer >= 1.5f)
+            if (timer >= 1.0f)
             {
                 timer = 0.0f;
 
@@ -74,4 +76,19 @@ public class GameManager : ManagerSingleton<GameManager>
             }
         }
 	}
+
+    IEnumerator PhaseNotice(string message, float speed)
+	{
+        yield return new WaitForSeconds(5.8f);
+        PhaseInfoText.gameObject.SetActive(true);
+
+        for (int i = 0; i < message.Length; ++i)
+		{
+            PhaseInfoText.text = message.Substring(0, i + 1);
+            yield return new WaitForSeconds(speed);
+		}
+
+        yield return new WaitForSeconds(1.0f);
+        PhaseInfoText.gameObject.SetActive(false);
+    }
 }
