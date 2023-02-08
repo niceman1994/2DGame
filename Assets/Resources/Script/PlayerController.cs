@@ -15,8 +15,8 @@ public class PlayerController : Object
 	public override void Initialize()
 	{
 		base.Name = "Player";
-		base.Hp = 0;
-		base.Atk = 0;
+		base.Hp = GameManager.Instance.PlayerLife;
+		base.Atk = 10;
 		base.ObjectAnim = _Object.GetComponent<Animator>();
 		ObjectAnim.enabled = false;
 
@@ -49,10 +49,12 @@ public class PlayerController : Object
 			
 			if (GameManager.Instance.PlayerCanvas.activeInHierarchy == true)
 			{
-				transform.DOMove(point[0], 2.0f).SetEase(Ease.InSine).OnComplete(() =>
+				yield return new WaitForSeconds(1.65f);
+				transform.GetComponent<AudioSource>().Play();
+				transform.DOMove(point[0], 2.2f).SetEase(Ease.InSine).OnComplete(() =>
 			  {
 				  transform.DOPath(point, 2.0f, PathType.CatmullRom).SetEase(Ease.OutSine);
-			  }).SetDelay(2.3f);
+			  });
 
 				break;
 			}
@@ -96,13 +98,13 @@ public class PlayerController : Object
 			{
 				ObjectAnim.SetBool("up", true);
 				ObjectAnim.SetBool("down", false);
-				transform.Translate(new Vector3(0.0f, 0.035f, 0.0f));
+				transform.Translate(new Vector3(0.0f, 0.02f, 0.0f));
 			}
 			else if (Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.UpArrow))
 			{
 				ObjectAnim.SetBool("down", true);
 				ObjectAnim.SetBool("up", false);
-				transform.Translate(new Vector3(0.0f, -0.035f, 0.0f));
+				transform.Translate(new Vector3(0.0f, -0.02f, 0.0f));
 			}
 			else
 			{
@@ -112,9 +114,9 @@ public class PlayerController : Object
 			}
 
 			if (Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
-				transform.Translate(new Vector2(-0.035f, 0.0f));
+				transform.Translate(new Vector2(-0.02f, 0.0f));
 			else if (Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.LeftArrow))
-				transform.Translate(new Vector2(0.035f, 0.0f));
+				transform.Translate(new Vector2(0.02f, 0.0f));
 		}
 	}
 
@@ -132,10 +134,11 @@ public class PlayerController : Object
 
 	void Attack()
     {
-		if (Input.GetKeyDown(KeyCode.Z) &&
+		if (Input.GetKeyDown(KeyCode.A) &&
 			!ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("Sally")
 			&& transform != null)
 		{
+			SoundManager.Instance.PlaySE("Shootsound");
 			GameObject Bullet = ObjectPool.GetObject();
 			Bullet.transform.position = BulletPoint.transform.position;
 		}

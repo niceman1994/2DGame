@@ -1,0 +1,6161 @@
+fileFormatVersion: 2
+guid: 417717d17d6f34441b6fb5c82eae7a94
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Air Buster - Enemies_0
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 554
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec42c91bb7b1afe4fadaeac0786fc16d
+      internalID: 1688017481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 554
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd039cb0451ee542a6691a38c5512cd
+      internalID: 978085703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 554
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d26a654a39fde4cba20742ac1fa7c5
+      internalID: -1386405794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 550
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f22405ebd1d914ea98a62ff42c92dd
+      internalID: -435480736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_4
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 507
+        width: 46
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf78680c154f4044eb5e0886cf27ec5f
+      internalID: -347679897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_5
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 507
+        width: 46
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69abfd9cb6c05cf45a27e4b7097d8363
+      internalID: 2143971028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_6
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 507
+        width: 46
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e85e1e30fee4345904c9fa1805e74e
+      internalID: 293126751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_7
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 507
+        width: 46
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8305d796d7122464dba17f333329df2e
+      internalID: -613147489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_8
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 543
+        width: 46
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3881acb54cfd7d94d938dde2fd54f660
+      internalID: 204698637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_9
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 532
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7877b375ad67374296dfc700fcc723a
+      internalID: -1375310315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_10
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 536
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05185f0b28864184c957100eeb0f23aa
+      internalID: 992878528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_11
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 539
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6034fffee04909648a3d3575e891242b
+      internalID: -1594383802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_12
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 558
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a945cc88eea51459c2bfaaeb01fb53
+      internalID: 2045379222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_13
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 560
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a5162523e47414386da1ec0e688d9e
+      internalID: 260547293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_14
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 561
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c947df79bfee147a34d94c57f51a93
+      internalID: 1465286366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_15
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 531
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a16ae14bbd8b745ac4762d4827ccd0
+      internalID: -1324938151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_16
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 531
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca6ad1816840d5044bf1c48e22098143
+      internalID: 469913260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_17
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 532
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4fd2a8ff203c7a4d84a851e58ff9854
+      internalID: -1617229534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_18
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 525
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad209484de5cd664eab7e2408364768c
+      internalID: -1886211199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_19
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 527
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 294e5ecf3cd61c64cb7eb0284aa8e992
+      internalID: -1571181903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_20
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 528
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d8c5cfd476d5249b2c871cf585a43d
+      internalID: 798108004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_21
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 478
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11944d44b387f447a9808ec6fb71b86
+      internalID: 680489050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_22
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 478
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280e8e85e084d3a49a3ba00b1f98c798
+      internalID: -1110983880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_23
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 478
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5df8d54ffea2654ab7af9e70cd66486
+      internalID: 1983978583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_24
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 478
+        width: 20
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 452c45ec80df5bd438bcdf1345563a29
+      internalID: 759401735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_25
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 478
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92443065a05c2ca4d9adfd0cc193e159
+      internalID: -1863101782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_26
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 474
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93acb1b54adbf01488666ef489bb6b2d
+      internalID: 1029065241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_27
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 472
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4626b8325286fe1449f1321bcb285874
+      internalID: -2036587671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_28
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 476
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd901b2a5ed6154ab79fb044749b29b
+      internalID: -35165895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_29
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 474
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4c67b2a03b9d8409ef91fc6bc71506
+      internalID: 548228120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_30
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 494
+        width: 46
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a7d445636c9eff4080da2492858ef95
+      internalID: -554379568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_31
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 483
+        width: 45
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c96899e814104324c999efbc5671fc14
+      internalID: 1563094580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_32
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 487
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc5099f705505946b09d1b4e6e64905
+      internalID: -889369666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_33
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 490
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4042c3e067f09b9409bc708b98ae4fae
+      internalID: -1225494581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_34
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 490
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1887206c0e5b41147a5e075fc86c7bb3
+      internalID: 1837559514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_35
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 484
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19be567ec30406f42874641fc07c3ffc
+      internalID: -2115738833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_36
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 491
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc88a1b319409ab418fc5e8c96505451
+      internalID: 1290858540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_37
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 401
+        width: 68
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af9e86a5336548449a0a627a04d30d14
+      internalID: -1429276396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_38
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 402
+        width: 54
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfbd412c9260f91439bf40e9c88b7c92
+      internalID: 143395206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_40
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 437
+        width: 34
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1e21b916abf6645bcc7b8b4dcf6254
+      internalID: -414811878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_41
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 422
+        width: 20
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90f24764c82f3143b06046e8c848b30
+      internalID: -14351510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_42
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 441
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd982157d432a04ca220a4bb3a453d0
+      internalID: -1803970792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_43
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 428
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4c46e88b95d4442953ee6a4c2c7096
+      internalID: 1050654353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_44
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 447
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d09f72dfa4d3e40aa7747c06dcbb35
+      internalID: -237133094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_45
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 446
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c85f5c15d48874d8cae0ab3bae21e0
+      internalID: 1886866136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_46
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 445
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b732b5fab594649bb96235fe8ff1e8
+      internalID: 1507886814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_47
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 445
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 384067bde5f7e0f4a8da878033844b94
+      internalID: 1280421584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_48
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 445
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9811cec4132130c4391970608537d7a1
+      internalID: 1471209571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_49
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 445
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e272a984c0e05c409f47e1a8cd6b0d9
+      internalID: -1919197245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_50
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 445
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3291ae6e90abc19429de889f3160b070
+      internalID: 1022960903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_51
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 446
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf57e0a83ef47d94c9e22eb2997c145e
+      internalID: 478362986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_52
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 406
+        width: 50
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e41c6d3660574d5488d6c238ea242f54
+      internalID: 1958236406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_54
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 410
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c7458349dd00cf429629b4c773b9fbf
+      internalID: -1102905018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_55
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 409
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf683503cb748e4881509b7a5852e4f
+      internalID: -183332113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_56
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 408
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c388715e061e200449c476152b03374b
+      internalID: -912981382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_57
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 408
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d98dd1b621cffe498c5d46efe5764f6
+      internalID: -1108557681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_58
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 408
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6a7c565219cf4046bf61650041f1ae0
+      internalID: -1123147883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_59
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 408
+        width: 20
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739a836f5f2d2384aafbb20a48aa24fc
+      internalID: 980088088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_60
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 408
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50c615055bd6c242b4e6d38b7c9a33c
+      internalID: -1646532272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_61
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 409
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec6fdeede98e004d84796320ff79b08
+      internalID: -1089262178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_62
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 393
+        width: 34
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9009ea23e092c2643a117f7b61392764
+      internalID: -1902732550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_63
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 386
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e0dd51ab4223d4fbdbcb8523b4bf01
+      internalID: 1243330651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_65
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 393
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acbdb544d6c7e514fa5f28b6f4baacd9
+      internalID: 1684988307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_67
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 379
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc82416476d4d245afca3eb96a6ae3f
+      internalID: 295589606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_68
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 379
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 143e8b6ad5454bd4da220208e6354518
+      internalID: -1391711433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_69
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 379
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf95cc6c6046c04baac88fa49edfb68
+      internalID: 407980027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_70
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 379
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53372029a0592d64a920a0c68d5a9163
+      internalID: -789929479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_71
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 357
+        width: 87
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3286100bd01df1c449caf40fcdffff8e
+      internalID: -413346430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_72
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 358
+        width: 30
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c272b0c7cff84774c8dc7ca0cc13b8cd
+      internalID: -512980976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_73
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 339
+        width: 59
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60fd32854f650a44fbd6c4b549f97f32
+      internalID: -1221763203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_75
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 348
+        width: 16
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc03e5edc5a8c8845b4e617e41fe508c
+      internalID: -1678477915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_76
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 343
+        width: 64
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53e82c849ad1ef428134021aae554fb
+      internalID: 288210563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_77
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 343
+        width: 52
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d0c6c6029309c4fb7dc291921a17cd
+      internalID: -720867738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_78
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 343
+        width: 41
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aadf511b8be13244857f924876ead82
+      internalID: 748738623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_79
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 343
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f48448f86773f446a4f7b6cd89acb68
+      internalID: 1495193500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_80
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 323
+        width: 119
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b89789313015ff4688bbf5f60b5012e
+      internalID: 80141006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_81
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 348
+        width: 12
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 711e46d5a0426fa4ebcfc44e810a24da
+      internalID: 1991518831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_82
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 360
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3166e7b3236b808489baedd149e454ac
+      internalID: 1612340945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_83
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4473dee985adce4481c599e12ed184c
+      internalID: -828316946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_84
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a303f712a54ebf4e9e502e60a87756c
+      internalID: -1331823936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_85
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 360
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31ed9ddb2e56eba4d98ad0ed671f2ee5
+      internalID: 1929552746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_86
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 339
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 392a6e2b1db475a43931107e3875e43c
+      internalID: -739965094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_87
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 340
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee9dae1ae134834099d1cb3e1aa6712
+      internalID: -901641156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_88
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 340
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76af215ba9a630243b8230a73d156bed
+      internalID: 219977429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_89
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 341
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21319f425367a504da5ef0a57ff6f800
+      internalID: 1838236817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_90
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 341
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ee3e09e5ac03f42bf5f93db48fa566
+      internalID: 708722202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_91
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 341
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 131fcafb3d370ba40bdf37ee7a8e801e
+      internalID: 1923107593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_92
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 265
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612b3885f09fc7e42a9a4f481d90f322
+      internalID: 1899261090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_93
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 283
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6199f32fee4843a4c8c00950314f95d1
+      internalID: -1905042785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_94
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 270
+        width: 44
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09c8e275fa9d3940bcfbb4e0d7cd218
+      internalID: 762826865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_95
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 296
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5479730b2c7c8740aeda1cda4b9f92f
+      internalID: 1721979666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_96
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 294
+        width: 26
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300aea602d9642a45be020651eddffe9
+      internalID: -982638059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_97
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 297
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2d0dadd8267e7647bb6b00653ff1fcd
+      internalID: -2074682974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_98
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 298
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6442c1d645e4a04585209932c403599
+      internalID: 1942048908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_99
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 301
+        width: 28
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab920c2bf1ccaa844a3b30b751abe17a
+      internalID: -740499620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_100
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 294
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ec6e6fa32816344a8a2fbcdff922fd
+      internalID: 430857141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_101
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 294
+        width: 31
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 712ae6c2c7fe4fc4c8313536fef27b93
+      internalID: -12782124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_102
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 310
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d116b5de3aaaf40ac0f157dd08be76
+      internalID: -1814888838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_103
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 268
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66470579b2c798c4f9a38c0136a98756
+      internalID: 55010981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_104
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 266
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2f3052b3f25c74f9179851409ef790
+      internalID: -1625385925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_105
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 269
+        width: 15
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5265c920ddc4bf4d84cf22fab035e81
+      internalID: 3750424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_106
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 282
+        width: 45
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b57c8b08c0a8dd84f88be123fdb5be1a
+      internalID: 1458468935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_107
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 270
+        width: 42
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61db17b2f3384a41864147087003e74
+      internalID: -1736939675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_108
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 262
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c1fb2a6990acd49bc088ae2d205ac5
+      internalID: 41069310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_109
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 262
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b331d165d34c1744a95c751fd5803aba
+      internalID: 650444445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_110
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 262
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4748b876000839b4ea7c0ac7e38815f2
+      internalID: -392236852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_111
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 259
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da226748e0e14914aa1ac3ce9856b7fd
+      internalID: 625527028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_112
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 257
+        width: 30
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a35bb59d7f77a449e862a83119440a
+      internalID: -1992089061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_113
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 257
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a453961d0344e4e44aeac6aa1b03f0c0
+      internalID: 540274087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_114
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 257
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 009759cd6d3a249448ac3ffa07295125
+      internalID: 822989026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_115
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 273
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3b4788062f989742819e7116dc5e027
+      internalID: 1151529462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_116
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 265
+        width: 22
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b80ebe7afa6398d4e80e136dc07d6e55
+      internalID: 1410521690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_117
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 228
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a70cbbc406cd044bf95b4e4202fbf8
+      internalID: 922304643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_118
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 228
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8c963f9b8d3e54787eaf132257b82a
+      internalID: 1563268534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_119
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 228
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6062a2e3a6668489a2c247cc7bc28b
+      internalID: -1543235449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_120
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 235
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ca876508a6ec24d8b80e41012af022
+      internalID: -1224539627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_121
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 237
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ddb566daf832d45b6e7ca50bce0bd7
+      internalID: 1844018503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_122
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 245
+        width: 25
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260faebb9aec8f34a9e74d1197a0de6d
+      internalID: -1469292880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_123
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 243
+        width: 27
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f01f55836678f849a4aa4875a70ea33
+      internalID: 1095058950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_124
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 242
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 270adfb85a2a6314291a9a809f804202
+      internalID: 1542157700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_125
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 242
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78f657cb6247bb438c46cd6eadf0532
+      internalID: -1841518794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_126
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 194
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6cc66c4d56f65b49b1cdb544911ec51
+      internalID: 882790861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_127
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 194
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1c65aad6452d74f9b1d85c40a6a2d7
+      internalID: 510678815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_128
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 186
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bcea2088c58682438ccb3db4a500df6
+      internalID: -1143252393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_129
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 186
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c7d01d1071c164aaf195a2822f64c2
+      internalID: 1363663373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_130
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 186
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06ad1303de1f6904d8967386383e5ff5
+      internalID: 1744863191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_131
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 186
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb826e8a292c454eb8f83a63171f60c
+      internalID: 657269834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_132
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 186
+        width: 47
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cea7001fa59ea64699b5a538ae17628
+      internalID: -729575576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_133
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 186
+        width: 47
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba449d5a4c9a71940b6a54d577ec2200
+      internalID: -138004060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_134
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 202
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae69d93dd695a124c933c047d080159d
+      internalID: -1291468706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_135
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 202
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f1315e971397147a24e4b782a564db
+      internalID: -179256680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_136
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 202
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca12a72bfe1584549b7294bfca9f01a6
+      internalID: 503149338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_137
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 202
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a452f53f620b8d4190122fb28f24815
+      internalID: -1277368082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_138
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 213
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af2385d342f66f4d923b6d4342b988a
+      internalID: 1873063175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_139
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 213
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59048a64c404bfb43a801eb85a8b348a
+      internalID: 1783197047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_140
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 213
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea7789a72a8f0440928b26687970988
+      internalID: 1845783200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_141
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 214
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81e9fb2844708eb4387eabce233c67c3
+      internalID: 816309041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_142
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 213
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec80b74c141bec5479588a21ed4bacec
+      internalID: -1647810574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_143
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 213
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a624507f2ddf4444b65f0f7f7bce701
+      internalID: 1943640741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_144
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 214
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 801faf1f2db16a8459a998742b640308
+      internalID: 1858023561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_145
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 214
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f42f8560dd52f46bc92999ba601c58
+      internalID: -884494603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_146
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 177
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c2527e37331384bb5d112acd209845
+      internalID: -169677245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_147
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 176
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee7cefba0fc29647b16f0c125656602
+      internalID: -1617128055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_148
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 176
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 415d7f7ce9a0ba746af4287cfddc6b73
+      internalID: -819193029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_149
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 177
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d959fcdd809e69042a0a7222ff378284
+      internalID: 514514284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_150
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 178
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e378cd66e3618f14b989a70f24d847fb
+      internalID: -1203898491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_151
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 176
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d9e1366f0ae764e958e3d6f0bfec3c
+      internalID: -153806276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_152
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c5c51083fe41f947bd69d6be1204d86
+      internalID: 112405566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_153
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 192
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0681d437d32f7ef4da4741d44b3bd8a3
+      internalID: -1219808080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_154
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 202
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7ff650749961c40b311d74f57406b3
+      internalID: -1311366194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_155
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 199
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3a75564da46e44686bf0fb0bf1b616
+      internalID: -1570685862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_156
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 183
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f458b8e702ee67b4b9a2ad3a9087f90b
+      internalID: -1524321883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_157
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 183
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d16068351e3851468268fca3193d240
+      internalID: 68173730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_158
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 183
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e66beb29cd0996042b0d9365313e9b23
+      internalID: -575415133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_159
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 193
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 393a312265bcd3245beaf5e782617b3c
+      internalID: -1113957616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_160
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 198
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2cb9f0e465b014dade83f9f9bea1f8
+      internalID: -1587661025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_161
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 183
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f58b28897484d48882c94fea66fd84
+      internalID: 973976966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_162
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 194
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 463b75421f49a4943b1427c5d753f730
+      internalID: -900200681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_163
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 186
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab8d730e03b559d47b1a9324ed329a41
+      internalID: -62699433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_164
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 186
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d1f1c65b3e9fb42a0ec5a95a2a95aa
+      internalID: 108638409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_165
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 175
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6450a9896a5380344b150f138393bd6d
+      internalID: -1708415052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_166
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 180
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a36fb39154292314cb76fb2691fe561a
+      internalID: -929195886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_167
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 183
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c42e4a44324b64e80313d05e725ff3
+      internalID: 830672747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_168
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 168
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0be7fc6b3fb10f4b87e5b6a14fe1de4
+      internalID: 2062704625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_169
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 169
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01ceae0de4208144af6dbc219fe41ea
+      internalID: -292347775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_170
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 166
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581d33e0cf7c5f741a5d54b41f4f716f
+      internalID: 348763561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_171
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 166
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 908fa49214db5a346a69523dd1022a6d
+      internalID: 2137484935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_172
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 166
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82ed0360d68c69499f2b6a82c4277db
+      internalID: -942790956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_173
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 179
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44a2b6430da5ef489e5d210335c4664
+      internalID: 1879538530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_174
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 174
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ed754224e43fd49b136f69049fc46c
+      internalID: 881004978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_175
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 172
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 733ea11272aac584c928768f6b0bc7eb
+      internalID: -945297706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_176
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 167
+        width: 28
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db8f151ecc755334582a042cc611312a
+      internalID: 217018280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_177
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 168
+        width: 28
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5292c5e04138ee46ab0bd251ac7ff2f
+      internalID: -269053975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_178
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 163
+        width: 28
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a0620bbd624b942be0361fda70da11
+      internalID: 1466068386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_179
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 175
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f8dca60c22b0b14196af079ea2b8f30
+      internalID: -1680999604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_180
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 146
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7fe64510b3f0fa4bb85eabf3cc5d9b6
+      internalID: 1412397423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_181
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 146
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e5771dea0a19b4f952a1c2ac23bd6a
+      internalID: -2045037702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_182
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 157
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66aba9e3e49ef1c409dabe1ffe64763c
+      internalID: -346556577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_183
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 153
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7263bbe345306a49b660f2168e6e8f3
+      internalID: 1112737662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_184
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 156
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 671273405d4ff354494b6a2ce39f2a7c
+      internalID: 1481283905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_185
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 149
+        width: 24
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31884479c2c04fc4c986d26973b4a23e
+      internalID: -1820727792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_186
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 149
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b274daed6bcf16043a2fd5a918121932
+      internalID: -1314592081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_187
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 148
+        width: 44
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9bd618385f8224898e8a70af5c1092
+      internalID: -1698340476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_188
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 149
+        width: 44
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dfe79b9ae4a7f74ca09a9a9f7042945
+      internalID: -511783224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_189
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 142
+        width: 43
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56c57fd9c76795f47b7dce6224a2da04
+      internalID: 1265659636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_190
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 143
+        width: 43
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9bd3892d79f9342947a9ed0c8e03fa
+      internalID: 1291197007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_191
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 109
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 982e6206a7e34f94ca065a808e7d0b38
+      internalID: 1845475915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_192
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 114
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d73b913f15b6640b0847636bd94127
+      internalID: 232322564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_193
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 112
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d851a1bd0806f4c9a811bc12c3f16e
+      internalID: 867664396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_194
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 112
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d820767fa0d80b44abce7cd7ec50c92
+      internalID: -1287621955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_195
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 85
+        width: 70
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 746ad0e7610799642a8bbf0dfb2834d8
+      internalID: -227042000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_196
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 115
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8548649d08293214ebf0bd313241917e
+      internalID: -1286657075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_197
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 115
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfa3848f5b9dbc5418af58b48583f052
+      internalID: 1473419660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_198
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 115
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b21318cd7ee89e140b08c11d3bb9b532
+      internalID: 980826763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_199
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 115
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ebfc47cc76f094897f293963bbac6c
+      internalID: -1663995248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_200
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 112
+        width: 44
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a513b070d042919419377a296abcb336
+      internalID: 591305660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_201
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 110
+        width: 44
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cadd811fa6dfc6f45a1e326ace24b27b
+      internalID: 1342458963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_202
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 106
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5b881f9165d4c74d846cff32789a9bd
+      internalID: 151439747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_203
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 108
+        width: 44
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 859613dae8b37ff4d8ef04407162a0a2
+      internalID: -1731366976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_204
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 76
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc6ba75dc04db184d827665592799bb3
+      internalID: 1583838303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_205
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 81
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21fac36812456114a89a8ba0c525b30c
+      internalID: 864554589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_206
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 79
+        width: 24
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5afaf1e05051cbe458960ff7a34ce42b
+      internalID: -921395353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_207
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 79
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f1b7d750e576d44a80867e486d1350
+      internalID: 1045850041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_208
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 80
+        width: 39
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa52463b41d7673448a60ba5cf69e96d
+      internalID: -1843580737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_209
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 65
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9fb1007c565ac2489a878c2b3bff878
+      internalID: 59076077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_210
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 88
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e688ac9cba391f543b7067373a5e021d
+      internalID: -1068115839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_211
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 87
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f67afcb120b8664a8c3065f3ac69f81
+      internalID: 1853445676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_212
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 89
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f8ed3824045d2439045c0852919cdf
+      internalID: 1713193794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_213
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 89
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 818dda8bbebf07443a56d10e7368cab5
+      internalID: 318550963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_214
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 87
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ae55d58bbc1ae429507729f98f2be4
+      internalID: -693385776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_215
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 91
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e81776065fe8d74091ae60d5edd8785
+      internalID: -660087769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_216
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 91
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a18e22c5ec9ec1649a01f2ec35a77c0b
+      internalID: 258188114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_217
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 93
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71c964bd54121d748b31e2312df9c5ef
+      internalID: -247181820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_218
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 86
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28cf81018d223284e90e1519776eb9d5
+      internalID: -1361991037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_219
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 86
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45d710c3dd67a414a834e110f17f4380
+      internalID: 578209052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_220
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 86
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd87afedd503274290e35e2793a01d6
+      internalID: -22895549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_221
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 87
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9152fd1a94748444ae572e13142384a
+      internalID: -113197170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_222
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 87
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4fe33e44b344ad44bef436e9da491c9
+      internalID: -1579817451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_223
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 87
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ca323ad96af904c9509d56fdee3312
+      internalID: 210950792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_224
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 88
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5145629759ff1ee4cb9504a86bf20bcc
+      internalID: -1195970210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_225
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 68
+        width: 5
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 582d5e5f04da33a489890dd4df3ee424
+      internalID: 1941012844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_226
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 89
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e18b09bb088253240810c85e7b99a82d
+      internalID: -1731978047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_227
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 86
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e336a8c188b8ef149a6c72ac87172735
+      internalID: -1302120821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_228
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 85
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127b1605c5d717142a7384770309ab34
+      internalID: 2047832995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_229
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 86
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bca7fa51fa09ed4c855d5766c30ab6a
+      internalID: -506576644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_230
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 88
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d51268945afe7934da5ca0ad9ecf9ed2
+      internalID: 1152734756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_231
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 68
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ebed87143f457440bb36fe46ec8a781
+      internalID: 1460973105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_232
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 69
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a31232d9d8ed194e86ad4d16b4daf8c
+      internalID: 1807677901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_233
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 70
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8022f6f7dbc7bc4eaa3339c044ceda9
+      internalID: 972044333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_234
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 71
+        width: 12
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e55dbb8c915c8749b4ca27a2d5db781
+      internalID: 2133219662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_235
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 67
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9adaf372ef9f2f44a9b94e7666d24ca1
+      internalID: -740403817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_236
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 66
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ab2993593b0bba45993ef41b3a19de3
+      internalID: 185610598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_237
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 73
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd6c2382945d8f44b745fc65bbc003f
+      internalID: 713235635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_238
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 73
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dcea740179c89a4fa3c4ba1ce37a01b
+      internalID: -1127936063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_239
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 72
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634830ecfb46a53499cd4b8300a48870
+      internalID: 254355716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_240
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 72
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db60bb129739d7e44a800bb4f245ff09
+      internalID: 1152737627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_241
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 71
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf9ab2dfbe89c8408692b2d56316720
+      internalID: 1206128497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_242
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 71
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e2d5db73cb965e408f3b9ac16389006
+      internalID: -267895360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_243
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 71
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d36eba7f0c0304ba4809c68e328260
+      internalID: -945099216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_244
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 70
+        width: 5
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592c3f3e455014846811e4b9880023f9
+      internalID: -1470183469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_245
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 40
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96254735fd13da4bbc136677c93a9c4
+      internalID: 79153410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_246
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 41
+        width: 32
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07014234c0cc50b49939c9aa04a9b51e
+      internalID: -2077119023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_247
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 40
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d019e8c8599293a4e9f50ff589bb4afa
+      internalID: 2071213170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_248
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 38
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9334efb3983fbe845a2cb0d44a70f369
+      internalID: -778199391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_249
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 36
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1320460853d8c940af02ba7c0b75b14
+      internalID: -570569933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_250
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 51
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a42b47a082f7954eb390955ab5fb02c
+      internalID: -1657237148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_251
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 46
+        width: 3
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38cb45ac8d425f84d86062c4c4d25dfa
+      internalID: -2110771030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_252
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 46
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a9ff0a435c2d548b613a8f36d22d7c
+      internalID: 1932844218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_253
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 47
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d260063ce3e74be4ba520efeef1b3803
+      internalID: -1937018658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_254
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 46
+        width: 3
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29687afd71d700344abab5a76a1a291f
+      internalID: 569569151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_255
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 46
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2618716c6cbf5247b089b60ee94de8e
+      internalID: -1163649666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_256
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 47
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8118988618915054bb8a9daa490b2de9
+      internalID: 1353024082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_257
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 53
+        width: 16
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b51c21df2d91f4a409d3358bfd80b9e4
+      internalID: -842856326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_258
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 35
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec48a9402c6ad9649a0ce47a945176bc
+      internalID: 581564384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_259
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 35
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bee0c13881e5b643acc3fe4ab6a46d1
+      internalID: -1819930550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_260
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 35
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b992c501115c54596bac01ba83d222
+      internalID: 1637515103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_261
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 35
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a946b47544e17d4d9ffc99c8f9e4e63
+      internalID: -1549230771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_262
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 35
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b4029de4e42f6c41b2fecdbcdfb5ec1
+      internalID: 677767905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_263
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 36
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2286ad3522f5ae644aab91391c242137
+      internalID: 858149293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_264
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 37
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad76249fea9aca84684f1bd48c881adf
+      internalID: -1454653878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_265
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d96d19aa64eb743ae711c0730d0b62
+      internalID: 993418114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_266
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fbfe486d231cd49899aee2a90de823
+      internalID: -311346115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_267
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73fb04e32b381c149abfc05058b68c1d
+      internalID: 43798681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_268
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da7126530999854d9696c0674550bf4
+      internalID: -288849489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_269
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17fb133c7e314140b05f2c275137fc0
+      internalID: 1561542620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_270
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58144e05cb5bd5042acb3df00376b38c
+      internalID: 388438031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_281
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 29
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7788d1a561e87bf4a9e6d1f8063229af
+      internalID: -232916889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_282
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 29
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4e1142a3c8208649ae515f12a34ee07
+      internalID: 242586131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_271
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 48
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab872d57d9cce5c42bf90962fcb6e88c
+      internalID: 1969038482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_272
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 49
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03be92ee5f55eeb43b17e2ac0992101c
+      internalID: 1171742682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_273
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 53
+        width: 16
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0795d03ba9cd62b49b19d9d36c6cd912
+      internalID: 1288091801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Enemies_274
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 49
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa83dc9a2b41e6b468976c4c51fb464a
+      internalID: 852645194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Air Buster - Enemies_9: -1375310315
+      Air Buster - Enemies_18: -1886211199
+      Air Buster - Enemies_57: -1108557681
+      Air Buster - Enemies_47: 1280421584
+      Air Buster - Enemies_80: 80141006
+      Air Buster - Enemies_155: -1570685862
+      Air Buster - Enemies_185: -1820727792
+      Air Buster - Enemies_113: 540274087
+      Air Buster - Enemies_116: 1410521690
+      Air Buster - Enemies_210: -1068115839
+      Air Buster - Enemies_257: -842856326
+      Air Buster - Enemies_259: -1819930550
+      Air Buster - Enemies_72: -512980976
+      Air Buster - Enemies_305: 297678329
+      Air Buster - Enemies_17: -1617229534
+      Air Buster - Enemies_129: 1363663373
+      Air Buster - Enemies_27: -2036587671
+      Air Buster - Enemies_52: 1958236406
+      Air Buster - Enemies_204: 1583838303
+      Air Buster - Enemies_238: -1127936063
+      Air Buster - Enemies_218: -1361991037
+      Air Buster - Enemies_214: -693385776
+      Air Buster - Enemies_290: 1014405755
+      Air Buster - Enemies_308: -1196548472
+      Air Buster - Enemies_63: 1243330651
+      Air Buster - Enemies_221: -113197170
+      Air Buster - Enemies_245: 79153410
+      Air Buster - Enemies_266: -311346115
+      Air Buster - Enemies_53: 150366659
+      Air Buster - Enemies_14: 1465286366
+      Air Buster - Enemies_151: -153806276
+      Air Buster - Enemies_156: -1524321883
+      Air Buster - Enemies_165: -1708415052
+      Air Buster - Enemies_296: 1591214803
+      Air Buster - Enemies_139: 1783197047
+      Air Buster - Enemies_161: 973976966
+      Air Buster - Enemies_111: 625527028
+      Air Buster - Enemies_166: -929195886
+      Air Buster - Enemies_124: 1542157700
+      Air Buster - Enemies_154: -1311366194
+      Air Buster - Enemies_309: 1021044910
+      Air Buster - Enemies_164: 108638409
+      Air Buster - Enemies_202: 151439747
+      Air Buster - Enemies_283: -113186019
+      Air Buster - Enemies_78: 748738623
+      Air Buster - Enemies_170: 348763561
+      Air Buster - Enemies_60: -1646532272
+      Air Buster - Enemies_250: -1657237148
+      Air Buster - Enemies_45: 1886866136
+      Air Buster - Enemies_92: 1899261090
+      Air Buster - Enemies_102: -1814888838
+      Air Buster - Enemies_184: 1481283905
+      Air Buster - Enemies_236: 185610598
+      Air Buster - Enemies_11: -1594383802
+      Air Buster - Enemies_183: 1112737662
+      Air Buster - Enemies_121: 1844018503
+      Air Buster - Enemies_127: 510678815
+      Air Buster - Enemies_58: -1123147883
+      Air Buster - Enemies_65: 1684988307
+      Air Buster - Enemies_4: -347679897
+      Air Buster - Enemies_70: -789929479
+      Air Buster - Enemies_44: -237133094
+      Air Buster - Enemies_224: -1195970210
+      Air Buster - Enemies_181: -2045037702
+      Air Buster - Enemies_201: 1342458963
+      Air Buster - Enemies_299: 1756252085
+      Air Buster - Enemies_162: -900200681
+      Air Buster - Enemies_67: 295589606
+      Air Buster - Enemies_115: 1151529462
+      Air Buster - Enemies_252: 1932844218
+      Air Buster - Enemies_211: 1853445676
+      Air Buster - Enemies_223: 210950792
+      Air Buster - Enemies_263: 858149293
+      Air Buster - Enemies_289: -1981069497
+      Air Buster - Enemies_157: 68173730
+      Air Buster - Enemies_55: -183332113
+      Air Buster - Enemies_103: 55010981
+      Air Buster - Enemies_33: -1225494581
+      Air Buster - Enemies_143: 1943640741
+      Air Buster - Enemies_230: 1152734756
+      Air Buster - Enemies_38: 143395206
+      Air Buster - Enemies_54: -1102905018
+      Air Buster - Enemies_281: -232916889
+      Air Buster - Enemies_297: -1415037781
+      Air Buster - Enemies_169: -292347775
+      Air Buster - Enemies_232: 1807677901
+      Air Buster - Enemies_256: 1353024082
+      Air Buster - Enemies_25: -1863101782
+      Air Buster - Enemies_144: 1858023561
+      Air Buster - Enemies_240: 1152737627
+      Air Buster - Enemies_295: 642354494
+      Air Buster - Enemies_79: 1495193500
+      Air Buster - Enemies_16: 469913260
+      Air Buster - Enemies_85: 1929552746
+      Air Buster - Enemies_304: 767500450
+      Air Buster - Enemies_118: 1563268534
+      Air Buster - Enemies_68: -1391711433
+      Air Buster - Enemies_128: -1143252393
+      Air Buster - Enemies_106: 1458468935
+      Air Buster - Enemies_150: -1203898491
+      Air Buster - Enemies_41: -14351510
+      Air Buster - Enemies_254: 569569151
+      Air Buster - Enemies_71: -413346430
+      Air Buster - Enemies_262: 677767905
+      Air Buster - Enemies_197: 1473419660
+      Air Buster - Enemies_152: 112405566
+      Air Buster - Enemies_97: -2074682974
+      Air Buster - Enemies_274: 852645194
+      Air Buster - Enemies_5: 2143971028
+      Air Buster - Enemies_13: 260547293
+      Air Buster - Enemies_177: -269053975
+      Air Buster - Enemies_130: 1744863191
+      Air Buster - Enemies_219: 578209052
+      Air Buster - Enemies_62: -1902732550
+      Air Buster - Enemies_75: -1678477915
+      Air Buster - Enemies_50: 1022960903
+      Air Buster - Enemies_209: 59076077
+      Air Buster - Enemies_207: 1045850041
+      Air Buster - Enemies_76: 288210563
+      Air Buster - Enemies_167: 830672747
+      Air Buster - Enemies_148: -819193029
+      Air Buster - Enemies_114: 822989026
+      Air Buster - Enemies_48: 1471209571
+      Air Buster - Enemies_186: -1314592081
+      Air Buster - Enemies_199: -1663995248
+      Air Buster - Enemies_225: 1941012844
+      Air Buster - Enemies_288: -790823231
+      Air Buster - Enemies_203: -1731366976
+      Air Buster - Enemies_301: 979646440
+      Air Buster - Enemies_176: 217018280
+      Air Buster - Enemies_258: 581564384
+      Air Buster - Enemies_227: -1302120821
+      Air Buster - Enemies_171: 2137484935
+      Air Buster - Enemies_66: -1358188347
+      Air Buster - Enemies_217: -247181820
+      Air Buster - Enemies_117: 922304643
+      Air Buster - Enemies_291: -917614155
+      Air Buster - Enemies_22: -1110983880
+      Air Buster - Enemies_37: -1429276396
+      Air Buster - Enemies_267: 43798681
+      Air Buster - Enemies_119: -1543235449
+      Air Buster - Enemies_15: -1324938151
+      Air Buster - Enemies_64: -882954119
+      Air Buster - Enemies_158: -575415133
+      Air Buster - Enemies_178: 1466068386
+      Air Buster - Enemies_24: 759401735
+      Air Buster - Enemies_94: 762826865
+      Air Buster - Enemies_100: 430857141
+      Air Buster - Enemies_244: -1470183469
+      Air Buster - Enemies_196: -1286657075
+      Air Buster - Enemies_163: -62699433
+      Air Buster - Enemies_206: -921395353
+      Air Buster - Enemies_246: -2077119023
+      Air Buster - Enemies_235: -740403817
+      Air Buster - Enemies_241: 1206128497
+      Air Buster - Enemies_251: -2110771030
+      Air Buster - Enemies_34: 1837559514
+      Air Buster - Enemies_29: 548228120
+      Air Buster - Enemies_23: 1983978583
+      Air Buster - Enemies_303: 14240013
+      Air Buster - Enemies_311: 1618936323
+      Air Buster - Enemies_19: -1571181903
+      Air Buster - Enemies_104: -1625385925
+      Air Buster - Enemies_87: -901641156
+      Air Buster - Enemies_107: -1736939675
+      Air Buster - Enemies_74: 1572183844
+      Air Buster - Enemies_101: -12782124
+      Air Buster - Enemies_93: -1905042785
+      Air Buster - Enemies_280: 456698059
+      Air Buster - Enemies_268: -288849489
+      Air Buster - Enemies_51: 478362986
+      Air Buster - Enemies_231: 1460973105
+      Air Buster - Enemies_242: -267895360
+      Air Buster - Enemies_39: -1358667703
+      Air Buster - Enemies_159: -1113957616
+      Air Buster - Enemies_198: 980826763
+      Air Buster - Enemies_173: 1879538530
+      Air Buster - Enemies_172: -942790956
+      Air Buster - Enemies_272: 1171742682
+      Air Buster - Enemies_95: 1721979666
+      Air Buster - Enemies_277: 1478505190
+      Air Buster - Enemies_21: 680489050
+      Air Buster - Enemies_140: 1845783200
+      Air Buster - Enemies_83: -828316946
+      Air Buster - Enemies_131: 657269834
+      Air Buster - Enemies_205: 864554589
+      Air Buster - Enemies_269: 1561542620
+      Air Buster - Enemies_12: 2045379222
+      Air Buster - Enemies_273: 1288091801
+      Air Buster - Enemies_287: 136460032
+      Air Buster - Enemies_120: -1224539627
+      Air Buster - Enemies_228: 2047832995
+      Air Buster - Enemies_180: 1412397423
+      Air Buster - Enemies_278: -768874610
+      Air Buster - Enemies_132: -729575576
+      Air Buster - Enemies_215: -660087769
+      Air Buster - Enemies_40: -414811878
+      Air Buster - Enemies_175: -945297706
+      Air Buster - Enemies_294: -324990256
+      Air Buster - Enemies_109: 650444445
+      Air Buster - Enemies_82: 1612340945
+      Air Buster - Enemies_271: 1969038482
+      Air Buster - Enemies_1: 978085703
+      Air Buster - Enemies_285: -1901319041
+      Air Buster - Enemies_46: 1507886814
+      Air Buster - Enemies_49: -1919197245
+      Air Buster - Enemies_2: -1386405794
+      Air Buster - Enemies_292: 1540760501
+      Air Buster - Enemies_10: 992878528
+      Air Buster - Enemies_298: 210697476
+      Air Buster - Enemies_35: -2115738833
+      Air Buster - Enemies_7: -613147489
+      Air Buster - Enemies_28: -35165895
+      Air Buster - Enemies_134: -1291468706
+      Air Buster - Enemies_188: -511783224
+      Air Buster - Enemies_307: 226362918
+      Air Buster - Enemies_81: 1991518831
+      Air Buster - Enemies_248: -778199391
+      Air Buster - Enemies_142: -1647810574
+      Air Buster - Enemies_135: -179256680
+      Air Buster - Enemies_189: 1265659636
+      Air Buster - Enemies_293: -451347329
+      Air Buster - Enemies_247: 2071213170
+      Air Buster - Enemies_8: 204698637
+      Air Buster - Enemies_36: 1290858540
+      Air Buster - Enemies_0: 1688017481
+      Air Buster - Enemies_265: 993418114
+      Air Buster - Enemies_96: -982638059
+      Air Buster - Enemies_138: 1873063175
+      Air Buster - Enemies_42: -1803970792
+      Air Buster - Enemies_302: 586123649
+      Air Buster - Enemies_190: 1291197007
+      Air Buster - Enemies_31: 1563094580
+      Air Buster - Enemies_261: -1549230771
+      Air Buster - Enemies_91: 1923107593
+      Air Buster - Enemies_306: 1465818111
+      Air Buster - Enemies_123: 1095058950
+      Air Buster - Enemies_279: 1290111544
+      Air Buster - Enemies_59: 980088088
+      Air Buster - Enemies_233: 972044333
+      Air Buster - Enemies_160: -1587661025
+      Air Buster - Enemies_194: -1287621955
+      Air Buster - Enemies_105: 3750424
+      Air Buster - Enemies_122: -1469292880
+      Air Buster - Enemies_195: -227042000
+      Air Buster - Enemies_208: -1843580737
+      Air Buster - Enemies_310: 174099287
+      Air Buster - Enemies_145: -884494603
+      Air Buster - Enemies_108: 41069310
+      Air Buster - Enemies_282: 242586131
+      Air Buster - Enemies_275: -1957328940
+      Air Buster - Enemies_141: 816309041
+      Air Buster - Enemies_30: -554379568
+      Air Buster - Enemies_192: 232322564
+      Air Buster - Enemies_69: 407980027
+      Air Buster - Enemies_61: -1089262178
+      Air Buster - Enemies_179: -1680999604
+      Air Buster - Enemies_213: 318550963
+      Air Buster - Enemies_3: -435480736
+      Air Buster - Enemies_56: -912981382
+      Air Buster - Enemies_146: -169677245
+      Air Buster - Enemies_220: -22895549
+      Air Buster - Enemies_84: -1331823936
+      Air Buster - Enemies_314: -1981355976
+      Air Buster - Enemies_136: 503149338
+      Air Buster - Enemies_216: 258188114
+      Air Buster - Enemies_284: -776566193
+      Air Buster - Enemies_77: -720867738
+      Air Buster - Enemies_226: -1731978047
+      Air Buster - Enemies_110: -392236852
+      Air Buster - Enemies_276: 1457174067
+      Air Buster - Enemies_90: 708722202
+      Air Buster - Enemies_88: 219977429
+      Air Buster - Enemies_212: 1713193794
+      Air Buster - Enemies_26: 1029065241
+      Air Buster - Enemies_153: -1219808080
+      Air Buster - Enemies_98: 1942048908
+      Air Buster - Enemies_73: -1221763203
+      Air Buster - Enemies_126: 882790861
+      Air Buster - Enemies_147: -1617128055
+      Air Buster - Enemies_137: -1277368082
+      Air Buster - Enemies_187: -1698340476
+      Air Buster - Enemies_255: -1163649666
+      Air Buster - Enemies_312: 685789801
+      Air Buster - Enemies_191: 1845475915
+      Air Buster - Enemies_200: 591305660
+      Air Buster - Enemies_264: -1454653878
+      Air Buster - Enemies_174: 881004978
+      Air Buster - Enemies_253: -1937018658
+      Air Buster - Enemies_313: -647285917
+      Air Buster - Enemies_6: 293126751
+      Air Buster - Enemies_99: -740499620
+      Air Buster - Enemies_222: -1579817451
+      Air Buster - Enemies_260: 1637515103
+      Air Buster - Enemies_125: -1841518794
+      Air Buster - Enemies_182: -346556577
+      Air Buster - Enemies_149: 514514284
+      Air Buster - Enemies_168: 2062704625
+      Air Buster - Enemies_234: 2133219662
+      Air Buster - Enemies_237: 713235635
+      Air Buster - Enemies_249: -570569933
+      Air Buster - Enemies_43: 1050654353
+      Air Buster - Enemies_270: 388438031
+      Air Buster - Enemies_229: -506576644
+      Air Buster - Enemies_286: -28441926
+      Air Buster - Enemies_20: 798108004
+      Air Buster - Enemies_32: -889369666
+      Air Buster - Enemies_112: -1992089061
+      Air Buster - Enemies_133: -138004060
+      Air Buster - Enemies_86: -739965094
+      Air Buster - Enemies_193: 867664396
+      Air Buster - Enemies_239: 254355716
+      Air Buster - Enemies_300: -672010413
+      Air Buster - Enemies_89: 1838236817
+      Air Buster - Enemies_243: -945099216
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

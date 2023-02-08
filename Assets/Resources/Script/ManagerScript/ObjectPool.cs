@@ -6,18 +6,17 @@ public class ObjectPool : ManagerSingleton<ObjectPool>
 {
 	[SerializeField] private GameObject poolObjectPrefab;
 
-	private Queue<GameObject> BulletQueue = new Queue<GameObject>();
-	private Queue<GameObject> EnemyQueue = new Queue<GameObject>();
+	private Queue<GameObject> ObjectQueue = new Queue<GameObject>();
 
 	private void Start()
 	{
-		Initialize(60);
+		Initialize(30);
 	}
 
 	private void Initialize(int initCount)
 	{
 		for (int i = 0; i < initCount; ++i)
-			BulletQueue.Enqueue(CreateNewObject());
+			ObjectQueue.Enqueue(CreateNewObject());
 	}
 
 	private GameObject CreateNewObject()
@@ -30,9 +29,9 @@ public class ObjectPool : ManagerSingleton<ObjectPool>
 
 	public static GameObject GetObject()
 	{
-		if (Instance.BulletQueue.Count > 0)
+		if (Instance.ObjectQueue.Count > 0)
 		{
-			GameObject Obj = Instance.BulletQueue.Dequeue();
+			GameObject Obj = Instance.ObjectQueue.Dequeue();
 			Obj.transform.SetParent(null);
 			Obj.gameObject.SetActive(true);
 			return Obj;
@@ -50,6 +49,6 @@ public class ObjectPool : ManagerSingleton<ObjectPool>
 	{
 		Obj.gameObject.SetActive(false);
 		Obj.transform.SetParent(Instance.transform);
-		Instance.BulletQueue.Enqueue(Obj);
+		Instance.ObjectQueue.Enqueue(Obj);
 	}
 }
