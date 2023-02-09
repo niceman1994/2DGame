@@ -703,6 +703,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 749f58d6c4f3e8d4b963a7d7f2e77f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Infos:
+  - ItemName: smallEnemy1
+    prefab: {fileID: 569337003437355458, guid: 461aa64481ef9e84485a5e1ae14a325e, type: 3}
+    count: 0
+  - ItemName: smallEnemy2
+    prefab: {fileID: 8466221563638602843, guid: cd48f7f74f21cde488d1c051c95ed774, type: 3}
+    count: 0
+  - ItemName: smallEnemy3
+    prefab: {fileID: 5719626365535365340, guid: b6772113a9f2d2446b18166b180ab746, type: 3}
+    count: 0
   poolItemName: Bullet
   prefab: {fileID: 8192772329285504715, guid: 9c16f71411d7f124c81028abb21382d3, type: 3}
   poolCount: 30
@@ -4575,10 +4585,6 @@ MonoBehaviour:
   - {fileID: 1443039050}
   - {fileID: 146031440}
   Speed: 0
-  leftPosX: 0
-  rightPosX: 0
-  xScreenHalfSize: 0
-  yScreenHalfSize: 0
 --- !u!4 &525318065
 Transform:
   m_ObjectHideFlags: 0
