@@ -1943,27 +1943,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Air Buster1 - Phase 1 Seaside Front_87
-      rect:
-        serializedVersion: 2
-        x: 469
-        y: 54
-        width: 402
-        height: 63
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7cd94a318f584b45995a69fb6b54f5d
-      internalID: -150706718
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Air Buster1 - Phase 1 Seaside Front_88
       rect:
         serializedVersion: 2

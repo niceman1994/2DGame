@@ -6,7 +6,7 @@ public abstract class Object : MonoBehaviour, Interface
 {
 	protected string Name;
 	protected int Hp;
-	protected int Atk;
+	protected float Speed;
 	protected Animator ObjectAnim;
 	public GameObject _Object;
 

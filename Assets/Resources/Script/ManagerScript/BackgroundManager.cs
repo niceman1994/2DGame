@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class BackgroundManager : ManagerSingleton<BackgroundManager>
 {
-	[SerializeField] private Transform[] Background;
-	float Speed;
+	public Transform[] Background;
+	public float Speed;
 
 	float leftPosX = 0f;
 	float rightPosX = 0f;
@@ -20,7 +20,7 @@ public class BackgroundManager : ManagerSingleton<BackgroundManager>
 		xScreenHalfSize = yScreenHalfSize * Camera.main.aspect;
 
 		leftPosX = -(xScreenHalfSize) * 2;
-		rightPosX = xScreenHalfSize * Background.Length;
+		rightPosX = xScreenHalfSize * 2.5f * Background.Length;
 	}
 
 	private void LateUpdate()
@@ -33,33 +33,25 @@ public class BackgroundManager : ManagerSingleton<BackgroundManager>
 		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
 			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
 		{
-			Camera.main.transform.position = Vector3.MoveTowards(Camera.main.transform.position, new Vector3(22.0f, 0.0f, -1.0f), 0.0125f);
+			Camera.main.transform.position = Vector3.MoveTowards(Camera.main.transform.position, new Vector3(22.0f, 0.0f, -1.0f), 0.03f); // 집에서는 0.0125f
 
 			if (Camera.main.transform.position.x >= 22.0f)
 			{
-				Background[0].position = new Vector3(Background[0].position.x + (-Speed * Time.deltaTime), 0.0f, 0.0f);
+				if (Background[0].position.x >= -73.2f)
+					Background[0].position = new Vector3(Background[0].position.x + (-Speed * Time.deltaTime), 0.0f, 0.0f);
 
-				for (int i = 1; i < Background.Length - 1; ++i)
+				for (int i = 1; i < Background.Length; ++i)
 				{
 					Background[i].position = new Vector3(Background[i].position.x + (-Speed * Time.deltaTime), 0.0f, 0.0f);
 
 					if (Background[i].position.x < leftPosX)
 					{
 						Vector3 nextPos = Background[i].position;
-						nextPos = new Vector3(nextPos.x + rightPosX + (rightPosX * 0.5f), nextPos.y, nextPos.z);
+						nextPos = new Vector3(nextPos.x + rightPosX, nextPos.y, nextPos.z);
 						Background[i].position = nextPos;
 					}
 				}
 			}
-
-			Background[5].position = new Vector3(Background[5].position.x + (-Speed * 0.98f * Time.deltaTime), 0.0f, 0.0f);
-		
-			if (Background[5].position.x < leftPosX)
-            {
-				Vector3 nextPos = Background[5].position;
-				nextPos = new Vector3(nextPos.x + rightPosX, nextPos.y, nextPos.z);
-				Background[5].position = nextPos;
-            }
 		}
 		else if (GameManager.Instance.PlayerLife == 0) Speed = 0.0f;
 	}

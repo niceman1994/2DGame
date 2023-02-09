@@ -2,38 +2,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletController : Object 
+public class BulletController : MonoBehaviour 
 {
-	float BulletSpeed;
+    public string poolItemName = "Bullet";
+    public float moveSpeed = 24f;
+    public float lifeTime = 0.75f;
+    public float _elapsedTime = 0f;
 
-	private void Awake()
-	{
-		BulletSpeed = 0.125f;
-	}
+    void Update()
+    {
+        transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
 
-	public override void Initialize()
-	{
-		base.Name = "Bullet";
-		base.Hp = 0;
-		base.Atk = 10;
-		base.ObjectAnim = null;
-		base._Object = null;
+        if (GetTimer() > lifeTime)
+        {
+            SetTimer();
+            ObjectPool.Instance.PushToPool(poolItemName, gameObject);
+        }
+    }
 
-		Invoke("DestroyBullet", 1.0f);
-	}
+    float GetTimer()
+    {
+        return (_elapsedTime += Time.deltaTime);
+    }
 
-	public override void Progress()
-	{
-		transform.Translate(Vector2.right * BulletSpeed);
-	}
-
-	public override void Release()
-	{
-		
-	}
-
-	public void DestroyBullet()
-	{
-		ObjectPool.ReturnObject(transform.gameObject);
-	}
+    void SetTimer()
+    {
+        _elapsedTime = 0f;
+    }
 }

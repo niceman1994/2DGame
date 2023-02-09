@@ -16,7 +16,7 @@ public class PlayerController : Object
 	{
 		base.Name = "Player";
 		base.Hp = GameManager.Instance.PlayerLife;
-		base.Atk = 10;
+		base.Speed = 10.0f;
 		base.ObjectAnim = _Object.GetComponent<Animator>();
 		ObjectAnim.enabled = false;
 
@@ -139,8 +139,9 @@ public class PlayerController : Object
 			&& transform != null)
 		{
 			SoundManager.Instance.PlaySE("Shootsound");
-			GameObject Bullet = ObjectPool.GetObject();
+			GameObject Bullet = ObjectPool.Instance.PopFromPool("Bullet");
 			Bullet.transform.position = BulletPoint.transform.position;
+			Bullet.SetActive(true);
 		}
     }
 }
