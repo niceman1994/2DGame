@@ -2,22 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletController : MonoBehaviour 
+public class BulletController : Object 
 {
-    public string poolItemName = "Bullet";
-    public float moveSpeed = 24f;
-    public float lifeTime = 0.75f;
-    public float _elapsedTime = 0f;
+    [SerializeField] private float lifeTime = 0.75f;
+    [SerializeField] private float _elapsedTime = 0f;
 
-    void Update()
-    {
-        transform.Translate(Vector2.right * moveSpeed * Time.deltaTime);
+	public override void Initialize()
+	{
+		base.Name = "Bullet";
+        base.Hp = 0;
+        base.Speed = 24.0f;
+        base.ObjectAnim = null;
+    }
+
+	public override void Progress()
+	{
+        transform.Translate(Vector2.right * Speed * Time.deltaTime);
 
         if (GetTimer() > lifeTime)
         {
             SetTimer();
-            ObjectPool.Instance.PushToPool(poolItemName, gameObject);
+            ObjectPool.Instance.PushPooledObject("Bullet", gameObject);
         }
+    }
+
+	public override void Release()
+	{
+        
     }
 
     float GetTimer()

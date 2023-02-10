@@ -653,7 +653,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 85478149}
-  - component: {fileID: 85478151}
   - component: {fileID: 85478150}
   m_Layer: 0
   m_Name: ObjectPool
@@ -673,7 +672,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1016674770}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -689,34 +689,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd8b285a27bb00d42b7e7d7d7f15f091, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPool:
-  - {fileID: 85478151}
---- !u!114 &85478151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 85478148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 749f58d6c4f3e8d4b963a7d7f2e77f5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Infos:
-  - ItemName: smallEnemy1
-    prefab: {fileID: 569337003437355458, guid: 461aa64481ef9e84485a5e1ae14a325e, type: 3}
-    count: 0
-  - ItemName: smallEnemy2
-    prefab: {fileID: 8466221563638602843, guid: cd48f7f74f21cde488d1c051c95ed774, type: 3}
-    count: 0
-  - ItemName: smallEnemy3
-    prefab: {fileID: 5719626365535365340, guid: b6772113a9f2d2446b18166b180ab746, type: 3}
-    count: 0
-  poolItemName: Bullet
-  prefab: {fileID: 8192772329285504715, guid: 9c16f71411d7f124c81028abb21382d3, type: 3}
-  poolCount: 30
-  poolList: []
+  poolPrefabs:
+  - {fileID: 8192772329285504715, guid: 9c16f71411d7f124c81028abb21382d3, type: 3}
+  - {fileID: 569337003437355458, guid: 461aa64481ef9e84485a5e1ae14a325e, type: 3}
 --- !u!1 &85608704
 GameObject:
   m_ObjectHideFlags: 0
@@ -4585,6 +4560,8 @@ MonoBehaviour:
   - {fileID: 1443039050}
   - {fileID: 146031440}
   Speed: 0
+  xScreenHalfSize: 0
+  yScreenHalfSize: 0
 --- !u!4 &525318065
 Transform:
   m_ObjectHideFlags: 0
@@ -7882,6 +7859,37 @@ RectTransform:
   m_AnchoredPosition: {x: -25, y: 40}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1016674769
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1016674770}
+  m_Layer: 0
+  m_Name: EnemySpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1016674770
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016674769}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 36, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 85478149}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1034591128
 GameObject:
   m_ObjectHideFlags: 0
@@ -19305,7 +19313,7 @@ GameObject:
   - component: {fileID: 7099644342945850160}
   - component: {fileID: 7099644342945850161}
   m_Layer: 0
-  m_Name: 1PlayerPlane
+  m_Name: Player1
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

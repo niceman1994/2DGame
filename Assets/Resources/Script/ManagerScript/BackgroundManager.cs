@@ -6,11 +6,11 @@ public class BackgroundManager : ManagerSingleton<BackgroundManager>
 {
 	public Transform[] Background;
 	public float Speed;
+	public float xScreenHalfSize;
+	public float yScreenHalfSize;
 
 	float leftPosX = 0f;
 	float rightPosX = 0f;
-	float xScreenHalfSize;
-	float yScreenHalfSize;
 
 	private void Start()
 	{
@@ -33,7 +33,7 @@ public class BackgroundManager : ManagerSingleton<BackgroundManager>
 		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
 			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
 		{
-			Camera.main.transform.position = Vector3.MoveTowards(Camera.main.transform.position, new Vector3(22.0f, 0.0f, -1.0f), 0.0125f); // 집에서는 0.0125f, 학원에서는 0.03f
+			Camera.main.transform.position = Vector3.MoveTowards(Camera.main.transform.position, new Vector3(22.0f, 0.0f, -1.0f), 0.03f); // 집에서는 0.0125f, 학원에서는 0.03f
 
 			if (Camera.main.transform.position.x >= 22.0f)
 			{

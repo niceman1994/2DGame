@@ -4,93 +4,73 @@ using UnityEngine;
 
 public class ObjectPool : ManagerSingleton<ObjectPool>
 {
-	public List<PooledObject> objectPool = new List<PooledObject>();
+	public GameObject[] poolPrefabs;
+	private Dictionary<object, List<GameObject>> pooledObjects = new Dictionary<object, List<GameObject>>();
 
 	private void Start()
 	{
-		for (int i = 0; i < objectPool.Count; ++i)
-			objectPool[i].Initialize(transform);
+		CreateMultiplePoolObjects("Bullet", 30);
+		CreateMultiplePoolObjects("smallEnemy1", 8);
+		ThrowPoolObject("smallEnemy1");
+	}
+
+	public void CreateMultiplePoolObjects(string _name, int _poolCount)
+	{
+		for (int i = 0; i < poolPrefabs.Length; ++i)
+		{
+			if (poolPrefabs[i].name.Equals(_name))
+			{
+				for (int j = 0; j < _poolCount; ++j)
+				{
+					if (!pooledObjects.ContainsKey(poolPrefabs[i].name))
+					{
+						List<GameObject> newList = new List<GameObject>();
+						pooledObjects.Add(poolPrefabs[i].name, newList);
+					}
+	
+					GameObject newDoll = Instantiate(poolPrefabs[i], transform);
+					newDoll.SetActive(false);
+					newDoll.name = _name;
+					pooledObjects[poolPrefabs[i].name].Add(newDoll);
+				}
+			}
+		}
 	}
 	
-	public bool PushToPool(string itemName, GameObject item, Transform parent = null)
+	public void PushPooledObject(string _name, GameObject _item)
 	{
-		PooledObject pool = GetPoolItem(itemName);
-
-		if (pool == null) return false;
-
-		pool.PushToPool(item, parent == null ? transform : parent);
-		return true;
-	}
-
-	public GameObject PopFromPool(string itemName, Transform parent = null)
-	{
-		PooledObject pool = GetPoolItem(itemName);
-
-		if (pool == null)
-			return null;
-
-		return pool.PopFromPool(parent);
-	}
-
-	PooledObject GetPoolItem(string itemName) 
-	{
-		for (int i = 0; i < objectPool.Count; ++i)
-    {
-			if (objectPool[i].poolItemName.Equals(itemName))
-				return objectPool[i];
-		}
-
-		Debug.LogWarning("There's no matched pool list.");
-		return null;
-	}
-}
-
-/*
-	[SerializeField] private GameObject poolObjectPrefab;
-
-	private Queue<GameObject> ObjectQueue = new Queue<GameObject>();
-
-	private void Start()
-	{
-		Initialize(30);
-	}
-
-	private void Initialize(int initCount)
-	{
-		for (int i = 0; i < initCount; ++i)
-			ObjectQueue.Enqueue(CreateNewObject());
-	}
-
-	private GameObject CreateNewObject()
-	{
-		GameObject newObj = Instantiate(poolObjectPrefab).GetComponent<BulletController>().gameObject;
-		newObj.gameObject.SetActive(false);
-		newObj.transform.SetParent(transform);
-		return newObj;
-	}
-
-	public static GameObject GetObject()
-	{
-		if (Instance.ObjectQueue.Count > 0)
+		if (pooledObjects.ContainsKey(_name))
 		{
-			GameObject Obj = Instance.ObjectQueue.Dequeue();
-			Obj.transform.SetParent(null);
-			Obj.gameObject.SetActive(true);
-			return Obj;
+			_item.transform.SetParent(transform);
+			_item.SetActive(false);
+			pooledObjects[_name].Add(_item);
+		}
+	}
+	
+	public GameObject PopPooledObject(string _name, Transform parent = null)
+	{
+		if (pooledObjects.ContainsKey(_name))
+		{
+			GameObject poolObject = pooledObjects[_name][0];
+			pooledObjects[_name].RemoveAt(0);
+			poolObject.transform.SetParent(null);
+			poolObject.SetActive(true);
+			return poolObject;
 		}
 		else
-		{
-			GameObject newObj = Instance.CreateNewObject();
-			newObj.gameObject.SetActive(true);
-			newObj.transform.SetParent(null);
-			return newObj;
-		}
+			return null;
 	}
 
-	public static void ReturnObject(GameObject Obj)
+	public void ThrowPoolObject(string _name)
 	{
-		Obj.gameObject.SetActive(false);
-		Obj.transform.SetParent(Instance.transform);
-		Instance.ObjectQueue.Enqueue(Obj);
+		if (pooledObjects.ContainsKey(_name))
+		{
+			for (int i = 0; i < pooledObjects[_name].Count; ++i)
+			{
+				GameObject item = pooledObjects[_name][i];
+
+				ObjectManager.Instance.CatchObject.Add(item);
+			}
+		}
 	}
-*/
+}

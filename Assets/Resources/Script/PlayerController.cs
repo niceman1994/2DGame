@@ -139,9 +139,8 @@ public class PlayerController : Object
 			&& transform != null)
 		{
 			SoundManager.Instance.PlaySE("Shootsound");
-			GameObject Bullet = ObjectPool.Instance.PopFromPool("Bullet");
+			GameObject Bullet = ObjectPool.Instance.PopPooledObject("Bullet");
 			Bullet.transform.position = BulletPoint.transform.position;
-			Bullet.SetActive(true);
 		}
     }
 }

@@ -20,13 +20,8 @@ public abstract class Object : MonoBehaviour, Interface
 		Progress();
 	}
 
-	protected void OnDestroy()
-    {
-		Release();
-    }
-
-    // 순수 가상 함수 Initialize(), Progress(), Release()
-    public abstract void Initialize();
+	// 순수 가상 함수 Initialize(), Progress(), Release()
+	public abstract void Initialize();
 	public abstract void Progress();
 	public abstract void Release();
 }
