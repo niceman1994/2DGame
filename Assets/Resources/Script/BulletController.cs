@@ -2,20 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletController : Object 
+public class BulletController : MonoBehaviour 
 {
+    [SerializeField] private string Name;
+    [SerializeField] private float Speed = 24.0f;
     [SerializeField] private float lifeTime = 0.75f;
     [SerializeField] private float _elapsedTime = 0f;
 
-	public override void Initialize()
-	{
-		base.Name = "Bullet";
-        base.Hp = 0;
-        base.Speed = 24.0f;
-        base.ObjectAnim = null;
-    }
-
-	public override void Progress()
+    void Update()
 	{
         transform.Translate(Vector2.right * Speed * Time.deltaTime);
 
@@ -26,11 +20,6 @@ public class BulletController : Object
         }
     }
 
-	public override void Release()
-	{
-        
-    }
-
     float GetTimer()
     {
         return (_elapsedTime += Time.deltaTime);
@@ -39,5 +28,11 @@ public class BulletController : Object
     void SetTimer()
     {
         _elapsedTime = 0f;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+            ObjectPool.Instance.PushPooledObject("Bullet", gameObject);
     }
 }

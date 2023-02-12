@@ -5,13 +5,13 @@ using UnityEngine;
 public class ObjectPool : ManagerSingleton<ObjectPool>
 {
 	public GameObject[] poolPrefabs;
-	private Dictionary<object, List<GameObject>> pooledObjects = new Dictionary<object, List<GameObject>>();
+	public int BulletLevel = 1;
+
+	public Dictionary<object, List<GameObject>> pooledObjects = new Dictionary<object, List<GameObject>>();
 
 	private void Start()
 	{
 		CreateMultiplePoolObjects("Bullet", 30);
-		CreateMultiplePoolObjects("smallEnemy1", 8);
-		ThrowPoolObject("smallEnemy1");
 	}
 
 	public void CreateMultiplePoolObjects(string _name, int _poolCount)
@@ -59,18 +59,5 @@ public class ObjectPool : ManagerSingleton<ObjectPool>
 		}
 		else
 			return null;
-	}
-
-	public void ThrowPoolObject(string _name)
-	{
-		if (pooledObjects.ContainsKey(_name))
-		{
-			for (int i = 0; i < pooledObjects[_name].Count; ++i)
-			{
-				GameObject item = pooledObjects[_name][i];
-
-				ObjectManager.Instance.CatchObject.Add(item);
-			}
-		}
 	}
 }

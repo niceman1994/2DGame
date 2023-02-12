@@ -11,6 +11,7 @@ public class PlayerController : Object
 	[SerializeField] private Vector3[] point = new Vector3[3];
 
 	Animator[] smoganim = new Animator[3];
+	Animator Charge;
 
 	public override void Initialize()
 	{
@@ -27,6 +28,10 @@ public class PlayerController : Object
 			smoganim[i] = Smog[i].GetComponent<Animator>();
 			smoganim[i].enabled = false;
 		}
+
+		Charge = transform.GetChild(4).GetComponent<Animator>();
+		Charge.enabled = false;
+		StartCoroutine(ChargeEffect());
 	}
 
 	public override void Progress()
@@ -34,6 +39,7 @@ public class PlayerController : Object
 		SmogAni();
 		Attack();
 		Move();
+		ChargeEffect();
 	}
 	
 	public override void Release()
@@ -44,9 +50,9 @@ public class PlayerController : Object
 	IEnumerator Sally()
     {
 		while (true)
-        {
+		{
 			yield return null;
-			
+
 			if (GameManager.Instance.PlayerCanvas.activeInHierarchy == true)
 			{
 				yield return new WaitForSeconds(1.65f);
@@ -143,4 +149,41 @@ public class PlayerController : Object
 			Bullet.transform.position = BulletPoint.transform.position;
 		}
     }
+
+	IEnumerator ChargeEffect()
+	{
+		while (true)
+		{
+			yield return null;
+
+			if (SkillBar.GetCurrentAnimatorStateInfo(0).IsName("GaugeUp") && 
+				!ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("Sally") && transform != null)
+			{
+				if (Input.GetKey(KeyCode.A))
+				{
+					if (SkillBar.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.25f)
+					{
+						Charge.enabled = true;
+						Charge.GetComponent<SpriteRenderer>().enabled = true;
+					}
+				}
+				else
+				{
+					if (SkillBar.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
+					{
+						Charge.enabled = false;
+						Charge.GetComponent<SpriteRenderer>().enabled = false;
+					}
+					else
+					{
+						Charge.SetBool("chargeEnd", true);
+						yield return Charge.GetCurrentAnimatorStateInfo(0).normalizedTime;
+						Charge.SetBool("chargeEnd", false);
+						yield return new WaitForSeconds(0.1f);
+						Charge.enabled = false;
+					}
+				}
+			}
+		}
+	}
 }

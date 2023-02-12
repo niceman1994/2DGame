@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SkillBarController : MonoBehaviour
 {
-    [SerializeField] private GameObject Player;
+    [SerializeField] private Animator Player;
     Animator anim;
     float animNormalizedTime;
 
@@ -18,7 +18,7 @@ public class SkillBarController : MonoBehaviour
         anim.speed = 0;
         animNormalizedTime = 0.0f;
     }
-
+    
 	private void Update()
 	{
         StartAnimation();
@@ -26,7 +26,8 @@ public class SkillBarController : MonoBehaviour
 
 	void StartAnimation()
     {
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("GaugeUp") && Player != null)
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("GaugeUp") && !Player.GetCurrentAnimatorStateInfo(0).IsName("Sally")
+            && Player.gameObject != null)
         {
             if (Input.GetKey(KeyCode.A))
             {
@@ -35,9 +36,9 @@ public class SkillBarController : MonoBehaviour
             }
             else
             {
-                if (anim.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
+                if (animNormalizedTime < 1.0f)
                 {
-                    animNormalizedTime -= Time.deltaTime * 1.5f;
+                    animNormalizedTime -= Time.deltaTime * 3.0f;
                     anim.Play("GaugeUp", 0, animNormalizedTime >= 0.0f ? animNormalizedTime : 0.0f);
                 }
                 else
