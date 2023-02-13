@@ -32,7 +32,10 @@ public class BulletController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.collider.tag == "Enemy")
+        {
+            SetTimer();
             ObjectPool.Instance.PushPooledObject("Bullet", gameObject);
+        }
     }
 }

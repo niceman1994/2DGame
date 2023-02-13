@@ -16,9 +16,6 @@ public class GameManager : ManagerSingleton<GameManager>
     public Text CoinText;
     public int Coin;
 
-    public Text ScoreText;
-    public int Score;
-
     public Text PlayerLifeText;
     public int PlayerLife;
 

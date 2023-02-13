@@ -1,23 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class EnemySpawn : MonoBehaviour
+public class EnemyManager : ManagerSingleton<EnemyManager>
 {
+    public Text ScoreText;
+    public int Score;
+
     public GameObject[] EnemyPrefab;
     public List<GameObject> EnemyList = new List<GameObject>();
 
-    void Start()
+	void Start()
     {
-        SpawnEnemy("smallEnemy1", 4);
+        SpawnEnemy("smallEnemy1", 4, new Vector3(46.0f, 2.1f, 0.0f));
+        SpawnEnemy("smallEnemy1", 4, new Vector3(50.0f, -2.1f, 0.0f));
     }
 
-    void Update()
-    {
+	private void Update()
+	{
         
-    }
+	}
 
-    void SpawnEnemy(string _name, int count)
+	void SpawnEnemy(string _name, int count, Vector3 _position)
     {
         for (int i = 0; i < EnemyPrefab.Length; ++i)
         {
@@ -26,10 +31,13 @@ public class EnemySpawn : MonoBehaviour
                 for (int j = 0; j < count; ++j)
                 {
                     GameObject Enemy = Instantiate(EnemyPrefab[i]);
-                    Enemy.transform.position = new Vector3(transform.position.x + (j + 1), 2.2f, transform.position.z);
+                    Enemy.transform.position = new Vector3(_position.x + (j + 1), _position.y, 0.0f);
                     EnemyList.Add(Enemy);
                 }
             }
         }
     }
+
+    //Score += 10;
+    //ScoreText.text = Score.ToString();
 }
