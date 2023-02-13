@@ -47,7 +47,16 @@ public class PlayerController : Object
 		
 	}
 
-	IEnumerator Sally()
+	private void OnCollisionEnter2D(Collision2D collision)
+	{
+		if (collision.gameObject.name == "EnemyBullet")
+		{
+			Charge.SetTrigger("die");
+			GameManager.Instance.PlayerLife -= 1;
+		}
+	}
+
+	private IEnumerator Sally()
     {
 		while (true)
 		{
@@ -67,7 +76,7 @@ public class PlayerController : Object
 		}
     }
 
-	void SmogAni()
+    void SmogAni()
 	{
 		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
 			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
@@ -177,6 +186,7 @@ public class PlayerController : Object
 					else
 					{
 						Charge.SetBool("chargeEnd", true);
+						SoundManager.Instance.PlaySE("SkillSound");
 						yield return Charge.GetCurrentAnimatorStateInfo(0).normalizedTime;
 						Charge.SetBool("chargeEnd", false);
 						yield return new WaitForSeconds(0.1f);

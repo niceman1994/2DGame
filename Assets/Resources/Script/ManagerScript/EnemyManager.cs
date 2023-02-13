@@ -19,8 +19,8 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
 
 	private void Update()
 	{
-        
-	}
+        ScoreText.text = Score.ToString();
+    }
 
 	void SpawnEnemy(string _name, int count, Vector3 _position)
     {
@@ -37,7 +37,4 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
             }
         }
     }
-
-    //Score += 10;
-    //ScoreText.text = Score.ToString();
 }

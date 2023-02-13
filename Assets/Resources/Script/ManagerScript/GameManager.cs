@@ -34,6 +34,7 @@ public class GameManager : ManagerSingleton<GameManager>
 	{
         insertCoin();
         ChangeText();
+        PlayerLifeText.text = PlayerLife.ToString();
 	}
 
     void ChangeText()

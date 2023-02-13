@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class smallEnemy1 : Object
 {
+	[SerializeField] private GameObject BullterPrefab;
+	[SerializeField] private GameObject BulletPoint;
+	GameObject bullet;
+
 	float currentTime;
+	float attackDelay;
 	float turnpointTime;
 	int dirType = 0;
 
@@ -25,6 +30,7 @@ public class smallEnemy1 : Object
 		{
 			transform.position = new Vector3(transform.position.x - (Speed * Time.deltaTime), transform.position.y, 0.0f);
 			UpDown();
+			EnemyAttack();
 		}
 	}
 
@@ -36,7 +42,14 @@ public class smallEnemy1 : Object
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
 		if (collision.gameObject.tag == "Bullet")
-			Debug.Log("collision");
+		{
+			ObjectAnim.SetTrigger("destroy");
+			transform.GetComponent<BoxCollider2D>().enabled = false;
+			SoundManager.Instance.PlaySE("smallEnemyDestroySound");
+			EnemyManager.Instance.Score += 10;
+
+			StartCoroutine(GiveScore());
+		}
 	}
 
 	void UpDown()
@@ -64,4 +77,34 @@ public class smallEnemy1 : Object
 			}
 		}
 	}
+
+	void EnemyAttack()
+    {
+		attackDelay += Time.deltaTime;
+
+		if (attackDelay >= 5.0f)
+        {
+			bullet = Instantiate(BullterPrefab);
+			bullet.transform.position += new Vector3(
+				BulletPoint.transform.position.x - Speed * 1.5f * Time.deltaTime,
+				BulletPoint.transform.position.y,
+				BulletPoint.transform.position.z);
+			
+			attackDelay = 0.0f;
+        }
+    }
+
+	IEnumerator GiveScore()
+    {
+		while (true)
+        {
+			yield return null;
+
+			if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+			{
+				gameObject.SetActive(false);
+				transform.SetParent(EnemyManager.Instance.transform);
+			}
+		}
+    }
 }
