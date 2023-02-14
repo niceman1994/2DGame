@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class EnemyManager : ManagerSingleton<EnemyManager>
 {
@@ -21,8 +22,8 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
     {
         SpawnEnemy("smallEnemy1", 4, new Vector3(46.0f, 2.1f, 0.0f));
         SpawnEnemy("smallEnemy1", 4, new Vector3(50.0f, -2.1f, 0.0f));
-        SpawnEnemy("smallEnemy2", 6, new Vector3(58.0f, 4.4f, 0.0f));
-        SpawnEnemy("smallEnemy2", 6, new Vector3(58.0f, -4.4f, 0.0f));
+        SpawnEnemy("smallEnemy2", 6, new Vector3(32.0f, 4.1f, 0.0f));
+        SpawnEnemy("smallEnemy2", 6, new Vector3(32.0f, -4.1f, 0.0f));
         ScoreText.text = "00";
 
         randomBullet = Random.Range(0, EnemyList.Count);

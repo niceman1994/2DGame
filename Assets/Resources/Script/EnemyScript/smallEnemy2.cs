@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
-struct DirType
+public struct DirType
 {
 	public int type;
 	public Vector3 direction;
@@ -10,16 +11,19 @@ struct DirType
 
 public class smallEnemy2 : Object
 {
-	DirType dir;
+	public DirType dir;
+	bool CheckScene;
 
 	public override void Initialize()
 	{
 		base.Name = "smallEnemy2";
 		base.Hp = 0;
 		base.Speed = 2.0f;
-		base.ObjectAnim = null;
+		base.ObjectAnim = GetComponent<Animator>();
 
+		CheckScene = false;
 		GetDirType();
+		StartCoroutine(UpDown());
 	}
 
 	// TODO : 추후 좌표 수정
@@ -28,8 +32,7 @@ public class smallEnemy2 : Object
 		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
 			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
 		{
-			transform.position = Vector3.MoveTowards(transform.position, new Vector3(18.0f, transform.position.y, 0.0f), 0.01f);
-			UpDown();
+			CheckScene = true;
 		}
 	}
 
@@ -38,16 +41,15 @@ public class smallEnemy2 : Object
 		
 	}
 
-	private void OnBecameInvisible()
-	{
-		gameObject.SetActive(false);
-		transform.SetParent(EnemyManager.Instance.transform);
-	}
-
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
 		if (collision.gameObject.tag == "Bullet")
+		{
+			ObjectAnim.SetTrigger("destroy");
+			transform.GetComponent<BoxCollider2D>().enabled = false;
+			SoundManager.Instance.PlaySE("smallEnemyDestroySound");
 			EnemyManager.Instance.Score += 100;
+		}
 	}
 
 	void GetDirType()
@@ -64,11 +66,38 @@ public class smallEnemy2 : Object
 		}
 	}
 
-	void UpDown()
+	IEnumerator UpDown()
 	{
-		if (dir.type == 1)
-			transform.position = Vector3.Slerp(transform.position, new Vector3(transform.position.x, -5.2f, 0.0f), 0.2f);
-		else if (dir.type == 2)
-			transform.position = Vector3.Slerp(transform.position, new Vector3(transform.position.x, 5.2f, 0.0f), 0.2f);
+		while (true)
+		{
+			yield return null;
+
+			if (CheckScene == true)
+			{
+				if (dir.type == 1)
+				{
+					yield return new WaitForSeconds(15.0f);
+					
+					transform.DOPath(
+						new[] { transform.position, new Vector3(transform.position.x - 12.0f, transform.position.y, 0.0f),
+						new Vector3(transform.position.x - 6.0f, 0.0f, 0.0f),
+						new Vector3(transform.position.x + 8.0f, -5.2f, 0.0f) }, 10.0f, PathType.CatmullRom).SetEase(Ease.Linear);
+				}
+				
+				if (dir.type == 2)
+				{
+					yield return new WaitForSeconds(15.0f);
+				
+					transform.DOPath(
+						new[] { transform.position, new Vector3(transform.position.x - 12.0f, transform.position.y, 0.0f),
+						new Vector3(transform.position.x - 6.0f, 0.0f, 0.0f),
+						new Vector3(transform.position.x + 8.0f, 5.2f, 0.0f) }, 10.0f, PathType.CatmullRom).SetEase(Ease.Linear);
+				}
+
+				yield return null;
+				CheckScene = false;
+				break;
+			}
+		}
 	}
 }
