@@ -8,6 +8,7 @@ public class ObjectPool : ManagerSingleton<ObjectPool>
 	public int BulletLevel = 1;
 
 	public Dictionary<object, List<GameObject>> pooledObjects = new Dictionary<object, List<GameObject>>();
+	
 
 	private void Start()
 	{

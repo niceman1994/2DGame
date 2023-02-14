@@ -6,36 +6,18 @@ public class BulletController : MonoBehaviour
 {
     [SerializeField] private string Name;
     [SerializeField] private float Speed = 24.0f;
-    [SerializeField] private float lifeTime = 0.75f;
-    [SerializeField] private float _elapsedTime = 0f;
 
-    void Update()
+	void Update()
 	{
         transform.Translate(Vector2.right * Speed * Time.deltaTime);
 
-        if (GetTimer() > lifeTime)
-        {
-            SetTimer();
+        if (transform.position.x >= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize)
             ObjectPool.Instance.PushPooledObject("Bullet", gameObject);
-        }
     }
 
-    float GetTimer()
-    {
-        return (_elapsedTime += Time.deltaTime);
-    }
-
-    void SetTimer()
-    {
-        _elapsedTime = 0f;
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
+	private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.tag == "Enemy")
-        {
-            SetTimer();
             ObjectPool.Instance.PushPooledObject("Bullet", gameObject);
-        }
     }
-}
+} 

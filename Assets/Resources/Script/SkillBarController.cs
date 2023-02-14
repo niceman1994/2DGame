@@ -27,7 +27,7 @@ public class SkillBarController : MonoBehaviour
 	void StartAnimation()
     {
         if (anim.GetCurrentAnimatorStateInfo(0).IsName("GaugeUp") && !Player.GetCurrentAnimatorStateInfo(0).IsName("Sally")
-            && Player.gameObject != null)
+            && !Player.GetCurrentAnimatorStateInfo(0).IsName("Die"))
         {
             if (Input.GetKey(KeyCode.A))
             {

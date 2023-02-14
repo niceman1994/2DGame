@@ -12,6 +12,7 @@ public class PlayerController : Object
 
 	Animator[] smoganim = new Animator[3];
 	Animator Charge;
+	Animator dieSmog;
 
 	public override void Initialize()
 	{
@@ -31,15 +32,22 @@ public class PlayerController : Object
 
 		Charge = transform.GetChild(4).GetComponent<Animator>();
 		Charge.enabled = false;
+
+		dieSmog = transform.GetChild(5).GetComponent<Animator>();
+
 		StartCoroutine(ChargeEffect());
 	}
 
 	public override void Progress()
 	{
 		SmogAni();
-		Attack();
-		Move();
-		ChargeEffect();
+
+		if (!ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("Sally") && !ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("Die"))
+		{
+			Attack();
+			Move();
+			ChargeEffect();
+		}
 	}
 	
 	public override void Release()
@@ -49,10 +57,21 @@ public class PlayerController : Object
 
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
-		if (collision.gameObject.name == "EnemyBullet")
+		if (collision.gameObject.name == "EnemyBullet" || collision.gameObject.tag == "Enemy")
 		{
-			Charge.SetTrigger("die");
+			ObjectAnim.SetBool("idle", false);
+			ObjectAnim.SetTrigger("die");
+			dieSmog.gameObject.SetActive(true);
+			dieSmog.SetTrigger("die");
+			transform.GetComponent<BoxCollider2D>().enabled = false;
 			GameManager.Instance.PlayerLife -= 1;
+
+			transform.DOPath(
+				new[] { transform.position, new Vector3(transform.position.x + 3.0f, - 6.2f, 0.0f) }, 2.0f, PathType.CatmullRom)
+				.SetEase(Ease.Linear).OnComplete(() =>
+			{
+				StartCoroutine(DieCheck());
+			});
 		}
 	}
 
@@ -105,34 +124,31 @@ public class PlayerController : Object
 
     void Move()
 	{
-		if (!ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("Sally") && transform != null)
+		CameraView();
+
+		if (Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow))
 		{
-			CameraView();
-
-			if (Input.GetKey(KeyCode.UpArrow) && !Input.GetKey(KeyCode.DownArrow))
-			{
-				ObjectAnim.SetBool("up", true);
-				ObjectAnim.SetBool("down", false);
-				transform.Translate(new Vector3(0.0f, 0.02f, 0.0f));
-			}
-			else if (Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.UpArrow))
-			{
-				ObjectAnim.SetBool("down", true);
-				ObjectAnim.SetBool("up", false);
-				transform.Translate(new Vector3(0.0f, -0.02f, 0.0f));
-			}
-			else
-			{
-				ObjectAnim.SetBool("idle", true);
-				ObjectAnim.SetBool("up", false);
-				ObjectAnim.SetBool("down", false);
-			}
-
-			if (Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
-				transform.Translate(new Vector2(-0.02f, 0.0f));
-			else if (Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.LeftArrow))
-				transform.Translate(new Vector2(0.02f, 0.0f));
+			ObjectAnim.SetBool("up", true);
+			ObjectAnim.SetBool("down", false);
+			transform.Translate(new Vector3(0.0f, 0.02f, 0.0f));
 		}
+		else if (Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.UpArrow))
+		{
+			ObjectAnim.SetBool("down", true);
+			ObjectAnim.SetBool("up", false);
+			transform.Translate(new Vector3(0.0f, -0.02f, 0.0f));
+		}
+		else
+		{
+			ObjectAnim.SetBool("idle", true);
+			ObjectAnim.SetBool("up", false);
+			ObjectAnim.SetBool("down", false);
+		}
+
+		if (Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
+			transform.Translate(new Vector2(-0.02f, 0.0f));
+		else if (Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.LeftArrow))
+			transform.Translate(new Vector2(0.02f, 0.0f));
 	}
 
 	void CameraView()
@@ -149,9 +165,7 @@ public class PlayerController : Object
 
 	void Attack()
     {
-		if (Input.GetKeyDown(KeyCode.A) &&
-			!ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("Sally")
-			&& transform != null)
+		if (Input.GetKeyDown(KeyCode.A))
 		{
 			SoundManager.Instance.PlaySE("Shootsound");
 			GameObject Bullet = ObjectPool.Instance.PopPooledObject("Bullet");
@@ -165,8 +179,7 @@ public class PlayerController : Object
 		{
 			yield return null;
 
-			if (SkillBar.GetCurrentAnimatorStateInfo(0).IsName("GaugeUp") && 
-				!ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("Sally") && transform != null)
+			if (SkillBar.GetCurrentAnimatorStateInfo(0).IsName("GaugeUp"))
 			{
 				if (Input.GetKey(KeyCode.A))
 				{
@@ -190,10 +203,23 @@ public class PlayerController : Object
 						yield return Charge.GetCurrentAnimatorStateInfo(0).normalizedTime;
 						Charge.SetBool("chargeEnd", false);
 						yield return new WaitForSeconds(0.1f);
+						Charge.GetComponent<SpriteRenderer>().enabled = false;
 						Charge.enabled = false;
 					}
 				}
 			}
 		}
+	}
+
+	IEnumerator DieCheck()
+	{
+		yield return null;
+
+		dieSmog.gameObject.SetActive(false);
+		transform.position = Vector3.MoveTowards(new Vector3(11.0f, 1.3f, 0.0f), new Vector3(16.0f, 1.3f, 0.0f), 0.01f);
+
+		yield return new WaitForSeconds(2.0f);
+		ObjectAnim.Play("Idle");
+		transform.GetComponent<BoxCollider2D>().enabled = true;
 	}
 }

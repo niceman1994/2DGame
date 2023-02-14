@@ -28,9 +28,16 @@ public class smallEnemy1 : Object
 		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
 			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
 		{
-			transform.position = new Vector3(transform.position.x - (Speed * Time.deltaTime), transform.position.y, 0.0f);
-			UpDown();
-			EnemyAttack();
+			if (transform.position.x >= Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize)
+			{
+				transform.position = new Vector3(transform.position.x - (Speed * Time.deltaTime), transform.position.y, 0.0f);
+				UpDown();
+			}
+			else
+			{
+				gameObject.SetActive(false);
+				transform.SetParent(EnemyManager.Instance.transform);
+			}
 		}
 	}
 
@@ -46,10 +53,10 @@ public class smallEnemy1 : Object
 			ObjectAnim.SetTrigger("destroy");
 			transform.GetComponent<BoxCollider2D>().enabled = false;
 			SoundManager.Instance.PlaySE("smallEnemyDestroySound");
-			EnemyManager.Instance.Score += 10;
+			EnemyManager.Instance.Score += 100;
 
 			StartCoroutine(GiveScore());
-		}
+		}		
 	}
 
 	void UpDown()
@@ -78,21 +85,23 @@ public class smallEnemy1 : Object
 		}
 	}
 
-	void EnemyAttack()
-    {
+	public void EnemyAttack()
+	{
 		attackDelay += Time.deltaTime;
 
-		if (attackDelay >= 5.0f)
-        {
+		if (attackDelay >= 6.0f)
+		{
 			bullet = Instantiate(BullterPrefab);
+			bullet.name = "EnemyBullet";
 			bullet.transform.position += new Vector3(
-				BulletPoint.transform.position.x - Speed * 1.5f * Time.deltaTime,
+				BulletPoint.transform.position.x - Speed * 1.3f * Time.deltaTime,
 				BulletPoint.transform.position.y,
 				BulletPoint.transform.position.z);
-			
+
 			attackDelay = 0.0f;
-        }
-    }
+
+		}
+	}
 
 	IEnumerator GiveScore()
     {

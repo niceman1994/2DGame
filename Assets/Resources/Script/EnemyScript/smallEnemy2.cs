@@ -2,11 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+struct DirType
+{
+	public int type;
+	public Vector3 direction;
+}
+
 public class smallEnemy2 : Object
 {
-	float currentTime;
-	float turnpointTime;
-	int dirType = 0;
+	DirType dir;
 
 	public override void Initialize()
 	{
@@ -15,15 +19,17 @@ public class smallEnemy2 : Object
 		base.Speed = 2.0f;
 		base.ObjectAnim = null;
 
-		turnpointTime = 1.0f;
+		GetDirType();
 	}
 
+	// TODO : 추후 좌표 수정
 	public override void Progress()
 	{
 		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
 			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
 		{
-			transform.position = new Vector3(transform.position.x - (Speed * Time.deltaTime), transform.position.y, 0.0f);
+			transform.position = Vector3.MoveTowards(transform.position, new Vector3(18.0f, transform.position.y, 0.0f), 0.01f);
+			UpDown();
 		}
 	}
 
@@ -32,29 +38,37 @@ public class smallEnemy2 : Object
 		
 	}
 
+	private void OnBecameInvisible()
+	{
+		gameObject.SetActive(false);
+		transform.SetParent(EnemyManager.Instance.transform);
+	}
+
+	private void OnCollisionEnter2D(Collision2D collision)
+	{
+		if (collision.gameObject.tag == "Bullet")
+			EnemyManager.Instance.Score += 100;
+	}
+
+	void GetDirType()
+	{
+		if (transform.position.y >= 4.0f)
+		{
+			dir.type = 1;
+			dir.direction = new Vector3(transform.position.x, transform.position.y - (Speed * Time.deltaTime), 0.0f);
+		}
+		else if (transform.position.y <= -4.0f)
+		{
+			dir.type = 2;
+			dir.direction = new Vector3(transform.position.x, transform.position.y + (Speed * Time.deltaTime), 0.0f);
+		}
+	}
+
 	void UpDown()
 	{
-		currentTime += Time.deltaTime;
-
-		if (dirType == 0)
-		{
-			transform.position += new Vector3(0.0f, -Speed * 0.25f * Time.deltaTime, 0.0f);
-
-			if (currentTime > turnpointTime)
-			{
-				dirType = 1;
-				currentTime = 0.0f;
-			}
-		}
-		else if (dirType == 1)
-		{
-			transform.position += new Vector3(0.0f, Speed * 0.25f * Time.deltaTime, 0.0f);
-
-			if (currentTime > turnpointTime)
-			{
-				dirType = 0;
-				currentTime = 0.0f;
-			}
-		}
+		if (dir.type == 1)
+			transform.position = Vector3.Slerp(transform.position, new Vector3(transform.position.x, -5.2f, 0.0f), 0.2f);
+		else if (dir.type == 2)
+			transform.position = Vector3.Slerp(transform.position, new Vector3(transform.position.x, 5.2f, 0.0f), 0.2f);
 	}
 }
