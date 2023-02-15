@@ -19,7 +19,7 @@ public class smallEnemy2 : Object
 
 		Player = GameObject.FindGameObjectWithTag("Player");
 		inScene = false;
-		GetDirType();
+		GetDirType(3.9f, -3.9f);
 	}
 
 	public override void Progress()
@@ -58,18 +58,18 @@ public class smallEnemy2 : Object
 		}
 	}
 
-	void GetDirType()
+	void GetDirType(float y1, float y2)
 	{
-		if (transform.position.y >= 3.9f)
+		if (transform.position.y >= y1)
 		{
 			dir.type = 1;
-			dir.pos = new Vector3(transform.position.x, transform.position.y - (Speed * Time.deltaTime), 0.0f);
+			dir.pos = transform.position;
 		}
-
-		if (transform.position.y <= -3.9f)
+	
+		if (transform.position.y <= -y2)
 		{
 			dir.type = 2;
-			dir.pos = new Vector3(transform.position.x, transform.position.y + (Speed * Time.deltaTime), 0.0f);
+			dir.pos = transform.position;
 		}
 	}
 
@@ -78,7 +78,7 @@ public class smallEnemy2 : Object
 		yield return null;
 
 		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
-		GameManager.Instance.CoinCanvas.activeInHierarchy == false)
+			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
 		{
 			if (dir.type == 1)
 			{

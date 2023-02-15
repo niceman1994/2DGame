@@ -1274,9 +1274,9 @@ TextureImporter:
       name: Air Buster - Blaster Fighters_56
       rect:
         serializedVersion: 2
-        x: 121
+        x: 118
         y: 74
-        width: 27
+        width: 32
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

@@ -30,7 +30,7 @@ public class smallEnemy1 : Object
 
 		randomBullet = 0.0f;
 		turnpointTime = 1.0f;
-		dir.type = 1;
+		GetDirType(1.7f, -1.7f);
 	}
 
 	public override void Progress()
@@ -54,45 +54,57 @@ public class smallEnemy1 : Object
 	}
 
 	public override void Release()
-	{
+    {
 
-	}
+    }
 
-	private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Bullet")
+        {
+            ObjectAnim.SetTrigger("destroy");
+            transform.GetComponent<BoxCollider2D>().enabled = false;
+            SoundManager.Instance.PlaySE("smallEnemyDestroySound");
+            EnemyManager.Instance.Score += Random.Range(5, 6) * 10;
+
+            StartCoroutine(ReturnObject());
+        }
+    }
+
+	void GetDirType(float _y1, float _y2)
+    {
+		if (transform.position.y >= _y1)
+			dir.type = 1;
+		if (transform.position.y <= -_y2)
+			dir.type = 2;
+    }
+
+    public void UpDown()
 	{
-		if (collision.gameObject.tag == "Bullet")
+		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
+			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
 		{
-			ObjectAnim.SetTrigger("destroy");
-			transform.GetComponent<BoxCollider2D>().enabled = false;
-			SoundManager.Instance.PlaySE("smallEnemyDestroySound");
-			EnemyManager.Instance.Score += Random.Range(5, 6) * 10;
-
-			StartCoroutine(ReturnObject());
-		}
-	}
-
-	public void UpDown()
-	{
-		currentTime += Time.deltaTime;
-
-		if (dir.type == 1)
-		{
-			transform.position += new Vector3(0.0f, -Speed * 0.25f * Time.deltaTime, 0.0f);
-
-			if (currentTime > turnpointTime)
+			currentTime += Time.deltaTime;
+	
+			if (dir.type == 1)
 			{
-				dir.type = 2;
-				currentTime = 0.0f;
+				transform.position += new Vector3(0.0f, -Speed * 0.25f * Time.deltaTime, 0.0f);
+	
+				if (currentTime > turnpointTime)
+				{
+					dir.type = 2;
+					currentTime = 0.0f;
+				}
 			}
-		}
-		else if (dir.type == 2)
-		{
-			transform.position += new Vector3(0.0f, Speed * 0.25f * Time.deltaTime, 0.0f);
-
-			if (currentTime > turnpointTime)
+			else if (dir.type == 2)
 			{
-				dir.type = 1;
-				currentTime = 0.0f;
+				transform.position += new Vector3(0.0f, Speed * 0.25f * Time.deltaTime, 0.0f);
+	
+				if (currentTime > turnpointTime)
+				{
+					dir.type = 1;
+					currentTime = 0.0f;
+				}
 			}
 		}
 	}

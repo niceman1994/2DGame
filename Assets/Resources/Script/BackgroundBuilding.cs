@@ -7,11 +7,11 @@ public class BackgroundBuilding : MonoBehaviour
 	public SpriteRenderer spritebg;
 	public int loopCount;
 
-	bool countCheck;
+	//bool countCheck;
 
 	private void Start()
 	{
-		countCheck = false;
+		//countCheck = false;
 	}
 
 	private void Update()

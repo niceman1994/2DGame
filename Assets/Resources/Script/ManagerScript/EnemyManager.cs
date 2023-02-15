@@ -17,7 +17,7 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
         SpawnEnemy<smallEnemy1>(4, new Vector2(46.0f, 2.1f));
         SpawnEnemy<smallEnemy1>(4, new Vector2(50.0f, -2.1f));
 
-        for (int i = 0; i < 6; ++i)
+        for (int i = 0; i < 10; ++i)
         {
             SpawnEnemy<smallEnemy2>(1, 32.0f + (i + 4), 4.1f);
             SpawnEnemy<smallEnemy2>(1, 32.0f + (i + 4), -4.1f);
@@ -26,8 +26,8 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
         ScoreText.text = "00";
 
         //StartCoroutine(setDelay<smallEnemy1>(2.0f));
-        StartCoroutine(setDelay1(2.0f, "smallEnemy1"));
-        StartCoroutine(setDelay2(2.0f, "smallEnemy2"));
+        StartCoroutine(setDelay1<smallEnemy1>(2.0f));
+        StartCoroutine(setDelay2<smallEnemy2>(1.0f));
     }
 
 	private void Update()
@@ -82,46 +82,35 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
         }
     }
 
-    void setDelay<T>(float _delay)
-    {
-        if (EnemyLists.ContainsKey(typeof(T).Name))
-        {
-            for (int i = 0; i < EnemyLists[typeof(T).Name].Count; ++i)
-            {
-                EnemyLists[typeof(T).Name][i].transform.GetComponent<T>().GetType().GetMethod("UpDown");
-            }
-        }
-    }
-
-    IEnumerator setDelay1(float _delay, string _name)
+    IEnumerator setDelay1<T>(float _delay)
     {
         while (true)
         {
             yield return null;
 
-            if (EnemyLists.ContainsKey(_name))
-            {
-                for (int i = 0; i < EnemyLists[_name].Count; ++i)
-                {
-                    EnemyLists[_name][i].transform.GetComponent<smallEnemy1>().UpDown();
-                    //EnemyLists[_name][i].transform.GetComponent<smallEnemy1>().EnemyAttack();
-                    yield return new WaitForSeconds(_delay);
-                }
-            }
+            //if (EnemyLists.ContainsKey(typeof(T).Name))
+            //{
+            //    for (int i = 0; i < EnemyLists[typeof(T).Name].Count; ++i)
+            //    {
+            //        StartCoroutine(EnemyLists[typeof(T).Name][i].transform.GetComponent<smallEnemy1>().UpDown());
+            //        //EnemyLists[_name][i].transform.GetComponent<smallEnemy1>().EnemyAttack();
+            //        yield return new WaitForSeconds(_delay);
+            //    }
+            //}
         }
     }
 
-    IEnumerator setDelay2(float _delay, string _name)
+    IEnumerator setDelay2<T>(float _delay)
 	{
         while (true)
         {
             yield return null;
             
-            if (EnemyLists.ContainsKey(_name))
+            if (EnemyLists.ContainsKey(typeof(T).Name))
             {
-                for (int i = 0; i < EnemyLists[_name].Count; ++i)
+                for (int i = 0; i < EnemyLists[typeof(T).Name].Count; ++i)
                 {
-                    StartCoroutine(EnemyLists[_name][i].transform.GetComponent<smallEnemy2>().UpDown());
+                    StartCoroutine(EnemyLists[typeof(T).Name][i].transform.GetComponent<smallEnemy2>().UpDown());
                     yield return new WaitForSeconds(_delay);                    
                 }
             }
