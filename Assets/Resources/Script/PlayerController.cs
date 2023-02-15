@@ -90,7 +90,7 @@ public class PlayerController : Object
 				  transform.DOPath(point, 2.0f, PathType.CatmullRom).SetEase(Ease.OutSine);
 			  });
 
-				break;
+				yield break;
 			}
 		}
     }

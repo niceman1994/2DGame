@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4079915553913795647}
   - component: {fileID: 9014323799996061888}
   - component: {fileID: 4278843585997841485}
+  - component: {fileID: 6231241131565831637}
   m_Layer: 7
   m_Name: smallEnemy3
   m_TagString: Enemy
@@ -105,3 +106,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6231241131565831637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8466221563638602843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0349b083eacf7fe418446f9999e03529, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Object: {fileID: 8466221563638602843}
