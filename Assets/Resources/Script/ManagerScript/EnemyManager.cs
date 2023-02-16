@@ -6,34 +6,26 @@ using DG.Tweening;
 
 public class EnemyManager : ManagerSingleton<EnemyManager>
 {
-    public Text ScoreText;
-    public int Score;
-
     public GameObject[] EnemyPrefab;
     public Dictionary<object, List<GameObject>> EnemyLists = new Dictionary<object, List<GameObject>>();
 
 	void Start()
     {
+        Initialize();
+        StartCoroutine(setDelay1<smallEnemy1>(0.2f));
+        StartCoroutine(setDelay2<smallEnemy2>(0.55f));
+    }
+
+	void Initialize()
+	{
         SpawnEnemy<smallEnemy1>(4, new Vector2(46.0f, 2.1f));
         SpawnEnemy<smallEnemy1>(4, new Vector2(50.0f, -2.1f));
 
-        for (int i = 0; i < 10; ++i)
+        for (int i = 0; i < 12; ++i)
         {
-            SpawnEnemy<smallEnemy2>(1, 32.0f + (i + 4), 4.1f);
-            SpawnEnemy<smallEnemy2>(1, 32.0f + (i + 4), -4.1f);
+            SpawnEnemy<smallEnemy2>(1, 34.0f, 4.1f);
+            SpawnEnemy<smallEnemy2>(1, 34.0f, -4.1f);
         }
-
-        ScoreText.text = "00";
-
-        //StartCoroutine(setDelay<smallEnemy1>(2.0f));
-        StartCoroutine(setDelay1<smallEnemy1>(2.0f));
-        StartCoroutine(setDelay2<smallEnemy2>(1.0f));
-    }
-
-	private void Update()
-	{
-        if (Score != 0)
-            ScoreText.text = Score.ToString();
     }
 
 	void SpawnEnemy<T>(int count, Vector2 _position)
@@ -52,7 +44,7 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
 
                     GameObject Enemy = Instantiate(EnemyPrefab[i]);
                     Enemy.name = typeof(T).Name;
-                    Enemy.transform.position = new Vector2(_position.x + (j + 2), _position.y + Random.Range(-0.2f, 0.2f));
+                    Enemy.transform.position = new Vector2(_position.x + (j * 2), _position.y);
                     EnemyLists[EnemyPrefab[i].name].Add(Enemy);
                 }
             }
@@ -88,15 +80,19 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
         {
             yield return null;
 
-            //if (EnemyLists.ContainsKey(typeof(T).Name))
-            //{
-            //    for (int i = 0; i < EnemyLists[typeof(T).Name].Count; ++i)
-            //    {
-            //        StartCoroutine(EnemyLists[typeof(T).Name][i].transform.GetComponent<smallEnemy1>().UpDown());
-            //        //EnemyLists[_name][i].transform.GetComponent<smallEnemy1>().EnemyAttack();
-            //        yield return new WaitForSeconds(_delay);
-            //    }
-            //}
+            if (EnemyLists.ContainsKey(typeof(T).Name))
+            {
+                for (int i = 0; i < EnemyLists[typeof(T).Name].Count; ++i)
+                {
+                    if (EnemyLists[typeof(T).Name][i].activeInHierarchy == true)
+                    {
+                        StartCoroutine(EnemyLists[typeof(T).Name][i].transform.GetComponent<smallEnemy1>().UpDown());
+                        yield return new WaitForSeconds(_delay);
+                    }
+                    else
+                        yield break;
+                }
+            }
         }
     }
 
@@ -110,10 +106,29 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
             {
                 for (int i = 0; i < EnemyLists[typeof(T).Name].Count; ++i)
                 {
-                    StartCoroutine(EnemyLists[typeof(T).Name][i].transform.GetComponent<smallEnemy2>().UpDown());
-                    yield return new WaitForSeconds(_delay);                    
+                    if (EnemyLists[typeof(T).Name][i].activeInHierarchy == true)
+                    {
+                        StartCoroutine(EnemyLists[typeof(T).Name][i].transform.GetComponent<smallEnemy2>().UpDown());
+                        yield return new WaitForSeconds(_delay);
+                    }
+                    else
+                        yield break;
                 }
             }
         }
 	}
+
+    public void PopPooledObject<T>(int _count, Transform parent = null)
+    {
+        if (EnemyLists.ContainsKey(typeof(T).Name))
+        {
+            for (int i = 0; i < _count; ++i)
+            {
+                GameObject poolObject = EnemyLists[typeof(T).Name][i];
+                EnemyLists[typeof(T).Name].RemoveAt(0);
+                poolObject.transform.SetParent(null);
+                poolObject.SetActive(true);
+            }
+        }
+    }
 }

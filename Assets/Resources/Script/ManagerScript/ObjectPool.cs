@@ -12,14 +12,15 @@ public class ObjectPool : ManagerSingleton<ObjectPool>
 
 	private void Start()
 	{
-		CreateMultiplePoolObjects("Bullet", 30);
+		CreateMultiplePoolObjects<Bullet>(30);
+		//CreateMultiplePoolObjects<BonusMob>(2);
 	}
 
-	public void CreateMultiplePoolObjects(string _name, int _poolCount)
+	public void CreateMultiplePoolObjects<T>(int _poolCount)
 	{
 		for (int i = 0; i < poolPrefabs.Length; ++i)
 		{
-			if (poolPrefabs[i].name.Equals(_name))
+			if (poolPrefabs[i].name.Equals(typeof(T).Name))
 			{
 				for (int j = 0; j < _poolCount; ++j)
 				{
@@ -31,29 +32,29 @@ public class ObjectPool : ManagerSingleton<ObjectPool>
 	
 					GameObject newDoll = Instantiate(poolPrefabs[i], transform);
 					newDoll.SetActive(false);
-					newDoll.name = _name;
+					newDoll.name = typeof(T).Name;
 					pooledObjects[poolPrefabs[i].name].Add(newDoll);
 				}
 			}
 		}
 	}
 	
-	public void PushPooledObject(string _name, GameObject _item)
+	public void PushPooledObject<T>(GameObject _item)
 	{
-		if (pooledObjects.ContainsKey(_name))
+		if (pooledObjects.ContainsKey(typeof(T).Name))
 		{
 			_item.transform.SetParent(transform);
 			_item.SetActive(false);
-			pooledObjects[_name].Add(_item);
+			pooledObjects[typeof(T).Name].Add(_item);
 		}
 	}
 	
-	public GameObject PopPooledObject(string _name, Transform parent = null)
+	public GameObject PopPooledObject<T>(Transform parent = null)
 	{
-		if (pooledObjects.ContainsKey(_name))
+		if (pooledObjects.ContainsKey(typeof(T).Name))
 		{
-			GameObject poolObject = pooledObjects[_name][0];
-			pooledObjects[_name].RemoveAt(0);
+			GameObject poolObject = pooledObjects[typeof(T).Name][0];
+			pooledObjects[typeof(T).Name].RemoveAt(0);
 			poolObject.transform.SetParent(null);
 			poolObject.SetActive(true);
 			return poolObject;

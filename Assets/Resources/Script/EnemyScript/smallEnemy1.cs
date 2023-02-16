@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 internal struct DirType
 {
@@ -16,8 +17,6 @@ public class smallEnemy1 : Object
 
 	float attackDelay;
 	float randomBullet;
-	float currentTime;
-	float turnpointTime;
 
 	DirType dir;
 
@@ -25,25 +24,24 @@ public class smallEnemy1 : Object
 	{
 		base.name = "smallEnemy1";
 		base.Hp = 0;
-		base.Speed = 2.0f;
+		base.Speed = 2.5f;
 		base.ObjectAnim = gameObject.GetComponent<Animator>();
 
-		randomBullet = 0.0f;
-		turnpointTime = 1.0f;
-		GetDirType(1.7f, -1.7f);
+		randomBullet = Random.Range(2, 8);
+		GetDirType(1.9f, -1.9f);
 	}
 
 	public override void Progress()
 	{
-		randomBullet = Random.Range(0, 10);
-
 		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
 			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
 		{
 			if (transform.position.x >= Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize)
 			{
 				transform.position = new Vector3(transform.position.x - (Speed * Time.deltaTime), transform.position.y, 0.0f);
-				UpDown();
+
+				if (transform.position.x < Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize)
+					EnemyAttack();
 			}
 			else
 			{
@@ -65,7 +63,7 @@ public class smallEnemy1 : Object
             ObjectAnim.SetTrigger("destroy");
             transform.GetComponent<BoxCollider2D>().enabled = false;
             SoundManager.Instance.PlaySE("smallEnemyDestroySound");
-            EnemyManager.Instance.Score += Random.Range(5, 6) * 10;
+            GameManager.Instance.Score += Random.Range(5, 6) * 10;
 
             StartCoroutine(ReturnObject());
         }
@@ -79,74 +77,67 @@ public class smallEnemy1 : Object
 			dir.type = 2;
     }
 
-    public void UpDown()
+	public IEnumerator UpDown()
 	{
+		yield return null;
+	
 		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
 			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
 		{
-			currentTime += Time.deltaTime;
-	
 			if (dir.type == 1)
 			{
-				transform.position += new Vector3(0.0f, -Speed * 0.25f * Time.deltaTime, 0.0f);
-	
-				if (currentTime > turnpointTime)
+				if (gameObject.activeInHierarchy == true)
 				{
-					dir.type = 2;
-					currentTime = 0.0f;
+					yield return new WaitForSeconds(5.0f);
+
+					transform.DOPath(new[] { transform.position,
+						new Vector3(transform.position.x - 1.0f, transform.position.y - 0.75f, 0.0f),
+						new Vector3(transform.position.x - 2.0f, transform.position.y, 0.0f),
+						new Vector3(transform.position.x - 3.0f, transform.position.y + 0.75f, 0.0f),
+						new Vector3(transform.position.x - 4.0f, transform.position.y - 0.75f, 0.0f) }, 2.0f, PathType.CatmullRom).SetEase(Ease.Linear).OnComplete(() =>
+					{
+						dir.pos = transform.position;
+					});
 				}
+				else
+					transform.DOKill();
 			}
 			else if (dir.type == 2)
 			{
-				transform.position += new Vector3(0.0f, Speed * 0.25f * Time.deltaTime, 0.0f);
-	
-				if (currentTime > turnpointTime)
+				if (gameObject.activeInHierarchy == true)
 				{
-					dir.type = 1;
-					currentTime = 0.0f;
+					yield return new WaitForSeconds(5.0f);
+
+					transform.DOPath(new[] { transform.position,
+						new Vector3(transform.position.x - 1.0f, transform.position.y + 0.75f, 0.0f),
+						new Vector3(transform.position.x - 2.0f, transform.position.y, 0.0f),
+						new Vector3(transform.position.x - 3.0f, transform.position.y - 0.75f, 0.0f),
+						new Vector3(transform.position.x - 4.0f, transform.position.y + 0.75f, 0.0f) }, 2.0f, PathType.CatmullRom).SetEase(Ease.Linear).OnComplete(() =>
+					{
+						dir.pos = transform.position;
+					});
 				}
+				else
+					transform.DOKill();
 			}
 		}
 	}
-
-	//public IEnumerator UpDown()
-	//{
-	//	yield return null;
-	//
-	//	if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
-	//		GameManager.Instance.CoinCanvas.activeInHierarchy == false)
-	//	{
-	//		if (dir.type == 1)
-	//		{
-	//			dir.pos = new Vector3(0.0f, -Speed * 0.25f * Time.deltaTime, 0.0f);
-	//			transform.position += dir.pos;
-	//
-	//			yield return new WaitForSeconds(1.0f);
-	//			dir.type = 2;
-	//		}
-	//		else if (dir.type == 2)
-	//		{
-	//			dir.pos = new Vector3(0.0f, Speed * 0.25f * Time.deltaTime, 0.0f);
-	//			transform.position += dir.pos;
-	//
-	//			yield return new WaitForSeconds(1.0f);
-	//			dir.type = 1;
-	//		}
-	//	}
-	//}
 
 	public void EnemyAttack()
 	{
 		attackDelay += Time.deltaTime;
 
-		if (attackDelay >= 6.0f && randomBullet == 5)
+		if (attackDelay >= 2.0f)
 		{
-			bullet = Instantiate(BullterPrefab);
-			bullet.name = "EnemyBullet";
-			bullet.transform.position += new Vector3(
-				BulletPoint.transform.position.x - Speed * 1.3f * Time.deltaTime,
-				BulletPoint.transform.position.y,
-				BulletPoint.transform.position.z);
+			if (randomBullet == 4 || randomBullet == 5)
+			{
+				bullet = Instantiate(BullterPrefab);
+				bullet.name = "EnemyBullet";
+				bullet.transform.position += new Vector3(
+					BulletPoint.transform.position.x - Speed * 1.2f * Time.deltaTime,
+					BulletPoint.transform.position.y,
+					BulletPoint.transform.position.z);
+			}
 
 			attackDelay = 0.0f;
 		}

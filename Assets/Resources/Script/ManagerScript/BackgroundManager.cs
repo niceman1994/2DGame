@@ -23,17 +23,18 @@ public class BackgroundManager : ManagerSingleton<BackgroundManager>
 		rightPosX = xScreenHalfSize * 2.5f * Background.Length;
 	}
 
-	private void LateUpdate()
+	private void Update()
 	{
 		BackgroundMove();
+		StopBackground();
 	}
 
 	void BackgroundMove()
 	{
 		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
-			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
+			GameManager.Instance.CoinCanvas.activeInHierarchy == false && Time.timeScale == 1)
 		{
-			Camera.main.transform.position = Vector3.MoveTowards(Camera.main.transform.position, new Vector3(22.0f, 0.0f, -1.0f), 0.0125f); // 집에서는 0.0125f, 학원에서는 0.03f
+			Camera.main.transform.position = Vector3.MoveTowards(Camera.main.transform.position, new Vector3(22.0f, 0.0f, -1.0f), 0.03f); // 집에서는 0.0125f, 학원에서는 0.03f
 
 			if (Camera.main.transform.position.x >= 22.0f)
 			{
@@ -53,6 +54,15 @@ public class BackgroundManager : ManagerSingleton<BackgroundManager>
 				}
 			}
 		}
-		else if (GameManager.Instance.PlayerLife == 0) Speed = 0.0f;
+
+		if (GameManager.Instance.PlayerLife == 0) Speed = 0.0f;
+	}
+
+	void StopBackground()
+	{
+		if (Input.GetKeyDown(KeyCode.P) && Time.timeScale == 1)
+			Time.timeScale = 0;
+		else if (Input.GetKeyDown(KeyCode.P) && Time.timeScale == 0)
+			Time.timeScale = 1;
 	}
 }

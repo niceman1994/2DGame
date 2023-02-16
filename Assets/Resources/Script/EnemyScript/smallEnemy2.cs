@@ -52,7 +52,7 @@ public class smallEnemy2 : Object
 			ObjectAnim.SetTrigger("destroy");
 			transform.GetComponent<BoxCollider2D>().enabled = false;
 			SoundManager.Instance.PlaySE("smallEnemyDestroySound");
-			EnemyManager.Instance.Score += Random.Range(8, 11) * 10;
+			GameManager.Instance.Score += Random.Range(8, 11) * 10;
 
 			StartCoroutine(ReturnObject());
 		}
@@ -82,13 +82,13 @@ public class smallEnemy2 : Object
 		{
 			if (dir.type == 1)
 			{
-				yield return new WaitForSeconds(12.0f);
+				yield return new WaitForSeconds(13.0f);
 
 				if (gameObject.activeInHierarchy == true)
 				{
 					transform.DOPath(
 						new[] { transform.position, new Vector3(transform.position.x - 14.0f, transform.position.y, 0.0f),
-						new Vector3(Player.transform.position.x + 2.0f, transform.position.y - 4.1f, 0.0f),
+						new Vector3(Player.transform.position.x + 5.0f, transform.position.y - 4.1f, 0.0f),
 						new Vector3(transform.position.x + 8.0f, transform.position.y - 5.2f, 0.0f) }, 5.0f, PathType.CatmullRom).SetEase(Ease.Linear);
 				}
 				else
@@ -97,13 +97,13 @@ public class smallEnemy2 : Object
 
 			if (dir.type == 2)
 			{
-				yield return new WaitForSeconds(12.0f);
+				yield return new WaitForSeconds(13.0f);
 
 				if (gameObject.activeInHierarchy == true)
 				{
 					transform.DOPath(
 						new[] { transform.position, new Vector3(transform.position.x - 14.0f, transform.position.y, 0.0f),
-						new Vector3(Player.transform.position.x + 2.0f, transform.position.y + 4.1f, 0.0f),
+						new Vector3(Player.transform.position.x + 5.0f, transform.position.y + 4.1f, 0.0f),
 						new Vector3(transform.position.x + 8.0f,transform.position.y + 5.2f, 0.0f) }, 5.0f, PathType.CatmullRom).SetEase(Ease.Linear);
 				}
 				else

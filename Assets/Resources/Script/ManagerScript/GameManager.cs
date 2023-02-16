@@ -8,10 +8,14 @@ public class GameManager : ManagerSingleton<GameManager>
     public GameObject IntroCanvas;
     public GameObject CoinCanvas;
     public GameObject PlayerCanvas;
+    public GameObject Panel;
 
     public Text InsertCoinText;
     public Text GameOverText;
     public Text PhaseInfoText;
+
+    public Text ScoreText;
+    public int Score;
 
     public Text CoinText;
     public int Coin;
@@ -24,6 +28,7 @@ public class GameManager : ManagerSingleton<GameManager>
 
 	private void Start()
 	{
+        ScoreText.text = "00";
         message = "PHASE  1\n SEASIDE   FRONT";
         CoinCanvas.SetActive(false);
         PlayerCanvas.SetActive(false);
@@ -34,8 +39,14 @@ public class GameManager : ManagerSingleton<GameManager>
 	{
         insertCoin();
         ChangeText();
+        GameStop();
         PlayerLifeText.text = PlayerLife.ToString();
-	}
+
+        if (Score != 0)
+            ScoreText.text = Score.ToString();
+
+        if (PlayerLife <= 0) PlayerLife = 0;
+    }
 
     void ChangeText()
 	{
@@ -89,4 +100,14 @@ public class GameManager : ManagerSingleton<GameManager>
         yield return new WaitForSeconds(1.0f);
         PhaseInfoText.gameObject.SetActive(false);
     }
+
+    void GameStop()
+	{
+        if (PlayerLife == 0)
+            Panel.gameObject.SetActive(true);
+        else if (Time.timeScale == 0)
+            Panel.gameObject.SetActive(true);
+        else
+            Panel.gameObject.SetActive(false);
+	}
 }

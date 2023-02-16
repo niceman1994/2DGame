@@ -33,7 +33,7 @@ public class ScrollBackground : MonoBehaviour
 			for (int i = 0; i < scrollBackground.Length - 2; ++i)
 			{
 				scrollBackground[i].gameObject.transform.position = new Vector3(
-					scrollBackground[i].gameObject.transform.position.x + ((-BackgroundManager.Instance.Speed - 0.05f) * Time.deltaTime), 0.0f, 0.0f);
+					scrollBackground[i].gameObject.transform.position.x + (-BackgroundManager.Instance.Speed * Time.deltaTime), 0.0f, 0.0f);
 		
 				if (scrollBackground[i].gameObject.transform.position.x < leftPosX[i] * 2.91f) // 움직이는 배경이 카메라에서 완전히 벗어났을 때의 x 좌표 : -115.84
 				{

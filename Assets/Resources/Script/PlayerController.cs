@@ -13,6 +13,7 @@ public class PlayerController : Object
 	Animator[] smoganim = new Animator[3];
 	Animator Charge;
 	Animator dieSmog;
+	Color color;
 
 	public override void Initialize()
 	{
@@ -21,6 +22,7 @@ public class PlayerController : Object
 		base.Speed = 10.0f;
 		base.ObjectAnim = _Object.GetComponent<Animator>();
 		ObjectAnim.enabled = false;
+		color = GetComponent<SpriteRenderer>().color;
 
 		StartCoroutine(Sally());
 
@@ -61,6 +63,7 @@ public class PlayerController : Object
 		{
 			ObjectAnim.SetBool("idle", false);
 			ObjectAnim.SetTrigger("die");
+			ObjectAnim.Play("Die");
 			dieSmog.gameObject.SetActive(true);
 			dieSmog.SetTrigger("die");
 			transform.GetComponent<BoxCollider2D>().enabled = false;
@@ -90,7 +93,7 @@ public class PlayerController : Object
 				  transform.DOPath(point, 2.0f, PathType.CatmullRom).SetEase(Ease.OutSine);
 			  });
 
-				yield break;
+				break;
 			}
 		}
     }
@@ -168,7 +171,7 @@ public class PlayerController : Object
 		if (Input.GetKeyDown(KeyCode.A))
 		{
 			SoundManager.Instance.PlaySE("Shootsound");
-			GameObject Bullet = ObjectPool.Instance.PopPooledObject("Bullet");
+			GameObject Bullet = ObjectPool.Instance.PopPooledObject<Bullet>();
 			Bullet.transform.position = BulletPoint.transform.position;
 		}
     }
@@ -217,9 +220,11 @@ public class PlayerController : Object
 
 		dieSmog.gameObject.SetActive(false);
 		transform.position = Vector3.MoveTowards(new Vector3(11.0f, 1.3f, 0.0f), new Vector3(16.0f, 1.3f, 0.0f), 0.01f);
+		ObjectAnim.Play("Idle");
+		color = new Color(color.r, color.g, color.b, color.a <= 255.0f ? 255.0f - Time.deltaTime : 0.0f);
 
 		yield return new WaitForSeconds(2.0f);
-		ObjectAnim.Play("Idle");
+		color = new Color(color.r, color.g, color.b, color.a <= 0.0f ? 0.0f + Time.deltaTime : 255.0f);
 		transform.GetComponent<BoxCollider2D>().enabled = true;
 	}
 }

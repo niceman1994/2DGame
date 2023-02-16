@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SkillBarController : MonoBehaviour
+public class SkillBar : MonoBehaviour
 {
     [SerializeField] private Animator Player;
     Animator anim;
@@ -22,12 +22,13 @@ public class SkillBarController : MonoBehaviour
 	private void Update()
 	{
         StartAnimation();
+        StopAnimation();
 	}
 
 	void StartAnimation()
     {
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("GaugeUp") && !Player.GetCurrentAnimatorStateInfo(0).IsName("Sally")
-            && !Player.GetCurrentAnimatorStateInfo(0).IsName("Die"))
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("GaugeUp") 
+            && !Player.GetCurrentAnimatorStateInfo(0).IsName("Sally"))
         {
             if (Input.GetKey(KeyCode.A))
             {
@@ -49,4 +50,12 @@ public class SkillBarController : MonoBehaviour
             }
         }
     }
+
+    void StopAnimation()
+	{
+        if (Player.GetCurrentAnimatorStateInfo(0).IsName("Die") && !Player.GetCurrentAnimatorStateInfo(0).IsName("Sally"))
+            anim.speed = 0;
+        else if (!Player.GetCurrentAnimatorStateInfo(0).IsName("Die") && !Player.GetCurrentAnimatorStateInfo(0).IsName("Sally"))
+            anim.speed = 1;
+	}
 }
