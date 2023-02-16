@@ -12,8 +12,8 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
 	void Start()
     {
         Initialize();
-        StartCoroutine(setDelay1<smallEnemy1>(0.2f, 0, 8));
-        StartCoroutine(setDelay1<smallEnemy1>(0.2f, 8, 24));
+        StartCoroutine(setDelay1<smallEnemy1>(0.195f, 0, 8));
+        StartCoroutine(setDelay1<smallEnemy1>(0.195f, 8, 20));
         StartCoroutine(setDelay2<smallEnemy2>(0.55f));
     }
 
@@ -21,9 +21,10 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
 	{
         SpawnEnemy<smallEnemy1>(4, new Vector2(46.0f, 2.2f));
         SpawnEnemy<smallEnemy1>(4, new Vector2(50.0f, -2.2f));
-
-        for (int i = 0; i < 4; ++i)
-            SpawnEnemy<smallEnemy1>(4, new Vector2(78.0f, 1.1f - i));
+        // TODO : 추후 수정
+        SpawnEnemy<smallEnemy1>(4, new Vector2(78.0f, 1.0f));
+        SpawnEnemy<smallEnemy1>(4, new Vector2(78.0f, 0.0f));
+        SpawnEnemy<smallEnemy1>(4, new Vector2(78.0f, -1.0f));
 
         for (int i = 0; i < 12; ++i)
         {
@@ -86,7 +87,7 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
 
             if (EnemyLists.ContainsKey(typeof(T).Name))
             {
-                for (int i = startcount; i < endcount/*EnemyLists[typeof(T).Name].Count*/; ++i)
+                for (int i = startcount; i < endcount; ++i)
                 {
                     if (EnemyLists[typeof(T).Name][i].activeInHierarchy == true)
                     {

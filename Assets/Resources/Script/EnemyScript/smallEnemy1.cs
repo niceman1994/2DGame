@@ -73,9 +73,9 @@ public class smallEnemy1 : Object
     {
 		if (transform.position.y >= y1)
 			dir.type = 1;
-		if (transform.position.y <= -y2)
+		else if (transform.position.y <= -y2)
 			dir.type = 2;
-		if (transform.position.y < y1 && transform.position.y > -y2)
+		else if (transform.position.y < y1 && transform.position.y > -y2)
 			dir.type = 3;
     }
 
@@ -90,16 +90,16 @@ public class smallEnemy1 : Object
 			{
 				if (gameObject.activeInHierarchy == true)
 				{
-					yield return new WaitForSeconds(5.0f);
+					yield return new WaitForSeconds(4.0f);
 
 					transform.DOPath(new[] { transform.position,
 						new Vector3(transform.position.x - 1.0f, transform.position.y - 0.75f, 0.0f),
 						new Vector3(transform.position.x - 2.0f, transform.position.y, 0.0f),
 						new Vector3(transform.position.x - 3.0f, transform.position.y + 0.75f, 0.0f),
-						new Vector3(transform.position.x - 4.0f, transform.position.y - 0.75f, 0.0f) }, 2.0f, PathType.CatmullRom).SetEase(Ease.Linear).OnComplete(() =>
-					{
-						dir.pos = transform.position;
-					});
+						new Vector3(transform.position.x - 4.0f, transform.position.y, 0.0f) }, 1.6f, PathType.CatmullRom).SetEase(Ease.Linear).OnComplete(() =>
+						{
+							dir.pos = transform.position;
+						});
 				}
 				else
 					transform.DOKill();
@@ -108,16 +108,16 @@ public class smallEnemy1 : Object
 			{
 				if (gameObject.activeInHierarchy == true)
 				{
-					yield return new WaitForSeconds(5.0f);
+					yield return new WaitForSeconds(4.0f);
 
 					transform.DOPath(new[] { transform.position,
 						new Vector3(transform.position.x - 1.0f, transform.position.y + 0.75f, 0.0f),
 						new Vector3(transform.position.x - 2.0f, transform.position.y, 0.0f),
 						new Vector3(transform.position.x - 3.0f, transform.position.y - 0.75f, 0.0f),
-						new Vector3(transform.position.x - 4.0f, transform.position.y + 0.75f, 0.0f) }, 2.0f, PathType.CatmullRom).SetEase(Ease.Linear).OnComplete(() =>
-					{
-						dir.pos = transform.position;
-					});
+						new Vector3(transform.position.x - 4.0f, transform.position.y, 0.0f) }, 1.6f, PathType.CatmullRom).SetEase(Ease.Linear).OnComplete(() =>
+						{
+							dir.pos = transform.position;
+						});
 				}
 				else
 					transform.DOKill();
@@ -126,13 +126,13 @@ public class smallEnemy1 : Object
             {
 				if (gameObject.activeInHierarchy == true)
                 {
-					yield return new WaitForSeconds(45.0f);
+					yield return new WaitForSeconds(4.0f);
 
 					transform.DOPath(new[] { transform.position,
 						new Vector3(transform.position.x - 1.0f, transform.position.y - 0.75f, 0.0f),
 						new Vector3(transform.position.x - 2.0f, transform.position.y, 0.0f),
 						new Vector3(transform.position.x - 3.0f, transform.position.y + 0.75f, 0.0f),
-						new Vector3(transform.position.x - 4.0f, transform.position.y - 1.5f, 0.0f) }, 2.0f, PathType.CatmullRom).SetEase(Ease.Linear).OnComplete(() =>
+						new Vector3(transform.position.x - 4.0f, transform.position.y , 0.0f) }, 1.6f, PathType.CatmullRom).SetEase(Ease.Linear).OnComplete(() =>
 						{
 							dir.pos = transform.position;
 						});
