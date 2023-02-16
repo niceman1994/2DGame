@@ -28,7 +28,7 @@ public class smallEnemy1 : Object
 		base.ObjectAnim = gameObject.GetComponent<Animator>();
 
 		randomBullet = Random.Range(2, 8);
-		GetDirType(1.9f, -1.9f);
+		GetDirType(2.0f, -2.0f);
 	}
 
 	public override void Progress()
@@ -69,12 +69,14 @@ public class smallEnemy1 : Object
         }
     }
 
-	void GetDirType(float _y1, float _y2)
+	void GetDirType(float y1, float y2)
     {
-		if (transform.position.y >= _y1)
+		if (transform.position.y >= y1)
 			dir.type = 1;
-		if (transform.position.y <= -_y2)
+		if (transform.position.y <= -y2)
 			dir.type = 2;
+		if (transform.position.y < y1 && transform.position.y > -y2)
+			dir.type = 3;
     }
 
 	public IEnumerator UpDown()
@@ -120,6 +122,24 @@ public class smallEnemy1 : Object
 				else
 					transform.DOKill();
 			}
+			else if (dir.type == 3)
+            {
+				if (gameObject.activeInHierarchy == true)
+                {
+					yield return new WaitForSeconds(45.0f);
+
+					transform.DOPath(new[] { transform.position,
+						new Vector3(transform.position.x - 1.0f, transform.position.y - 0.75f, 0.0f),
+						new Vector3(transform.position.x - 2.0f, transform.position.y, 0.0f),
+						new Vector3(transform.position.x - 3.0f, transform.position.y + 0.75f, 0.0f),
+						new Vector3(transform.position.x - 4.0f, transform.position.y - 1.5f, 0.0f) }, 2.0f, PathType.CatmullRom).SetEase(Ease.Linear).OnComplete(() =>
+						{
+							dir.pos = transform.position;
+						});
+				}
+				else
+					transform.DOKill();
+			}
 		}
 	}
 
@@ -127,7 +147,7 @@ public class smallEnemy1 : Object
 	{
 		attackDelay += Time.deltaTime;
 
-		if (attackDelay >= 2.0f)
+		if (attackDelay >= 4.0f)
 		{
 			if (randomBullet == 4 || randomBullet == 5)
 			{

@@ -12,14 +12,18 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
 	void Start()
     {
         Initialize();
-        StartCoroutine(setDelay1<smallEnemy1>(0.2f));
+        StartCoroutine(setDelay1<smallEnemy1>(0.2f, 0, 8));
+        StartCoroutine(setDelay1<smallEnemy1>(0.2f, 8, 24));
         StartCoroutine(setDelay2<smallEnemy2>(0.55f));
     }
 
 	void Initialize()
 	{
-        SpawnEnemy<smallEnemy1>(4, new Vector2(46.0f, 2.1f));
-        SpawnEnemy<smallEnemy1>(4, new Vector2(50.0f, -2.1f));
+        SpawnEnemy<smallEnemy1>(4, new Vector2(46.0f, 2.2f));
+        SpawnEnemy<smallEnemy1>(4, new Vector2(50.0f, -2.2f));
+
+        for (int i = 0; i < 4; ++i)
+            SpawnEnemy<smallEnemy1>(4, new Vector2(78.0f, 1.1f - i));
 
         for (int i = 0; i < 12; ++i)
         {
@@ -67,14 +71,14 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
 
                     GameObject Enemy = Instantiate(EnemyPrefab[i]);
                     Enemy.name = typeof(T).Name;
-                    Enemy.transform.position = new Vector2(_x, _y);
+                    Enemy.transform.position = new Vector2(_x + (j * 2), _y);
                     EnemyLists[EnemyPrefab[i].name].Add(Enemy);
                 }
             }
         }
     }
 
-    IEnumerator setDelay1<T>(float _delay)
+    IEnumerator setDelay1<T>(float _delay, int startcount, int endcount)
     {
         while (true)
         {
@@ -82,7 +86,7 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
 
             if (EnemyLists.ContainsKey(typeof(T).Name))
             {
-                for (int i = 0; i < EnemyLists[typeof(T).Name].Count; ++i)
+                for (int i = startcount; i < endcount/*EnemyLists[typeof(T).Name].Count*/; ++i)
                 {
                     if (EnemyLists[typeof(T).Name][i].activeInHierarchy == true)
                     {

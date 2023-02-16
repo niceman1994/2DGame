@@ -64,13 +64,14 @@ public class PlayerController : Object
 			ObjectAnim.SetBool("idle", false);
 			ObjectAnim.SetTrigger("die");
 			ObjectAnim.Play("Die");
+			SoundManager.Instance.PlaySE("PlayerDestroySound");
 			dieSmog.gameObject.SetActive(true);
 			dieSmog.SetTrigger("die");
 			transform.GetComponent<BoxCollider2D>().enabled = false;
 			GameManager.Instance.PlayerLife -= 1;
 
 			transform.DOPath(
-				new[] { transform.position, new Vector3(transform.position.x + 3.0f, - 6.2f, 0.0f) }, 2.0f, PathType.CatmullRom)
+				new[] { transform.position, new Vector3(transform.position.x + 3.0f, - 6.2f, 0.0f) }, 1.0f, PathType.CatmullRom)
 				.SetEase(Ease.Linear).OnComplete(() =>
 			{
 				StartCoroutine(DieCheck());
@@ -221,10 +222,8 @@ public class PlayerController : Object
 		dieSmog.gameObject.SetActive(false);
 		transform.position = Vector3.MoveTowards(new Vector3(11.0f, 1.3f, 0.0f), new Vector3(16.0f, 1.3f, 0.0f), 0.01f);
 		ObjectAnim.Play("Idle");
-		color = new Color(color.r, color.g, color.b, color.a <= 255.0f ? 255.0f - Time.deltaTime : 0.0f);
 
 		yield return new WaitForSeconds(2.0f);
-		color = new Color(color.r, color.g, color.b, color.a <= 0.0f ? 0.0f + Time.deltaTime : 255.0f);
 		transform.GetComponent<BoxCollider2D>().enabled = true;
 	}
 }
