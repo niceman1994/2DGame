@@ -14,13 +14,13 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
     {
         Initialize();
 
-        StartCoroutine(setDelay1<smallEnemy1>(0.195f, 0, 8));
-        StartCoroutine(setDelay1<smallEnemy1>(0.195f, 8, 12));
-        StartCoroutine(setDelay1<smallEnemy1>(0.195f, 12, 16));
-        StartCoroutine(setDelay1<smallEnemy1>(0.195f, 16, 20));
-        StartCoroutine(setDelay1<smallEnemy1>(0.195f, 20, 24));
-        StartCoroutine(setDelay2<smallEnemy2>(0.45f));
-        StartCoroutine(setDelay3<smallEnemy3>(0.5f));
+        //StartCoroutine(setDelay1<smallEnemy1>(0.195f, 0, 8));
+        //StartCoroutine(setDelay1<smallEnemy1>(0.195f, 8, 12));
+        //StartCoroutine(setDelay1<smallEnemy1>(0.195f, 12, 16));
+        //StartCoroutine(setDelay1<smallEnemy1>(0.195f, 16, 20));
+        //StartCoroutine(setDelay1<smallEnemy1>(0.195f, 20, 24));
+        //StartCoroutine(setDelay2<smallEnemy2>(0.45f));
+        //StartCoroutine(setDelay3<smallEnemy3>(0.5f));
         StartCoroutine(bigEnemyDealy<greenEnemy>(1.0f));
     }
 
@@ -54,7 +54,7 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
         }
 
         for (int i = 0; i < 3; ++i)
-            SpawnEnemy<greenEnemy>(1, 42.0f, -1.5f);
+            SpawnEnemy<greenEnemy>(1, 42.0f, -2.4f);
     }
 
     void SpawnEnemy<T>(int count, Vector2 pos)
