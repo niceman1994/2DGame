@@ -9,6 +9,7 @@ public class GameManager : ManagerSingleton<GameManager>
     public GameObject CoinCanvas;
     public GameObject PlayerCanvas;
     public GameObject Panel;
+    public Animator ChargeEffect;
 
     public Text InsertCoinText;
     public Text GameOverText;
@@ -22,6 +23,7 @@ public class GameManager : ManagerSingleton<GameManager>
 
     public Text PlayerLifeText;
     public int PlayerLife;
+    public bool PlayerCharge;
 
     float timer = 0.0f;
     string message;
@@ -33,12 +35,14 @@ public class GameManager : ManagerSingleton<GameManager>
         CoinCanvas.SetActive(false);
         PlayerCanvas.SetActive(false);
         StartCoroutine(PhaseNotice(message, 0.15f));
+        PlayerCharge = false;
     }
 
 	private void Update()
 	{
         insertCoin();
         ChangeText();
+        ChargeCheck();
         GameStop();
         PlayerLifeText.text = PlayerLife.ToString();
 
@@ -100,6 +104,14 @@ public class GameManager : ManagerSingleton<GameManager>
         yield return new WaitForSeconds(1.0f);
         PhaseInfoText.gameObject.SetActive(false);
     }
+
+    void ChargeCheck()
+	{
+        if (ChargeEffect.GetCurrentAnimatorStateInfo(0).IsName("ChargeEnd"))
+            PlayerCharge = true;
+        else
+            PlayerCharge = false;
+	}
 
     void GameStop()
 	{

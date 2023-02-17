@@ -32,10 +32,7 @@ public class smallEnemy2 : Object
 			else
 			{
 				if (inScene == true)
-				{
 					gameObject.SetActive(false);
-					transform.SetParent(EnemyManager.Instance.transform);
-				}
 			}
 		}
 	}
@@ -77,12 +74,14 @@ public class smallEnemy2 : Object
 	{
 		yield return null;
 
+		WaitForSeconds waitForSeconds = new WaitForSeconds(12.0f);
+
 		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
 			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
 		{
 			if (dir.type == 1)
 			{
-				yield return new WaitForSeconds(13.0f);
+				yield return waitForSeconds;
 
 				if (gameObject.activeInHierarchy == true)
 				{
@@ -97,7 +96,7 @@ public class smallEnemy2 : Object
 
 			if (dir.type == 2)
 			{
-				yield return new WaitForSeconds(13.0f);
+				yield return waitForSeconds;
 
 				if (gameObject.activeInHierarchy == true)
 				{
@@ -119,10 +118,8 @@ public class smallEnemy2 : Object
 			yield return null;
 
 			if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
-			{
 				gameObject.SetActive(false);
-				transform.SetParent(EnemyManager.Instance.transform);
-			}
+			else if (gameObject.activeInHierarchy == false) break;
 		}
 	}
 }

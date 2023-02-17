@@ -6,9 +6,17 @@ public class Bullet : MonoBehaviour
 {
     [SerializeField] private string Name;
     [SerializeField] private float Speed = 24.0f;
+    [SerializeField] Sprite[] sprites;
+    SpriteRenderer SpriteR;
+
+	private void Start()
+	{
+        SpriteR = gameObject.GetComponent<SpriteRenderer>();
+	}
 
 	void Update()
 	{
+        BulletLevelUp();
         transform.Translate(Vector2.right * Speed * Time.deltaTime);
 
         if (transform.position.x >= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize)
@@ -22,4 +30,13 @@ public class Bullet : MonoBehaviour
         else if (collision.gameObject.tag == "ItemMob")
             ObjectPool.Instance.PushPooledObject<Bullet>(gameObject);
     }
+
+    void BulletLevelUp()
+	{
+        if (ObjectPool.Instance.BulletLevel == 2)
+		{
+            SpriteR.sprite = sprites[1];
+            transform.GetComponent<BoxCollider2D>().size = new Vector2(0.08f, 0.08f);
+        }
+	}
 } 

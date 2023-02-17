@@ -2242,6 +2242,7 @@ MonoBehaviour:
   CoinCanvas: {fileID: 2097414137}
   PlayerCanvas: {fileID: 719757287}
   Panel: {fileID: 959669551}
+  ChargeEffect: {fileID: 1135599154}
   InsertCoinText: {fileID: 1189732060}
   GameOverText: {fileID: 499799089}
   PhaseInfoText: {fileID: 2061649510}
@@ -2250,7 +2251,8 @@ MonoBehaviour:
   CoinText: {fileID: 1866336593}
   Coin: 0
   PlayerLifeText: {fileID: 103112943}
-  PlayerLife: 2
+  PlayerLife: 5
+  PlayerCharge: 0
 --- !u!4 &207643103
 Transform:
   m_ObjectHideFlags: 0
@@ -8089,8 +8091,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyPrefab:
   - {fileID: 569337003437355458, guid: 461aa64481ef9e84485a5e1ae14a325e, type: 3}
-  - {fileID: 5719626365535365340, guid: cd48f7f74f21cde488d1c051c95ed774, type: 3}
-  - {fileID: 8466221563638602843, guid: b6772113a9f2d2446b18166b180ab746, type: 3}
+  - {fileID: 5719626365535365340, guid: b6772113a9f2d2446b18166b180ab746, type: 3}
+  - {fileID: 8466221563638602843, guid: cd48f7f74f21cde488d1c051c95ed774, type: 3}
+  - {fileID: 6634266926878728465, guid: 352525ae6a681c040b8f09801f616bc0, type: 3}
 --- !u!1 &1034591128
 GameObject:
   m_ObjectHideFlags: 0
@@ -8754,7 +8757,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.15, y: 0.15}
+  m_Size: {x: 0.09, y: 0.09}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0

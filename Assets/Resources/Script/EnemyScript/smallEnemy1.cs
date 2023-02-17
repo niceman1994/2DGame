@@ -28,7 +28,7 @@ public class smallEnemy1 : Object
 		base.ObjectAnim = gameObject.GetComponent<Animator>();
 
 		randomBullet = Random.Range(2, 8);
-		GetDirType(2.0f, -2.0f);
+		GetDirType(2.3f, -2.3f);
 	}
 
 	public override void Progress()
@@ -44,10 +44,7 @@ public class smallEnemy1 : Object
 					EnemyAttack();
 			}
 			else
-			{
 				gameObject.SetActive(false);
-				transform.SetParent(EnemyManager.Instance.transform);
-			}
 		}
 	}
 
@@ -82,7 +79,9 @@ public class smallEnemy1 : Object
 	public IEnumerator UpDown()
 	{
 		yield return null;
-	
+
+		WaitForSeconds waitForSeconds = new WaitForSeconds(4.0f);
+
 		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
 			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
 		{
@@ -90,16 +89,13 @@ public class smallEnemy1 : Object
 			{
 				if (gameObject.activeInHierarchy == true)
 				{
-					yield return new WaitForSeconds(4.0f);
+					yield return waitForSeconds;
 
 					transform.DOPath(new[] { transform.position,
 						new Vector3(transform.position.x - 1.0f, transform.position.y - 0.75f, 0.0f),
 						new Vector3(transform.position.x - 2.0f, transform.position.y, 0.0f),
 						new Vector3(transform.position.x - 3.0f, transform.position.y + 0.75f, 0.0f),
-						new Vector3(transform.position.x - 4.0f, transform.position.y, 0.0f) }, 1.6f, PathType.CatmullRom).SetEase(Ease.Linear).OnComplete(() =>
-						{
-							dir.pos = transform.position;
-						});
+						new Vector3(transform.position.x - 4.0f, transform.position.y, 0.0f) }, 1.6f, PathType.CatmullRom).SetEase(Ease.Linear);
 				}
 				else
 					transform.DOKill();
@@ -108,16 +104,13 @@ public class smallEnemy1 : Object
 			{
 				if (gameObject.activeInHierarchy == true)
 				{
-					yield return new WaitForSeconds(4.0f);
+					yield return waitForSeconds;
 
 					transform.DOPath(new[] { transform.position,
 						new Vector3(transform.position.x - 1.0f, transform.position.y + 0.75f, 0.0f),
 						new Vector3(transform.position.x - 2.0f, transform.position.y, 0.0f),
 						new Vector3(transform.position.x - 3.0f, transform.position.y - 0.75f, 0.0f),
-						new Vector3(transform.position.x - 4.0f, transform.position.y, 0.0f) }, 1.6f, PathType.CatmullRom).SetEase(Ease.Linear).OnComplete(() =>
-						{
-							dir.pos = transform.position;
-						});
+						new Vector3(transform.position.x - 4.0f, transform.position.y, 0.0f) }, 1.6f, PathType.CatmullRom).SetEase(Ease.Linear);
 				}
 				else
 					transform.DOKill();
@@ -126,16 +119,13 @@ public class smallEnemy1 : Object
             {
 				if (gameObject.activeInHierarchy == true)
                 {
-					yield return new WaitForSeconds(4.0f);
+					yield return waitForSeconds;
 
 					transform.DOPath(new[] { transform.position,
-						new Vector3(transform.position.x - 1.0f, transform.position.y - 0.75f, 0.0f),
+						new Vector3(transform.position.x - 1.0f, transform.position.y - 1.25f, 0.0f),
 						new Vector3(transform.position.x - 2.0f, transform.position.y, 0.0f),
-						new Vector3(transform.position.x - 3.0f, transform.position.y + 0.75f, 0.0f),
-						new Vector3(transform.position.x - 4.0f, transform.position.y , 0.0f) }, 1.6f, PathType.CatmullRom).SetEase(Ease.Linear).OnComplete(() =>
-						{
-							dir.pos = transform.position;
-						});
+						new Vector3(transform.position.x - 3.0f, transform.position.y + 1.25f, 0.0f),
+						new Vector3(transform.position.x - 4.0f, transform.position.y , 0.0f) }, 1.6f, PathType.CatmullRom).SetEase(Ease.Linear);
 				}
 				else
 					transform.DOKill();
@@ -147,7 +137,7 @@ public class smallEnemy1 : Object
 	{
 		attackDelay += Time.deltaTime;
 
-		if (attackDelay >= 4.0f)
+		if (attackDelay >= 2.0f)
 		{
 			if (randomBullet == 4 || randomBullet == 5)
 			{
@@ -166,14 +156,12 @@ public class smallEnemy1 : Object
 	IEnumerator ReturnObject()
     {
 		while (true)
-        {
+		{
 			yield return null;
-	
+
 			if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
-			{
 				gameObject.SetActive(false);
-				transform.SetParent(EnemyManager.Instance.transform);
-			}
+			else if (gameObject.activeInHierarchy == false) break;
 		}
-    }
+	}
 }

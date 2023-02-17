@@ -13,7 +13,6 @@ public class PlayerController : Object
 	Animator[] smoganim = new Animator[3];
 	Animator Charge;
 	Animator dieSmog;
-	Color color;
 
 	public override void Initialize()
 	{
@@ -22,7 +21,6 @@ public class PlayerController : Object
 		base.Speed = 10.0f;
 		base.ObjectAnim = _Object.GetComponent<Animator>();
 		ObjectAnim.enabled = false;
-		color = GetComponent<SpriteRenderer>().color;
 
 		StartCoroutine(Sally());
 
@@ -77,6 +75,8 @@ public class PlayerController : Object
 				StartCoroutine(DieCheck());
 			});
 		}
+
+		GetItem(collision.gameObject);
 	}
 
 	private IEnumerator Sally()
@@ -134,13 +134,13 @@ public class PlayerController : Object
 		{
 			ObjectAnim.SetBool("up", true);
 			ObjectAnim.SetBool("down", false);
-			transform.Translate(new Vector3(0.0f, 0.02f, 0.0f));
+			transform.Translate(new Vector3(0.0f, 0.045f, 0.0f)); // 집에서는 0.02f, 학원에서는
 		}
 		else if (Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.UpArrow))
 		{
 			ObjectAnim.SetBool("down", true);
 			ObjectAnim.SetBool("up", false);
-			transform.Translate(new Vector3(0.0f, -0.02f, 0.0f));
+			transform.Translate(new Vector3(0.0f, -0.045f, 0.0f));
 		}
 		else
 		{
@@ -150,9 +150,9 @@ public class PlayerController : Object
 		}
 
 		if (Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
-			transform.Translate(new Vector2(-0.02f, 0.0f));
+			transform.Translate(new Vector2(-0.045f, 0.0f));
 		else if (Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.LeftArrow))
-			transform.Translate(new Vector2(0.02f, 0.0f));
+			transform.Translate(new Vector2(0.045f, 0.0f));
 	}
 
 	void CameraView()
@@ -221,9 +221,24 @@ public class PlayerController : Object
 
 		dieSmog.gameObject.SetActive(false);
 		transform.position = Vector3.MoveTowards(new Vector3(11.0f, 1.3f, 0.0f), new Vector3(16.0f, 1.3f, 0.0f), 0.01f);
-		ObjectAnim.Play("Idle");
+		ObjectAnim.Play("Sally");
+		transform.GetComponent<SpriteRenderer>().color = new Color(255.0f, 255.0f, 255.0f, 0.0f);
 
 		yield return new WaitForSeconds(2.0f);
+		ObjectAnim.Play("Idle");
+		transform.GetComponent<SpriteRenderer>().color = new Color(255.0f, 255.0f, 255.0f, 255.0f);
 		transform.GetComponent<BoxCollider2D>().enabled = true;
+	}
+
+	void GetItem(GameObject obj)
+	{
+		if (obj.name == "PowerUp")
+			ObjectPool.Instance.BulletLevel += 1;
+
+		if (obj.name == "LifeUp")
+			GameManager.Instance.PlayerLife += 1;
+
+		if (obj.name == "ScoreUp")
+			GameManager.Instance.Score += Random.Range(3, 5) * 10;
 	}
 }

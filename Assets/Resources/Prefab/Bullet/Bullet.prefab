@@ -49,6 +49,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Bullet
   Speed: 24
+  sprites:
+  - {fileID: -1944919902, guid: 1bd699ab85154f94a9f23ed004dd6eaa, type: 3}
+  - {fileID: -1385823796, guid: 1bd699ab85154f94a9f23ed004dd6eaa, type: 3}
+  - {fileID: 1650974765, guid: 1bd699ab85154f94a9f23ed004dd6eaa, type: 3}
 --- !u!212 &5167270347097577624
 SpriteRenderer:
   m_ObjectHideFlags: 0
