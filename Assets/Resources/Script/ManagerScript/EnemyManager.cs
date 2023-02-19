@@ -7,10 +7,12 @@ using DG.Tweening;
 public class EnemyManager : ManagerSingleton<EnemyManager>
 {
     public GameObject[] EnemyPrefab;
+    public GameObject BullterPrefab;
+
     public Dictionary<object, List<GameObject>> EnemyLists = new Dictionary<object, List<GameObject>>();
     public List<IEnumerator> enumerators = new List<IEnumerator>();
 
-	void Start()
+    void Start()
     {
         Initialize();
 
@@ -18,27 +20,18 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
         //StartCoroutine(setDelay1<smallEnemy1>(0.195f, 8, 12));
         //StartCoroutine(setDelay1<smallEnemy1>(0.195f, 12, 16));
         //StartCoroutine(setDelay1<smallEnemy1>(0.195f, 16, 20));
-        //StartCoroutine(setDelay1<smallEnemy1>(0.195f, 20, 24));
         //StartCoroutine(setDelay2<smallEnemy2>(0.45f));
         //StartCoroutine(setDelay3<smallEnemy3>(0.5f));
-        StartCoroutine(bigEnemyDealy<greenEnemy>(1.0f));
+        StartCoroutine(setDelay4<smallEnemy4>(1.0f));
+        //StartCoroutine(bigEnemyDealy<greenEnemy>(1.0f));
     }
-
-	private void Update()
-	{
-		if (EnemyLists.ContainsKey("smallEnemy1"))
-		{
-            for (int i = 24; i < EnemyLists["smallEnemy1"].Count; ++i)
-                EnemyLists["smallEnemy1"][i].gameObject.SetActive(false);
-		}
-	}
 
 	void Initialize()
 	{
         SpawnEnemy<smallEnemy1>(4, new Vector2(46.0f, 2.4f));
         SpawnEnemy<smallEnemy1>(4, new Vector2(50.0f, -2.4f));
         
-        for (int i = 0; i < 8; ++i)
+        for (int i = 0; i < 4; ++i)
             SpawnEnemy<smallEnemy1>(4, new Vector2(86.0f, 0.0f - i));
 
         for (int i = 0; i < 10; ++i)
@@ -52,6 +45,9 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
             SpawnEnemy<smallEnemy3>(1, 38.0f, 1.8f);
             SpawnEnemy<smallEnemy3>(1, 38.0f, -1.8f);
         }
+
+        for (int i = 0; i < 10; ++i)
+            SpawnEnemy<smallEnemy4>(1, 36.0f, -4.4f);
 
         for (int i = 0; i < 3; ++i)
             SpawnEnemy<greenEnemy>(1, 42.0f, -2.4f);
@@ -176,23 +172,50 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
         }
     }
 
+    IEnumerator setDelay4<T>(float delay)
+    {
+        WaitForSeconds waitForSeconds = new WaitForSeconds(delay);
+
+        while (true)
+        {
+            yield return null;
+
+            if (EnemyLists.ContainsKey(typeof(T).Name))
+            {
+                for (int i = 0; i < EnemyLists[typeof(T).Name].Count; ++i)
+                {
+                    if (EnemyLists[typeof(T).Name][i].activeInHierarchy == true)
+                    {
+                        StartCoroutine(EnemyLists[typeof(T).Name][i].transform.GetComponent<smallEnemy4>().UpDown());
+                        yield return waitForSeconds;
+                    }
+                    else
+                        yield break;
+                }
+            }
+        }
+    }
+
     IEnumerator bigEnemyDealy<T>(float delay)
 	{
         WaitForSeconds waitForSeconds = new WaitForSeconds(delay);
 
-        yield return null;
-
-        if (EnemyLists.ContainsKey(typeof(T).Name))
+        while (true)
         {
-            for (int i = 0; i < EnemyLists[typeof(T).Name].Count; ++i)
+            yield return null;
+
+            if (EnemyLists.ContainsKey(typeof(T).Name))
             {
-                if (EnemyLists[typeof(T).Name][i].activeInHierarchy == true)
+                for (int i = 0; i < EnemyLists[typeof(T).Name].Count; ++i)
                 {
-                    StartCoroutine(EnemyLists[typeof(T).Name][i].transform.GetComponent<greenEnemy>().UpDown());
-                    yield return waitForSeconds;
+                    if (EnemyLists[typeof(T).Name][i].activeInHierarchy == true)
+                    {
+                        StartCoroutine(EnemyLists[typeof(T).Name][i].transform.GetComponent<greenEnemy>().UpDown());
+                        yield return waitForSeconds;
+                    }
+                    else
+                        yield break;
                 }
-                else
-                    yield break;
             }
         }
     }

@@ -11,12 +11,14 @@ internal struct DirType
 
 public class smallEnemy1 : Object
 {
-	[SerializeField] private GameObject BullterPrefab;
 	[SerializeField] private GameObject BulletPoint;
 	GameObject bullet;
 
 	float attackDelay;
 	float randomBullet;
+
+	float CameraRightPos;
+	float CameraLeftPos;
 
 	DirType dir;
 
@@ -27,6 +29,8 @@ public class smallEnemy1 : Object
 		base.Speed = 2.5f;
 		base.ObjectAnim = gameObject.GetComponent<Animator>();
 
+		CameraRightPos = Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize;
+		CameraLeftPos = Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize;
 		randomBullet = Random.Range(2, 8);
 		GetDirType(2.3f, -2.3f);
 	}
@@ -36,11 +40,11 @@ public class smallEnemy1 : Object
 		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
 			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
 		{
-			if (transform.position.x >= Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize)
+			if (transform.position.x >= CameraRightPos)
 			{
 				transform.position = new Vector3(transform.position.x - (Speed * Time.deltaTime), transform.position.y, 0.0f);
 
-				if (transform.position.x < Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize)
+				if (transform.position.x < CameraLeftPos)
 					EnemyAttack();
 			}
 			else
@@ -141,7 +145,7 @@ public class smallEnemy1 : Object
 		{
 			if (randomBullet == 4 || randomBullet == 5)
 			{
-				bullet = Instantiate(BullterPrefab);
+				bullet = Instantiate(EnemyManager.Instance.BullterPrefab);
 				bullet.name = "EnemyBullet";
 				bullet.transform.position += new Vector3(
 					BulletPoint.transform.position.x - Speed * 1.2f * Time.deltaTime,
