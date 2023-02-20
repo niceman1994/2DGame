@@ -8040,8 +8040,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyPrefab:
   - {fileID: 569337003437355458, guid: 461aa64481ef9e84485a5e1ae14a325e, type: 3}
-  - {fileID: 5719626365535365340, guid: b6772113a9f2d2446b18166b180ab746, type: 3}
-  - {fileID: 8466221563638602843, guid: cd48f7f74f21cde488d1c051c95ed774, type: 3}
+  - {fileID: 5719626365535365340, guid: cd48f7f74f21cde488d1c051c95ed774, type: 3}
+  - {fileID: 8466221563638602843, guid: b6772113a9f2d2446b18166b180ab746, type: 3}
   - {fileID: 5988790504481976328, guid: 185cb3bca63037e4dad5ddf28b10bc60, type: 3}
   - {fileID: 6634266926878728465, guid: 352525ae6a681c040b8f09801f616bc0, type: 3}
   BullterPrefab: {fileID: 3881419598712241178, guid: c9d1e004750ccac45b12af3c097e8d67, type: 3}

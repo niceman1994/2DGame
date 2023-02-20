@@ -86,7 +86,7 @@ public class greenEnemy : Object
 		yield return waitForSeconds;
 
 		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
-			   GameManager.Instance.CoinCanvas.activeInHierarchy == false)
+			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
 		{
 			if (gameObject.activeInHierarchy == true && Hp > 0)
 			{
