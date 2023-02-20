@@ -8,21 +8,30 @@ public class greenEnemy : Object
 	[SerializeField] private GameObject BulletPoint1;
 	[SerializeField] private GameObject BulletPoint2;
 	[SerializeField] private Animator[] animators;
+	[SerializeField] private Vector3[] pos = new Vector3[5];
+
+	float time;
 
 	public override void Initialize()
 	{
 		base.Name = "greenEnemy";
 		base.Hp = 100;
 		base.Speed = 3.0f;
-		base.ObjectAnim = gameObject.GetComponent<Animator>();
+		base.ObjectAnim = GetComponent<Animator>();
 		ObjectAnim.enabled = false;
+		time = 0.0f;
 
 		StartCoroutine(UpDown());
 	}
 
 	public override void Progress()
 	{
-		ZeroHp();
+		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
+			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
+		{
+			ZeroHp();
+			ShootBullet();
+		}
 	}
 
 	public override void Release()
@@ -65,73 +74,61 @@ public class greenEnemy : Object
 		if (Hp > 0)
 		{
 			for (int i = 0; i < transform.childCount - 2; ++i)
-			{
 				animators[i].enabled = false;
-				animators[i].speed = 0;
-			}
 		}
-		else
-			ObjectAnim.enabled = false;
 	}
 
 	// TODO : 추후 수정
 	public IEnumerator UpDown()
 	{
-		yield return null;
+		WaitForSeconds waitForSeconds = new WaitForSeconds(6.0f);
 
-		WaitForSeconds waitForSeconds = new WaitForSeconds(5.0f);
+		yield return waitForSeconds;
 
 		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
-			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
+			   GameManager.Instance.CoinCanvas.activeInHierarchy == false)
 		{
-			yield return waitForSeconds;
-
-			transform.DOMoveX(transform.position.x - 22.0f, 2.0f).SetEase(Ease.Linear).OnComplete(() =>
+			if (gameObject.activeInHierarchy == true && Hp > 0)
 			{
-				transform.DOPath(new[] { new Vector3(transform.position.x + 8.0f, transform.position.y + 3.0f, 0.0f),
-					new Vector3(transform.position.x + 8.0f, transform.position.y + 5.0f, 0.0f),
-					new Vector3(transform.position.x - 1.5f, transform.position.y + 5.0f, 0.0f) }, 3.0f, PathType.CatmullRom)
-					.SetEase(Ease.Linear).OnComplete(() => { }).Kill(true);
-			});
-			
-			yield return waitForSeconds;
-			ObjectAnim.enabled = true;
-
-			if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
-			{
-				yield return new WaitForSeconds(1.0f);
-
-				SoundManager.Instance.PlaySE("GreenEnemyBulletSound");
-				ShootBullet();
-				ObjectAnim.enabled = false;
-			}
-
-			yield return new WaitForSeconds(1.0f);
-			transform.DOPath(new[] { transform.position,
-				new Vector3(transform.position.x + 12.0f, transform.position.y - 4.5f, 0.0f)}, 2.0f, PathType.Linear).SetEase(Ease.Linear).OnComplete(() =>
+				transform.DOMove(pos[0], 2.0f).SetEase(Ease.Linear).OnComplete(() =>
 				{
-					ObjectAnim.enabled = true;
-					SoundManager.Instance.PlaySE("GreenEnemyBulletSound");
-					ShootBullet();
+					transform.DOPath(new[] { pos[0], pos[1], pos[2], pos[3] }, 2.0f, PathType.CatmullRom).SetEase(Ease.Linear).SetDelay(1.0f, false).OnComplete(() =>
+				   {
+					   transform.DOPath(new[] { pos[3], pos[4] }, 2.0f).SetEase(Ease.Linear).SetDelay(1.0f, false).SetAutoKill(true);
+				   });
 				});
-
-			ObjectAnim.enabled = false;
+			}
+			else if (gameObject.activeInHierarchy == false)
+				transform.DOKill(true);
 		}
 	}
 
 	void ShootBullet()
     {
-		for (int i = 0; i < 6; ++i)
-		{
-			GameObject bullet1 = Instantiate(EnemyManager.Instance.BullterPrefab);
-			bullet1.name = "EnemyBullet";
-			bullet1.transform.position = new Vector3(
-				BulletPoint1.transform.position.x - i, BulletPoint1.transform.position.y, BulletPoint1.transform.position.z);
+		time += Time.deltaTime;
 
-			GameObject bullet2 = Instantiate(EnemyManager.Instance.BullterPrefab);
-			bullet2.name = "EnemyBullet";
-			bullet2.transform.position = new Vector3(
-				BulletPoint2.transform.position.x - i, BulletPoint2.transform.position.y, BulletPoint2.transform.position.z);
+		if (transform.position.x == 21.0f || transform.position.x == 31.0f)
+		{
+			if (time >= 1.0f)
+			{
+				time = 0.0f;
+				ObjectAnim.enabled = true;
+
+				for (int i = 0; i < 6; ++i)
+				{
+					GameObject bullet1 = Instantiate(EnemyManager.Instance.BullterPrefab);
+					bullet1.name = "EnemyBullet";
+					bullet1.transform.position = new Vector3(
+						BulletPoint1.transform.position.x - i, BulletPoint1.transform.position.y, BulletPoint1.transform.position.z);
+
+					GameObject bullet2 = Instantiate(EnemyManager.Instance.BullterPrefab);
+					bullet2.name = "EnemyBullet";
+					bullet2.transform.position = new Vector3(
+						BulletPoint2.transform.position.x - i, BulletPoint2.transform.position.y, BulletPoint2.transform.position.z);
+				}
+			}
+			else
+				ObjectAnim.enabled = false;
 		}
 	}
 }

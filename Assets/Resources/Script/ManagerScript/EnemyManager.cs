@@ -12,6 +12,7 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
     public Dictionary<object, List<GameObject>> EnemyLists = new Dictionary<object, List<GameObject>>();
     public List<IEnumerator> enumerators = new List<IEnumerator>();
 
+    
     void Start()
     {
         Initialize();
@@ -23,7 +24,7 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
         //StartCoroutine(setDelay2<smallEnemy2>(0.45f));
         //StartCoroutine(setDelay3<smallEnemy3>(0.5f));
         StartCoroutine(setDelay4<smallEnemy4>(1.0f));
-        //StartCoroutine(bigEnemyDealy<greenEnemy>(1.0f));
+        StartCoroutine(bigEnemyDealy<greenEnemy>(1.0f));
     }
 
 	void Initialize()
@@ -49,8 +50,7 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
         for (int i = 0; i < 10; ++i)
             SpawnEnemy<smallEnemy4>(1, 36.0f, -4.4f);
 
-        for (int i = 0; i < 3; ++i)
-            SpawnEnemy<greenEnemy>(1, 42.0f, -2.4f);
+        SpawnEnemy<greenEnemy>(3, 34.0f, -2.4f);
     }
 
     void SpawnEnemy<T>(int count, Vector2 pos)

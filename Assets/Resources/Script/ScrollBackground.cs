@@ -8,6 +8,7 @@ public class ScrollBackground : MonoBehaviour
 
 	private float[] leftPosX = new float[2];
 	private float[] rightPosX = new float[2];
+	private int loopCount;
 
 	private void Start()
 	{
@@ -19,6 +20,8 @@ public class ScrollBackground : MonoBehaviour
 			leftPosX[i] = -(vect.x) * 10.0f;
 			rightPosX[i] = vect.x * 10.0f;
 		}
+
+		loopCount = 0;
 	}
 
 	void Update()
@@ -40,6 +43,13 @@ public class ScrollBackground : MonoBehaviour
 					Vector3 nextPos = scrollBackground[i].gameObject.transform.position;
 					nextPos = new Vector3(nextPos.x + rightPosX[i] + 38.3993f, nextPos.y, nextPos.z);
 					scrollBackground[i].gameObject.transform.position = nextPos;
+					loopCount += 1;
+
+					if (loopCount > 5 && scrollBackground[i].transform.position == nextPos)
+					{
+						for (int j = 0; j < scrollBackground[i].transform.childCount; ++j)
+							scrollBackground[i].transform.GetChild(j).gameObject.SetActive(true);
+					}
 				}
 			}
 		}
