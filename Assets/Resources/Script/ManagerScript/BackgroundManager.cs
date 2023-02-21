@@ -9,6 +9,7 @@ public class BackgroundManager : ManagerSingleton<BackgroundManager>
 	public float xScreenHalfSize;
 	public float yScreenHalfSize;
 
+	ScrollBackground getCount;
 	float leftPosX = 0f;
 	float rightPosX = 0f;
 
@@ -21,6 +22,8 @@ public class BackgroundManager : ManagerSingleton<BackgroundManager>
 
 		leftPosX = -(xScreenHalfSize) * 2;
 		rightPosX = xScreenHalfSize * 2.5f * Background.Length;
+
+		getCount = transform.GetComponent<ScrollBackground>();
 	}
 
 	private void Update()
@@ -34,7 +37,7 @@ public class BackgroundManager : ManagerSingleton<BackgroundManager>
 		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
 			GameManager.Instance.CoinCanvas.activeInHierarchy == false && Time.timeScale == 1)
 		{
-			Camera.main.transform.position = Vector3.MoveTowards(Camera.main.transform.position, new Vector3(22.0f, 0.0f, -1.0f), 0.0125f); // 집에서는 0.0125f, 학원에서는 0.03f
+			Camera.main.transform.position = Vector3.MoveTowards(Camera.main.transform.position, new Vector3(22.0f, 0.0f, -1.0f), 0.03f); // 집에서는 0.0125f, 학원에서는 0.03f
 
 			if (Camera.main.transform.position.x >= 22.0f)
 			{
@@ -45,17 +48,18 @@ public class BackgroundManager : ManagerSingleton<BackgroundManager>
 				{
 					Background[i].position = new Vector3(Background[i].position.x + (-Speed * Time.deltaTime), 0.0f, 0.0f);
 
-					if (Background[i].position.x < leftPosX)
+					if (Background[i].position.x < leftPosX && getCount.loopCount <= 1)
 					{
 						Vector3 nextPos = Background[i].position;
 						nextPos = new Vector3(nextPos.x + rightPosX, nextPos.y, nextPos.z);
 						Background[i].position = nextPos;
 					}
+					else if (Background[i].position.x < leftPosX && getCount.loopCount > 1)
+						Background[i].gameObject.SetActive(false);
 				}
 			}
 		}
-
-		if (GameManager.Instance.PlayerLife == 0) Speed = 0.0f;
+		else if (GameManager.Instance.PlayerLife == 0) Speed = 0.0f;
 	}
 
 	void StopBackground()

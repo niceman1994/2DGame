@@ -10,7 +10,8 @@ public class greenEnemy : Object
 	[SerializeField] private Animator[] animators;
 	[SerializeField] private Vector3[] pos = new Vector3[5];
 
-	float time;
+	float attackTime;
+	float waitTime;
 
 	public override void Initialize()
 	{
@@ -19,19 +20,13 @@ public class greenEnemy : Object
 		base.Speed = 3.0f;
 		base.ObjectAnim = GetComponent<Animator>();
 		ObjectAnim.enabled = false;
-		time = 0.0f;
-
-		StartCoroutine(UpDown());
+		attackTime = 0.0f;
+		waitTime = 0.0f;
 	}
 
 	public override void Progress()
 	{
-		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
-			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
-		{
-			ZeroHp();
-			ShootBullet();
-		}
+		ZeroHp();
 	}
 
 	public override void Release()
@@ -50,11 +45,7 @@ public class greenEnemy : Object
 			{
 				Hp = 0;
 				transform.GetComponent<BoxCollider2D>().enabled = false;
-				transform.DOPath(new[] { transform.position,
-					new Vector3(transform.position.x + 4.0f, -6.5f, 0.0f)}, 2.0f, PathType.Linear).SetEase(Ease.Linear).OnComplete(() =>
-					{
-						gameObject.SetActive(false);
-					});
+				transform.position = Vector2.MoveTowards(transform.position, new Vector2(transform.position.x, -6.0f), 0.03f);
 
 				GameManager.Instance.Score += Random.Range(25, 30) * 10;
 
@@ -78,40 +69,59 @@ public class greenEnemy : Object
 		}
 	}
 
+	void Move()
+	{
+		waitTime += Time.deltaTime;
+
+		if (waitTime >= 6.0f)
+		{
+			if (transform.position.x >= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize)
+				transform.position = Vector2.MoveTowards(transform.position, new Vector2(pos[0].x, pos[0].y), 0.05f);
+		}
+	}
+
 	// TODO : 추후 수정
 	public IEnumerator UpDown()
 	{
-		WaitForSeconds waitForSeconds = new WaitForSeconds(6.0f);
+		yield return null;
 
-		yield return waitForSeconds;
+		WaitForSeconds waitForSeconds = new WaitForSeconds(6.0f);
 
 		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
 			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
 		{
 			if (gameObject.activeInHierarchy == true && Hp > 0)
 			{
-				transform.DOMove(pos[0], 2.0f).SetEase(Ease.Linear).OnComplete(() =>
+				yield return waitForSeconds;
+
+				transform.DOMoveX(pos[0].x, 2.0f).SetEase(Ease.Linear).OnComplete(() =>
 				{
-					transform.DOPath(new[] { pos[0], pos[1], pos[2], pos[3] }, 2.0f, PathType.CatmullRom).SetEase(Ease.Linear).SetDelay(1.0f, false).OnComplete(() =>
-				   {
-					   transform.DOPath(new[] { pos[3], pos[4] }, 2.0f).SetEase(Ease.Linear).SetDelay(1.0f, false).SetAutoKill(true);
-				   });
+					transform.DOPath(new[] { pos[0], pos[1], pos[2] }, 3.0f, PathType.CatmullRom).SetDelay(1.0f).SetEase(Ease.Linear).OnComplete(() =>
+					{
+						ObjectAnim.enabled = true;
+						ShootBullet();
+						transform.DOMove(pos[3], 4.0f).SetEase(Ease.Linear).OnComplete(() =>
+						{
+							ObjectAnim.enabled = false;
+							transform.DOPath(new[] { pos[3], pos[4] }, 2.0f, PathType.CatmullRom).SetDelay(1.0f).SetEase(Ease.Linear);
+						});
+					});
 				});
 			}
-			else if (gameObject.activeInHierarchy == false)
+			else if (Hp <= 0)
 				transform.DOKill(true);
 		}
 	}
 
 	void ShootBullet()
     {
-		time += Time.deltaTime;
+		attackTime += Time.deltaTime;
 
 		if (transform.position.x == 21.0f || transform.position.x == 31.0f)
 		{
-			if (time >= 1.0f)
+			if (attackTime >= 1.0f)
 			{
-				time = 0.0f;
+				attackTime = 0.0f;
 				ObjectAnim.enabled = true;
 
 				for (int i = 0; i < 6; ++i)
@@ -119,12 +129,12 @@ public class greenEnemy : Object
 					GameObject bullet1 = Instantiate(EnemyManager.Instance.BullterPrefab);
 					bullet1.name = "EnemyBullet";
 					bullet1.transform.position = new Vector3(
-						BulletPoint1.transform.position.x - i, BulletPoint1.transform.position.y, BulletPoint1.transform.position.z);
+						BulletPoint1.transform.position.x - (i * 2), BulletPoint1.transform.position.y, BulletPoint1.transform.position.z);
 
 					GameObject bullet2 = Instantiate(EnemyManager.Instance.BullterPrefab);
 					bullet2.name = "EnemyBullet";
 					bullet2.transform.position = new Vector3(
-						BulletPoint2.transform.position.x - i, BulletPoint2.transform.position.y, BulletPoint2.transform.position.z);
+						BulletPoint2.transform.position.x - (i * 2), BulletPoint2.transform.position.y, BulletPoint2.transform.position.z);
 				}
 			}
 			else
