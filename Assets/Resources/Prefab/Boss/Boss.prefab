@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1471456825196195369}
   - component: {fileID: 4339624528488178771}
   - component: {fileID: 4346112201872238297}
+  - component: {fileID: 637391090913196432}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -304,3 +305,21 @@ MonoBehaviour:
   lastFlipX: 0
   lastFlipY: 0
   editorCache: []
+--- !u!114 &637391090913196432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471456825196195370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc5548c4688ad0a4c89d8e21921a461c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Object: {fileID: 1471456825196195370}
+  SideWeapoon1: {fileID: 3284408713556066049, guid: ea5e2a691f1affc41a1752682b8e8300, type: 3}
+  SideWeapoon2: {fileID: 3284408713556066049, guid: ea5e2a691f1affc41a1752682b8e8300, type: 3}
+  UpMissile: {fileID: 4246140047727440760, guid: 15bdeb7d0a96c1942aee5df7befa1765, type: 3}
+  downMissile: {fileID: 5525809768735763546, guid: ee9457a89819b8f4c84acd4c529dc4d9, type: 3}
+  downArms: {fileID: 1906234881031297627, guid: 16669ce41cd38db44a8f058255ea14a0, type: 3}
