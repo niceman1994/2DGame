@@ -45,7 +45,13 @@ public class greenEnemy : Object
 			{
 				Hp = 0;
 				transform.GetComponent<BoxCollider2D>().enabled = false;
-				transform.position = Vector2.MoveTowards(transform.position, new Vector2(transform.position.x, -6.0f), 0.03f);
+
+				transform.DOKill(true);
+				transform.DOPath(new[] { transform.position,
+					new Vector3(transform.position.x + 3.0f, -6.5f, 0.0f) }, 2.0f, PathType.Linear).SetEase(Ease.Linear).OnComplete(() =>
+					{
+						gameObject.SetActive(false);
+					}).SetAutoKill(true);
 
 				GameManager.Instance.Score += Random.Range(25, 30) * 10;
 
@@ -73,11 +79,9 @@ public class greenEnemy : Object
 	{
 		waitTime += Time.deltaTime;
 
-		if (waitTime >= 6.0f)
-		{
-			if (transform.position.x >= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize)
-				transform.position = Vector2.MoveTowards(transform.position, new Vector2(pos[0].x, pos[0].y), 0.05f);
-		}
+		if (transform.position.x >= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize
+			&& waitTime >= 6.0f)
+			transform.position = Vector2.MoveTowards(transform.position, new Vector2(pos[0].x, pos[0].y), 0.05f);
 	}
 
 	// TODO : 추후 수정
@@ -108,8 +112,6 @@ public class greenEnemy : Object
 					});
 				});
 			}
-			else if (Hp <= 0)
-				transform.DOKill(true);
 		}
 	}
 

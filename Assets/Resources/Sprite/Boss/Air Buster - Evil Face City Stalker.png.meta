@@ -1,0 +1,883 @@
+fileFormatVersion: 2
+guid: e282f7318098c4640b9bb8527bfde5a0
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 178
+        width: 239
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f39b6cf5773553c4fb5be695f04b66d5
+      internalID: -1033481920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_1
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 286
+        width: 95
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809390ec9bf44b84dab6c2ba12a1a7ba
+      internalID: -740390959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_2
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 180
+        width: 87
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f468cfd0ef543bd4188e145ba91795ae
+      internalID: -199699486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_3
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 180
+        width: 95
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e877d870f593c24b9d3339ab3b6344b
+      internalID: 1665366891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_4
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 127
+        width: 63
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ecdd4086bff57741b5b4f22550b7fae
+      internalID: -810877122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_5
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 127
+        width: 63
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ef9e817e9a6e241b25c48a6e0a4cde
+      internalID: -1376096893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_6
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 127
+        width: 38
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0abd30d5a318424e82342dbad1e18ad
+      internalID: -429646293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_7
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 129
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a198606252186744e93f356f5ddea058
+      internalID: 1251894852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_8
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 137
+        width: 96
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6f00c90507b5145bb580d914735d3f
+      internalID: -1846363906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_9
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 91
+        width: 83
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef7aa2a08e2fed44ab59fd3fe88ca61
+      internalID: -1826164109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_10
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 91
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a089d4b25fa5d5046861a26b354e0cce
+      internalID: -849122438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_11
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 91
+        width: 46
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa3832599babf34d83a3c8a4a6ce574
+      internalID: -2085606885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_12
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 103
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e91ff2802a74084d9c36b67af520c33
+      internalID: -620710370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_13
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 92
+        width: 88
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 885e25de564cb364e806e4f7499816c7
+      internalID: -1340295953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_14
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 92
+        width: 88
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1c51784247469418301a8b34f2aeeb
+      internalID: 713991932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_15
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 82
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377d1731dad58ee43bb141e01f71e1b8
+      internalID: -404754820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_16
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 84
+        width: 42
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a974d3e06a91c2d4fae9416c9e2bc2f3
+      internalID: 1753145254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_17
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 59
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f87b33e6192134cb4b0eaf021561f8
+      internalID: 441196357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_18
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 59
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f860cac9a7fce0e4d9a5b81fad1a90d2
+      internalID: 1174152130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_19
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 59
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add3b86d389c5aa41a0ce34fbb77b77d
+      internalID: 1082467831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_20
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 58
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4345cbf11112cd141a9f0bc0b1ce94aa
+      internalID: -253205301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_21
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 58
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f83be13a04d9f194683741357567d0e6
+      internalID: -456145158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_22
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 59
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 555bdcf84bcd89e4caa445eced842659
+      internalID: 1371480823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_23
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 59
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a988cb97c5d464a92f2c53c07d6acd
+      internalID: -1958464567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_24
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 61
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c98106524247b4a8e5e5a4b0cd809d
+      internalID: -567009542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_25
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 67
+        width: 32
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4518b573e1fbb54c83155ff4c6fd430
+      internalID: 774677111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_26
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 34
+        width: 88
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c98a317e4a3c474eb2410f02fbe8424
+      internalID: -904348754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_27
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 34
+        width: 88
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994a96084f7d8114fa01434a2a0fa7bb
+      internalID: 474780936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_28
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 38
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c03d41473056246a10f044dbd2606f
+      internalID: -1583354075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_29
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 38
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a0e360ccd3fb9c4c8245ff97b733eec
+      internalID: 378322634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_30
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 43
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 034a026290623d84dae643b158da3799
+      internalID: 741034221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Air Buster - Evil Face City Stalker_31
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 42
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23124bf06a3736247a94f6a1e8167ab7
+      internalID: -1161772591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Air Buster - Evil Face City Stalker_55: -971048419
+      Air Buster - Evil Face City Stalker_56: 1498801376
+      Air Buster - Evil Face City Stalker_46: -35901930
+      Air Buster - Evil Face City Stalker_53: 2060436750
+      Air Buster - Evil Face City Stalker_40: -423371607
+      Air Buster - Evil Face City Stalker_0: -1033481920
+      Air Buster - Evil Face City Stalker_9: -1826164109
+      Air Buster - Evil Face City Stalker_17: 441196357
+      Air Buster - Evil Face City Stalker_30: 741034221
+      Air Buster - Evil Face City Stalker_50: -668214191
+      Air Buster - Evil Face City Stalker_75: -583785464
+      Air Buster - Evil Face City Stalker_42: -1518472795
+      Air Buster - Evil Face City Stalker_20: -253205301
+      Air Buster - Evil Face City Stalker_21: -456145158
+      Air Buster - Evil Face City Stalker_71: -738975851
+      Air Buster - Evil Face City Stalker_12: -620710370
+      Air Buster - Evil Face City Stalker_22: 1371480823
+      Air Buster - Evil Face City Stalker_3: 1665366891
+      Air Buster - Evil Face City Stalker_4: -810877122
+      Air Buster - Evil Face City Stalker_23: -1958464567
+      Air Buster - Evil Face City Stalker_15: -404754820
+      Air Buster - Evil Face City Stalker_2: -199699486
+      Air Buster - Evil Face City Stalker_29: 378322634
+      Air Buster - Evil Face City Stalker_44: 1265669782
+      Air Buster - Evil Face City Stalker_41: -337245755
+      Air Buster - Evil Face City Stalker_27: 474780936
+      Air Buster - Evil Face City Stalker_14: 713991932
+      Air Buster - Evil Face City Stalker_36: 2072994989
+      Air Buster - Evil Face City Stalker_10: -849122438
+      Air Buster - Evil Face City Stalker_32: 1899776537
+      Air Buster - Evil Face City Stalker_43: 1848610173
+      Air Buster - Evil Face City Stalker_35: 1773965540
+      Air Buster - Evil Face City Stalker_68: -1225311213
+      Air Buster - Evil Face City Stalker_58: 1716431740
+      Air Buster - Evil Face City Stalker_25: 774677111
+      Air Buster - Evil Face City Stalker_63: -794644453
+      Air Buster - Evil Face City Stalker_66: 109947069
+      Air Buster - Evil Face City Stalker_45: 1747583971
+      Air Buster - Evil Face City Stalker_19: 1082467831
+      Air Buster - Evil Face City Stalker_8: -1846363906
+      Air Buster - Evil Face City Stalker_72: -758555430
+      Air Buster - Evil Face City Stalker_24: -567009542
+      Air Buster - Evil Face City Stalker_33: 1091459125
+      Air Buster - Evil Face City Stalker_61: -1730777194
+      Air Buster - Evil Face City Stalker_38: -756345867
+      Air Buster - Evil Face City Stalker_54: 1015517018
+      Air Buster - Evil Face City Stalker_13: -1340295953
+      Air Buster - Evil Face City Stalker_64: -1085946716
+      Air Buster - Evil Face City Stalker_69: 1630582815
+      Air Buster - Evil Face City Stalker_57: 1555943336
+      Air Buster - Evil Face City Stalker_52: -79646048
+      Air Buster - Evil Face City Stalker_76: 1416843343
+      Air Buster - Evil Face City Stalker_11: -2085606885
+      Air Buster - Evil Face City Stalker_74: -58707869
+      Air Buster - Evil Face City Stalker_51: -978301535
+      Air Buster - Evil Face City Stalker_70: -1352464660
+      Air Buster - Evil Face City Stalker_28: -1583354075
+      Air Buster - Evil Face City Stalker_59: 1823513110
+      Air Buster - Evil Face City Stalker_16: 1753145254
+      Air Buster - Evil Face City Stalker_34: -1865639474
+      Air Buster - Evil Face City Stalker_49: -1412690090
+      Air Buster - Evil Face City Stalker_26: -904348754
+      Air Buster - Evil Face City Stalker_31: -1161772591
+      Air Buster - Evil Face City Stalker_73: -1097106916
+      Air Buster - Evil Face City Stalker_65: -708101109
+      Air Buster - Evil Face City Stalker_6: -429646293
+      Air Buster - Evil Face City Stalker_60: -1638551233
+      Air Buster - Evil Face City Stalker_39: -1580933370
+      Air Buster - Evil Face City Stalker_62: 1576861336
+      Air Buster - Evil Face City Stalker_67: 300849611
+      Air Buster - Evil Face City Stalker_5: -1376096893
+      Air Buster - Evil Face City Stalker_1: -740390959
+      Air Buster - Evil Face City Stalker_48: 2126935917
+      Air Buster - Evil Face City Stalker_47: 362200712
+      Air Buster - Evil Face City Stalker_37: -1674733734
+      Air Buster - Evil Face City Stalker_7: 1251894852
+      Air Buster - Evil Face City Stalker_18: 1174152130
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
