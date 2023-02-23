@@ -45,14 +45,6 @@ public class greenEnemy : Object
 			{
 				Hp = 0;
 				transform.GetComponent<BoxCollider2D>().enabled = false;
-
-				transform.DOKill(true);
-				transform.DOPath(new[] { transform.position,
-					new Vector3(transform.position.x + 3.0f, -6.5f, 0.0f) }, 2.0f, PathType.Linear).SetEase(Ease.Linear).OnComplete(() =>
-					{
-						gameObject.SetActive(false);
-					}).SetAutoKill(true);
-
 				GameManager.Instance.Score += Random.Range(25, 30) * 10;
 
 				for (int i = 0; i < transform.childCount - 2; ++i)
@@ -94,16 +86,29 @@ public class greenEnemy : Object
 		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
 			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
 		{
-			if (gameObject.activeInHierarchy == true && Hp > 0)
+			if (Hp > 0)
 			{
 				yield return waitForSeconds;
 
 				transform.DOMoveX(pos[0].x, 2.0f).SetEase(Ease.Linear).OnComplete(() =>
 				{
-					transform.DOPath(new[] { pos[0], pos[1], pos[2] }, 3.0f, PathType.CatmullRom).SetDelay(1.0f).SetEase(Ease.Linear).OnComplete(() =>
+					transform.DOPath(new[] { pos[0], pos[1], pos[2] }, 3.0f, PathType.CatmullRom).SetDelay(1.0f, false).SetEase(Ease.Linear).OnComplete(() =>
 					{
 						ObjectAnim.enabled = true;
-						ShootBullet();
+
+						for (int i = 0; i < 6; ++i)
+						{
+							GameObject bullet1 = Instantiate(EnemyManager.Instance.BullterPrefab);
+							bullet1.name = "EnemyBullet";
+							bullet1.transform.position = new Vector3(
+								BulletPoint1.transform.position.x - i, BulletPoint1.transform.position.y, BulletPoint1.transform.position.z);
+
+							GameObject bullet2 = Instantiate(EnemyManager.Instance.BullterPrefab);
+							bullet2.name = "EnemyBullet";
+							bullet2.transform.position = new Vector3(
+								BulletPoint2.transform.position.x - i, BulletPoint2.transform.position.y, BulletPoint2.transform.position.z);
+						}
+						
 						transform.DOMove(pos[3], 4.0f).SetEase(Ease.Linear).OnComplete(() =>
 						{
 							ObjectAnim.enabled = false;
@@ -111,6 +116,17 @@ public class greenEnemy : Object
 						});
 					});
 				});
+			}
+			else
+			{
+				yield return null;
+
+				transform.DOPath(new[] { transform.position,
+					new Vector3(transform.position.x + 3.0f, -6.5f, 0.0f) }, 2.0f, PathType.Linear).SetEase(Ease.Linear).OnComplete(() =>
+					{
+						gameObject.SetActive(false);
+						transform.DOKill(true);
+					});
 			}
 		}
 	}

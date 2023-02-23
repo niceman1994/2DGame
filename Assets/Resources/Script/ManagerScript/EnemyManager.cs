@@ -51,6 +51,8 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
             SpawnEnemy<smallEnemy4>(1, 36.0f, -4.4f);
 
         SpawnEnemy<greenEnemy>(3, 34.0f, -2.4f);
+
+        SpawnEnemy<Boss>(1, 40.0f, 6.33f);
     }
 
     void SpawnEnemy<T>(int count, Vector2 pos)

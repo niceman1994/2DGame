@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1798393624157643269}
   - component: {fileID: 3004955201904812577}
   m_Layer: 0
-  m_Name: downArms
+  m_Name: downArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -31,6 +31,8 @@ public class Bullet : MonoBehaviour
             ObjectPool.Instance.PushPooledObject<Bullet>(gameObject);
         else if (collision.gameObject.tag == "GreenEnemy")
             ObjectPool.Instance.PushPooledObject<Bullet>(gameObject);
+        else if (collision.gameObject.tag == "Boss")
+            ObjectPool.Instance.PushPooledObject<Bullet>(gameObject);
     }
 
     void BulletLevelUp()

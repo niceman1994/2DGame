@@ -9,6 +9,7 @@ TagManager:
   - GreenEnemy
   - Item
   - ItemMob
+  - Boss
   layers:
   - Default
   - TransparentFX
