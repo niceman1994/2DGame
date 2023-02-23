@@ -24,6 +24,7 @@ public class GameManager : ManagerSingleton<GameManager>
     public Text PlayerLifeText;
     public int PlayerLife;
     public bool PlayerCharge;
+    public bool CollisionCheck;
 
     float timer = 0.0f;
     string message;
@@ -36,6 +37,7 @@ public class GameManager : ManagerSingleton<GameManager>
         PlayerCanvas.SetActive(false);
         StartCoroutine(PhaseNotice(message, 0.15f));
         PlayerCharge = false;
+        CollisionCheck = false;
     }
 
 	private void Update()

@@ -37,7 +37,7 @@ public class BackgroundManager : ManagerSingleton<BackgroundManager>
 		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
 			GameManager.Instance.CoinCanvas.activeInHierarchy == false && Time.timeScale == 1)
 		{
-			Camera.main.transform.position = Vector3.MoveTowards(Camera.main.transform.position, new Vector3(22.0f, 0.0f, -1.0f), 0.033f); // 집에서는 0.0125f, 학원에서는 0.033f
+			Camera.main.transform.position = Vector3.MoveTowards(Camera.main.transform.position, new Vector3(22.0f, 0.0f, -1.0f), 0.013f); // 집에서는 0.013f, 학원에서는 0.033f
 
 			if (Camera.main.transform.position.x >= 22.0f)
 			{
@@ -55,7 +55,10 @@ public class BackgroundManager : ManagerSingleton<BackgroundManager>
 						Background[i].position = nextPos;
 					}
 					else if (Background[i].position.x < leftPosX && getCount.loopCount > 1)
+					{
 						Background[i].gameObject.SetActive(false);
+						Background[i].position = new Vector3(-70.0f, 0.0f, 0.0f);
+					}
 				}
 			}
 		}

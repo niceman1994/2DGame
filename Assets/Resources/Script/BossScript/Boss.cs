@@ -23,7 +23,7 @@ public class Boss : Object
         if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
             GameManager.Instance.CoinCanvas.activeInHierarchy == false)
 		{
-            if (time <= 12.0f)
+            if (time <= 24.0f)
                 time += Time.deltaTime;
             else
                 transform.position = Vector2.MoveTowards(transform.position, new Vector2(27.0f, transform.position.y), 0.04f);
@@ -37,10 +37,10 @@ public class Boss : Object
 
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
-		if (collision.gameObject.tag == "Bullet")
-		{
-
-		}
+		if (collision.gameObject.tag == "Player")
+        {
+            
+        }
 	}
 
 	IEnumerator UpDown()

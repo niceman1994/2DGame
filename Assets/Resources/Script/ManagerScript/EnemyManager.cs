@@ -24,7 +24,7 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
         //StartCoroutine(setDelay2<smallEnemy2>(0.45f));
         //StartCoroutine(setDelay3<smallEnemy3>(0.5f));
         StartCoroutine(setDelay4<smallEnemy4>(1.0f));
-        StartCoroutine(bigEnemyDealy<greenEnemy>(1.0f));
+        StartCoroutine(setDelay5<smallEnemy5>(1.5f));
     }
 
 	void Initialize()
@@ -37,8 +37,8 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
 
         for (int i = 0; i < 10; ++i)
         {
-            SpawnEnemy<smallEnemy2>(1, 34.0f, 4.1f);
-            SpawnEnemy<smallEnemy2>(1, 34.0f, -4.1f);
+            SpawnEnemy<smallEnemy2>(1, new Vector2(34.0f, 4.1f));
+            SpawnEnemy<smallEnemy2>(1, new Vector2(34.0f, -4.1f));
         }
 
         for (int i = 0; i < 8; ++i)
@@ -50,7 +50,8 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
         for (int i = 0; i < 10; ++i)
             SpawnEnemy<smallEnemy4>(1, 36.0f, -4.4f);
 
-        SpawnEnemy<greenEnemy>(3, 34.0f, -2.4f);
+        SpawnEnemy<smallEnemy5>(5, new Vector2(36.0f, Random.Range(1.5f, 1.8f)));
+        SpawnEnemy<smallEnemy5>(5, new Vector2(36.0f, Random.Range(-1.5f, -1.8f)));
 
         SpawnEnemy<Boss>(1, 40.0f, 6.33f);
     }
@@ -198,8 +199,8 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
         }
     }
 
-    IEnumerator bigEnemyDealy<T>(float delay)
-	{
+    IEnumerator setDelay5<T>(float delay)
+    {
         WaitForSeconds waitForSeconds = new WaitForSeconds(delay);
 
         while (true)
@@ -212,7 +213,7 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
                 {
                     if (EnemyLists[typeof(T).Name][i].activeInHierarchy == true)
                     {
-                        StartCoroutine(EnemyLists[typeof(T).Name][i].transform.GetComponent<greenEnemy>().UpDown());
+                        StartCoroutine(EnemyLists[typeof(T).Name][i].transform.GetComponent<smallEnemy5>().UpDown());
                         yield return waitForSeconds;
                     }
                     else
