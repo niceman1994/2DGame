@@ -5408,48 +5408,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Air Buster - Enemies_281
-      rect:
-        serializedVersion: 2
-        x: 533
-        y: 29
-        width: 4
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7788d1a561e87bf4a9e6d1f8063229af
-      internalID: -232916889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Air Buster - Enemies_282
-      rect:
-        serializedVersion: 2
-        x: 538
-        y: 29
-        width: 4
-        height: 5
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b4e1142a3c8208649ae515f12a34ee07
-      internalID: 242586131
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Air Buster - Enemies_271
       rect:
         serializedVersion: 2

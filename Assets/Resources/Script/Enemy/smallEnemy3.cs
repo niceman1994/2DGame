@@ -49,7 +49,7 @@ public class smallEnemy3 : Object
 			ObjectAnim.SetTrigger("destroy");
 			transform.GetComponent<BoxCollider2D>().enabled = false;
 			SoundManager.Instance.PlaySE("smallEnemyDestroySound");
-			GameManager.Instance.Score += Random.Range(8, 11) * 10;
+			GameManager.Instance.Score += Random.Range(2, 3) * 10;
 
 			StartCoroutine(ReturnObject());
 		}
@@ -74,7 +74,7 @@ public class smallEnemy3 : Object
 	{
 		yield return null;
 
-		WaitForSeconds waitForSeconds = new WaitForSeconds(25.0f);
+		WaitForSeconds waitForSeconds = new WaitForSeconds(27.0f);
 
 		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
 			GameManager.Instance.CoinCanvas.activeInHierarchy == false)

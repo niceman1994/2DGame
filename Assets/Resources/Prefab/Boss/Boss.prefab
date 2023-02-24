@@ -706,9 +706,9 @@ Transform:
   - {fileID: 8410611868796471231}
   - {fileID: 8265985945247607658}
   - {fileID: 1912979072317997692}
-  - {fileID: 6556632771220449009}
   - {fileID: 8346952402413537641}
   - {fileID: 2287834582946815702}
+  - {fileID: 6556632771220449009}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1813,6 +1813,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Object: {fileID: 1471456825196195370}
+  SmogAnim:
+  - {fileID: 1552917862151515018}
+  - {fileID: 7869228475713762399}
+  - {fileID: 2039707922157284429}
 --- !u!95 &2485644833105693451
 Animator:
   serializedVersion: 4
@@ -1845,7 +1849,7 @@ GameObject:
   - component: {fileID: 7869228475713762399}
   - component: {fileID: 3467476004366019268}
   m_Layer: 0
-  m_Name: Smog3
+  m_Name: Smog2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1859,12 +1863,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1912583671048346030}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.162, y: -0.729, z: 0}
+  m_LocalPosition: {x: -0.252, y: -0.729, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1471456825196195368}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &7869228475713762399
 Animator:
@@ -2169,7 +2173,7 @@ GameObject:
   - component: {fileID: 1552917862151515018}
   - component: {fileID: 5483274129280635630}
   m_Layer: 0
-  m_Name: Smog2
+  m_Name: Smog1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2183,12 +2187,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3137094878489733039}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.982, y: -0.532, z: 0}
+  m_LocalPosition: {x: -0.741, y: -0.503, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1471456825196195368}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1552917862151515018
 Animator:
@@ -2256,7 +2260,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.21, y: 0.21}
+  m_Size: {x: 0.15, y: 0.15}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -2273,7 +2277,7 @@ GameObject:
   - component: {fileID: 1912979072317997692}
   - component: {fileID: 5179345593114594938}
   - component: {fileID: 3447060097235797290}
-  - component: {fileID: 1915205905953066636}
+  - component: {fileID: 4547867346553834371}
   m_Layer: 0
   m_Name: SideWeapon2
   m_TagString: Boss
@@ -2368,7 +2372,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!61 &1915205905953066636
+--- !u!61 &4547867346553834371
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2793,6 +2797,151 @@ MonoBehaviour:
         - {x: -0.120000005, y: -0.120000005}
         - {x: -0.080000006, y: -0.16}
         - {x: -0.030000001, y: -0.19}
+  - Key:
+      Texture: {fileID: 2800000, guid: 6e483812c8ca16846ad078577966affb, type: 3}
+      Rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 63
+        height: 43
+    Value:
+      List:
+      - Array:
+        - {x: 0.020000001, y: -0.21000001}
+        - {x: 0.120000005, y: -0.21000001}
+        - {x: 0.19000001, y: -0.19}
+        - {x: 0.23, y: -0.16}
+        - {x: 0.24000001, y: -0.14999999}
+        - {x: 0.27, y: -0.17}
+        - {x: 0.28, y: -0.17999999}
+        - {x: 0.3, y: -0.17}
+        - {x: 0.31, y: -0.16}
+        - {x: 0.31, y: 0.17999999}
+        - {x: 0.31, y: 0.2}
+        - {x: 0.31, y: 0.21000001}
+        - {x: -0.24000001, y: 0.21000001}
+        - {x: -0.27, y: 0.21000001}
+        - {x: -0.28, y: 0.21000001}
+        - {x: -0.29, y: 0.21000001}
+        - {x: -0.3, y: 0.21000001}
+        - {x: -0.31, y: 0.21000001}
+        - {x: -0.27, y: 0.17}
+        - {x: -0.26, y: 0.14999999}
+        - {x: -0.26, y: 0.13}
+        - {x: -0.28, y: 0.120000005}
+        - {x: -0.29, y: 0.11}
+        - {x: -0.28, y: 0.08}
+        - {x: -0.27, y: 0.060000002}
+        - {x: -0.22, y: 0.04}
+        - {x: -0.17, y: 0.05}
+        - {x: -0.120000005, y: 0.08}
+        - {x: -0.1, y: 0.089999996}
+        - {x: -0.080000006, y: 0.1}
+        - {x: -0.060000002, y: 0.089999996}
+        - {x: -0.060000002, y: 0.04}
+        - {x: -0.040000003, y: 0}
+        - {x: -0.1, y: -0.07}
+        - {x: -0.120000005, y: -0.089999996}
+        - {x: -0.13, y: -0.1}
+        - {x: -0.11, y: -0.13}
+        - {x: -0.07, y: -0.17}
+        - {x: -0.010000001, y: -0.2}
+  - Key:
+      Texture: {fileID: 2800000, guid: 4bf1f05fb2f7b8445aa1553e4329a81f, type: 3}
+      Rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 63
+        height: 43
+    Value:
+      List:
+      - Array:
+        - {x: 0.020000001, y: -0.21000001}
+        - {x: 0.120000005, y: -0.21000001}
+        - {x: 0.19000001, y: -0.19}
+        - {x: 0.23, y: -0.16}
+        - {x: 0.24000001, y: -0.14999999}
+        - {x: 0.27, y: -0.17}
+        - {x: 0.28, y: -0.17999999}
+        - {x: 0.3, y: -0.17}
+        - {x: 0.31, y: -0.16}
+        - {x: 0.31, y: 0.17999999}
+        - {x: 0.31, y: 0.2}
+        - {x: 0.31, y: 0.21000001}
+        - {x: -0.24000001, y: 0.21000001}
+        - {x: -0.27, y: 0.21000001}
+        - {x: -0.28, y: 0.21000001}
+        - {x: -0.29, y: 0.21000001}
+        - {x: -0.3, y: 0.21000001}
+        - {x: -0.31, y: 0.21000001}
+        - {x: -0.27, y: 0.17}
+        - {x: -0.26, y: 0.14999999}
+        - {x: -0.26, y: 0.13}
+        - {x: -0.28, y: 0.120000005}
+        - {x: -0.29, y: 0.11}
+        - {x: -0.28, y: 0.08}
+        - {x: -0.27, y: 0.060000002}
+        - {x: -0.22, y: 0.04}
+        - {x: -0.17, y: 0.05}
+        - {x: -0.120000005, y: 0.08}
+        - {x: -0.1, y: 0.089999996}
+        - {x: -0.080000006, y: 0.1}
+        - {x: -0.060000002, y: 0.089999996}
+        - {x: -0.060000002, y: 0.04}
+        - {x: -0.030000001, y: -0.030000001}
+        - {x: 0, y: -0.060000002}
+        - {x: 0.040000003, y: -0.07}
+        - {x: 0.05, y: -0.08}
+        - {x: -0.010000001, y: -0.2}
+  - Key:
+      Texture: {fileID: 2800000, guid: 069f3860bfd6496489fe3f3e02f91ced, type: 3}
+      Rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 63
+        height: 43
+    Value:
+      List:
+      - Array:
+        - {x: 0.19000001, y: -0.19}
+        - {x: 0.23, y: -0.16}
+        - {x: 0.24000001, y: -0.14999999}
+        - {x: 0.27, y: -0.17}
+        - {x: 0.28, y: -0.17999999}
+        - {x: 0.3, y: -0.17}
+        - {x: 0.31, y: -0.16}
+        - {x: 0.31, y: 0.17999999}
+        - {x: 0.31, y: 0.2}
+        - {x: 0.31, y: 0.21000001}
+        - {x: -0.24000001, y: 0.21000001}
+        - {x: -0.27, y: 0.21000001}
+        - {x: -0.28, y: 0.21000001}
+        - {x: -0.29, y: 0.21000001}
+        - {x: -0.3, y: 0.21000001}
+        - {x: -0.31, y: 0.21000001}
+        - {x: -0.27, y: 0.17}
+        - {x: -0.26, y: 0.14999999}
+        - {x: -0.26, y: 0.13}
+        - {x: -0.28, y: 0.120000005}
+        - {x: -0.29, y: 0.11}
+        - {x: -0.28, y: 0.08}
+        - {x: -0.27, y: 0.060000002}
+        - {x: -0.22, y: 0.04}
+        - {x: -0.17, y: 0.05}
+        - {x: -0.120000005, y: 0.08}
+        - {x: -0.1, y: 0.089999996}
+        - {x: -0.080000006, y: 0.1}
+        - {x: -0.060000002, y: 0.089999996}
+        - {x: -0.060000002, y: 0.04}
+        - {x: -0.030000001, y: -0.030000001}
+        - {x: 0, y: -0.060000002}
+        - {x: 0.05, y: -0.08}
+        - {x: 0.120000005, y: -0.07}
+        - {x: 0.14, y: -0.08}
+        - {x: 0.17, y: -0.14999999}
 --- !u!114 &7012474801336194000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2806,6 +2955,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Object: {fileID: 4657828814612738145}
+  MissilePrefab: {fileID: 7915693802535678042, guid: 6dcbb732a5333194dabde2fe9f47be62, type: 3}
 --- !u!1 &6536313927537065644
 GameObject:
   m_ObjectHideFlags: 0
@@ -2817,7 +2967,7 @@ GameObject:
   - component: {fileID: 8265985945247607658}
   - component: {fileID: 3448157905286276972}
   - component: {fileID: 5182658960082496572}
-  - component: {fileID: 8263761888300476314}
+  - component: {fileID: 3742286329553281027}
   m_Layer: 0
   m_Name: SideWeapon1
   m_TagString: Boss
@@ -2912,7 +3062,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!61 &8263761888300476314
+--- !u!61 &3742286329553281027
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2950,7 +3100,7 @@ GameObject:
   - component: {fileID: 2039707922157284429}
   - component: {fileID: 125495658814902110}
   m_Layer: 0
-  m_Name: Smog1
+  m_Name: Smog3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2969,7 +3119,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1471456825196195368}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &2039707922157284429
 Animator:

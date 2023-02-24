@@ -10,21 +10,21 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
     public GameObject BullterPrefab;
 
     public Dictionary<object, List<GameObject>> EnemyLists = new Dictionary<object, List<GameObject>>();
-    public List<IEnumerator> enumerators = new List<IEnumerator>();
-
+    public List<GameObject> BulletLists = new List<GameObject>();
     
     void Start()
     {
         Initialize();
 
-        //StartCoroutine(setDelay1<smallEnemy1>(0.195f, 0, 8));
-        //StartCoroutine(setDelay1<smallEnemy1>(0.195f, 8, 12));
-        //StartCoroutine(setDelay1<smallEnemy1>(0.195f, 12, 16));
-        //StartCoroutine(setDelay1<smallEnemy1>(0.195f, 16, 20));
-        //StartCoroutine(setDelay2<smallEnemy2>(0.45f));
-        //StartCoroutine(setDelay3<smallEnemy3>(0.5f));
+        StartCoroutine(setDelay1<smallEnemy1>(0.195f, 0, 8));
+        StartCoroutine(setDelay1<smallEnemy1>(0.195f, 8, 12));
+        StartCoroutine(setDelay1<smallEnemy1>(0.195f, 12, 16));
+        StartCoroutine(setDelay1<smallEnemy1>(0.195f, 16, 20));
+        StartCoroutine(setDelay1<smallEnemy1>(0.195f, 20, 24));
+        StartCoroutine(setDelay2<smallEnemy2>(0.45f));
+        StartCoroutine(setDelay3<smallEnemy3>(0.5f));
         StartCoroutine(setDelay4<smallEnemy4>(1.0f));
-        StartCoroutine(setDelay5<smallEnemy5>(1.5f));
+        StartCoroutine(setDelay5<smallEnemy5>(0.5f));
     }
 
 	void Initialize()
@@ -105,7 +105,6 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
     IEnumerator setDelay1<T>(float delay, int startcount, int endcount)
     {
         WaitForSeconds waitForSeconds = new WaitForSeconds(delay);
-        enumerators.Add(setDelay1<T>(delay, startcount, endcount));
 
         while (true)
         {

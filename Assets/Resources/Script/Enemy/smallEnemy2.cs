@@ -49,7 +49,7 @@ public class smallEnemy2 : Object
 			ObjectAnim.SetTrigger("destroy");
 			transform.GetComponent<BoxCollider2D>().enabled = false;
 			SoundManager.Instance.PlaySE("smallEnemyDestroySound");
-			GameManager.Instance.Score += Random.Range(8, 11) * 10;
+			GameManager.Instance.Score += Random.Range(7, 10) * 10;
 
 			StartCoroutine(ReturnObject());
 		}

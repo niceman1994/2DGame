@@ -9,12 +9,12 @@ public class downMissile : Object
 	public override void Initialize()
 	{
 		base.Name = "downMissile";
-		base.Hp = 80;
+		base.Hp = 120;
 		base.Speed = 0.0f;
 		base.ObjectAnim = GetComponent<Animator>();
 		ObjectAnim.enabled = false;
 
-		animator = transform.parent.GetChild(7).GetComponent<Animator>();
+		animator = transform.parent.GetChild(6).GetComponent<Animator>();
 		animator.enabled = false;
 	}
 

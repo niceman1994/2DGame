@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 420883718354940475}
   - component: {fileID: 1794609085739457024}
   - component: {fileID: 5850940436581135353}
-  - component: {fileID: 331078803760769383}
+  - component: {fileID: 3666344113142711935}
+  - component: {fileID: 3000373825468323705}
   m_Layer: 0
   m_Name: BonusMob
   m_TagString: Untagged
@@ -125,8 +126,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!61 &331078803760769383
-BoxCollider2D:
+--- !u!60 &3666344113142711935
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -148,6 +149,168 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.47}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.015, y: -0.21000001}
+      - {x: 0.024999999, y: -0.19}
+      - {x: 0.044999998, y: -0.14999999}
+      - {x: 0.055, y: -0.14}
+      - {x: 0.114999995, y: -0.2}
+      - {x: 0.13499999, y: -0.21000001}
+      - {x: 0.155, y: -0.2}
+      - {x: 0.095, y: -0.14}
+      - {x: 0.074999996, y: -0.12}
+      - {x: 0.065, y: -0.11}
+      - {x: 0.074999996, y: -0.1}
+      - {x: 0.114999995, y: -0.13}
+      - {x: 0.125, y: -0.14}
+      - {x: 0.145, y: -0.13}
+      - {x: 0.155, y: -0.12}
+      - {x: 0.13499999, y: -0.08}
+      - {x: 0.155, y: -0.05}
+      - {x: 0.155, y: 0.01}
+      - {x: 0.145, y: 0.06}
+      - {x: 0.114999995, y: 0.09}
+      - {x: 0.114999995, y: 0.2}
+      - {x: 0.085, y: 0.22}
+      - {x: 0.055, y: 0.23}
+      - {x: -0.015, y: 0.23}
+      - {x: -0.065, y: 0.23}
+      - {x: -0.114999995, y: 0.21000001}
+      - {x: -0.125, y: 0.2}
+      - {x: -0.125, y: -0.01}
+      - {x: -0.095, y: -0.04}
+      - {x: -0.125, y: -0.05}
+      - {x: -0.13499999, y: -0.06}
+      - {x: -0.13499999, y: -0.09}
+      - {x: -0.105, y: -0.12}
+      - {x: -0.105, y: -0.14}
+      - {x: -0.074999996, y: -0.16999999}
+--- !u!114 &3000373825468323705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948715916730912635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c55c83d4c4dd1145ad5fbbab3c3df36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AlphaTolerance: 20
+  DistanceThreshold: 0
+  Scale: 1
+  Decompose: 0
+  RunInPlayMode: 1
+  UseCache: 1
+  lastAlphaTolerance: 20
+  lastScale: 1
+  lastDistanceThreshold: 0
+  lastDecompose: 0
+  lastSprite: {fileID: 21300000, guid: 30ca125e054aa5745a761217a39bb125, type: 3}
+  lastRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 32
+    height: 47
+  lastOffset: {x: 16, y: 23.5}
+  lastPixelsPerUnit: 100
+  lastFlipX: 0
+  lastFlipY: 0
+  editorCache:
+  - Key:
+      Texture: {fileID: 2800000, guid: 1ddfa98d78f9bfc4b83d64a9ce9cbe85, type: 3}
+      Rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 47
+    Value:
+      List:
+      - Array:
+        - {x: 0.024999999, y: -0.23}
+        - {x: 0.155, y: -0.2}
+        - {x: 0.065, y: -0.11}
+        - {x: 0.155, y: 0.01}
+        - {x: 0.114999995, y: 0.2}
+        - {x: -0.065, y: 0.23}
+        - {x: -0.125, y: -0.16}
+        - {x: 0.015, y: -0.22}
+      - Array:
+        - {x: -0.015, y: -0.21000001}
+        - {x: 0.155, y: -0.2}
+        - {x: 0.055, y: 0.23}
+        - {x: -0.125, y: 0.2}
+        - {x: -0.125, y: -0.16}
+        - {x: -0.024999999, y: -0.2}
+  - Key:
+      Texture: {fileID: 2800000, guid: 30ca125e054aa5745a761217a39bb125, type: 3}
+      Rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 47
+    Value:
+      List:
+      - Array:
+        - {x: -0.015, y: -0.21000001}
+        - {x: 0.024999999, y: -0.19}
+        - {x: 0.044999998, y: -0.14999999}
+        - {x: 0.055, y: -0.14}
+        - {x: 0.114999995, y: -0.2}
+        - {x: 0.13499999, y: -0.21000001}
+        - {x: 0.155, y: -0.2}
+        - {x: 0.095, y: -0.14}
+        - {x: 0.074999996, y: -0.12}
+        - {x: 0.065, y: -0.11}
+        - {x: 0.074999996, y: -0.1}
+        - {x: 0.114999995, y: -0.13}
+        - {x: 0.125, y: -0.14}
+        - {x: 0.145, y: -0.13}
+        - {x: 0.155, y: -0.12}
+        - {x: 0.13499999, y: -0.08}
+        - {x: 0.155, y: -0.05}
+        - {x: 0.155, y: 0.01}
+        - {x: 0.145, y: 0.06}
+        - {x: 0.114999995, y: 0.09}
+        - {x: 0.114999995, y: 0.2}
+        - {x: 0.085, y: 0.22}
+        - {x: 0.055, y: 0.23}
+        - {x: -0.015, y: 0.23}
+        - {x: -0.065, y: 0.23}
+        - {x: -0.114999995, y: 0.21000001}
+        - {x: -0.125, y: 0.2}
+        - {x: -0.125, y: -0.01}
+        - {x: -0.095, y: -0.04}
+        - {x: -0.125, y: -0.05}
+        - {x: -0.13499999, y: -0.06}
+        - {x: -0.13499999, y: -0.09}
+        - {x: -0.105, y: -0.12}
+        - {x: -0.105, y: -0.14}
+        - {x: -0.074999996, y: -0.16999999}
+  - Key:
+      Texture: {fileID: 2800000, guid: 670fe155861c4e84d8330bd2fe8838a2, type: 3}
+      Rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 47
+    Value:
+      List:
+      - Array:
+        - {x: -0.105, y: -0.23}
+        - {x: 0.155, y: -0.2}
+        - {x: 0.085, y: 0.22}
+        - {x: -0.125, y: 0.2}
+        - {x: -0.114999995, y: -0.22}
+      - Array:
+        - {x: -0.13499999, y: -0.2}
+        - {x: 0.155, y: -0.2}
+        - {x: 0.085, y: 0.22}
+        - {x: -0.125, y: 0.2}
+        - {x: -0.145, y: -0.16}

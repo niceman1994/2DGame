@@ -14,7 +14,7 @@ public class upMissile : Object
 		base.ObjectAnim = GetComponent<Animator>();
 		ObjectAnim.enabled = false;
 
-		animator = transform.parent.GetChild(5).GetComponent<Animator>();
+		animator = transform.parent.GetChild(7).GetComponent<Animator>();
 		animator.enabled = false;
 	}
 

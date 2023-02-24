@@ -12,13 +12,9 @@ internal struct DirType
 public class smallEnemy1 : Object
 {
 	[SerializeField] private GameObject BulletPoint;
-	GameObject bullet;
 
 	float attackDelay;
 	float randomBullet;
-
-	float CameraRightPos;
-	float CameraLeftPos;
 
 	DirType dir;
 
@@ -29,8 +25,7 @@ public class smallEnemy1 : Object
 		base.Speed = 2.5f;
 		base.ObjectAnim = gameObject.GetComponent<Animator>();
 
-		CameraRightPos = Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize;
-		CameraLeftPos = Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize;
+		attackDelay = 0.0f;
 		randomBullet = Random.Range(2, 8);
 		GetDirType(2.3f, -2.3f);
 	}
@@ -40,14 +35,14 @@ public class smallEnemy1 : Object
 		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
 			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
 		{
-			if (transform.position.x >= CameraRightPos)
+			if (transform.position.x >= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize)
 			{
 				transform.position = new Vector3(transform.position.x - (Speed * Time.deltaTime), transform.position.y, 0.0f);
 
-				if (transform.position.x < CameraLeftPos)
+				if (transform.position.x < Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize)
 					EnemyAttack();
 			}
-			else
+			else if (transform.position.x <= Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize)
 				gameObject.SetActive(false);
 		}
 	}
@@ -64,7 +59,7 @@ public class smallEnemy1 : Object
             ObjectAnim.SetTrigger("destroy");
             transform.GetComponent<BoxCollider2D>().enabled = false;
             SoundManager.Instance.PlaySE("smallEnemyDestroySound");
-            GameManager.Instance.Score += Random.Range(5, 6) * 10;
+            GameManager.Instance.Score += Random.Range(4, 6) * 10;
 
             StartCoroutine(ReturnObject());
         }
@@ -139,19 +134,16 @@ public class smallEnemy1 : Object
 
 	public void EnemyAttack()
 	{
-		attackDelay += Time.deltaTime;
-
-		if (attackDelay >= 2.0f)
+		if (attackDelay <= 2.0f)
+			attackDelay += Time.deltaTime;
+		else
 		{
-			if (randomBullet == 4 || randomBullet == 5)
-			{
-				bullet = Instantiate(EnemyManager.Instance.BullterPrefab);
-				bullet.name = "EnemyBullet";
-				bullet.transform.position += new Vector3(
-					BulletPoint.transform.position.x - Speed * 1.2f * Time.deltaTime,
-					BulletPoint.transform.position.y,
-					BulletPoint.transform.position.z);
-			}
+			GameObject bullet = Instantiate(EnemyManager.Instance.BullterPrefab);
+			bullet.name = "EnemyBullet";
+			bullet.transform.position += new Vector3(
+				BulletPoint.transform.position.x - Speed * 1.2f * Time.deltaTime,
+				BulletPoint.transform.position.y,
+				BulletPoint.transform.position.z);
 
 			attackDelay = 0.0f;
 		}

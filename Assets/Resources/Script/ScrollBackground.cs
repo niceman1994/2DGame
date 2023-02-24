@@ -12,8 +12,6 @@ public class ScrollBackground : MonoBehaviour
 	private float[] redLeftPosX = new float[2];
 	private float[] redRightPosX = new float[2];
 
-	float time;
-
 	private void Start()
 	{
 		for (int i = 0; i < scrollBackground.Length - 2; ++i)
@@ -35,7 +33,6 @@ public class ScrollBackground : MonoBehaviour
 		}
 
 		loopCount = 0;
-		time = 0.0f;
 	}
 
 	void Update()
@@ -60,25 +57,22 @@ public class ScrollBackground : MonoBehaviour
 					scrollBackground[i].gameObject.transform.position = nextPos;
 					loopCount += 1;
 
-					if (loopCount > 0 && scrollBackground[i].transform.position == nextPos)
+					if (GameManager.Instance.countDown <= 35.0f && scrollBackground[i].transform.position == nextPos)
 					{
 						for (int j = 16; j < scrollBackground[i].transform.childCount; ++j)
 							scrollBackground[i].transform.GetChild(j).gameObject.SetActive(true);
 					}
 				}
 
-				if (loopCount > 1)
+				if (GameManager.Instance.countDown <= 10.0f && GameManager.Instance.countDown > 7.0f)
 				{
-					time += Time.deltaTime;
-
 					for (int j = 3; j < 16; ++j)
 						scrollBackground[i].transform.GetChild(j).gameObject.SetActive(true);
-
-					if (time >= 5.0f)
-					{
-						scrollBackground[i].gameObject.SetActive(false);
-						scrollBackground[i].transform.position = Vector3.zero;
-					}
+				}
+				else if (GameManager.Instance.countDown <= 7.0f)
+				{
+					scrollBackground[i].gameObject.SetActive(false);
+					scrollBackground[i].transform.position = Vector3.zero;
 				}
 			}
 		}

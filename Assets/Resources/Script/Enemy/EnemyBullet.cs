@@ -15,7 +15,8 @@ public class EnemyBullet : MonoBehaviour
         if (transform.position.x <= Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize)
         {
             gameObject.SetActive(false);
-            transform.SetParent(ObjectPool.Instance.transform);
+            transform.SetParent(EnemyManager.Instance.transform.GetChild(0));
+            EnemyManager.Instance.BulletLists.Add(gameObject);
         }
     }
 
@@ -24,7 +25,8 @@ public class EnemyBullet : MonoBehaviour
         if (collision.collider.tag == "Player")
         {
             gameObject.SetActive(false);
-            transform.SetParent(ObjectPool.Instance.transform);
+            transform.SetParent(EnemyManager.Instance.transform.GetChild(0));
+            EnemyManager.Instance.BulletLists.Add(gameObject);
         }
     }
 
@@ -36,7 +38,8 @@ public class EnemyBullet : MonoBehaviour
             if (GameManager.Instance.PlayerCharge == true)
             {
                 gameObject.SetActive(false);
-                transform.SetParent(ObjectPool.Instance.transform);
+                transform.SetParent(EnemyManager.Instance.transform.GetChild(0));
+                EnemyManager.Instance.BulletLists.Add(gameObject);
             }
         }
 	}

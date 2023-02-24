@@ -5,7 +5,9 @@ using DG.Tweening;
 
 public class smallEnemy4 : Object
 {
-	bool inScene;
+    [SerializeField] private GameObject BulletPoint;
+
+    bool inScene;
 
     public override void Initialize()
     {
@@ -45,7 +47,7 @@ public class smallEnemy4 : Object
             ObjectAnim.SetTrigger("destroy");
             transform.GetComponent<BoxCollider2D>().enabled = false;
             SoundManager.Instance.PlaySE("smallEnemyDestroySound");
-            GameManager.Instance.Score += Random.Range(5, 6) * 10;
+            GameManager.Instance.Score += Random.Range(3, 4) * 10;
 
             StartCoroutine(ReturnObject());
         }
@@ -55,7 +57,7 @@ public class smallEnemy4 : Object
     {
         yield return null;
 
-        WaitForSeconds waitForSeconds = new WaitForSeconds(5.0f);
+        WaitForSeconds waitForSeconds = new WaitForSeconds(35.0f);
 
         if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
             GameManager.Instance.CoinCanvas.activeInHierarchy == false)
