@@ -7,6 +7,7 @@ public class smallEnemy4 : Object
 {
     [SerializeField] private GameObject BulletPoint;
 
+    float attackDelay;
     bool inScene;
 
     public override void Initialize()
@@ -17,6 +18,7 @@ public class smallEnemy4 : Object
         base.ObjectAnim = GetComponent<Animator>();
 
         ObjectAnim.speed = 0;
+        attackDelay = 0.0f;
         inScene = false;
     }
 
@@ -26,7 +28,12 @@ public class smallEnemy4 : Object
             GameManager.Instance.CoinCanvas.activeInHierarchy == false)
         {
             if (transform.position.y >= Camera.main.transform.position.y - BackgroundManager.Instance.yScreenHalfSize)
+            {
                 inScene = true;
+
+                if (transform.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize)
+                    EnemyAttack();
+            }
             else
             {
                 if (inScene == true)
@@ -76,6 +83,23 @@ public class smallEnemy4 : Object
             }
             else
                 transform.DOKill();
+        }
+    }
+
+    void EnemyAttack()
+    {
+        if (attackDelay <= 2.0f)
+            attackDelay += Time.deltaTime;
+        else
+        {
+            GameObject bullet = Instantiate(EnemyManager.Instance.BullterPrefab);
+            bullet.name = "EnemyBullet";
+            bullet.transform.position += new Vector3(
+                BulletPoint.transform.position.x - Speed * 1.2f * Time.deltaTime,
+                BulletPoint.transform.position.y,
+                BulletPoint.transform.position.z);
+
+            attackDelay = 0.0f;
         }
     }
 

@@ -53,8 +53,13 @@ public class GameManager : ManagerSingleton<GameManager>
         if (PlayerLife <= 0) PlayerLife = 0;
 
         if (IntroCanvas.activeInHierarchy == false &&
-            CoinCanvas.activeInHierarchy == false && countDown >= 0.0f)
-            countDown -= Time.deltaTime;
+            CoinCanvas.activeInHierarchy == false)
+        {
+            if (countDown > 0.0f)
+                countDown -= Time.deltaTime;
+            else
+                countDown = 0.0f;
+        } 
     }
 
     void ChangeText()

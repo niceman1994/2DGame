@@ -88,7 +88,7 @@ public class smallEnemy2 : Object
 					transform.DOPath(
 						new[] { transform.position, new Vector3(transform.position.x - 14.0f, transform.position.y, 0.0f),
 						new Vector3(Player.transform.position.x + Random.Range(4.0f, 6.0f), transform.position.y - 4.1f, 0.0f),
-						new Vector3(transform.position.x + 8.0f, transform.position.y - 5.2f, 0.0f) }, 5.0f, PathType.CatmullRom).SetEase(Ease.Linear);
+						new Vector3(transform.position.x + 8.0f, transform.position.y - 5.2f, 0.0f) }, 3.0f, PathType.CatmullRom).SetEase(Ease.Linear);
 				}
 				else
 					transform.DOKill();
@@ -103,7 +103,7 @@ public class smallEnemy2 : Object
 					transform.DOPath(
 						new[] { transform.position, new Vector3(transform.position.x - 14.0f, transform.position.y, 0.0f),
 						new Vector3(Player.transform.position.x + Random.Range(4.0f, 6.0f), transform.position.y + 4.1f, 0.0f),
-						new Vector3(transform.position.x + 8.0f,transform.position.y + 5.2f, 0.0f) }, 5.0f, PathType.CatmullRom).SetEase(Ease.Linear);
+						new Vector3(transform.position.x + 8.0f,transform.position.y + 5.2f, 0.0f) }, 3.0f, PathType.CatmullRom).SetEase(Ease.Linear);
 				}
 				else
 					transform.DOKill();

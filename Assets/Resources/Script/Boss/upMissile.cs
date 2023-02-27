@@ -40,6 +40,7 @@ public class upMissile : Object
 				Hp = 0;
 				ObjectAnim.enabled = true;
 				ObjectAnim.SetTrigger("destroy");
+				transform.GetComponent<PolygonCollider2D>().enabled = false;
 				animator.enabled = true;
 			}
 		}

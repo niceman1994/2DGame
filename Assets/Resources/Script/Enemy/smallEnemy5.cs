@@ -13,7 +13,7 @@ public class smallEnemy5 : Object
     public override void Initialize()
     {
         base.Name = "smallEnemy5";
-        base.Hp = 0;
+        base.Hp = 30;
         base.Speed = 2.5f;
         base.ObjectAnim = GetComponent<Animator>();
 
@@ -47,14 +47,20 @@ public class smallEnemy5 : Object
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Bullet")
+        if (collision.gameObject.CompareTag("Bullet"))
         {
-            ObjectAnim.SetTrigger("destroy");
-            transform.GetComponent<BoxCollider2D>().enabled = false;
-            SoundManager.Instance.PlaySE("smallEnemyDestroySound");
-            GameManager.Instance.Score += Random.Range(6, 7) * 10;
+            Hp -= 10;
 
-            StartCoroutine(ReturnObject());
+            if (Hp <= 0)
+            {
+                Hp = 0;
+                ObjectAnim.SetTrigger("destroy");
+                transform.GetComponent<BoxCollider2D>().enabled = false;
+                SoundManager.Instance.PlaySE("smallEnemyDestroySound");
+                GameManager.Instance.Score += Random.Range(6, 7) * 10;
+
+                StartCoroutine(ReturnObject());
+            }
         }
     }
 
@@ -95,7 +101,7 @@ public class smallEnemy5 : Object
     {
         if (!ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("Destroy(Enemy5)"))
         {
-            if (attackDelay <= 2.0f)
+            if (attackDelay <= 2.5f)
                 attackDelay += Time.deltaTime;
             else
             {

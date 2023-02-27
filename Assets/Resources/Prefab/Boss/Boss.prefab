@@ -1813,10 +1813,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Object: {fileID: 1471456825196195370}
-  SmogAnim:
+  WeaponAnim:
   - {fileID: 1552917862151515018}
   - {fileID: 7869228475713762399}
   - {fileID: 2039707922157284429}
+  - {fileID: 5182658960082496572}
+  - {fileID: 3447060097235797290}
 --- !u!95 &2485644833105693451
 Animator:
   serializedVersion: 4

@@ -36,12 +36,9 @@ public class smallEnemy1 : Object
 			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
 		{
 			if (transform.position.x >= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize)
-			{
 				transform.position = new Vector3(transform.position.x - (Speed * Time.deltaTime), transform.position.y, 0.0f);
-
-				if (transform.position.x < Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize)
-					EnemyAttack();
-			}
+			else if (transform.position.x < Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize)
+				EnemyAttack();
 			else if (transform.position.x <= Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize)
 				gameObject.SetActive(false);
 		}
@@ -132,19 +129,22 @@ public class smallEnemy1 : Object
 		}
 	}
 
-	public void EnemyAttack()
+	void EnemyAttack()
 	{
-		if (attackDelay <= 2.0f)
+		if (attackDelay <= 3.0f)
 			attackDelay += Time.deltaTime;
 		else
 		{
-			GameObject bullet = Instantiate(EnemyManager.Instance.BullterPrefab);
-			bullet.name = "EnemyBullet";
-			bullet.transform.position += new Vector3(
-				BulletPoint.transform.position.x - Speed * 1.2f * Time.deltaTime,
-				BulletPoint.transform.position.y,
-				BulletPoint.transform.position.z);
-
+			if (randomBullet == 4 || randomBullet == 5)
+			{
+				GameObject bullet = Instantiate(EnemyManager.Instance.BullterPrefab);
+				bullet.name = "EnemyBullet";
+				bullet.transform.position += new Vector3(
+					BulletPoint.transform.position.x - Speed * 1.2f * Time.deltaTime,
+					BulletPoint.transform.position.y,
+					BulletPoint.transform.position.z);
+			}
+			
 			attackDelay = 0.0f;
 		}
 	}

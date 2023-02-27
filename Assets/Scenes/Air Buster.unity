@@ -1740,7 +1740,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146031439}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 48.7, y: -0.3, z: 0}
+  m_LocalPosition: {x: 49.3, y: -0.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2356,7 +2356,7 @@ MonoBehaviour:
   PlayerLifeText: {fileID: 103112943}
   PlayerLife: 5
   PlayerCharge: 0
-  countDown: 60
+  countDown: 55
 --- !u!4 &207643103
 Transform:
   m_ObjectHideFlags: 0
@@ -7256,6 +7256,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &929475571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 929475572}
+  m_Layer: 0
+  m_Name: BossBullets
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &929475572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929475571}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1016674770}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &941628717
 GameObject:
   m_ObjectHideFlags: 0
@@ -8089,6 +8120,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 547705041}
+  - {fileID: 929475572}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8106,8 +8138,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EnemyPrefab:
   - {fileID: 569337003437355458, guid: 461aa64481ef9e84485a5e1ae14a325e, type: 3}
-  - {fileID: 5719626365535365340, guid: b6772113a9f2d2446b18166b180ab746, type: 3}
-  - {fileID: 8466221563638602843, guid: cd48f7f74f21cde488d1c051c95ed774, type: 3}
+  - {fileID: 5719626365535365340, guid: cd48f7f74f21cde488d1c051c95ed774, type: 3}
+  - {fileID: 8466221563638602843, guid: b6772113a9f2d2446b18166b180ab746, type: 3}
   - {fileID: 5988790504481976328, guid: 185cb3bca63037e4dad5ddf28b10bc60, type: 3}
   - {fileID: 225403370509400576, guid: 6b352ed2121bd11439d87cd579991737, type: 3}
   - {fileID: 1471456825196195370, guid: 8d3ae6f9fa703b94f9f0c169568b5742, type: 3}

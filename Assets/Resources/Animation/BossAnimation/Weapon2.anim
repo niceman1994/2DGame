@@ -28,7 +28,7 @@ AnimationClip:
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
-        time: 0.3
+        time: 0.33333334
         value: {x: -1.335, y: -0.2196, z: 0}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
@@ -53,13 +53,13 @@ AnimationClip:
   m_FloatCurves: []
   m_PPtrCurves:
   - curve:
-    - time: 0.3
+    - time: 0.15
       value: {fileID: 21300000, guid: 98bd4f9104c8292448ac641f30575d19, type: 3}
-    - time: 0.36666667
+    - time: 0.21666667
       value: {fileID: 21300000, guid: 29a067ad8abb7ff458c45c4f996642b9, type: 3}
-    - time: 0.43333334
+    - time: 0.28333333
       value: {fileID: 21300000, guid: 6567886a335df1541b0dae4b3d37a8e6, type: 3}
-    - time: 0.48333332
+    - time: 0.33333334
       value: {fileID: 21300000, guid: 6567886a335df1541b0dae4b3d37a8e6, type: 3}
     attribute: m_Sprite
     path: 
@@ -125,7 +125,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.3
+        time: 0.33333334
         value: -1.335
         inSlope: 0
         outSlope: 0
@@ -162,7 +162,7 @@ AnimationClip:
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
-        time: 0.3
+        time: 0.33333334
         value: -0.2196
         inSlope: 0
         outSlope: 0

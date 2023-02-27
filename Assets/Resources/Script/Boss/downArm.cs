@@ -8,7 +8,6 @@ public class downArm : Object
 	[SerializeField] private GameObject MissilePrefab;
 	GameObject Missile;
 
-	GameObject Player;
 	Animator animator;
 	float time;
 
@@ -19,7 +18,6 @@ public class downArm : Object
 		base.Speed = 0.0f;
 		base.ObjectAnim = GetComponent<Animator>();
 		ObjectAnim.enabled = false;
-		Player = GameObject.FindGameObjectWithTag("Player");
 
 		animator = transform.parent.GetChild(5).GetComponent<Animator>();
 		animator.enabled = false;
@@ -33,12 +31,15 @@ public class downArm : Object
 		{
 			if (transform.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize)
 			{
-				if (time <= 2.0f)
+				if (time <= 6.0f)
 					time += Time.deltaTime;
 				else
 				{
 					MissileEject();
 					time = 0.0f;
+
+					if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f && Hp > 0)
+						ObjectAnim.Play("downArms", -1, 1.0f);
 				}
 			}
 		}
@@ -75,21 +76,13 @@ public class downArm : Object
 
 			if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.75f)
 			{
-				for (int i = 0; i < 10; ++i)
+				for (int i = 0; i < 6; ++i)
 				{
 					Missile = Instantiate(MissilePrefab);
 					Missile.name = "BossMissile";
 					Missile.transform.position = transform.position;
-					Missile.transform.DOPath(new[] { Missile.transform.position,
-						new Vector3(transform.localPosition.x + Random.Range(-2.0f, 2.0f), transform.localPosition.y - 0.1f, 0.0f) }, 2.0f, PathType.Linear).OnComplete(() =>
-						{
-							transform.DOPath(new[] { transform.position,
-							new Vector3(Player.transform.position.x, Player.transform.position.y, 0.0f) }, 2.0f, PathType.CatmullRom).SetEase(Ease.Linear).SetAutoKill(true);
-						}).SetAutoKill(true);
 				}
 			}
-			else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
-				ObjectAnim.Play("downArms", -1, 1.0f);
 		}
 	}
 }
