@@ -68,7 +68,7 @@ public class smallEnemy5 : Object
     {
         yield return null;
 
-        WaitForSeconds waitForSeconds = new WaitForSeconds(40.0f);
+        WaitForSeconds waitForSeconds = new WaitForSeconds(42.0f);
 
         if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
             GameManager.Instance.CoinCanvas.activeInHierarchy == false)
@@ -99,7 +99,7 @@ public class smallEnemy5 : Object
 
     void ShootBullet()
     {
-        if (!ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("Destroy(Enemy5)"))
+        if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("smallEnemy5"))
         {
             if (attackDelay <= 2.5f)
                 attackDelay += Time.deltaTime;

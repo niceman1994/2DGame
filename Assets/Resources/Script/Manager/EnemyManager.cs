@@ -50,8 +50,8 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
         for (int i = 0; i < 10; ++i)
             SpawnEnemy<smallEnemy4>(1, 36.0f, -4.4f);
 
-        SpawnEnemy<smallEnemy5>(5, new Vector2(36.0f, Random.Range(1.5f, 1.8f)));
-        SpawnEnemy<smallEnemy5>(5, new Vector2(36.0f, Random.Range(-1.5f, -1.8f)));
+        SpawnEnemy<smallEnemy5>(3, new Vector2(36.0f, Random.Range(1.5f, 1.8f)));
+        SpawnEnemy<smallEnemy5>(3, new Vector2(36.0f, Random.Range(-1.5f, -1.8f)));
 
         SpawnEnemy<Boss>(1, 40.0f, 6.33f);
     }

@@ -20,7 +20,7 @@ public class smallEnemy1 : Object
 
 	public override void Initialize()
 	{
-		base.name = "smallEnemy1";
+		base.Name = "smallEnemy1";
 		base.Hp = 0;
 		base.Speed = 2.5f;
 		base.ObjectAnim = gameObject.GetComponent<Animator>();
@@ -131,21 +131,24 @@ public class smallEnemy1 : Object
 
 	void EnemyAttack()
 	{
-		if (attackDelay <= 3.0f)
-			attackDelay += Time.deltaTime;
-		else
+		if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("smallEnemy1"))
 		{
-			if (randomBullet == 4 || randomBullet == 5)
+			if (attackDelay <= 2.0f)
+				attackDelay += Time.deltaTime;
+			else
 			{
-				GameObject bullet = Instantiate(EnemyManager.Instance.BullterPrefab);
-				bullet.name = "EnemyBullet";
-				bullet.transform.position += new Vector3(
-					BulletPoint.transform.position.x - Speed * 1.2f * Time.deltaTime,
-					BulletPoint.transform.position.y,
-					BulletPoint.transform.position.z);
+				if (randomBullet == 4 || randomBullet == 5 || randomBullet == 6)
+				{
+					GameObject bullet = Instantiate(EnemyManager.Instance.BullterPrefab);
+					bullet.name = "EnemyBullet";
+					bullet.transform.position += new Vector3(
+						BulletPoint.transform.position.x - Speed * 1.4f * Time.deltaTime,
+						BulletPoint.transform.position.y,
+						BulletPoint.transform.position.z);
+				}
+
+				attackDelay = 0.0f;
 			}
-			
-			attackDelay = 0.0f;
 		}
 	}
 

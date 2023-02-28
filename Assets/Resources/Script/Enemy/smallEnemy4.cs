@@ -49,7 +49,7 @@ public class smallEnemy4 : Object
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Bullet")
+        if (collision.gameObject.CompareTag("Bullet"))
         {
             ObjectAnim.SetTrigger("destroy");
             transform.GetComponent<BoxCollider2D>().enabled = false;
@@ -88,18 +88,21 @@ public class smallEnemy4 : Object
 
     void EnemyAttack()
     {
-        if (attackDelay <= 2.0f)
-            attackDelay += Time.deltaTime;
-        else
+        if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("smallEnemy4"))
         {
-            GameObject bullet = Instantiate(EnemyManager.Instance.BullterPrefab);
-            bullet.name = "EnemyBullet";
-            bullet.transform.position += new Vector3(
-                BulletPoint.transform.position.x - Speed * 1.2f * Time.deltaTime,
-                BulletPoint.transform.position.y,
-                BulletPoint.transform.position.z);
+            if (attackDelay <= 1.0f)
+                attackDelay += Time.deltaTime;
+            else
+            {
+                GameObject bullet = Instantiate(EnemyManager.Instance.BullterPrefab);
+                bullet.name = "EnemyBullet";
+                bullet.transform.position += new Vector3(
+                    BulletPoint.transform.position.x - Speed * 2.5f * Time.deltaTime,
+                    BulletPoint.transform.position.y,
+                    BulletPoint.transform.position.z);
 
-            attackDelay = 0.0f;
+                attackDelay = 0.0f;
+            }
         }
     }
 

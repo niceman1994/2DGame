@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using DG.Tweening;
 
 public class downArm : Object
 {
@@ -31,15 +30,12 @@ public class downArm : Object
 		{
 			if (transform.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize)
 			{
-				if (time <= 6.0f)
+				if (time <= 5.0f)
 					time += Time.deltaTime;
 				else
 				{
 					MissileEject();
 					time = 0.0f;
-
-					if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f && Hp > 0)
-						ObjectAnim.Play("downArms", -1, 1.0f);
 				}
 			}
 		}
@@ -70,18 +66,24 @@ public class downArm : Object
 
 	void MissileEject()
 	{
-		if (Hp > 0)
+		if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("downArms"))
 		{
-			ObjectAnim.enabled = true;
-
-			if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.75f)
+			if (Hp > 0)
 			{
-				for (int i = 0; i < 6; ++i)
+				ObjectAnim.enabled = true;
+
+				if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.75f &&
+					ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
 				{
-					Missile = Instantiate(MissilePrefab);
-					Missile.name = "BossMissile";
-					Missile.transform.position = transform.position;
+					for (int i = 0; i < 6; ++i)
+					{
+						Missile = Instantiate(MissilePrefab);
+						Missile.name = "BossMissile";
+						Missile.transform.position = new Vector2(transform.position.x + Random.Range(-1.0f, 1.0f), transform.position.y - 1.0f);
+					}
 				}
+				else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
+					ObjectAnim.Play("downArms", -1, ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime);
 			}
 		}
 	}

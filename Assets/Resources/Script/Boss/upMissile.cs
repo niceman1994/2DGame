@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class upMissile : Object
 {
+	[SerializeField] private GameObject bulletPrefab;
+
 	Animator animator;
+	float attackDelay;
 
 	public override void Initialize()
 	{
@@ -16,11 +19,17 @@ public class upMissile : Object
 
 		animator = transform.parent.GetChild(7).GetComponent<Animator>();
 		animator.enabled = false;
+		attackDelay = 0.0f;
 	}
 
 	public override void Progress()
 	{
-		
+		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
+			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
+		{
+			if (transform.parent.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize)
+				StartAnim();
+		}
 	}
 
 	public override void Release()
@@ -30,7 +39,7 @@ public class upMissile : Object
 
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
-		if (collision.gameObject.tag == "Bullet")
+		if (collision.gameObject.CompareTag("Bullet"))
 		{
 			Hp -= 10;
 			SoundManager.Instance.PlaySE("hitSound");
@@ -42,6 +51,25 @@ public class upMissile : Object
 				ObjectAnim.SetTrigger("destroy");
 				transform.GetComponent<PolygonCollider2D>().enabled = false;
 				animator.enabled = true;
+			}
+		}
+	}
+
+	void StartAnim()
+	{
+		if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("upMissile"))
+		{
+			ObjectAnim.enabled = true;
+
+			if (attackDelay <= 3.0f)
+				attackDelay += Time.deltaTime;
+			else if (attackDelay > 3.0f && ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.66f)
+			{
+				GameObject bullet = Instantiate(bulletPrefab);
+				bullet.transform.position += new Vector3(transform.position.x - 1.5f - (3.0f * Time.deltaTime),
+					transform.position.y + 0.5f, 0.0f);
+
+				attackDelay = 0.0f;
 			}
 		}
 	}

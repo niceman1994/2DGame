@@ -46,24 +46,21 @@ public class Boss : Object
 
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
-		if (collision.gameObject.CompareTag("Bullet"))
+        foreach (Animator ani in WeaponAnim)
         {
-            foreach (Animator ani in WeaponAnim)
+            if (collision.gameObject.CompareTag("Bullet") && ani.enabled == true)
             {
-                if (ani.enabled == true)
-                {
-                    Hp -= 10;
-                    SoundManager.Instance.PlaySE("hitSound");
+                Hp -= 10;
+                SoundManager.Instance.PlaySE("hitSound");
 
-                    if (Hp <= 0)
+                if (Hp <= 0)
+                {
+                    Hp = 0;
+                    transform.DOPath(new[] { transform.position,
+                    new Vector3(transform.position.x + 2.0f, transform.position.y - 6.0f, 0.0f)}, 3.0f, PathType.Linear).SetEase(Ease.Linear).OnComplete(() =>
                     {
-                        Hp = 0;
-                        transform.DOPath(new[] { transform.position,
-                            new Vector3(transform.position.x + 2.0f, transform.position.y - 6.0f, 0.0f)}, 3.0f, PathType.Linear).SetEase(Ease.Linear).OnComplete(() =>
-                            {
-                                gameObject.SetActive(false);
-                            });
-                    }
+                        gameObject.SetActive(false);
+                    });
                 }
             }
         }

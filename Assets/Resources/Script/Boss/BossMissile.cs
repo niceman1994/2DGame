@@ -3,19 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 
-public class BossBullet : Object
+public class BossMissile : Object
 {
     GameObject Player;
 
     public override void Initialize()
     {
-        base.Name = "BossBullet";
+        base.Name = "BossMissile";
         base.Hp = 0;
         base.Speed = 2.5f;
         base.ObjectAnim = null;
 
         Player = GameObject.FindGameObjectWithTag("Player");
-        StartCoroutine(Move());
     }
 
     public override void Progress()
@@ -23,7 +22,7 @@ public class BossBullet : Object
         if (transform.position.x >= Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize)
         {
             Vector3 Distance = (transform.position - Player.transform.position).normalized;
-            transform.position += Distance;
+            transform.position -= new Vector3(Distance.x - (Speed * Time.deltaTime), Distance.y + Random.Range(-1.0f, 1.0f), Distance.z);
         }
         else
         {
@@ -45,13 +44,5 @@ public class BossBullet : Object
             transform.GetComponent<BoxCollider2D>().enabled = false;
             transform.SetParent(EnemyManager.Instance.transform);
         }
-    }
-    
-    IEnumerator Move()
-    {
-        yield return null;
-
-        transform.DOPath(new[] { transform.position,
-            new Vector3(transform.position.x + Random.Range(-1.0f, 1.0f), transform.position.y - 1.0f, 0.0f) }, 2.0f, PathType.Linear).SetAutoKill(true);
     }
 }

@@ -125,4 +125,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: EnemyBullet
-  Speed: 6
+  Speed: 8

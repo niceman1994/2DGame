@@ -668,6 +668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Object: {fileID: 913907847256449075}
+  bulletPrefab: {fileID: 7915693802535678042, guid: 6dcbb732a5333194dabde2fe9f47be62, type: 3}
 --- !u!1 &1471456825196195370
 GameObject:
   m_ObjectHideFlags: 0
@@ -2280,6 +2281,7 @@ GameObject:
   - component: {fileID: 5179345593114594938}
   - component: {fileID: 3447060097235797290}
   - component: {fileID: 4547867346553834371}
+  - component: {fileID: 8357583838160268437}
   m_Layer: 0
   m_Name: SideWeapon2
   m_TagString: Boss
@@ -2400,6 +2402,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.16}
   m_EdgeRadius: 0
+--- !u!114 &8357583838160268437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3643215124830312378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b6813d7d6a24db468342a0ea255522f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Object: {fileID: 3643215124830312378}
+  bulletPrefab: {fileID: 3940093006102693476, guid: 658c0801c25ea3b49b35cec404b48502, type: 3}
 --- !u!1 &4657828814612738145
 GameObject:
   m_ObjectHideFlags: 0
@@ -2970,6 +2986,7 @@ GameObject:
   - component: {fileID: 3448157905286276972}
   - component: {fileID: 5182658960082496572}
   - component: {fileID: 3742286329553281027}
+  - component: {fileID: 8913476855789433792}
   m_Layer: 0
   m_Name: SideWeapon1
   m_TagString: Boss
@@ -3090,6 +3107,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.16}
   m_EdgeRadius: 0
+--- !u!114 &8913476855789433792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6536313927537065644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3d804adaa4b63f4f8befd7d5ebc4ed0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Object: {fileID: 6536313927537065644}
+  bulletPrefab: {fileID: 3940093006102693476, guid: 658c0801c25ea3b49b35cec404b48502, type: 3}
 --- !u!1 &7208556251675219981
 GameObject:
   m_ObjectHideFlags: 0
