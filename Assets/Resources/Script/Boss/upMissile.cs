@@ -27,7 +27,8 @@ public class upMissile : Object
 		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
 			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
 		{
-			if (transform.parent.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize)
+			if (transform.parent.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize &&
+				transform.parent.position.y <= 1.0f)
 				StartAnim();
 		}
 	}
@@ -66,7 +67,7 @@ public class upMissile : Object
 			else if (attackDelay > 3.0f && ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.66f)
 			{
 				GameObject bullet = Instantiate(bulletPrefab);
-				bullet.transform.position += new Vector3(transform.position.x - 1.5f - (3.0f * Time.deltaTime),
+				bullet.transform.position += new Vector3(transform.position.x - 0.5f - (3.0f * Time.deltaTime),
 					transform.position.y + 0.5f, 0.0f);
 
 				attackDelay = 0.0f;
