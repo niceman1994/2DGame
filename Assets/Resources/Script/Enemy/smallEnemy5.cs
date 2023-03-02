@@ -68,7 +68,7 @@ public class smallEnemy5 : Object
     {
         yield return null;
 
-        WaitForSeconds waitForSeconds = new WaitForSeconds(42.0f);
+        WaitForSeconds waitForSeconds = new WaitForSeconds(43.0f);
 
         if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
             GameManager.Instance.CoinCanvas.activeInHierarchy == false)
@@ -111,7 +111,7 @@ public class smallEnemy5 : Object
                     bullet.name = "EnemyBullet";
                     bullet.transform.rotation = Quaternion.Euler(0.0f, 0.0f, 30.0f - (i * 15.0f));
                     bullet.transform.position += new Vector3(
-                        BulletPoint.transform.position.x - Speed * 1.2f * Time.deltaTime,
+                        BulletPoint.transform.position.x - Speed * 1.1f * Time.deltaTime,
                         BulletPoint.transform.position.y,
                         BulletPoint.transform.position.z);
                 }

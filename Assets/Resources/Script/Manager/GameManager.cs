@@ -60,6 +60,12 @@ public class GameManager : ManagerSingleton<GameManager>
             else
                 countDown = 0.0f;
         } 
+
+        if (countDown <= 5.0f)
+		{
+            SoundManager.Instance.StopBGM("Seaside Front");
+            SoundManager.Instance.PlayBGM("Ruins");
+        }
     }
 
     void ChangeText()

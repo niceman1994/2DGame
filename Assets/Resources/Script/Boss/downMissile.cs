@@ -12,7 +12,7 @@ public class downMissile : Object
 		base.Hp = 120;
 		base.Speed = 0.0f;
 		base.ObjectAnim = GetComponent<Animator>();
-		ObjectAnim.enabled = false;
+		ObjectAnim.speed = 0;
 
 		animator = transform.parent.GetChild(6).GetComponent<Animator>();
 		animator.enabled = false;
@@ -20,7 +20,11 @@ public class downMissile : Object
 
 	public override void Progress()
 	{
-		
+		if (transform.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize &&
+			transform.position.x >= Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize)
+		{
+			ObjectAnim.speed = 1;
+		}
 	}
 
 	public override void Release()

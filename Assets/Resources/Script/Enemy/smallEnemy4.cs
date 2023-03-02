@@ -90,9 +90,9 @@ public class smallEnemy4 : Object
     {
         if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("smallEnemy4"))
         {
-            if (attackDelay <= 1.0f)
+            if (attackDelay <= 0.5f)
                 attackDelay += Time.deltaTime;
-            else
+            else if(attackDelay > 0.5f && gameObject.activeInHierarchy == true)
             {
                 GameObject bullet = Instantiate(EnemyManager.Instance.BullterPrefab);
                 bullet.name = "EnemyBullet";
@@ -100,9 +100,9 @@ public class smallEnemy4 : Object
                     BulletPoint.transform.position.x - Speed * 2.5f * Time.deltaTime,
                     BulletPoint.transform.position.y,
                     BulletPoint.transform.position.z);
-
-                attackDelay = 0.0f;
             }
+
+            attackDelay = 0.0f;
         }
     }
 

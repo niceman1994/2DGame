@@ -10,11 +10,11 @@ public class Boss : Object
     public override void Initialize()
     {
         base.Name = "Boss";
-        base.Hp = 200;
+        base.Hp = 0;
         base.Speed = 0.0f;
         base.ObjectAnim = null;
 
-        StartCoroutine(Move());
+        transform.GetComponent<PolygonCollider2D>().enabled = false;
     }
 
     public override void Progress()
@@ -24,8 +24,6 @@ public class Boss : Object
 		{
             if (GameManager.Instance.countDown <= 5.0f)
             {
-                SoundManager.Instance.StopBGM("Seaside Front");
-                SoundManager.Instance.PlayBGM("Ruins");
                 transform.position = Vector2.MoveTowards(transform.position, new Vector2(27.0f, transform.position.y), 0.04f);
 
                 if (WeaponAnim[0].enabled == true &&
@@ -33,6 +31,7 @@ public class Boss : Object
                 {
                     SoundManager.Instance.StopBGM("Ruins");
                     SoundManager.Instance.PlayBGM("Boss");
+                    transform.GetComponent<PolygonCollider2D>().enabled = true;
                     transform.position = Vector2.MoveTowards(transform.position, new Vector2(30.0f, 0.05f), 0.04f);
                 }
             }
@@ -48,16 +47,17 @@ public class Boss : Object
 	{
         foreach (Animator ani in WeaponAnim)
         {
-            if (collision.gameObject.CompareTag("Bullet") && ani.enabled == true)
+            if (collision.gameObject.CompareTag("Bullet"))
             {
-                Hp -= 10;
+                Hp += 1;
                 SoundManager.Instance.PlaySE("hitSound");
 
-                if (Hp <= 0)
+                if (Hp >= 70)
                 {
-                    Hp = 0;
+                    Hp = 70;
+                    transform.GetComponent<PolygonCollider2D>().enabled = false;
                     transform.DOPath(new[] { transform.position,
-                    new Vector3(transform.position.x + 2.0f, transform.position.y - 6.0f, 0.0f)}, 3.0f, PathType.Linear).SetEase(Ease.Linear).OnComplete(() =>
+                    new Vector3(transform.position.x + 2.0f, transform.position.y - 8.0f, 0.0f)}, 3.5f, PathType.Linear).SetEase(Ease.Linear).OnComplete(() =>
                     {
                         gameObject.SetActive(false);
                     });
@@ -65,27 +65,4 @@ public class Boss : Object
             }
         }
 	}
-
-	IEnumerator Move()
-	{
-        while (true)
-        {
-            yield return null;
-
-            if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
-                GameManager.Instance.CoinCanvas.activeInHierarchy == false)
-            {
-                if (transform.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize)
-                {
-                    transform.DOPath(new[] { new Vector3(transform.position.x, 6.33f, 0.0f),
-                    new Vector3(transform.position.x, 6.33f - 0.5f, 0.0f),
-                    new Vector3(transform.position.x, 6.33f , 0.0f) }, 2.0f, PathType.Linear).SetLoops(-1);
-                }
-                else
-                    transform.DOKill();
-            }
-            else
-                break;
-        }
-    }
 }

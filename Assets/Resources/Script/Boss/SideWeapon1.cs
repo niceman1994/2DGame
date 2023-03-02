@@ -59,17 +59,20 @@ public class SideWeapon1 : Object
 
 			if (attackDelay <= 3.0f)
 				attackDelay += Time.deltaTime;
-			else if (attackDelay > 3.0f && ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.66f)
+			else
 			{
-				for (int i = 0; i < 3; ++i)
+				if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.66f)
 				{
-					GameObject bullet = Instantiate(bulletPrefab);
-					bullet.transform.position += new Vector3(
-						transform.position.x - i - (3.0f * Time.deltaTime),
-						transform.position.y, 0.0f);
-				}
+					for (int i = 0; i < 3; ++i)
+					{
+						GameObject bullet = Instantiate(bulletPrefab);
+						bullet.name = "BossBullet";
+						bullet.transform.position = new Vector3(
+							transform.position.x - 1.0f - i, transform.position.y, 0.0f);
+					}
 
-				attackDelay = 0.0f;
+					attackDelay = 0.0f;
+				}
 			}
 		}
 	}

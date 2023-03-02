@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6228714855324055054}
   - component: {fileID: 3940093006102693479}
   - component: {fileID: 7018413826197668586}
+  - component: {fileID: -7983764902249684034}
   m_Layer: 0
   m_Name: BossBullet
   m_TagString: Enemy
@@ -111,3 +112,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.03}
   m_EdgeRadius: 0
+--- !u!114 &-7983764902249684034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3940093006102693476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0723c29ce4fbf2e48bd162aaef34cf66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Object: {fileID: 3940093006102693476}

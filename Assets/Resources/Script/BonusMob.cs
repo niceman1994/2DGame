@@ -5,9 +5,8 @@ using DG.Tweening;
 
 public class BonusMob : Object
 {
-	[SerializeField] GameObject[] itemPrefab;
+	[SerializeField] private GameObject[] itemPrefab;
 	GameObject[] item;
-
 
 	public override void Initialize()
 	{

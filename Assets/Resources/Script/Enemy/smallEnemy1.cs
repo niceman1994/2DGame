@@ -131,18 +131,18 @@ public class smallEnemy1 : Object
 
 	void EnemyAttack()
 	{
-		if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("smallEnemy1"))
+		if (!ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("Destroy"))
 		{
-			if (attackDelay <= 2.0f)
+			if(attackDelay <= 2.0f)
 				attackDelay += Time.deltaTime;
-			else
+			else if (attackDelay > 2.0f && gameObject.activeInHierarchy == true)
 			{
-				if (randomBullet == 4 || randomBullet == 5 || randomBullet == 6)
+				if (randomBullet == 3 || randomBullet == 4 || randomBullet == 5)
 				{
 					GameObject bullet = Instantiate(EnemyManager.Instance.BullterPrefab);
 					bullet.name = "EnemyBullet";
 					bullet.transform.position += new Vector3(
-						BulletPoint.transform.position.x - Speed * 1.4f * Time.deltaTime,
+						BulletPoint.transform.position.x - Speed * 1.2f * Time.deltaTime,
 						BulletPoint.transform.position.y,
 						BulletPoint.transform.position.z);
 				}

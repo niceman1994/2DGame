@@ -8,7 +8,6 @@ public class downArm : Object
 	GameObject Missile;
 
 	Animator animator;
-	float time;
 
 	public override void Initialize()
 	{
@@ -16,29 +15,17 @@ public class downArm : Object
 		base.Hp = 200;
 		base.Speed = 0.0f;
 		base.ObjectAnim = GetComponent<Animator>();
-		ObjectAnim.enabled = false;
+		ObjectAnim.speed = 0;
 
 		animator = transform.parent.GetChild(5).GetComponent<Animator>();
 		animator.enabled = false;
-		time = 0.0f;
+
+		StartCoroutine(MissileEject());
 	}
 
 	public override void Progress()
 	{
-		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
-			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
-		{
-			if (transform.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize)
-			{
-				if (time <= 5.0f)
-					time += Time.deltaTime;
-				else
-				{
-					MissileEject();
-					time = 0.0f;
-				}
-			}
-		}
+		
 	}
 
 	public override void Release()
@@ -64,26 +51,39 @@ public class downArm : Object
 		}
 	}
 
-	void MissileEject()
+	IEnumerator MissileEject()
 	{
-		if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("downArms"))
-		{
-			if (Hp > 0)
-			{
-				ObjectAnim.enabled = true;
+		WaitForSeconds waitForSeconds = new WaitForSeconds(4.0f);
 
-				if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.75f &&
-					ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime < 1.0f)
+		while (true)
+		{
+			yield return null;
+
+			if (transform.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize &&
+				transform.position.x >= Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize)
+			{
+				if (!ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("downArmsDestroy"))
 				{
-					for (int i = 0; i < 6; ++i)
+					yield return waitForSeconds;
+
+					if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime <= 0.0f)
+						ObjectAnim.speed = 1.0f;
+					else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
 					{
-						Missile = Instantiate(MissilePrefab);
-						Missile.name = "BossMissile";
-						Missile.transform.position = new Vector2(transform.position.x + Random.Range(-1.0f, 1.0f), transform.position.y - 1.0f);
+						for (int i = 0; i < 6; ++i)
+						{
+							Missile = Instantiate(MissilePrefab);
+							Missile.name = "BossMissile";
+							Missile.transform.position = new Vector2(transform.position.x + Random.Range(-4.0f, 4.0f), transform.position.y - 1.2f);
+						}
+
+						ObjectAnim.SetBool("end", true);
+						yield return waitForSeconds;
+						ObjectAnim.SetBool("end", false);
 					}
 				}
-				else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f)
-					ObjectAnim.Play("downArms", -1, ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime);
+				else
+					break;
 			}
 		}
 	}

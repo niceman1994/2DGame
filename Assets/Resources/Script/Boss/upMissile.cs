@@ -7,7 +7,6 @@ public class upMissile : Object
 	[SerializeField] private GameObject bulletPrefab;
 
 	Animator animator;
-	float attackDelay;
 
 	public override void Initialize()
 	{
@@ -15,22 +14,17 @@ public class upMissile : Object
 		base.Hp = 80;
 		base.Speed = 0.0f;
 		base.ObjectAnim = GetComponent<Animator>();
-		ObjectAnim.enabled = false;
+		ObjectAnim.speed = 0;
 
 		animator = transform.parent.GetChild(7).GetComponent<Animator>();
 		animator.enabled = false;
-		attackDelay = 0.0f;
+
+		StartCoroutine(StartAnim());
 	}
 
 	public override void Progress()
 	{
-		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
-			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
-		{
-			if (transform.parent.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize &&
-				transform.parent.position.y <= 1.0f)
-				StartAnim();
-		}
+		
 	}
 
 	public override void Release()
@@ -56,21 +50,41 @@ public class upMissile : Object
 		}
 	}
 
-	void StartAnim()
+	IEnumerator StartAnim()
 	{
-		if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("upMissile"))
+		WaitForSeconds waitForSeconds = new WaitForSeconds(4.0f);
+
+		while (true)
 		{
-			ObjectAnim.enabled = true;
+			yield return null;
 
-			if (attackDelay <= 3.0f)
-				attackDelay += Time.deltaTime;
-			else if (attackDelay > 3.0f && ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.66f)
+			if (transform.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize &&
+				transform.position.x >= Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize &&
+				transform.position.y <= Camera.main.transform.position.y + BackgroundManager.Instance.yScreenHalfSize)
 			{
-				GameObject bullet = Instantiate(bulletPrefab);
-				bullet.transform.position += new Vector3(transform.position.x - 0.5f - (3.0f * Time.deltaTime),
-					transform.position.y + 0.5f, 0.0f);
+				if (!ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("upMissileDestroy"))
+				{
+					yield return waitForSeconds;
 
-				attackDelay = 0.0f;
+					if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime <= 0.0f)
+						ObjectAnim.speed = 1.0f;
+					else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
+					{
+						for (int i = 0; i < 4; ++i)
+						{
+							GameObject bullet = Instantiate(bulletPrefab);
+							bullet.name = "BossMissle";
+							bullet.transform.position = new Vector2(transform.position.x - Random.Range(1.0f, 2.0f),
+								transform.position.y + Random.Range(0.5f, 1.5f));
+						}
+
+						ObjectAnim.SetBool("end", true);
+						yield return waitForSeconds;
+						ObjectAnim.SetBool("end", false);
+					}
+				}
+				else
+					break;
 			}
 		}
 	}
