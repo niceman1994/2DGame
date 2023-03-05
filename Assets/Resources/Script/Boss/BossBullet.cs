@@ -8,7 +8,7 @@ public class BossBullet : Object
 	{
 		base.Name = "BossBullet";
 		base.Hp = 0;
-		base.Speed = 2.0f;
+		base.Speed = 1.0f;
 		base.ObjectAnim = null;
 	}
 
@@ -16,9 +16,8 @@ public class BossBullet : Object
 	{
 		if (transform.position.x >= Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize)
 		{
-			transform.position += new Vector3(
-				transform.position.x - (Speed * 1.2f * Time.deltaTime),
-				transform.position.y, 0.0f);
+			transform.position = Vector2.MoveTowards(transform.position,
+				new Vector2(Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize - 1.0f, transform.position.y), 0.04f);
 		}
 		else
 		{

@@ -13,8 +13,6 @@ public class Boss : Object
         base.Hp = 0;
         base.Speed = 0.0f;
         base.ObjectAnim = null;
-
-        transform.GetComponent<PolygonCollider2D>().enabled = false;
     }
 
     public override void Progress()
@@ -31,7 +29,6 @@ public class Boss : Object
                 {
                     SoundManager.Instance.StopBGM("Ruins");
                     SoundManager.Instance.PlayBGM("Boss");
-                    transform.GetComponent<PolygonCollider2D>().enabled = true;
                     transform.position = Vector2.MoveTowards(transform.position, new Vector2(30.0f, 0.05f), 0.04f);
                 }
             }

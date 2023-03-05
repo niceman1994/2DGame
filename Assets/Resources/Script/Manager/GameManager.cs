@@ -29,7 +29,10 @@ public class GameManager : ManagerSingleton<GameManager>
     float timer = 0.0f;
     string message;
 
-	private void Start()
+    GameObject boss;
+    Text ClearText;
+
+    private void Start()
 	{
         ScoreText.text = "00";
         message = "PHASE  1\n SEASIDE   FRONT";
@@ -37,6 +40,7 @@ public class GameManager : ManagerSingleton<GameManager>
         PlayerCanvas.SetActive(false);
         StartCoroutine(PhaseNotice(message, 0.15f));
         PlayerCharge = false;
+        boss = GameObject.FindGameObjectWithTag("Boss").gameObject;
     }
 
 	private void Update()
@@ -65,6 +69,21 @@ public class GameManager : ManagerSingleton<GameManager>
 		{
             SoundManager.Instance.StopBGM("Seaside Front");
             SoundManager.Instance.PlayBGM("Ruins");
+        }
+
+        if (boss.activeInHierarchy == false)
+        {
+            SoundManager.Instance.StopBGM("Boss");
+            SoundManager.Instance.PlayBGM("Clear");
+            Panel.SetActive(true);
+            ClearText.gameObject.SetActive(true);
+            countDown += Time.deltaTime;
+        
+            if (countDown >= 2.0f)
+            {
+                countDown = 2.0f;
+                Application.Quit();
+            }
         }
     }
 

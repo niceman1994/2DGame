@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossMissile : Object
+public class BossMissile2 : Object
 {
     GameObject Player;
 
@@ -10,8 +10,8 @@ public class BossMissile : Object
     {
         base.Name = "BossMissile";
         base.Hp = 0;
-        base.Speed = 1.5f;
-        base.ObjectAnim = GetComponent<Animator>();
+        base.Speed = 2.5f;
+        base.ObjectAnim = null;
 
         Player = GameObject.FindGameObjectWithTag("Player");
     }

@@ -668,7 +668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Object: {fileID: 913907847256449075}
-  bulletPrefab: {fileID: 7915693802535678042, guid: 6dcbb732a5333194dabde2fe9f47be62, type: 3}
+  bulletPrefab: {fileID: 1718789427564048499, guid: cfccb478d401b9b4491278e25cf44c9d, type: 3}
 --- !u!1 &1471456825196195370
 GameObject:
   m_ObjectHideFlags: 0
