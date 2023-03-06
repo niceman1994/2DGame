@@ -21,16 +21,15 @@ public class Boss : Object
             GameManager.Instance.CoinCanvas.activeInHierarchy == false)
 		{
             if (GameManager.Instance.countDown <= 5.0f)
-            {
-                transform.position = Vector2.MoveTowards(transform.position, new Vector2(27.0f, transform.position.y), 0.04f);
+                transform.position = Vector2.MoveTowards(transform.position, new Vector2(27.0f, transform.position.y), 0.024f);
 
-                if (WeaponAnim[0].enabled == true &&
-                    WeaponAnim[1].enabled == true)
-                {
-                    SoundManager.Instance.StopBGM("Ruins");
-                    SoundManager.Instance.PlayBGM("Boss");
-                    transform.position = Vector2.MoveTowards(transform.position, new Vector2(30.0f, 0.05f), 0.04f);
-                }
+            // TODO : 소리 추후 수정
+            if (WeaponAnim[0].enabled == true &&
+                WeaponAnim[1].enabled == true)
+            {
+                SoundManager.Instance.StopBGM("Ruins");
+                SoundManager.Instance.PlayBGM("Boss");
+                transform.position = Vector2.MoveTowards(transform.position, new Vector2(30.0f, 0.05f), 0.024f);
             }
         }
     }

@@ -40,7 +40,6 @@ public class GameManager : ManagerSingleton<GameManager>
         PlayerCanvas.SetActive(false);
         StartCoroutine(PhaseNotice(message, 0.15f));
         PlayerCharge = false;
-        boss = GameObject.FindGameObjectWithTag("Boss").gameObject;
     }
 
 	private void Update()
@@ -63,26 +62,31 @@ public class GameManager : ManagerSingleton<GameManager>
                 countDown -= Time.deltaTime;
             else
                 countDown = 0.0f;
-        } 
-
+        }
+        // TODO : 소리 추후 수정
         if (countDown <= 5.0f)
 		{
             SoundManager.Instance.StopBGM("Seaside Front");
             SoundManager.Instance.PlayBGM("Ruins");
         }
 
-        if (boss.activeInHierarchy == false)
+        if (boss != null)
         {
-            SoundManager.Instance.StopBGM("Boss");
-            SoundManager.Instance.PlayBGM("Clear");
-            Panel.SetActive(true);
-            ClearText.gameObject.SetActive(true);
-            countDown += Time.deltaTime;
-        
-            if (countDown >= 2.0f)
+            boss = GameObject.FindGameObjectWithTag("Boss").gameObject;
+
+            if (boss.activeInHierarchy == false)
             {
-                countDown = 2.0f;
-                Application.Quit();
+                SoundManager.Instance.StopBGM("Boss");
+                SoundManager.Instance.PlayBGM("Clear");
+                Panel.SetActive(true);
+                ClearText.gameObject.SetActive(true);
+                countDown += Time.deltaTime;
+
+                if (countDown >= 2.0f)
+                {
+                    countDown = 2.0f;
+                    Application.Quit();
+                }
             }
         }
     }
