@@ -18,20 +18,16 @@ public class BossMissile2 : Object
 
     public override void Progress()
     {
-        if (transform.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize &&
-            transform.position.x >= Player.transform.position.x)
+        if (transform.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize)
         {
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(
                 Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize - 2.0f,
-                Random.Range(Player.transform.position.y - 1.0f, Player.transform.position.y + 1.0f)), 0.024f);
+                Random.Range(Player.transform.position.y - 1.0f, Player.transform.position.y + 1.0f)), 0.02f);
 
-            Vector3 Direction = (transform.position - Player.transform.position).normalized;
-            transform.rotation = Quaternion.LookRotation(new Vector3(0.0f, 0.0f, Direction.z));
+            float angle = Mathf.Atan2(transform.position.y - Player.transform.position.y, transform.position.x - Player.transform.position.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
         }
-        else if (transform.position.x < Player.transform.position.x &&
-                 transform.position.x >= Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize)
-            transform.position += new Vector3(transform.position.x - Speed * Time.deltaTime, transform.position.y, 0.0f);
-        else if (transform.position.x < Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize)
+        else
         {
             gameObject.SetActive(false);
             transform.GetComponent<BoxCollider2D>().enabled = false;

@@ -20,11 +20,7 @@ public class downMissile : Object
 
 	public override void Progress()
 	{
-		if (transform.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize &&
-			transform.position.x >= Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize)
-		{
-			ObjectAnim.speed = 1;
-		}
+		
 	}
 
 	public override void Release()
@@ -46,6 +42,28 @@ public class downMissile : Object
 				ObjectAnim.SetTrigger("destroy");
 				transform.GetComponent<PolygonCollider2D>().enabled = false;
 				animator.enabled = true;
+			}
+		}
+	}
+
+	IEnumerator StartAnim()
+	{
+		WaitForSeconds waitForSeconds = new WaitForSeconds(4.0f);
+
+		while (true)
+		{
+			yield return null;
+
+			if (transform.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize &&
+				transform.position.x >= Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize)
+			{
+				if (!ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("downMissileDestroy"))
+				{
+					yield return waitForSeconds;
+
+					if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime <= 0.0f)
+						ObjectAnim.speed = 1.0f;
+				}
 			}
 		}
 	}

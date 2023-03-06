@@ -79,7 +79,7 @@ public class upMissile : Object
 						}
 
 						ObjectAnim.SetBool("end", true);
-						yield return waitForSeconds;
+						yield return null;
 						ObjectAnim.SetBool("end", false);
 					}
 				}

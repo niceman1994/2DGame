@@ -61,7 +61,9 @@ public class SideWeapon2 : Object
 				attackDelay += Time.deltaTime;
 			else
 			{
-				if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.66f)
+				if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime <= 0.0f)
+					ObjectAnim.speed = 1.0f;
+				else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.66f)
 				{
 					for (int i = 0; i < 3; ++i)
 					{

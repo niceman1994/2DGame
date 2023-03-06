@@ -38,7 +38,7 @@ public class smallEnemy1 : Object
 			if (transform.position.x >= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize)
 				transform.position = new Vector3(transform.position.x - (Speed * Time.deltaTime), transform.position.y, 0.0f);
 			else if (transform.position.x < Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize)
-				EnemyAttack();
+				EnemyAttack(2.0f);
 			else if (transform.position.x <= Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize)
 				gameObject.SetActive(false);
 		}
@@ -129,15 +129,15 @@ public class smallEnemy1 : Object
 		}
 	}
 
-	void EnemyAttack()
+	void EnemyAttack(float _time)
 	{
 		if (!ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("Destroy"))
 		{
-			if(attackDelay <= 2.0f)
+			if(attackDelay <= _time)
 				attackDelay += Time.deltaTime;
-			else if (attackDelay > 2.0f && gameObject.activeInHierarchy == true)
+			else if (attackDelay > _time && gameObject.activeInHierarchy == true)
 			{
-				if (randomBullet == 3 || randomBullet == 4 || randomBullet == 5)
+				if (randomBullet == 3 || randomBullet == 4 || randomBullet == 5 || randomBullet == 6)
 				{
 					GameObject bullet = Instantiate(EnemyManager.Instance.BullterPrefab);
 					bullet.name = "EnemyBullet";

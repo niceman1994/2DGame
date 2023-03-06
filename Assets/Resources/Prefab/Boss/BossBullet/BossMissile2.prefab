@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5908126719550663453}
   m_Layer: 0
   m_Name: BossMissile2
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -124,4 +124,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 799247fb57794df4ba92812dfb307be0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Object: {fileID: 0}
+  _Object: {fileID: 1718789427564048499}

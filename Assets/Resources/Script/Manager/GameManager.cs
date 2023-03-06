@@ -14,6 +14,7 @@ public class GameManager : ManagerSingleton<GameManager>
     public Text InsertCoinText;
     public Text GameOverText;
     public Text PhaseInfoText;
+    public Text ClearText;
 
     public Text ScoreText;
     public int Score;
@@ -30,7 +31,6 @@ public class GameManager : ManagerSingleton<GameManager>
     string message;
 
     GameObject boss;
-    Text ClearText;
 
     private void Start()
 	{
@@ -80,13 +80,6 @@ public class GameManager : ManagerSingleton<GameManager>
                 SoundManager.Instance.PlayBGM("Clear");
                 Panel.SetActive(true);
                 ClearText.gameObject.SetActive(true);
-                countDown += Time.deltaTime;
-
-                if (countDown >= 2.0f)
-                {
-                    countDown = 2.0f;
-                    Application.Quit();
-                }
             }
         }
     }

@@ -30,7 +30,7 @@ public class smallEnemy5 : Object
             if (transform.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize)
             {
                 inScene = true;
-                ShootBullet();
+                ShootBullet(2.0f);
             }
             else
             {
@@ -55,7 +55,7 @@ public class smallEnemy5 : Object
             {
                 Hp = 0;
                 ObjectAnim.SetTrigger("destroy");
-                transform.GetComponent<BoxCollider2D>().enabled = false;
+                transform.GetComponent<PolygonCollider2D>().enabled = false;
                 SoundManager.Instance.PlaySE("smallEnemyDestroySound");
                 GameManager.Instance.Score += Random.Range(6, 7) * 10;
 
@@ -97,11 +97,11 @@ public class smallEnemy5 : Object
         }
     }
 
-    void ShootBullet()
+    void ShootBullet(float _time)
     {
         if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("smallEnemy5"))
         {
-            if (attackDelay <= 2.5f)
+            if (attackDelay <= _time)
                 attackDelay += Time.deltaTime;
             else
             {

@@ -74,7 +74,7 @@ public class downArm : Object
 						{
 							Missile = Instantiate(MissilePrefab);
 							Missile.name = "BossMissile";
-							Missile.transform.position = new Vector2(transform.position.x + Random.Range(-4.0f, 4.0f), transform.position.y - 1.2f);
+							Missile.transform.position = new Vector2(transform.position.x + Random.Range(-3.0f, 3.0f), transform.position.y - 1.2f);
 						}
 
 						ObjectAnim.SetBool("end", true);

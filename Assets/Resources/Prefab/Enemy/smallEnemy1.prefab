@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 569337003437355460}
   - component: {fileID: 569337003437355461}
   - component: {fileID: 1153380751378516013}
-  - component: {fileID: 3906776809653372882}
+  - component: {fileID: 6739589713864425920}
   m_Layer: 7
   m_Name: smallEnemy1
   m_TagString: Enemy
@@ -121,9 +121,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Object: {fileID: 569337003437355458}
-  BullterPrefab: {fileID: 3881419598712241178, guid: c9d1e004750ccac45b12af3c097e8d67, type: 3}
   BulletPoint: {fileID: 7283726510258483608}
---- !u!61 &3906776809653372882
+--- !u!61 &6739589713864425920
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -147,7 +146,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.16, y: 0.15}
   m_EdgeRadius: 0
 --- !u!1 &7283726510258483608
 GameObject:

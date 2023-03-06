@@ -14,6 +14,7 @@ public class SideWeapon1 : Object
 		base.Hp = 100;
 		base.Speed = 0.0f;
 		base.ObjectAnim = GetComponent<Animator>();
+		ObjectAnim.speed = 0;
 
 		attackDelay = 0.0f;
 	}
@@ -61,7 +62,9 @@ public class SideWeapon1 : Object
 				attackDelay += Time.deltaTime;
 			else
 			{
-				if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.66f)
+				if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime <= 0.0f)
+					ObjectAnim.speed = 1.0f;
+				else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.66f)
 				{
 					for (int i = 0; i < 3; ++i)
 					{

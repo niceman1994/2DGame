@@ -29,7 +29,7 @@ public class Boss : Object
             {
                 SoundManager.Instance.StopBGM("Ruins");
                 SoundManager.Instance.PlayBGM("Boss");
-                transform.position = Vector2.MoveTowards(transform.position, new Vector2(30.0f, 0.05f), 0.024f);
+                transform.position = Vector2.MoveTowards(transform.position, new Vector2(31.0f, 0.05f), 0.024f);
             }
         }
     }
