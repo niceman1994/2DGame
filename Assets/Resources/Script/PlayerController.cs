@@ -137,13 +137,13 @@ public class PlayerController : Object
 		{
 			ObjectAnim.SetBool("up", true);
 			ObjectAnim.SetBool("down", false);
-			transform.Translate(new Vector2(0.0f, 0.045f)); // 집에서는 0.021f, 학원에서는 0.045f
+			transform.Translate(new Vector2(0.0f, 0.021f)); // 집에서는 0.021f, 학원에서는 0.045f
 		}
 		else if (Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.UpArrow))
 		{
 			ObjectAnim.SetBool("down", true);
 			ObjectAnim.SetBool("up", false);
-			transform.Translate(new Vector2(0.0f, -0.045f));
+			transform.Translate(new Vector2(0.0f, -0.021f));
 		}
 		else
 		{
@@ -153,9 +153,9 @@ public class PlayerController : Object
 		}
 
 		if (Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
-			transform.Translate(new Vector2(-0.045f, 0.0f));
+			transform.Translate(new Vector2(-0.021f, 0.0f));
 		else if (Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.LeftArrow))
-			transform.Translate(new Vector2(0.045f, 0.0f));
+			transform.Translate(new Vector2(0.021f, 0.0f));
 	}
 
 	void CameraView()
