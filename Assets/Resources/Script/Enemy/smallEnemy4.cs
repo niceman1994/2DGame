@@ -30,10 +30,9 @@ public class smallEnemy4 : Object
             if (transform.position.y >= Camera.main.transform.position.y - BackgroundManager.Instance.yScreenHalfSize)
             {
                 inScene = true;
-                EnemyAttack(1.0f);
 
-                //if (transform.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize)
-                //    EnemyAttack(1.0f);
+                if (transform.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize)
+                    EnemyAttack(0.5f);
             }
             else
             {

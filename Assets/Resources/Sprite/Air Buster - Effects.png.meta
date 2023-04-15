@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -993,8 +993,8 @@ TextureImporter:
       Air Buster - Effects_10: -1237120647
       Air Buster - Effects_46: 1744136746
       Air Buster - Effects_11: 1441418507
-      Air Buster - Effects_71: 50879505
       Air Buster - Effects_22: 911312745
+      Air Buster - Effects_71: 50879505
       Air Buster - Effects_5: 1464349372
       Air Buster - Effects_20: -1608660801
       Air Buster - Effects_3: 1416083143

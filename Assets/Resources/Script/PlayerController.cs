@@ -92,7 +92,7 @@ public class PlayerController : Object
 			{
 				yield return new WaitForSeconds(1.65f);
 				transform.GetComponent<AudioSource>().Play();
-				transform.DOMove(point[0], 2.2f).SetEase(Ease.InSine).OnComplete(() =>
+				transform.DOMove(point[0], 1.9f).SetEase(Ease.InSine).OnComplete(() =>
 			  {
 				  transform.DOPath(point, 2.0f, PathType.CatmullRom).SetEase(Ease.OutSine);
 			  });

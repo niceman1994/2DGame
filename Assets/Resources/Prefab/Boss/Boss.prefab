@@ -185,14 +185,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AlphaTolerance: 20
-  DistanceThreshold: 0
+  DistanceThreshold: 1
   Scale: 1
   Decompose: 0
   RunInPlayMode: 1
   UseCache: 1
   lastAlphaTolerance: 20
   lastScale: 1
-  lastDistanceThreshold: 0
+  lastDistanceThreshold: 1
   lastDecompose: 0
   lastSprite: {fileID: 21300000, guid: 89b30e36801acd64fb4c7b9dbfcf1b27, type: 3}
   lastRect:
@@ -2722,14 +2722,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AlphaTolerance: 20
-  DistanceThreshold: 0
+  DistanceThreshold: 1
   Scale: 1
   Decompose: 0
   RunInPlayMode: 1
   UseCache: 1
   lastAlphaTolerance: 20
   lastScale: 1
-  lastDistanceThreshold: 0
+  lastDistanceThreshold: 1
   lastDecompose: 0
   lastSprite: {fileID: 21300000, guid: 6429fd0a482a960429399a84f8e63c6d, type: 3}
   lastRect:

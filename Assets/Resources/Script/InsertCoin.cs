@@ -28,10 +28,10 @@ public class InsertCoin : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha0))
         {
-            if (SoundManager.Instance.audioSourceBGM.isPlaying == true)
-                SoundManager.Instance.StopBGM("Select");
+            if (SoundManager.Instance.audioSourceBGM[0].isPlaying == true)
+                SoundManager.Instance.audioSourceBGM[0].Stop();
 
-            SoundManager.Instance.PlayBGM("Select");
+            SoundManager.Instance.audioSourceBGM[1].Play();
 
             foreach (AudioSource element in SoundManager.Instance.audioSourceEffects)
             {
@@ -60,9 +60,9 @@ public class InsertCoin : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1) && GameManager.Instance.Coin > 0)
         {
             gameObject.SetActive(false);
-            SoundManager.Instance.StopBGM("Select");
+            SoundManager.Instance.audioSourceBGM[1].Stop();
             SoundManager.Instance.StopSE("Credit");
-            SoundManager.Instance.PlayBGM("Seaside Front");
+            SoundManager.Instance.audioSourceBGM[2].Play();
             GameManager.Instance.Coin -= 1;
             GameManager.Instance.PlayerCanvas.SetActive(true);
         }

@@ -62,7 +62,7 @@ public class downArm : Object
 			if (transform.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize &&
 				transform.position.x >= Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize)
 			{
-				if (!ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("downArmsDestroy"))
+				if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("downArms"))
 				{
 					yield return waitForSeconds;
 

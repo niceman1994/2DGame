@@ -22,6 +22,11 @@ public class GameManager : ManagerSingleton<GameManager>
     public Text CoinText;
     public int Coin;
 
+    public GameObject Defeat;
+    public Text HaveCoin;
+    public Text CountText;
+    public int Count;
+
     public Text PlayerLifeText;
     public int PlayerLife;
     public bool PlayerCharge;
@@ -29,8 +34,6 @@ public class GameManager : ManagerSingleton<GameManager>
 
     float timer = 0.0f;
     string message;
-
-    GameObject boss;
 
     private void Start()
 	{
@@ -40,6 +43,7 @@ public class GameManager : ManagerSingleton<GameManager>
         PlayerCanvas.SetActive(false);
         StartCoroutine(PhaseNotice(message, 0.15f));
         PlayerCharge = false;
+        Defeat.SetActive(false);
     }
 
 	private void Update()
@@ -49,6 +53,7 @@ public class GameManager : ManagerSingleton<GameManager>
         ChargeCheck();
         GameStop();
         PlayerLifeText.text = PlayerLife.ToString();
+        HaveCoin = CoinText;
 
         if (Score != 0)
             ScoreText.text = Score.ToString();
@@ -62,25 +67,6 @@ public class GameManager : ManagerSingleton<GameManager>
                 countDown -= Time.deltaTime;
             else
                 countDown = 0.0f;
-        }
-        // TODO : 소리 추후 수정
-        if (countDown <= 5.0f)
-		{
-            SoundManager.Instance.StopBGM("Seaside Front");
-            SoundManager.Instance.PlayBGM("Ruins");
-        }
-
-        if (boss != null)
-        {
-            boss = GameObject.FindGameObjectWithTag("Boss").gameObject;
-
-            if (boss.activeInHierarchy == false)
-            {
-                SoundManager.Instance.StopBGM("Boss");
-                SoundManager.Instance.PlayBGM("Clear");
-                Panel.SetActive(true);
-                ClearText.gameObject.SetActive(true);
-            }
         }
     }
 
@@ -116,7 +102,7 @@ public class GameManager : ManagerSingleton<GameManager>
             {
                 Coin += 1;
 
-                if (Coin <= 99)
+                if (Coin <= 9)
                     CoinText.text = Coin.ToString();
             }
         }

@@ -11,13 +11,12 @@ public class Sound
 
 public class SoundManager : ManagerSingleton<SoundManager>
 {
-    public AudioSource audioSourceBGM;
+    public AudioSource[] audioSourceBGM;
     public AudioSource[] audioSourceEffects;
 
     public string[] playSoundName;
 
     public Sound[] effectSounds;
-    public Sound[] bgmSounds;
 
     void Start()
     {
@@ -47,20 +46,6 @@ public class SoundManager : ManagerSingleton<SoundManager>
         Debug.Log(_name + "사운드가 SoundManager에 등록되지 않았습니다.");
     }
 
-    public void PlayBGM(string _name)
-    {
-        for (int i = 0; i < bgmSounds.Length; i++)
-        {
-            if (_name == bgmSounds[i].name)
-            {
-                audioSourceBGM.clip = bgmSounds[i].clip;
-                audioSourceBGM.Play();
-                return;
-            }
-        }
-        Debug.Log(_name + "사운드가 SoundManager에 등록되지 않았습니다.");
-    }
-
     public void StopAllSE()
     {
         for (int i = 0; i < audioSourceEffects.Length; i++)
@@ -78,17 +63,5 @@ public class SoundManager : ManagerSingleton<SoundManager>
             }
         }
         Debug.Log("재생 중인" + _name + "사운드가 없습니다. ");
-    }
-
-    public void StopBGM(string _name)
-    {
-        for (int i = 0; i < bgmSounds.Length; i++)
-        {
-            if (_name == bgmSounds[i].name)
-            {
-                audioSourceBGM.Stop();
-                break;
-            }
-        }
     }
 }

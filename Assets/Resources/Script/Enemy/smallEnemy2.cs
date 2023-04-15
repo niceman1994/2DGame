@@ -47,7 +47,7 @@ public class smallEnemy2 : Object
 		if (collision.gameObject.tag == "Bullet")
 		{
 			ObjectAnim.SetTrigger("destroy");
-			transform.GetComponent<PolygonCollider2D>().enabled = false;
+			transform.GetComponent<BoxCollider2D>().enabled = false;
 			SoundManager.Instance.PlaySE("smallEnemyDestroySound");
 			GameManager.Instance.Score += Random.Range(7, 10) * 10;
 

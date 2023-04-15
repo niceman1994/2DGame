@@ -13,7 +13,7 @@ public class IntroCanvas : MonoBehaviour
 
     private void Start()
     {
-        SoundManager.Instance.PlayBGM("Title");
+        SoundManager.Instance.audioSourceBGM[0].Play();
     }
 
     private void Update()
@@ -26,11 +26,11 @@ public class IntroCanvas : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha0))
         {
             gameObject.SetActive(false);
-            SoundManager.Instance.StopBGM("Title");
+            SoundManager.Instance.audioSourceBGM[0].Stop();
             anim.enabled = false;
 
             GameManager.Instance.CoinCanvas.SetActive(true);
-            SoundManager.Instance.PlayBGM("Select");
+            SoundManager.Instance.audioSourceBGM[1].Play();
             SoundManager.Instance.PlaySE("Credit");
         }
     }

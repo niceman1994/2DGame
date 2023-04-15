@@ -62,7 +62,7 @@ public class upMissile : Object
 				transform.position.x >= Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize &&
 				transform.position.y <= Camera.main.transform.position.y + BackgroundManager.Instance.yScreenHalfSize)
 			{
-				if (!ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("upMissileDestroy"))
+				if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("upMissile"))
 				{
 					yield return waitForSeconds;
 

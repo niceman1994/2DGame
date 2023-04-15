@@ -20,17 +20,23 @@ public class Boss : Object
         if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
             GameManager.Instance.CoinCanvas.activeInHierarchy == false)
 		{
-            if (GameManager.Instance.countDown <= 5.0f)
-                transform.position = Vector2.MoveTowards(transform.position, new Vector2(27.0f, transform.position.y), 0.024f);
-
-            // TODO : 소리 추후 수정
-            if (WeaponAnim[0].enabled == true &&
-                WeaponAnim[1].enabled == true)
+            if (GameManager.Instance.countDown <= 6.5f)
             {
-                SoundManager.Instance.StopBGM("Ruins");
-                SoundManager.Instance.PlayBGM("Boss");
-                transform.position = Vector2.MoveTowards(transform.position, new Vector2(31.0f, 0.05f), 0.024f);
+                if (WeaponAnim[0].enabled == false &&
+                    WeaponAnim[1].enabled == false)
+                    transform.position = Vector2.MoveTowards(transform.position, new Vector2(27.0f, transform.position.y), 0.02f);
+                else if (WeaponAnim[0].enabled == true &&
+                    WeaponAnim[1].enabled == true)
+                    transform.position = Vector2.MoveTowards(transform.position, new Vector2(31.0f, 0.05f), 0.02f);
             }
+        }
+
+        if (transform.position.x == 27.0f)
+        {
+            SoundManager.Instance.audioSourceBGM[2].Stop();
+
+            if (!SoundManager.Instance.audioSourceBGM[3].isPlaying)
+                SoundManager.Instance.audioSourceBGM[3].Play();
         }
     }
 
@@ -43,22 +49,24 @@ public class Boss : Object
 	{
         foreach (Animator ani in WeaponAnim)
         {
-            if (collision.gameObject.CompareTag("Bullet"))
+            if (collision.gameObject.CompareTag("Bullet") && ani.enabled == true)
             {
                 Hp += 1;
                 SoundManager.Instance.PlaySE("hitSound");
 
-                if (Hp >= 70)
+                if (Hp >= 50)
                 {
-                    Hp = 70;
+                    Hp = 50;
+                    SoundManager.Instance.audioSourceBGM[3].Stop();
+                    SoundManager.Instance.audioSourceBGM[4].Play();
                     transform.GetComponent<PolygonCollider2D>().enabled = false;
                     transform.DOPath(new[] { transform.position,
-                    new Vector3(transform.position.x + 2.0f, transform.position.y - 8.0f, 0.0f)}, 3.5f, PathType.Linear).SetEase(Ease.Linear).OnComplete(() =>
+                    new Vector3(transform.position.x + 2.0f, transform.position.y - 8.0f, 0.0f)}, 2.5f, PathType.Linear).SetEase(Ease.Linear).OnComplete(() =>
                     {
                         gameObject.SetActive(false);
                     });
                 }
             }
         }
-	}
+    }
 }

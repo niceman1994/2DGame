@@ -142,7 +142,7 @@ public class smallEnemy1 : Object
 					GameObject bullet = Instantiate(EnemyManager.Instance.BullterPrefab);
 					bullet.name = "EnemyBullet";
 					bullet.transform.position += new Vector3(
-						BulletPoint.transform.position.x - Speed * 1.2f * Time.deltaTime,
+						BulletPoint.transform.position.x - Speed * 1.05f * Time.deltaTime,
 						BulletPoint.transform.position.y,
 						BulletPoint.transform.position.z);
 				}
