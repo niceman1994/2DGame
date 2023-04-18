@@ -46,14 +46,14 @@ public class BackgroundManager : ManagerSingleton<BackgroundManager>
 					Background[i].position = new Vector3(Background[i].position.x + (-Speed * Time.deltaTime), 0.0f, 0.0f);
 
 					if (Background[i].position.x <= leftPosX && 
-						GameManager.Instance.countDown <= 50.0f && GameManager.Instance.countDown > 7.0f)
+						GameManager.Instance.GameCount <= 50.0f && GameManager.Instance.GameCount > 7.0f)
 					{
 						Vector3 nextPos = Background[i].position;
 						nextPos = new Vector3(nextPos.x + rightPosX, nextPos.y, nextPos.z);
 						Background[i].position = nextPos;
 					}
-					else if (Background[i].position.x <= leftPosX && GameManager.Instance.countDown <= 7.0f
-						&& GameManager.Instance.countDown > 6.5f)
+					else if (Background[i].position.x <= leftPosX && GameManager.Instance.GameCount <= 7.0f
+						&& GameManager.Instance.GameCount > 6.5f)
 					{
 						Background[i].gameObject.SetActive(false);
 						Background[i].position = new Vector3(-70.0f, 0.0f, 0.0f);

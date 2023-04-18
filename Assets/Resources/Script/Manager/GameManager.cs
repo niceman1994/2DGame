@@ -30,7 +30,9 @@ public class GameManager : ManagerSingleton<GameManager>
     public Text PlayerLifeText;
     public int PlayerLife;
     public bool PlayerCharge;
-    public float countDown = 60.0f;
+    public bool StageClear;
+    public bool GameOver;
+    public float GameCount = 60.0f;
 
     float timer = 0.0f;
     string message;
@@ -43,7 +45,9 @@ public class GameManager : ManagerSingleton<GameManager>
         PlayerCanvas.SetActive(false);
         StartCoroutine(PhaseNotice(message, 0.15f));
         PlayerCharge = false;
+        GameOver = false;
         Defeat.SetActive(false);
+        StartCoroutine(CountDown());
     }
 
 	private void Update()
@@ -53,20 +57,30 @@ public class GameManager : ManagerSingleton<GameManager>
         ChargeCheck();
         GameStop();
         PlayerLifeText.text = PlayerLife.ToString();
-        HaveCoin = CoinText;
+        HaveCoin.text = Coin.ToString();
 
         if (Score != 0)
             ScoreText.text = Score.ToString();
 
-        if (PlayerLife <= 0) PlayerLife = 0;
+        if (PlayerLife <= 0)
+        {
+            PlayerLife = 0;
+            Time.timeScale = 0;
+            Defeat.SetActive(true);
+        }
+        else
+        {
+            Time.timeScale = 1;
+            Defeat.SetActive(false);
+        }
 
         if (IntroCanvas.activeInHierarchy == false &&
             CoinCanvas.activeInHierarchy == false)
         {
-            if (countDown > 0.0f)
-                countDown -= Time.deltaTime;
+            if (GameCount > 0.0f)
+                GameCount -= Time.deltaTime;
             else
-                countDown = 0.0f;
+                GameCount = 0.0f;
         }
     }
 
@@ -102,8 +116,20 @@ public class GameManager : ManagerSingleton<GameManager>
             {
                 Coin += 1;
 
-                if (Coin <= 9)
+                if (Coin < 9)
                     CoinText.text = Coin.ToString();
+            }
+        }
+        else if (Defeat.activeInHierarchy == true)
+        {
+            if (Input.GetKeyDown(KeyCode.Alpha0) && Coin < 9)
+                Coin += 1;
+
+            if (Input.GetKeyDown(KeyCode.Alpha1) && Coin >= 1)
+            {
+                Coin -= 1;
+                PlayerLife = 2;
+                CoinText.text = Coin.ToString();
             }
         }
 	}
@@ -121,6 +147,28 @@ public class GameManager : ManagerSingleton<GameManager>
 
         yield return new WaitForSeconds(1.0f);
         PhaseInfoText.gameObject.SetActive(false);
+    }
+
+    IEnumerator CountDown()
+    {
+        WaitForSecondsRealtime waitForSecondsRealtime = new WaitForSecondsRealtime(1.0f);
+
+        while (true)
+        {
+            yield return null;
+
+            if (Defeat.activeInHierarchy == true)
+            {
+                yield return waitForSecondsRealtime;
+                Count = Count >= 0 ? Count -= 1 : 0;
+                CountText.text = Count.ToString();
+
+                if (Count == -1)
+                    UnityEditor.EditorApplication.isPlaying = false;
+            }
+            else
+                Count = 9;      
+        }
     }
 
     void ChargeCheck()

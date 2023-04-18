@@ -25,7 +25,7 @@ public class BossMissile2 : Object
         {
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(
                 Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize - 2.0f,
-                Random.Range(Player.transform.position.y - 1.0f, Player.transform.position.y + 1.0f)), 0.5f);
+                Random.Range(Player.transform.position.y - 1.0f, Player.transform.position.y + 1.0f)), 0.005f);
 
             float angle = Mathf.Atan2(transform.position.y - Player.transform.position.y, transform.position.x - Player.transform.position.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
@@ -55,8 +55,8 @@ public class BossMissile2 : Object
 
     void DestroyBullet()
     {
-        if (transform.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize &&
-            transform.position.x > Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize - 150.0f)
+        if (transform.position.x > Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize ||
+            transform.position.x < Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize)
         {
             gameObject.SetActive(false);
             transform.SetParent(EnemyManager.Instance.transform.GetChild(1));

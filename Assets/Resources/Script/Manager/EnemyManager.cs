@@ -8,6 +8,7 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
 {
     public GameObject[] EnemyPrefab;
     public GameObject BullterPrefab;
+    public bool StageClear;
 
     public Dictionary<object, List<GameObject>> EnemyLists = new Dictionary<object, List<GameObject>>();
     public List<GameObject> BulletLists = new List<GameObject>();
@@ -27,7 +28,12 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
         StartCoroutine(setDelay5<smallEnemy5>(0.5f));
     }
 
-	void Initialize()
+    private void Update()
+    {
+        CheckClear<Boss>();
+    }
+
+    void Initialize()
 	{
         //SpawnEnemy<smallEnemy1>(4, new Vector2(46.0f, 2.4f));
         //SpawnEnemy<smallEnemy1>(4, new Vector2(50.0f, -2.4f));
@@ -222,12 +228,9 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
         }
     }
 
-    void SetnewPos<T>(int count, Vector2 pos)
-	{
-        if (EnemyLists.ContainsKey(typeof(T).Name))
-		{
-            for (int i = 0; i < count; ++i)
-                EnemyLists[typeof(T).Name][i].transform.position = new Vector2(pos.x + (i * 2), pos.y);
-		}
-	}
+    void CheckClear<T>()
+    {
+        if (EnemyLists[typeof(T).Name][0].activeInHierarchy == false)
+            StageClear = EnemyLists[typeof(T).Name][0].GetComponent<Boss>().GetBool();
+    }
 }

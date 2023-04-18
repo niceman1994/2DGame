@@ -57,14 +57,15 @@ public class SideWeapon1 : Object
 		if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("Weapon1"))
 		{
 			ObjectAnim.enabled = true;
+			ObjectAnim.speed = 1.0f;
 
-			if (attackDelay <= 3.0f)
+			if (attackDelay <= 2.0f)
 				attackDelay += Time.deltaTime;
 			else
 			{
-				if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime <= 0.0f)
-					ObjectAnim.speed = 1.0f;
-				else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.66f)
+				//if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime <= 0.0f)
+				//	ObjectAnim.speed = 1.0f;
+				if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.66f)
 				{
 					for (int i = 0; i < 3; ++i)
 					{

@@ -137,13 +137,13 @@ public class PlayerController : Object
 		{
 			ObjectAnim.SetBool("up", true);
 			ObjectAnim.SetBool("down", false);
-			transform.Translate(new Vector2(0.0f, 0.021f)); // 집에서는 0.021f, 학원에서는 0.045f
+			transform.Translate(new Vector2(0.0f, 0.018f)); // 집에서는 0.018f, 학원에서는 0.045f
 		}
 		else if (Input.GetKey(KeyCode.DownArrow) && !Input.GetKey(KeyCode.UpArrow))
 		{
 			ObjectAnim.SetBool("down", true);
 			ObjectAnim.SetBool("up", false);
-			transform.Translate(new Vector2(0.0f, -0.021f));
+			transform.Translate(new Vector2(0.0f, -0.018f));
 		}
 		else
 		{
@@ -153,9 +153,9 @@ public class PlayerController : Object
 		}
 
 		if (Input.GetKey(KeyCode.LeftArrow) && !Input.GetKey(KeyCode.RightArrow))
-			transform.Translate(new Vector2(-0.021f, 0.0f));
+			transform.Translate(new Vector2(-0.018f, 0.0f));
 		else if (Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.LeftArrow))
-			transform.Translate(new Vector2(0.021f, 0.0f));
+			transform.Translate(new Vector2(0.018f, 0.0f));
 	}
 
 	void CameraView()
@@ -221,13 +221,13 @@ public class PlayerController : Object
 	IEnumerator DieCheck()
 	{
 		yield return null;
-
+		
 		dieSmog.gameObject.SetActive(false);
-		transform.position = Vector3.MoveTowards(new Vector3(11.0f, 1.3f, 0.0f), new Vector3(16.0f, 1.3f, 0.0f), 0.01f);
+		transform.position = Vector3.MoveTowards(new Vector3(11.0f, 1.1f, 0.0f), new Vector3(18.0f, 1.1f, 0.0f), 0.02f);
 		ObjectAnim.Play("Sally");
 		transform.GetComponent<SpriteRenderer>().color = new Color(255.0f, 255.0f, 255.0f, 0.0f);
 
-		yield return new WaitForSeconds(2.0f);
+		yield return new WaitForSecondsRealtime(2.0f);
 		ObjectAnim.Play("Idle");
 		transform.GetComponent<SpriteRenderer>().color = new Color(255.0f, 255.0f, 255.0f, 255.0f);
 		transform.GetComponent<BoxCollider2D>().enabled = true;

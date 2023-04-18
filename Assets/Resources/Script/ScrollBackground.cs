@@ -57,19 +57,19 @@ public class ScrollBackground : MonoBehaviour
 					scrollBackground[i].gameObject.transform.position = nextPos;
 					loopCount += 1;
 
-					if (GameManager.Instance.countDown <= 35.0f && scrollBackground[i].transform.position == nextPos)
+					if (GameManager.Instance.GameCount <= 35.0f && scrollBackground[i].transform.position == nextPos)
 					{
 						for (int j = 16; j < scrollBackground[i].transform.childCount; ++j)
 							scrollBackground[i].transform.GetChild(j).gameObject.SetActive(true);
 					}
 				}
 
-				if (GameManager.Instance.countDown <= 10.0f && GameManager.Instance.countDown > 7.0f)
+				if (GameManager.Instance.GameCount <= 10.0f && GameManager.Instance.GameCount > 7.0f)
 				{
 					for (int j = 3; j < 16; ++j)
 						scrollBackground[i].transform.GetChild(j).gameObject.SetActive(true);
 				}
-				else if (GameManager.Instance.countDown <= 7.0f)
+				else if (GameManager.Instance.GameCount <= 7.0f)
 				{
 					scrollBackground[i].gameObject.SetActive(false);
 					scrollBackground[i].transform.position = Vector3.zero;

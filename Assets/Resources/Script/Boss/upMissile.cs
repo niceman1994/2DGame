@@ -52,7 +52,7 @@ public class upMissile : Object
 
 	IEnumerator StartAnim()
 	{
-		WaitForSeconds waitForSeconds = new WaitForSeconds(4.0f);
+		WaitForSeconds waitForSeconds = new WaitForSeconds(3.5f);
 
 		while (true)
 		{
@@ -79,13 +79,15 @@ public class upMissile : Object
 						}
 
 						ObjectAnim.SetBool("end", true);
-						yield return null;
-						ObjectAnim.SetBool("end", false);
 					}
 				}
-				else
-					break;
+				else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("upMissile 0"))
+                {
+					yield return null;
+					ObjectAnim.SetBool("end", false);
+				}
 			}
+			else if (Hp == 0) break;
 		}
 	}
 }

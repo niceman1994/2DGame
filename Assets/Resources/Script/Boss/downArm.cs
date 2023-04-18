@@ -53,12 +53,12 @@ public class downArm : Object
 
 	IEnumerator MissileEject()
 	{
-		WaitForSeconds waitForSeconds = new WaitForSeconds(4.0f);
+		WaitForSeconds waitForSeconds = new WaitForSeconds(3.5f);
 
 		while (true)
 		{
 			yield return null;
-
+			
 			if (transform.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize &&
 				transform.position.x >= Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize)
 			{
@@ -68,7 +68,7 @@ public class downArm : Object
 
 					if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime <= 0.0f)
 						ObjectAnim.speed = 1.0f;
-					else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
+					else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.66f)
 					{
 						for (int i = 0; i < 6; ++i)
 						{
@@ -78,13 +78,15 @@ public class downArm : Object
 						}
 
 						ObjectAnim.SetBool("end", true);
-						yield return waitForSeconds;
-						ObjectAnim.SetBool("end", false);
 					}
 				}
-				else
-					break;
+				else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("downArms 0"))
+				{
+					yield return waitForSeconds;
+					ObjectAnim.SetBool("end", false);
+				}
 			}
+			else if (Hp == 0) break;
 		}
 	}
 }
