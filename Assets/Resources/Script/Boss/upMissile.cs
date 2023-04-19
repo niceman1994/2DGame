@@ -11,7 +11,7 @@ public class upMissile : Object
 	public override void Initialize()
 	{
 		base.Name = "upMissile";
-		base.Hp = 80;
+		base.Hp = 120;
 		base.Speed = 0.0f;
 		base.ObjectAnim = GetComponent<Animator>();
 		ObjectAnim.speed = 0;
@@ -62,13 +62,15 @@ public class upMissile : Object
 				transform.position.x >= Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize &&
 				transform.position.y <= Camera.main.transform.position.y + BackgroundManager.Instance.yScreenHalfSize)
 			{
-				if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("upMissile"))
+				if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("upMissileDestroy"))
+					break;
+				else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("upMissile"))
 				{
 					yield return waitForSeconds;
 
 					if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime <= 0.0f)
 						ObjectAnim.speed = 1.0f;
-					else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
+					else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.8f)
 					{
 						for (int i = 0; i < 4; ++i)
 						{
@@ -82,12 +84,11 @@ public class upMissile : Object
 					}
 				}
 				else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("upMissile 0"))
-                {
+				{
 					yield return null;
 					ObjectAnim.SetBool("end", false);
 				}
 			}
-			else if (Hp == 0) break;
 		}
 	}
 }

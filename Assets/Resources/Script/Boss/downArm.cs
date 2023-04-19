@@ -62,7 +62,9 @@ public class downArm : Object
 			if (transform.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize &&
 				transform.position.x >= Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize)
 			{
-				if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("downArms"))
+				if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("downArmsDestroy"))
+					break;
+				else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("downArms"))
 				{
 					yield return waitForSeconds;
 
@@ -86,7 +88,6 @@ public class downArm : Object
 					ObjectAnim.SetBool("end", false);
 				}
 			}
-			else if (Hp == 0) break;
 		}
 	}
 }

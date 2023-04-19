@@ -11,10 +11,11 @@ public class SideWeapon2 : Object
 	public override void Initialize()
 	{
 		base.Name = "SideWeapon2";
-		base.Hp = 100;
+		base.Hp = 80;
 		base.Speed = 0.0f;
 		base.ObjectAnim = GetComponent<Animator>();
 
+		ObjectAnim.speed = 0;
 		attackDelay = 0.0f;
 	}
 
@@ -23,7 +24,7 @@ public class SideWeapon2 : Object
 		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
 			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
 		{
-			if (transform.parent.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize &&
+			if (transform.parent.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize + 2.0f &&
 				transform.parent.position.y <= 1.0f)
 				StartAnim();
 		}
@@ -55,16 +56,13 @@ public class SideWeapon2 : Object
 	{
 		if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("Weapon2"))
 		{
-			ObjectAnim.enabled = true;
-			ObjectAnim.speed = 1.0f;
-
-			if (attackDelay <= 2.0f)
+			if (attackDelay <= 5.0f)
 				attackDelay += Time.deltaTime;
 			else
 			{
-				//if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime <= 0.0f)
-				//	ObjectAnim.speed = 1.0f;
-				if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.66f)
+				if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime <= 0.0f)
+					ObjectAnim.speed = 1;
+				else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.66f)
 				{
 					for (int i = 0; i < 3; ++i)
 					{

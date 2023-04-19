@@ -55,14 +55,17 @@ public class Boss : Object
         {
             if (WeaponAnim[0].enabled == true &&
                 WeaponAnim[1].enabled == true &&
-                WeaponAnim[2].enabled == true)
+                WeaponAnim[2].enabled == true &&
+                WeaponAnim[3].GetCurrentAnimatorStateInfo(0).IsName("Weapon1Destroy") &&
+                WeaponAnim[4].GetCurrentAnimatorStateInfo(0).IsName("Weapon2Destroy"))
             {
                 Hp += 1;
                 SoundManager.Instance.PlaySE("hitSound");
 
-                if (Hp >= 30)
+                if (Hp >= 5)
                 {
-                    Hp = 30;
+                    Hp = 5;
+                    GameManager.Instance.Score += 5000;
                     SoundManager.Instance.audioSourceBGM[3].Stop();
                     SoundManager.Instance.audioSourceBGM[4].Play();
                     transform.GetComponent<PolygonCollider2D>().enabled = false;

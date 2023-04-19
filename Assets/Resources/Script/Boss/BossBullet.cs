@@ -17,7 +17,7 @@ public class BossBullet : Object
 		if (transform.position.x >= Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize)
 		{
 			transform.position = Vector2.MoveTowards(transform.position,
-				new Vector2(Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize - 1.0f, transform.position.y), 0.005f);
+				new Vector2(Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize - 1.0f, transform.position.y), 0.0125f);
 		}
 		else
 		{
