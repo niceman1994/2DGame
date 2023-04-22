@@ -128,7 +128,7 @@ public class GameManager : ManagerSingleton<GameManager>
             if (Input.GetKeyDown(KeyCode.Alpha1) && Coin >= 1)
             {
                 Coin -= 1;
-                PlayerLife = 2;
+                PlayerLife = 3;
                 CoinText.text = Coin.ToString();
             }
         }
@@ -136,17 +136,30 @@ public class GameManager : ManagerSingleton<GameManager>
 
     IEnumerator PhaseNotice(string message, float speed)
 	{
-        yield return new WaitForSeconds(5.8f);
-        PhaseInfoText.gameObject.SetActive(true);
+        WaitForSeconds waitForSeconds = new WaitForSeconds(5.8f);
 
-        for (int i = 0; i < message.Length; ++i)
-		{
-            PhaseInfoText.text = message.Substring(0, i + 1);
-            yield return new WaitForSeconds(speed);
-		}
+        while (true)
+        {
+            yield return null;
 
-        yield return new WaitForSeconds(1.0f);
-        PhaseInfoText.gameObject.SetActive(false);
+            if (IntroCanvas.activeInHierarchy == false &&
+                CoinCanvas.activeInHierarchy == false)
+            {
+                yield return waitForSeconds;
+                PhaseInfoText.gameObject.SetActive(true);
+
+                for (int i = 0; i < message.Length; ++i)
+                {
+                    PhaseInfoText.text = message.Substring(0, i + 1);
+                    yield return new WaitForSeconds(speed);
+                }
+
+                yield return new WaitForSeconds(1.0f);
+                PhaseInfoText.gameObject.SetActive(false);
+                yield break;
+            }
+        }
+        
     }
 
     IEnumerator CountDown()

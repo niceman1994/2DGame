@@ -63,6 +63,7 @@ public class BackgroundManager : ManagerSingleton<BackgroundManager>
 		}
 
 		if (GameManager.Instance.PlayerLife == 0) Speed = 0.0f;
+		else if (GameManager.Instance.PlayerLife > 0) Speed = 6.5f;
 	}
 
 	void StopBackground()

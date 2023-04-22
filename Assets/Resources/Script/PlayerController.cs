@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using DG.Tweening;
 
 public class PlayerController : Object
@@ -9,10 +10,12 @@ public class PlayerController : Object
 	[SerializeField] private GameObject BulletPoint;
 	[SerializeField] private GameObject[] Smog = new GameObject[3];
 	[SerializeField] private Vector3[] point = new Vector3[3];
+	[SerializeField] private bool Die;
 
 	Animator[] smoganim = new Animator[3];
 	Animator Charge;
 	Animator dieSmog;
+	SpriteRenderer Renderer;
 
 	public override void Initialize()
 	{
@@ -21,6 +24,7 @@ public class PlayerController : Object
 		base.Speed = 10.0f;
 		base.ObjectAnim = _Object.GetComponent<Animator>();
 		ObjectAnim.enabled = false;
+		Renderer = transform.GetComponent<SpriteRenderer>();
 
 		StartCoroutine(Sally());
 
@@ -32,6 +36,7 @@ public class PlayerController : Object
 
 		Charge = transform.GetChild(4).GetComponent<Animator>();
 		Charge.enabled = false;
+		Die = false;
 
 		dieSmog = transform.GetChild(5).GetComponent<Animator>();
 
@@ -62,6 +67,7 @@ public class PlayerController : Object
 			collision.gameObject.CompareTag("GreenEnemy") ||
 			collision.gameObject.CompareTag("Boss"))
 		{
+			Die = true;
 			ObjectAnim.SetBool("idle", false);
 			ObjectAnim.SetTrigger("die");
 			ObjectAnim.Play("Die");
@@ -72,14 +78,12 @@ public class PlayerController : Object
 			GameManager.Instance.PlayerLife -= 1;
 
 			transform.DOPath(
-				new[] { transform.position, new Vector3(transform.position.x + 3.0f, - 6.2f, 0.0f) }, 1.0f, PathType.CatmullRom)
-				.SetEase(Ease.Linear).OnComplete(() =>
+			new[] { transform.position, new Vector3(transform.position.x + 3.0f, - 6.2f, 0.0f) }, 1.0f, PathType.CatmullRom)
+			.SetUpdate(true).SetEase(Ease.Linear).OnComplete(() =>
 			{
 				StartCoroutine(DieCheck());
 			});
 		}
-
-		GetItem(collision.gameObject);
 	}
 
 	private IEnumerator Sally()
@@ -220,28 +224,32 @@ public class PlayerController : Object
 
 	IEnumerator DieCheck()
 	{
-		yield return null;
-		
-		dieSmog.gameObject.SetActive(false);
-		transform.position = Vector3.MoveTowards(new Vector3(11.0f, 1.1f, 0.0f), new Vector3(18.0f, 1.1f, 0.0f), 0.02f);
-		ObjectAnim.Play("Sally");
-		transform.GetComponent<SpriteRenderer>().color = new Color(255.0f, 255.0f, 255.0f, 0.0f);
+		while (true)
+		{
+			yield return null;
 
-		yield return new WaitForSecondsRealtime(2.0f);
-		ObjectAnim.Play("Idle");
-		transform.GetComponent<SpriteRenderer>().color = new Color(255.0f, 255.0f, 255.0f, 255.0f);
-		transform.GetComponent<BoxCollider2D>().enabled = true;
+			if (Die == true)
+			{
+				dieSmog.gameObject.SetActive(false);
+				transform.position = new Vector3(15.0f, 1.1f, 0.0f);
+				ObjectAnim.Play("Idle");
+				Renderer.color = Color.black;
+
+				yield return new WaitForSecondsRealtime(3.0f);
+				Renderer.color = Color.white;
+				transform.GetComponent<BoxCollider2D>().enabled = true;
+				Die = false;
+			}
+			else
+				break;
+		}
 	}
 
-	void GetItem(GameObject obj)
-	{
-		if (obj.name == "PowerUp")
-			ObjectPool.Instance.BulletLevel += 1;
-
-		if (obj.name == "LifeUp")
-			GameManager.Instance.PlayerLife += 1;
-
-		if (obj.name == "ScoreUp")
-			GameManager.Instance.Score += Random.Range(3, 5) * 10;
+	void ChangeAlpha()
+    {
+		if (Die == true)
+			Renderer.color = new Color(255.0f, 255.0f, 255.0f, 128.0f);
+		else
+			Renderer.color = new Color(255.0f, 255.0f, 255.0f, 255.0f);
 	}
 }

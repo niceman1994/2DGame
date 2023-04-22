@@ -27,12 +27,12 @@ public class smallEnemy4 : Object
         if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
             GameManager.Instance.CoinCanvas.activeInHierarchy == false)
         {
-            if (transform.position.y >= Camera.main.transform.position.y - BackgroundManager.Instance.yScreenHalfSize)
+            if (transform.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize)
             {
                 inScene = true;
 
-                if (transform.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize)
-                    EnemyAttack(0.5f);
+                if (transform.position.y > - 1.5f && transform.position.y < 2.0f)
+                    EnemyAttack();
             }
             else
             {
@@ -86,11 +86,11 @@ public class smallEnemy4 : Object
         }
     }
 
-    void EnemyAttack(float _time)
+    void EnemyAttack()
     {
         if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("smallEnemy4"))
         {
-            if (attackDelay <= _time)
+            if (attackDelay <= 0.25f)
                 attackDelay += Time.deltaTime;
             else
             {
@@ -100,9 +100,9 @@ public class smallEnemy4 : Object
                     BulletPoint.transform.position.x - Speed * 2.0f * Time.deltaTime,
                     BulletPoint.transform.position.y,
                     BulletPoint.transform.position.z);
-            }
 
-            attackDelay = 0.0f;
+                attackDelay = 0.0f;
+            }
         }
     }
 

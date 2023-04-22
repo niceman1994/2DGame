@@ -35,29 +35,29 @@ public class EnemyManager : ManagerSingleton<EnemyManager>
 
     void Initialize()
 	{
-        //SpawnEnemy<smallEnemy1>(4, new Vector2(46.0f, 2.4f));
-        //SpawnEnemy<smallEnemy1>(4, new Vector2(50.0f, -2.4f));
-        //
-        //for (int i = 0; i < 4; ++i)
-        //    SpawnEnemy<smallEnemy1>(4, new Vector2(86.0f, 0.0f - i));
-        //
-        //for (int i = 0; i < 10; ++i)
-        //{
-        //    SpawnEnemy<smallEnemy2>(1, new Vector2(34.0f, 4.1f));
-        //    SpawnEnemy<smallEnemy2>(1, new Vector2(34.0f, -4.1f));
-        //}
-        //
-        //for (int i = 0; i < 8; ++i)
-		//{
-        //    SpawnEnemy<smallEnemy3>(1, 38.0f, 1.8f);
-        //    SpawnEnemy<smallEnemy3>(1, 38.0f, -1.8f);
-        //}
-        //
-        //for (int i = 0; i < 10; ++i)
-        //    SpawnEnemy<smallEnemy4>(1, 36.0f, -4.4f);
-        //
-        //SpawnEnemy<smallEnemy5>(3, new Vector2(36.0f, Random.Range(1.5f, 1.8f)));
-        //SpawnEnemy<smallEnemy5>(3, new Vector2(36.0f, Random.Range(-1.5f, -1.8f)));
+        SpawnEnemy<smallEnemy1>(4, new Vector2(46.0f, 2.4f));
+        SpawnEnemy<smallEnemy1>(4, new Vector2(50.0f, -2.4f));
+        
+        for (int i = 0; i < 4; ++i)
+            SpawnEnemy<smallEnemy1>(4, new Vector2(86.0f, 0.0f - i));
+        
+        for (int i = 0; i < 10; ++i)
+        {
+            SpawnEnemy<smallEnemy2>(1, new Vector2(34.0f, 4.1f));
+            SpawnEnemy<smallEnemy2>(1, new Vector2(34.0f, -4.1f));
+        }
+        
+        for (int i = 0; i < 8; ++i)
+		{
+            SpawnEnemy<smallEnemy3>(1, 38.0f, 1.8f);
+            SpawnEnemy<smallEnemy3>(1, 38.0f, -1.8f);
+        }
+        
+        for (int i = 0; i < 10; ++i)
+            SpawnEnemy<smallEnemy4>(1, 36.0f, -4.4f);
+        
+        SpawnEnemy<smallEnemy5>(3, new Vector2(36.0f, Random.Range(1.5f, 1.8f)));
+        SpawnEnemy<smallEnemy5>(3, new Vector2(36.0f, Random.Range(-1.5f, -1.8f)));
 
         SpawnEnemy<Boss>(1, 40.0f, 6.33f);
     }

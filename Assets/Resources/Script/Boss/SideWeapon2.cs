@@ -6,8 +6,6 @@ public class SideWeapon2 : Object
 {
 	[SerializeField] private GameObject bulletPrefab;
 
-	float attackDelay;
-
 	public override void Initialize()
 	{
 		base.Name = "SideWeapon2";
@@ -16,18 +14,12 @@ public class SideWeapon2 : Object
 		base.ObjectAnim = GetComponent<Animator>();
 
 		ObjectAnim.speed = 0;
-		attackDelay = 0.0f;
+		StartCoroutine(BulletEject());
 	}
 
 	public override void Progress()
 	{
-		if (GameManager.Instance.IntroCanvas.activeInHierarchy == false &&
-			GameManager.Instance.CoinCanvas.activeInHierarchy == false)
-		{
-			if (transform.parent.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize + 2.0f &&
-				transform.parent.position.y <= 1.0f)
-				StartAnim();
-		}
+
 	}
 
 	public override void Release()
@@ -52,27 +44,45 @@ public class SideWeapon2 : Object
 		}
 	}
 
-	void StartAnim()
+	IEnumerator BulletEject()
 	{
-		if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("Weapon2"))
-		{
-			if (attackDelay <= 5.0f)
-				attackDelay += Time.deltaTime;
-			else
-			{
-				if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime <= 0.0f)
-					ObjectAnim.speed = 1;
-				else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.66f)
-				{
-					for (int i = 0; i < 3; ++i)
-					{
-						GameObject bullet = Instantiate(bulletPrefab);
-						bullet.name = "BossBullet";
-						bullet.transform.position = new Vector3(
-							transform.position.x - 1.0f - i, transform.position.y, 0.0f);
-					}
+		WaitForSeconds waitForSeconds = new WaitForSeconds(4.0f);
 
-					attackDelay = 0.0f;
+		while (true)
+		{
+			yield return null;
+
+			if (transform.parent.position.x <= Camera.main.transform.position.x + BackgroundManager.Instance.xScreenHalfSize + 2.0f &&
+				transform.parent.position.y <= 1.0f)
+			{
+				yield return waitForSeconds;
+				ObjectAnim.speed = 1.0f;
+
+				if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("Weapon2Destroy"))
+				{
+					ObjectAnim.enabled = false;
+					break;
+				}
+				else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("Weapon2"))
+				{
+					if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.66f &&
+						!ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("Weapon2Destroy"))
+					{
+						for (int i = 0; i < 3; ++i)
+						{
+							GameObject bullet = Instantiate(bulletPrefab);
+							bullet.name = "BossBullet";
+							bullet.transform.position = new Vector3(
+								transform.position.x - 1.5f - i, transform.position.y, 0.0f);
+						}
+
+						ObjectAnim.SetBool("end", true);
+					}
+				}
+				else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("Weapon2 0"))
+				{
+					yield return Random.Range(1.0f, 3.0f);
+					ObjectAnim.SetBool("end", false);
 				}
 			}
 		}

@@ -63,14 +63,18 @@ public class downArm : Object
 				transform.position.x >= Camera.main.transform.position.x - BackgroundManager.Instance.xScreenHalfSize)
 			{
 				if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("downArmsDestroy"))
+				{
+					ObjectAnim.enabled = false;
 					break;
+				}
 				else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("downArms"))
 				{
 					yield return waitForSeconds;
 
 					if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime <= 0.0f)
 						ObjectAnim.speed = 1.0f;
-					else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.66f)
+					else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.66f &&
+						!ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("downArmsDestroy"))
 					{
 						for (int i = 0; i < 6; ++i)
 						{

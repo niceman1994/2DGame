@@ -63,14 +63,18 @@ public class upMissile : Object
 				transform.position.y <= Camera.main.transform.position.y + BackgroundManager.Instance.yScreenHalfSize)
 			{
 				if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("upMissileDestroy"))
+				{
+					ObjectAnim.enabled = false;
 					break;
+				}
 				else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("upMissile"))
 				{
 					yield return waitForSeconds;
 
 					if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime <= 0.0f)
 						ObjectAnim.speed = 1.0f;
-					else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.8f)
+					else if (ObjectAnim.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1.0f &&
+						!ObjectAnim.GetCurrentAnimatorStateInfo(0).IsName("upMissileDestroy"))
 					{
 						for (int i = 0; i < 4; ++i)
 						{
