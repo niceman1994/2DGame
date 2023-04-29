@@ -26,9 +26,4 @@ public class BossBullet : Object
 			transform.SetParent(EnemyManager.Instance.transform.GetChild(1));
 		}
 	}
-
-	public override void Release()
-	{
-		
-	}
 }

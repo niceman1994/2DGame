@@ -42,11 +42,6 @@ public class smallEnemy4 : Object
         }
     }
 
-    public override void Release()
-    {
-        
-    }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Bullet"))

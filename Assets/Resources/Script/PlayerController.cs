@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using DG.Tweening;
 
 public class PlayerController : Object
@@ -43,7 +42,7 @@ public class PlayerController : Object
 		StartCoroutine(ChargeEffect());
 	}
 
-	public override void Progress()
+    public override void Progress()
 	{
 		SmogAni();
 
@@ -53,11 +52,6 @@ public class PlayerController : Object
 			Move();
 			ChargeEffect();
 		}
-	}
-	
-	public override void Release()
-	{
-		
 	}
 
 	private void OnCollisionEnter2D(Collision2D collision)
@@ -97,9 +91,9 @@ public class PlayerController : Object
 				yield return new WaitForSeconds(1.65f);
 				transform.GetComponent<AudioSource>().Play();
 				transform.DOMove(point[0], 1.9f).SetEase(Ease.InSine).OnComplete(() =>
-			  {
+				{
 				  transform.DOPath(point, 2.0f, PathType.CatmullRom).SetEase(Ease.OutSine);
-			  });
+				});
 
 				break;
 			}
@@ -243,13 +237,5 @@ public class PlayerController : Object
 			else
 				break;
 		}
-	}
-
-	void ChangeAlpha()
-    {
-		if (Die == true)
-			Renderer.color = new Color(255.0f, 255.0f, 255.0f, 128.0f);
-		else
-			Renderer.color = new Color(255.0f, 255.0f, 255.0f, 255.0f);
 	}
 }

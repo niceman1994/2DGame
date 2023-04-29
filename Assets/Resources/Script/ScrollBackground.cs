@@ -78,7 +78,6 @@ public class ScrollBackground : MonoBehaviour
 		}
 	}
 
-	// TODO : 추후 수정
 	void RuinScrolling()
 	{
 		if (scrollBackground[0].gameObject.activeInHierarchy == false &&
